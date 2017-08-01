@@ -1,0 +1,2463 @@
+parseName: class cv.Mat with set(['cv']) -> fullname:cv::Mat namespace:cv classpath: classname: name:Mat
+register class cv::Mat (['class cv.Mat', '', ['/Ghost'], []])
+parseName: class cv.Algorithm with set(['cv']) -> fullname:cv::Algorithm namespace:cv classpath: classname: name:Algorithm
+register class cv::Algorithm (['class cv.Algorithm', '', ['/Ghost'], []])
+
+
+===== Header: /usr/include/opencv2/highgui/cap_ios.h =====
+Namespaces: set(['cv'])
+
+
+===== Header: /usr/include/opencv2/highgui/highgui.hpp =====
+Namespaces: set(['cv'])
+
+--- Incoming ---
+[u'const cv.WINDOW_NORMAL', u'CV_WINDOW_NORMAL', [], []]
+parseName: const cv.WINDOW_NORMAL with ['cv'] -> fullname:cv::WINDOW_NORMAL namespace:cv classpath: classname: name:WINDOW_NORMAL
+
+--- Incoming ---
+[u'const cv.WINDOW_AUTOSIZE', u'CV_WINDOW_AUTOSIZE', [], []]
+parseName: const cv.WINDOW_AUTOSIZE with ['cv'] -> fullname:cv::WINDOW_AUTOSIZE namespace:cv classpath: classname: name:WINDOW_AUTOSIZE
+
+--- Incoming ---
+[u'const cv.WINDOW_OPENGL', u'CV_WINDOW_OPENGL', [], []]
+parseName: const cv.WINDOW_OPENGL with ['cv'] -> fullname:cv::WINDOW_OPENGL namespace:cv classpath: classname: name:WINDOW_OPENGL
+
+--- Incoming ---
+[u'const cv.WND_PROP_FULLSCREEN', u'CV_WND_PROP_FULLSCREEN', [], []]
+parseName: const cv.WND_PROP_FULLSCREEN with ['cv'] -> fullname:cv::WND_PROP_FULLSCREEN namespace:cv classpath: classname: name:WND_PROP_FULLSCREEN
+
+--- Incoming ---
+[u'const cv.WND_PROP_AUTOSIZE', u'CV_WND_PROP_AUTOSIZE', [], []]
+parseName: const cv.WND_PROP_AUTOSIZE with ['cv'] -> fullname:cv::WND_PROP_AUTOSIZE namespace:cv classpath: classname: name:WND_PROP_AUTOSIZE
+
+--- Incoming ---
+[u'const cv.WND_PROP_ASPECT_RATIO', u'CV_WND_PROP_ASPECTRATIO', [], []]
+parseName: const cv.WND_PROP_ASPECT_RATIO with ['cv'] -> fullname:cv::WND_PROP_ASPECT_RATIO namespace:cv classpath: classname: name:WND_PROP_ASPECT_RATIO
+
+--- Incoming ---
+[u'const cv.WND_PROP_OPENGL', u'CV_WND_PROP_OPENGL', [], []]
+parseName: const cv.WND_PROP_OPENGL with ['cv'] -> fullname:cv::WND_PROP_OPENGL namespace:cv classpath: classname: name:WND_PROP_OPENGL
+
+--- Incoming ---
+[   u'cv.namedWindow',
+    u'void',
+    ['/NW'],
+    [   [u'const string&', u'winname', '', []],
+        [u'int', u'flags', u'WINDOW_AUTOSIZE', []]],
+    '']
+parseName: cv.namedWindow with ['cv'] -> fullname:cv::namedWindow namespace:cv classpath: classname: name:namedWindow
+register (function) namedWindow
+
+--- Incoming ---
+[   u'cv.destroyWindow',
+    u'void',
+    ['/NW'],
+    [[u'const string&', u'winname', '', []]],
+    '']
+parseName: cv.destroyWindow with ['cv'] -> fullname:cv::destroyWindow namespace:cv classpath: classname: name:destroyWindow
+register (function) destroyWindow
+
+--- Incoming ---
+[u'cv.destroyAllWindows', u'void', ['/NW'], [], '']
+parseName: cv.destroyAllWindows with ['cv'] -> fullname:cv::destroyAllWindows namespace:cv classpath: classname: name:destroyAllWindows
+register (function) destroyAllWindows
+
+--- Incoming ---
+[u'cv.startWindowThread', u'int', ['/NW'], [], '']
+parseName: cv.startWindowThread with ['cv'] -> fullname:cv::startWindowThread namespace:cv classpath: classname: name:startWindowThread
+register (function) startWindowThread
+
+--- Incoming ---
+[u'cv.waitKey', u'int', ['/NW'], [[u'int', u'delay', u'0', []]], '']
+parseName: cv.waitKey with ['cv'] -> fullname:cv::waitKey namespace:cv classpath: classname: name:waitKey
+register (function) waitKey
+
+--- Incoming ---
+[   u'cv.imshow',
+    u'void',
+    ['/NW'],
+    [[u'const string&', u'winname', '', []], [u'InputArray', u'mat', '', []]],
+    '']
+parseName: cv.imshow with ['cv'] -> fullname:cv::imshow namespace:cv classpath: classname: name:imshow
+register (function) imshow
+
+--- Incoming ---
+[   u'cv.resizeWindow',
+    u'void',
+    ['/NW'],
+    [   [u'const string&', u'winname', '', []],
+        [u'int', u'width', '', []],
+        [u'int', u'height', '', []]],
+    '']
+parseName: cv.resizeWindow with ['cv'] -> fullname:cv::resizeWindow namespace:cv classpath: classname: name:resizeWindow
+register (function) resizeWindow
+
+--- Incoming ---
+[   u'cv.moveWindow',
+    u'void',
+    ['/NW'],
+    [   [u'const string&', u'winname', '', []],
+        [u'int', u'x', '', []],
+        [u'int', u'y', '', []]],
+    '']
+parseName: cv.moveWindow with ['cv'] -> fullname:cv::moveWindow namespace:cv classpath: classname: name:moveWindow
+register (function) moveWindow
+
+--- Incoming ---
+[   u'cv.setWindowProperty',
+    u'void',
+    ['/NW'],
+    [   [u'const string&', u'winname', '', []],
+        [u'int', u'prop_id', '', []],
+        [u'double', u'prop_value', '', []]],
+    '']
+parseName: cv.setWindowProperty with ['cv'] -> fullname:cv::setWindowProperty namespace:cv classpath: classname: name:setWindowProperty
+register (function) setWindowProperty
+
+--- Incoming ---
+[   u'cv.getWindowProperty',
+    u'double',
+    ['/NW'],
+    [[u'const string&', u'winname', '', []], [u'int', u'prop_id', '', []]],
+    '']
+parseName: cv.getWindowProperty with ['cv'] -> fullname:cv::getWindowProperty namespace:cv classpath: classname: name:getWindowProperty
+register (function) getWindowProperty
+
+--- Incoming ---
+[u'const cv.EVENT_MOUSEMOVE', u'0', [], []]
+parseName: const cv.EVENT_MOUSEMOVE with ['cv'] -> fullname:cv::EVENT_MOUSEMOVE namespace:cv classpath: classname: name:EVENT_MOUSEMOVE
+
+--- Incoming ---
+[u'const cv.EVENT_LBUTTONDOWN', u'1', [], []]
+parseName: const cv.EVENT_LBUTTONDOWN with ['cv'] -> fullname:cv::EVENT_LBUTTONDOWN namespace:cv classpath: classname: name:EVENT_LBUTTONDOWN
+
+--- Incoming ---
+[u'const cv.EVENT_RBUTTONDOWN', u'2', [], []]
+parseName: const cv.EVENT_RBUTTONDOWN with ['cv'] -> fullname:cv::EVENT_RBUTTONDOWN namespace:cv classpath: classname: name:EVENT_RBUTTONDOWN
+
+--- Incoming ---
+[u'const cv.EVENT_MBUTTONDOWN', u'3', [], []]
+parseName: const cv.EVENT_MBUTTONDOWN with ['cv'] -> fullname:cv::EVENT_MBUTTONDOWN namespace:cv classpath: classname: name:EVENT_MBUTTONDOWN
+
+--- Incoming ---
+[u'const cv.EVENT_LBUTTONUP', u'4', [], []]
+parseName: const cv.EVENT_LBUTTONUP with ['cv'] -> fullname:cv::EVENT_LBUTTONUP namespace:cv classpath: classname: name:EVENT_LBUTTONUP
+
+--- Incoming ---
+[u'const cv.EVENT_RBUTTONUP', u'5', [], []]
+parseName: const cv.EVENT_RBUTTONUP with ['cv'] -> fullname:cv::EVENT_RBUTTONUP namespace:cv classpath: classname: name:EVENT_RBUTTONUP
+
+--- Incoming ---
+[u'const cv.EVENT_MBUTTONUP', u'6', [], []]
+parseName: const cv.EVENT_MBUTTONUP with ['cv'] -> fullname:cv::EVENT_MBUTTONUP namespace:cv classpath: classname: name:EVENT_MBUTTONUP
+
+--- Incoming ---
+[u'const cv.EVENT_LBUTTONDBLCLK', u'7', [], []]
+parseName: const cv.EVENT_LBUTTONDBLCLK with ['cv'] -> fullname:cv::EVENT_LBUTTONDBLCLK namespace:cv classpath: classname: name:EVENT_LBUTTONDBLCLK
+
+--- Incoming ---
+[u'const cv.EVENT_RBUTTONDBLCLK', u'8', [], []]
+parseName: const cv.EVENT_RBUTTONDBLCLK with ['cv'] -> fullname:cv::EVENT_RBUTTONDBLCLK namespace:cv classpath: classname: name:EVENT_RBUTTONDBLCLK
+
+--- Incoming ---
+[u'const cv.EVENT_MBUTTONDBLCLK', u'9', [], []]
+parseName: const cv.EVENT_MBUTTONDBLCLK with ['cv'] -> fullname:cv::EVENT_MBUTTONDBLCLK namespace:cv classpath: classname: name:EVENT_MBUTTONDBLCLK
+
+--- Incoming ---
+[u'const cv.EVENT_FLAG_LBUTTON', u'1', [], []]
+parseName: const cv.EVENT_FLAG_LBUTTON with ['cv'] -> fullname:cv::EVENT_FLAG_LBUTTON namespace:cv classpath: classname: name:EVENT_FLAG_LBUTTON
+
+--- Incoming ---
+[u'const cv.EVENT_FLAG_RBUTTON', u'2', [], []]
+parseName: const cv.EVENT_FLAG_RBUTTON with ['cv'] -> fullname:cv::EVENT_FLAG_RBUTTON namespace:cv classpath: classname: name:EVENT_FLAG_RBUTTON
+
+--- Incoming ---
+[u'const cv.EVENT_FLAG_MBUTTON', u'4', [], []]
+parseName: const cv.EVENT_FLAG_MBUTTON with ['cv'] -> fullname:cv::EVENT_FLAG_MBUTTON namespace:cv classpath: classname: name:EVENT_FLAG_MBUTTON
+
+--- Incoming ---
+[u'const cv.EVENT_FLAG_CTRLKEY', u'8', [], []]
+parseName: const cv.EVENT_FLAG_CTRLKEY with ['cv'] -> fullname:cv::EVENT_FLAG_CTRLKEY namespace:cv classpath: classname: name:EVENT_FLAG_CTRLKEY
+
+--- Incoming ---
+[u'const cv.EVENT_FLAG_SHIFTKEY', u'16', [], []]
+parseName: const cv.EVENT_FLAG_SHIFTKEY with ['cv'] -> fullname:cv::EVENT_FLAG_SHIFTKEY namespace:cv classpath: classname: name:EVENT_FLAG_SHIFTKEY
+
+--- Incoming ---
+[u'const cv.EVENT_FLAG_ALTKEY', u'32', [], []]
+parseName: const cv.EVENT_FLAG_ALTKEY with ['cv'] -> fullname:cv::EVENT_FLAG_ALTKEY namespace:cv classpath: classname: name:EVENT_FLAG_ALTKEY
+
+--- Incoming ---
+[   u'cv.setMouseCallback',
+    u'void',
+    ['/NW'],
+    [   [u'const string&', u'winname', '', []],
+        [u'MouseCallback', u'onMouse', '', []],
+        [u'void*', u'userdata', u'0', []]],
+    u'assigns callback for mouse events\n']
+parseName: cv.setMouseCallback with ['cv'] -> fullname:cv::setMouseCallback namespace:cv classpath: classname: name:setMouseCallback
+Registering an unknown type: MouseCallback
+register (function) setMouseCallback
+
+--- Incoming ---
+[   u'cv.createTrackbar',
+    u'int',
+    ['/NW'],
+    [   [u'const string&', u'trackbarname', '', []],
+        [u'const string&', u'winname', '', []],
+        [u'int*', u'value', '', []],
+        [u'int', u'count', '', []],
+        [u'TrackbarCallback', u'onChange', u'0', []],
+        [u'void*', u'userdata', u'0', []]],
+    '']
+parseName: cv.createTrackbar with ['cv'] -> fullname:cv::createTrackbar namespace:cv classpath: classname: name:createTrackbar
+Registering an unknown type: TrackbarCallback
+register (function) createTrackbar
+
+--- Incoming ---
+[   u'cv.getTrackbarPos',
+    u'int',
+    ['/NW'],
+    [   [u'const string&', u'trackbarname', '', []],
+        [u'const string&', u'winname', '', []]],
+    '']
+parseName: cv.getTrackbarPos with ['cv'] -> fullname:cv::getTrackbarPos namespace:cv classpath: classname: name:getTrackbarPos
+register (function) getTrackbarPos
+
+--- Incoming ---
+[   u'cv.setTrackbarPos',
+    u'void',
+    ['/NW'],
+    [   [u'const string&', u'trackbarname', '', []],
+        [u'const string&', u'winname', '', []],
+        [u'int', u'pos', '', []]],
+    '']
+parseName: cv.setTrackbarPos with ['cv'] -> fullname:cv::setTrackbarPos namespace:cv classpath: classname: name:setTrackbarPos
+register (function) setTrackbarPos
+
+--- Incoming ---
+[   u'cv.setOpenGlDrawCallback',
+    u'void',
+    ['/NW'],
+    [   [u'const string&', u'winname', '', []],
+        [u'OpenGlDrawCallback', u'onOpenGlDraw', '', []],
+        [u'void*', u'userdata', u'0', []]],
+    '']
+parseName: cv.setOpenGlDrawCallback with ['cv'] -> fullname:cv::setOpenGlDrawCallback namespace:cv classpath: classname: name:setOpenGlDrawCallback
+Registering an unknown type: OpenGlDrawCallback
+register (function) setOpenGlDrawCallback
+
+--- Incoming ---
+[   u'cv.setOpenGlContext',
+    u'void',
+    ['/NW'],
+    [[u'const string&', u'winname', '', []]],
+    '']
+parseName: cv.setOpenGlContext with ['cv'] -> fullname:cv::setOpenGlContext namespace:cv classpath: classname: name:setOpenGlContext
+register (function) setOpenGlContext
+
+--- Incoming ---
+[   u'cv.updateWindow',
+    u'void',
+    ['/NW'],
+    [[u'const string&', u'winname', '', []]],
+    '']
+parseName: cv.updateWindow with ['cv'] -> fullname:cv::updateWindow namespace:cv classpath: classname: name:updateWindow
+register (function) updateWindow
+
+--- Incoming ---
+[   u'cv.pointCloudShow',
+    u'void',
+    ['/NW'],
+    [   [u'const string&', u'winname', '', []],
+        [u'const GlCamera&', u'camera', '', []],
+        [u'const GlArrays&', u'arr', '', []]],
+    '']
+parseName: cv.pointCloudShow with ['cv'] -> fullname:cv::pointCloudShow namespace:cv classpath: classname: name:pointCloudShow
+Registering an unknown type: GlCamera
+Registering an unknown type: GlArrays
+register (function) pointCloudShow
+
+--- Incoming ---
+[   u'cv.pointCloudShow',
+    u'void',
+    ['/NW'],
+    [   [u'const string&', u'winname', '', []],
+        [u'const GlCamera&', u'camera', '', []],
+        [u'InputArray', u'points', '', []],
+        [u'InputArray', u'colors', u'noArray()', []]],
+    '']
+parseName: cv.pointCloudShow with ['cv'] -> fullname:cv::pointCloudShow namespace:cv classpath: classname: name:pointCloudShow
+register (function) pointCloudShow
+
+--- Incoming ---
+[   u'cv.fontQt',
+    u'CvFont',
+    ['/NW'],
+    [   [u'const string&', u'nameFont', '', []],
+        [u'int', u'pointSize', u'-1', []],
+        [u'Scalar', u'color', u'Scalar::all(0)', []],
+        [u'int', u'weight', u'CV_FONT_NORMAL', []],
+        [u'int', u'style', u'CV_STYLE_NORMAL', []],
+        [u'int', u'spacing', u'0', []]],
+    '']
+parseName: cv.fontQt with ['cv'] -> fullname:cv::fontQt namespace:cv classpath: classname: name:fontQt
+Registering an unknown type: CvFont
+register (function) fontQt
+
+--- Incoming ---
+[   u'cv.addText',
+    u'void',
+    ['/NW'],
+    [   [u'const Mat&', u'img', '', []],
+        [u'const string&', u'text', '', []],
+        [u'Point', u'org', '', []],
+        [u'CvFont', u'font', '', []]],
+    '']
+parseName: cv.addText with ['cv'] -> fullname:cv::addText namespace:cv classpath: classname: name:addText
+register (function) addText
+
+--- Incoming ---
+[   u'cv.displayOverlay',
+    u'void',
+    ['/NW'],
+    [   [u'const string&', u'winname', '', []],
+        [u'const string&', u'text', '', []],
+        [u'int', u'delayms', u'0', []]],
+    '']
+parseName: cv.displayOverlay with ['cv'] -> fullname:cv::displayOverlay namespace:cv classpath: classname: name:displayOverlay
+register (function) displayOverlay
+
+--- Incoming ---
+[   u'cv.displayStatusBar',
+    u'void',
+    ['/NW'],
+    [   [u'const string&', u'winname', '', []],
+        [u'const string&', u'text', '', []],
+        [u'int', u'delayms', u'0', []]],
+    '']
+parseName: cv.displayStatusBar with ['cv'] -> fullname:cv::displayStatusBar namespace:cv classpath: classname: name:displayStatusBar
+register (function) displayStatusBar
+
+--- Incoming ---
+[   u'cv.saveWindowParameters',
+    u'void',
+    ['/NW'],
+    [[u'const string&', u'windowName', '', []]],
+    '']
+parseName: cv.saveWindowParameters with ['cv'] -> fullname:cv::saveWindowParameters namespace:cv classpath: classname: name:saveWindowParameters
+register (function) saveWindowParameters
+
+--- Incoming ---
+[   u'cv.loadWindowParameters',
+    u'void',
+    ['/NW'],
+    [[u'const string&', u'windowName', '', []]],
+    '']
+parseName: cv.loadWindowParameters with ['cv'] -> fullname:cv::loadWindowParameters namespace:cv classpath: classname: name:loadWindowParameters
+register (function) loadWindowParameters
+
+--- Incoming ---
+[   u'cv.startLoop',
+    u'int',
+    ['/NW'],
+    [   [u'int (*pt2Func)(int argc@comma@ char *argv[])', u'', '', []],
+        [u'int', u'argc', '', []],
+        [u'char*[]', u'argv', '', []]],
+    '']
+parseName: cv.startLoop with ['cv'] -> fullname:cv::startLoop namespace:cv classpath: classname: name:startLoop
+Registering an unknown type: int (*pt2Func)(int argc@comma@ char *argv[])
+Registering an unknown type: char*[]
+register (function) startLoop
+
+--- Incoming ---
+[u'cv.stopLoop', u'void', ['/NW'], [], '']
+parseName: cv.stopLoop with ['cv'] -> fullname:cv::stopLoop namespace:cv classpath: classname: name:stopLoop
+register (function) stopLoop
+
+--- Incoming ---
+[   u'cv.createButton',
+    u'int',
+    ['/NW'],
+    [   [u'const string&', u'bar_name', '', []],
+        [u'ButtonCallback', u'on_change', '', []],
+        [u'void*', u'userdata', u'NULL', []],
+        [u'int', u'type', u'CV_PUSH_BUTTON', []],
+        [u'bool', u'initial_button_state', u'0', []]],
+    '']
+parseName: cv.createButton with ['cv'] -> fullname:cv::createButton namespace:cv classpath: classname: name:createButton
+Registering an unknown type: ButtonCallback
+register (function) createButton
+
+--- Incoming ---
+[u'const cv.IMREAD_UNCHANGED', u'-1', [], []]
+parseName: const cv.IMREAD_UNCHANGED with ['cv'] -> fullname:cv::IMREAD_UNCHANGED namespace:cv classpath: classname: name:IMREAD_UNCHANGED
+
+--- Incoming ---
+[u'const cv.IMREAD_GRAYSCALE', u'0', [], []]
+parseName: const cv.IMREAD_GRAYSCALE with ['cv'] -> fullname:cv::IMREAD_GRAYSCALE namespace:cv classpath: classname: name:IMREAD_GRAYSCALE
+
+--- Incoming ---
+[u'const cv.IMREAD_COLOR', u'1', [], []]
+parseName: const cv.IMREAD_COLOR with ['cv'] -> fullname:cv::IMREAD_COLOR namespace:cv classpath: classname: name:IMREAD_COLOR
+
+--- Incoming ---
+[u'const cv.IMREAD_ANYDEPTH', u'2', [], []]
+parseName: const cv.IMREAD_ANYDEPTH with ['cv'] -> fullname:cv::IMREAD_ANYDEPTH namespace:cv classpath: classname: name:IMREAD_ANYDEPTH
+
+--- Incoming ---
+[u'const cv.IMREAD_ANYCOLOR', u'4', [], []]
+parseName: const cv.IMREAD_ANYCOLOR with ['cv'] -> fullname:cv::IMREAD_ANYCOLOR namespace:cv classpath: classname: name:IMREAD_ANYCOLOR
+
+--- Incoming ---
+[u'const cv.IMWRITE_JPEG_QUALITY', u'1', [], []]
+parseName: const cv.IMWRITE_JPEG_QUALITY with ['cv'] -> fullname:cv::IMWRITE_JPEG_QUALITY namespace:cv classpath: classname: name:IMWRITE_JPEG_QUALITY
+
+--- Incoming ---
+[u'const cv.IMWRITE_PNG_COMPRESSION', u'16', [], []]
+parseName: const cv.IMWRITE_PNG_COMPRESSION with ['cv'] -> fullname:cv::IMWRITE_PNG_COMPRESSION namespace:cv classpath: classname: name:IMWRITE_PNG_COMPRESSION
+
+--- Incoming ---
+[u'const cv.IMWRITE_PNG_STRATEGY', u'17', [], []]
+parseName: const cv.IMWRITE_PNG_STRATEGY with ['cv'] -> fullname:cv::IMWRITE_PNG_STRATEGY namespace:cv classpath: classname: name:IMWRITE_PNG_STRATEGY
+
+--- Incoming ---
+[u'const cv.IMWRITE_PNG_BILEVEL', u'18', [], []]
+parseName: const cv.IMWRITE_PNG_BILEVEL with ['cv'] -> fullname:cv::IMWRITE_PNG_BILEVEL namespace:cv classpath: classname: name:IMWRITE_PNG_BILEVEL
+
+--- Incoming ---
+[u'const cv.IMWRITE_PNG_STRATEGY_DEFAULT', u'0', [], []]
+parseName: const cv.IMWRITE_PNG_STRATEGY_DEFAULT with ['cv'] -> fullname:cv::IMWRITE_PNG_STRATEGY_DEFAULT namespace:cv classpath: classname: name:IMWRITE_PNG_STRATEGY_DEFAULT
+
+--- Incoming ---
+[u'const cv.IMWRITE_PNG_STRATEGY_FILTERED', u'1', [], []]
+parseName: const cv.IMWRITE_PNG_STRATEGY_FILTERED with ['cv'] -> fullname:cv::IMWRITE_PNG_STRATEGY_FILTERED namespace:cv classpath: classname: name:IMWRITE_PNG_STRATEGY_FILTERED
+
+--- Incoming ---
+[u'const cv.IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY', u'2', [], []]
+parseName: const cv.IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY with ['cv'] -> fullname:cv::IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY namespace:cv classpath: classname: name:IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY
+
+--- Incoming ---
+[u'const cv.IMWRITE_PNG_STRATEGY_RLE', u'3', [], []]
+parseName: const cv.IMWRITE_PNG_STRATEGY_RLE with ['cv'] -> fullname:cv::IMWRITE_PNG_STRATEGY_RLE namespace:cv classpath: classname: name:IMWRITE_PNG_STRATEGY_RLE
+
+--- Incoming ---
+[u'const cv.IMWRITE_PNG_STRATEGY_FIXED', u'4', [], []]
+parseName: const cv.IMWRITE_PNG_STRATEGY_FIXED with ['cv'] -> fullname:cv::IMWRITE_PNG_STRATEGY_FIXED namespace:cv classpath: classname: name:IMWRITE_PNG_STRATEGY_FIXED
+
+--- Incoming ---
+[u'const cv.IMWRITE_PXM_BINARY', u'32', [], []]
+parseName: const cv.IMWRITE_PXM_BINARY with ['cv'] -> fullname:cv::IMWRITE_PXM_BINARY namespace:cv classpath: classname: name:IMWRITE_PXM_BINARY
+
+--- Incoming ---
+[   u'cv.imread',
+    u'Mat',
+    ['/NW'],
+    [[u'const string&', u'filename', '', []], [u'int', u'flags', u'1', []]],
+    '']
+parseName: cv.imread with ['cv'] -> fullname:cv::imread namespace:cv classpath: classname: name:imread
+register (function) imread
+
+--- Incoming ---
+[   u'cv.imwrite',
+    u'bool',
+    ['/NW'],
+    [   [u'const string&', u'filename', '', []],
+        [u'InputArray', u'img', '', []],
+        [u'const vector<int>&', u'params', u'vector<int>()', []]],
+    '']
+parseName: cv.imwrite with ['cv'] -> fullname:cv::imwrite namespace:cv classpath: classname: name:imwrite
+register (function) imwrite
+
+--- Incoming ---
+[   u'cv.imdecode',
+    u'Mat',
+    ['/NW'],
+    [[u'InputArray', u'buf', '', []], [u'int', u'flags', '', []]],
+    '']
+parseName: cv.imdecode with ['cv'] -> fullname:cv::imdecode namespace:cv classpath: classname: name:imdecode
+register (function) imdecode
+
+--- Incoming ---
+[   u'cv.imdecode',
+    u'Mat',
+    ['/NW'],
+    [   [u'InputArray', u'buf', '', []],
+        [u'int', u'flags', '', []],
+        [u'Mat*', u'dst', '', []]],
+    '']
+parseName: cv.imdecode with ['cv'] -> fullname:cv::imdecode namespace:cv classpath: classname: name:imdecode
+register (function) imdecode
+
+--- Incoming ---
+[   u'cv.imencode',
+    u'bool',
+    ['/NW'],
+    [   [u'const string&', u'ext', '', []],
+        [u'InputArray', u'img', '', []],
+        [u'vector<uchar>&', u'buf', '', []],
+        [u'const vector<int>&', u'params', u'vector<int>()', []]],
+    '']
+parseName: cv.imencode with ['cv'] -> fullname:cv::imencode namespace:cv classpath: classname: name:imencode
+register (function) imencode
+
+--- Incoming ---
+[u'class cv.VideoCapture', '', [], [], '']
+parseName: class cv.VideoCapture with ['cv'] -> fullname:cv::VideoCapture namespace:cv classpath: classname: name:VideoCapture
+register class cv::VideoCapture ([u'class cv.VideoCapture', '', [], [], ''])
+
+--- Incoming ---
+[u'cv.VideoCapture.VideoCapture', u'', ['/NW'], [], '']
+parseName: cv.VideoCapture.VideoCapture with ['cv'] -> fullname:cv::VideoCapture::VideoCapture namespace:cv classpath:VideoCapture classname:VideoCapture name:VideoCapture
+register (constructor) new in cv::VideoCapture
+
+--- Incoming ---
+[   u'cv.VideoCapture.VideoCapture',
+    u'',
+    ['/NW'],
+    [[u'const string&', u'filename', '', []]],
+    '']
+parseName: cv.VideoCapture.VideoCapture with ['cv'] -> fullname:cv::VideoCapture::VideoCapture namespace:cv classpath:VideoCapture classname:VideoCapture name:VideoCapture
+register (constructor) new in cv::VideoCapture
+
+--- Incoming ---
+[   u'cv.VideoCapture.VideoCapture',
+    u'',
+    ['/NW'],
+    [[u'int', u'device', '', []]],
+    '']
+parseName: cv.VideoCapture.VideoCapture with ['cv'] -> fullname:cv::VideoCapture::VideoCapture namespace:cv classpath:VideoCapture classname:VideoCapture name:VideoCapture
+register (constructor) new in cv::VideoCapture
+
+--- Incoming ---
+[u'cv.VideoCapture.~VideoCapture', u'', ['/NW'], [], '']
+parseName: cv.VideoCapture.~VideoCapture with ['cv'] -> fullname:cv::VideoCapture::~VideoCapture namespace:cv classpath:VideoCapture classname:VideoCapture name:~VideoCapture
+ignore destructor (method) ~VideoCapture in cv::VideoCapture
+
+--- Incoming ---
+[   u'cv.VideoCapture.open',
+    u'bool',
+    ['/NW'],
+    [[u'const string&', u'filename', '', []]],
+    '']
+parseName: cv.VideoCapture.open with ['cv'] -> fullname:cv::VideoCapture::open namespace:cv classpath:VideoCapture classname:VideoCapture name:open
+register (method) open in cv::VideoCapture
+
+--- Incoming ---
+[u'cv.VideoCapture.open', u'bool', ['/NW'], [[u'int', u'device', '', []]], '']
+parseName: cv.VideoCapture.open with ['cv'] -> fullname:cv::VideoCapture::open namespace:cv classpath:VideoCapture classname:VideoCapture name:open
+register (method) open in cv::VideoCapture
+
+--- Incoming ---
+[u'cv.VideoCapture.isOpened', u'bool', ['/NW', '/C'], [], '']
+parseName: cv.VideoCapture.isOpened with ['cv'] -> fullname:cv::VideoCapture::isOpened namespace:cv classpath:VideoCapture classname:VideoCapture name:isOpened
+register (method) isOpened in cv::VideoCapture
+
+--- Incoming ---
+[u'cv.VideoCapture.release', u'void', ['/NW'], [], '']
+parseName: cv.VideoCapture.release with ['cv'] -> fullname:cv::VideoCapture::release namespace:cv classpath:VideoCapture classname:VideoCapture name:release
+register (method) release in cv::VideoCapture
+
+--- Incoming ---
+[u'cv.VideoCapture.grab', u'bool', ['/NW'], [], '']
+parseName: cv.VideoCapture.grab with ['cv'] -> fullname:cv::VideoCapture::grab namespace:cv classpath:VideoCapture classname:VideoCapture name:grab
+register (method) grab in cv::VideoCapture
+
+--- Incoming ---
+[   u'cv.VideoCapture.retrieve',
+    u'bool',
+    ['/NW'],
+    [[u'Mat&', u'image', '', []], [u'int', u'channel', u'0', []]],
+    '']
+parseName: cv.VideoCapture.retrieve with ['cv'] -> fullname:cv::VideoCapture::retrieve namespace:cv classpath:VideoCapture classname:VideoCapture name:retrieve
+register (method) retrieve in cv::VideoCapture
+
+--- Incoming ---
+[   u'cv.VideoCapture.operator >>',
+    u'VideoCapture&',
+    ['/NW'],
+    [[u'Mat&', u'image', '', []]],
+    '']
+parseName: cv.VideoCapture.operator >> with ['cv'] -> fullname:cv::VideoCapture::operator >> namespace:cv classpath:VideoCapture classname:VideoCapture name:operator >>
+ignore (method) operator >> in cv::VideoCapture
+
+--- Incoming ---
+[u'cv.VideoCapture.read', u'bool', ['/NW'], [[u'Mat&', u'image', '', []]], '']
+parseName: cv.VideoCapture.read with ['cv'] -> fullname:cv::VideoCapture::read namespace:cv classpath:VideoCapture classname:VideoCapture name:read
+register (method) read in cv::VideoCapture
+
+--- Incoming ---
+[   u'cv.VideoCapture.set',
+    u'bool',
+    ['/NW'],
+    [[u'int', u'propId', '', []], [u'double', u'value', '', []]],
+    '']
+parseName: cv.VideoCapture.set with ['cv'] -> fullname:cv::VideoCapture::set namespace:cv classpath:VideoCapture classname:VideoCapture name:set
+register (method) set in cv::VideoCapture
+
+--- Incoming ---
+[u'cv.VideoCapture.get', u'double', ['/NW'], [[u'int', u'propId', '', []]], '']
+parseName: cv.VideoCapture.get with ['cv'] -> fullname:cv::VideoCapture::get namespace:cv classpath:VideoCapture classname:VideoCapture name:get
+register (method) get in cv::VideoCapture
+
+--- Incoming ---
+[u'class cv.VideoWriter', '', [], [], '']
+parseName: class cv.VideoWriter with ['cv'] -> fullname:cv::VideoWriter namespace:cv classpath: classname: name:VideoWriter
+register class cv::VideoWriter ([u'class cv.VideoWriter', '', [], [], ''])
+
+--- Incoming ---
+[u'cv.VideoWriter.VideoWriter', u'', ['/NW'], [], '']
+parseName: cv.VideoWriter.VideoWriter with ['cv'] -> fullname:cv::VideoWriter::VideoWriter namespace:cv classpath:VideoWriter classname:VideoWriter name:VideoWriter
+register (constructor) new in cv::VideoWriter
+
+--- Incoming ---
+[   u'cv.VideoWriter.VideoWriter',
+    u'',
+    ['/NW'],
+    [   [u'const string&', u'filename', '', []],
+        [u'int', u'fourcc', '', []],
+        [u'double', u'fps', '', []],
+        [u'Size', u'frameSize', '', []],
+        [u'bool', u'isColor', u'true', []]],
+    '']
+parseName: cv.VideoWriter.VideoWriter with ['cv'] -> fullname:cv::VideoWriter::VideoWriter namespace:cv classpath:VideoWriter classname:VideoWriter name:VideoWriter
+register (constructor) new in cv::VideoWriter
+
+--- Incoming ---
+[u'cv.VideoWriter.~VideoWriter', u'', ['/NW'], [], '']
+parseName: cv.VideoWriter.~VideoWriter with ['cv'] -> fullname:cv::VideoWriter::~VideoWriter namespace:cv classpath:VideoWriter classname:VideoWriter name:~VideoWriter
+ignore destructor (method) ~VideoWriter in cv::VideoWriter
+
+--- Incoming ---
+[   u'cv.VideoWriter.open',
+    u'bool',
+    ['/NW'],
+    [   [u'const string&', u'filename', '', []],
+        [u'int', u'fourcc', '', []],
+        [u'double', u'fps', '', []],
+        [u'Size', u'frameSize', '', []],
+        [u'bool', u'isColor', u'true', []]],
+    '']
+parseName: cv.VideoWriter.open with ['cv'] -> fullname:cv::VideoWriter::open namespace:cv classpath:VideoWriter classname:VideoWriter name:open
+register (method) open in cv::VideoWriter
+
+--- Incoming ---
+[u'cv.VideoWriter.isOpened', u'bool', ['/NW', '/C'], [], '']
+parseName: cv.VideoWriter.isOpened with ['cv'] -> fullname:cv::VideoWriter::isOpened namespace:cv classpath:VideoWriter classname:VideoWriter name:isOpened
+register (method) isOpened in cv::VideoWriter
+
+--- Incoming ---
+[u'cv.VideoWriter.release', u'void', ['/NW'], [], '']
+parseName: cv.VideoWriter.release with ['cv'] -> fullname:cv::VideoWriter::release namespace:cv classpath:VideoWriter classname:VideoWriter name:release
+register (method) release in cv::VideoWriter
+
+--- Incoming ---
+[   u'cv.VideoWriter.operator <<',
+    u'VideoWriter&',
+    ['/NW'],
+    [[u'const Mat&', u'image', '', []]],
+    '']
+parseName: cv.VideoWriter.operator << with ['cv'] -> fullname:cv::VideoWriter::operator << namespace:cv classpath:VideoWriter classname:VideoWriter name:operator <<
+ignore (method) operator << in cv::VideoWriter
+
+--- Incoming ---
+[   u'cv.VideoWriter.write',
+    u'void',
+    ['/NW'],
+    [[u'const Mat&', u'image', '', []]],
+    '']
+parseName: cv.VideoWriter.write with ['cv'] -> fullname:cv::VideoWriter::write namespace:cv classpath:VideoWriter classname:VideoWriter name:write
+register (method) write in cv::VideoWriter
+
+
+===== Header: /usr/include/opencv2/highgui/highgui_c.h =====
+Namespaces: set(['', 'cv'])
+
+--- Incoming ---
+[u'const CV_FONT_LIGHT', u'25', [], []]
+parseName: const CV_FONT_LIGHT with ['', 'cv'] -> fullname:CV_FONT_LIGHT namespace: classpath: classname: name:CV_FONT_LIGHT
+
+--- Incoming ---
+[u'const CV_FONT_NORMAL', u'50', [], []]
+parseName: const CV_FONT_NORMAL with ['', 'cv'] -> fullname:CV_FONT_NORMAL namespace: classpath: classname: name:CV_FONT_NORMAL
+
+--- Incoming ---
+[u'const CV_FONT_DEMIBOLD', u'63', [], []]
+parseName: const CV_FONT_DEMIBOLD with ['', 'cv'] -> fullname:CV_FONT_DEMIBOLD namespace: classpath: classname: name:CV_FONT_DEMIBOLD
+
+--- Incoming ---
+[u'const CV_FONT_BOLD', u'75', [], []]
+parseName: const CV_FONT_BOLD with ['', 'cv'] -> fullname:CV_FONT_BOLD namespace: classpath: classname: name:CV_FONT_BOLD
+
+--- Incoming ---
+[u'const CV_FONT_BLACK', u'87', [], []]
+parseName: const CV_FONT_BLACK with ['', 'cv'] -> fullname:CV_FONT_BLACK namespace: classpath: classname: name:CV_FONT_BLACK
+
+--- Incoming ---
+[u'const CV_STYLE_NORMAL', u'0', [], []]
+parseName: const CV_STYLE_NORMAL with ['', 'cv'] -> fullname:CV_STYLE_NORMAL namespace: classpath: classname: name:CV_STYLE_NORMAL
+
+--- Incoming ---
+[u'const CV_STYLE_ITALIC', u'1', [], []]
+parseName: const CV_STYLE_ITALIC with ['', 'cv'] -> fullname:CV_STYLE_ITALIC namespace: classpath: classname: name:CV_STYLE_ITALIC
+
+--- Incoming ---
+[u'const CV_STYLE_OBLIQUE', u'2', [], []]
+parseName: const CV_STYLE_OBLIQUE with ['', 'cv'] -> fullname:CV_STYLE_OBLIQUE namespace: classpath: classname: name:CV_STYLE_OBLIQUE
+
+--- Incoming ---
+[   u'cvFontQt',
+    u'CvFont',
+    ['/NW'],
+    [   [u'const char*', u'nameFont', '', []],
+        [u'int', u'pointSize', u'-1', []],
+        [u'CvScalar', u'color', u'cvScalarAll(0)', []],
+        [u'int', u'weight', u'CV_FONT_NORMAL', []],
+        [u'int', u'style', u'CV_STYLE_NORMAL', []],
+        [u'int', u'spacing', u'0', []]],
+    '']
+parseName: cvFontQt with ['', 'cv'] -> fullname:cvFontQt namespace: classpath: classname: name:cvFontQt
+Registering an unknown type: CvScalar
+register (function) cvFontQt
+
+--- Incoming ---
+[   u'cvAddText',
+    u'void',
+    ['/NW'],
+    [   [u'const CvArr*', u'img', '', []],
+        [u'const char*', u'text', '', []],
+        [u'CvPoint', u'org', '', []],
+        [u'CvFont *', u'arg2', '', []]],
+    '']
+parseName: cvAddText with ['', 'cv'] -> fullname:cvAddText namespace: classpath: classname: name:cvAddText
+Registering an unknown type: CvArr
+Registering an unknown type: CvPoint
+Registering an unknown type: CvFont
+register (function) cvAddText
+
+--- Incoming ---
+[   u'cvDisplayOverlay',
+    u'void',
+    ['/NW'],
+    [   [u'const char*', u'name', '', []],
+        [u'const char*', u'text', '', []],
+        [u'int', u'delayms', u'0', []]],
+    '']
+parseName: cvDisplayOverlay with ['', 'cv'] -> fullname:cvDisplayOverlay namespace: classpath: classname: name:cvDisplayOverlay
+register (function) cvDisplayOverlay
+
+--- Incoming ---
+[   u'cvDisplayStatusBar',
+    u'void',
+    ['/NW'],
+    [   [u'const char*', u'name', '', []],
+        [u'const char*', u'text', '', []],
+        [u'int', u'delayms', u'0', []]],
+    '']
+parseName: cvDisplayStatusBar with ['', 'cv'] -> fullname:cvDisplayStatusBar namespace: classpath: classname: name:cvDisplayStatusBar
+register (function) cvDisplayStatusBar
+
+--- Incoming ---
+[   u'cvSaveWindowParameters',
+    u'void',
+    ['/NW'],
+    [[u'const char*', u'name', '', []]],
+    '']
+parseName: cvSaveWindowParameters with ['', 'cv'] -> fullname:cvSaveWindowParameters namespace: classpath: classname: name:cvSaveWindowParameters
+register (function) cvSaveWindowParameters
+
+--- Incoming ---
+[   u'cvLoadWindowParameters',
+    u'void',
+    ['/NW'],
+    [[u'const char*', u'name', '', []]],
+    '']
+parseName: cvLoadWindowParameters with ['', 'cv'] -> fullname:cvLoadWindowParameters namespace: classpath: classname: name:cvLoadWindowParameters
+register (function) cvLoadWindowParameters
+
+--- Incoming ---
+[   u'cvStartLoop',
+    u'int',
+    ['/NW'],
+    [   [u'int (*pt2Func)(int argc@comma@ char *argv[])', u'', '', []],
+        [u'int', u'argc', '', []],
+        [u'char*[]', u'argv', '', []]],
+    '']
+parseName: cvStartLoop with ['', 'cv'] -> fullname:cvStartLoop namespace: classpath: classname: name:cvStartLoop
+register (function) cvStartLoop
+
+--- Incoming ---
+[u'cvStopLoop', u'void', ['/NW'], [], '']
+parseName: cvStopLoop with ['', 'cv'] -> fullname:cvStopLoop namespace: classpath: classname: name:cvStopLoop
+register (function) cvStopLoop
+
+--- Incoming ---
+[u'const CV_PUSH_BUTTON', u'0', [], []]
+parseName: const CV_PUSH_BUTTON with ['', 'cv'] -> fullname:CV_PUSH_BUTTON namespace: classpath: classname: name:CV_PUSH_BUTTON
+
+--- Incoming ---
+[u'const CV_CHECKBOX', u'1', [], []]
+parseName: const CV_CHECKBOX with ['', 'cv'] -> fullname:CV_CHECKBOX namespace: classpath: classname: name:CV_CHECKBOX
+
+--- Incoming ---
+[u'const CV_RADIOBOX', u'2', [], []]
+parseName: const CV_RADIOBOX with ['', 'cv'] -> fullname:CV_RADIOBOX namespace: classpath: classname: name:CV_RADIOBOX
+
+--- Incoming ---
+[   u'cvCreateButton',
+    u'int',
+    ['/NW'],
+    [   [u'const char*', u'button_name', u'NULL', []],
+        [u'CvButtonCallback', u'on_change', u'NULL', []],
+        [u'void*', u'userdata', u'NULL', []],
+        [u'int', u'button_type', u'CV_PUSH_BUTTON', []],
+        [u'int', u'initial_button_state', u'0', []]],
+    '']
+parseName: cvCreateButton with ['', 'cv'] -> fullname:cvCreateButton namespace: classpath: classname: name:cvCreateButton
+Registering an unknown type: CvButtonCallback
+register (function) cvCreateButton
+
+--- Incoming ---
+[   u'cvInitSystem',
+    u'int',
+    ['/NW'],
+    [[u'int', u'argc', '', []], [u'char**', u'argv', '', []]],
+    '']
+parseName: cvInitSystem with ['', 'cv'] -> fullname:cvInitSystem namespace: classpath: classname: name:cvInitSystem
+register (function) cvInitSystem
+
+--- Incoming ---
+[u'cvStartWindowThread', u'int', ['/NW'], [], '']
+parseName: cvStartWindowThread with ['', 'cv'] -> fullname:cvStartWindowThread namespace: classpath: classname: name:cvStartWindowThread
+register (function) cvStartWindowThread
+
+--- Incoming ---
+[u'const CV_WND_PROP_FULLSCREEN', u'0', [], []]
+parseName: const CV_WND_PROP_FULLSCREEN with ['', 'cv'] -> fullname:CV_WND_PROP_FULLSCREEN namespace: classpath: classname: name:CV_WND_PROP_FULLSCREEN
+
+--- Incoming ---
+[u'const CV_WND_PROP_AUTOSIZE', u'1', [], []]
+parseName: const CV_WND_PROP_AUTOSIZE with ['', 'cv'] -> fullname:CV_WND_PROP_AUTOSIZE namespace: classpath: classname: name:CV_WND_PROP_AUTOSIZE
+
+--- Incoming ---
+[u'const CV_WND_PROP_ASPECTRATIO', u'2', [], []]
+parseName: const CV_WND_PROP_ASPECTRATIO with ['', 'cv'] -> fullname:CV_WND_PROP_ASPECTRATIO namespace: classpath: classname: name:CV_WND_PROP_ASPECTRATIO
+
+--- Incoming ---
+[u'const CV_WND_PROP_OPENGL', u'3', [], []]
+parseName: const CV_WND_PROP_OPENGL with ['', 'cv'] -> fullname:CV_WND_PROP_OPENGL namespace: classpath: classname: name:CV_WND_PROP_OPENGL
+
+--- Incoming ---
+[u'const CV_WINDOW_NORMAL', u'0x00000000', [], []]
+parseName: const CV_WINDOW_NORMAL with ['', 'cv'] -> fullname:CV_WINDOW_NORMAL namespace: classpath: classname: name:CV_WINDOW_NORMAL
+
+--- Incoming ---
+[u'const CV_WINDOW_AUTOSIZE', u'0x00000001', [], []]
+parseName: const CV_WINDOW_AUTOSIZE with ['', 'cv'] -> fullname:CV_WINDOW_AUTOSIZE namespace: classpath: classname: name:CV_WINDOW_AUTOSIZE
+
+--- Incoming ---
+[u'const CV_WINDOW_OPENGL', u'0x00001000', [], []]
+parseName: const CV_WINDOW_OPENGL with ['', 'cv'] -> fullname:CV_WINDOW_OPENGL namespace: classpath: classname: name:CV_WINDOW_OPENGL
+
+--- Incoming ---
+[u'const CV_GUI_EXPANDED', u'0x00000000', [], []]
+parseName: const CV_GUI_EXPANDED with ['', 'cv'] -> fullname:CV_GUI_EXPANDED namespace: classpath: classname: name:CV_GUI_EXPANDED
+
+--- Incoming ---
+[u'const CV_GUI_NORMAL', u'0x00000010', [], []]
+parseName: const CV_GUI_NORMAL with ['', 'cv'] -> fullname:CV_GUI_NORMAL namespace: classpath: classname: name:CV_GUI_NORMAL
+
+--- Incoming ---
+[u'const CV_WINDOW_FULLSCREEN', u'1', [], []]
+parseName: const CV_WINDOW_FULLSCREEN with ['', 'cv'] -> fullname:CV_WINDOW_FULLSCREEN namespace: classpath: classname: name:CV_WINDOW_FULLSCREEN
+
+--- Incoming ---
+[u'const CV_WINDOW_FREERATIO', u'0x00000100', [], []]
+parseName: const CV_WINDOW_FREERATIO with ['', 'cv'] -> fullname:CV_WINDOW_FREERATIO namespace: classpath: classname: name:CV_WINDOW_FREERATIO
+
+--- Incoming ---
+[u'const CV_WINDOW_KEEPRATIO', u'0x00000000', [], []]
+parseName: const CV_WINDOW_KEEPRATIO with ['', 'cv'] -> fullname:CV_WINDOW_KEEPRATIO namespace: classpath: classname: name:CV_WINDOW_KEEPRATIO
+
+--- Incoming ---
+[   u'cvNamedWindow',
+    u'int',
+    ['/NW'],
+    [   [u'const char*', u'name', '', []],
+        [u'int', u'flags', u'CV_WINDOW_AUTOSIZE', []]],
+    '']
+parseName: cvNamedWindow with ['', 'cv'] -> fullname:cvNamedWindow namespace: classpath: classname: name:cvNamedWindow
+register (function) cvNamedWindow
+
+--- Incoming ---
+[   u'cvSetWindowProperty',
+    u'void',
+    ['/NW'],
+    [   [u'const char*', u'name', '', []],
+        [u'int', u'prop_id', '', []],
+        [u'double', u'prop_value', '', []]],
+    '']
+parseName: cvSetWindowProperty with ['', 'cv'] -> fullname:cvSetWindowProperty namespace: classpath: classname: name:cvSetWindowProperty
+register (function) cvSetWindowProperty
+
+--- Incoming ---
+[   u'cvGetWindowProperty',
+    u'double',
+    ['/NW'],
+    [[u'const char*', u'name', '', []], [u'int', u'prop_id', '', []]],
+    '']
+parseName: cvGetWindowProperty with ['', 'cv'] -> fullname:cvGetWindowProperty namespace: classpath: classname: name:cvGetWindowProperty
+register (function) cvGetWindowProperty
+
+--- Incoming ---
+[   u'cvShowImage',
+    u'void',
+    ['/NW'],
+    [[u'const char*', u'name', '', []], [u'const CvArr*', u'image', '', []]],
+    '']
+parseName: cvShowImage with ['', 'cv'] -> fullname:cvShowImage namespace: classpath: classname: name:cvShowImage
+register (function) cvShowImage
+
+--- Incoming ---
+[   u'cvResizeWindow',
+    u'void',
+    ['/NW'],
+    [   [u'const char*', u'name', '', []],
+        [u'int', u'width', '', []],
+        [u'int', u'height', '', []]],
+    '']
+parseName: cvResizeWindow with ['', 'cv'] -> fullname:cvResizeWindow namespace: classpath: classname: name:cvResizeWindow
+register (function) cvResizeWindow
+
+--- Incoming ---
+[   u'cvMoveWindow',
+    u'void',
+    ['/NW'],
+    [   [u'const char*', u'name', '', []],
+        [u'int', u'x', '', []],
+        [u'int', u'y', '', []]],
+    '']
+parseName: cvMoveWindow with ['', 'cv'] -> fullname:cvMoveWindow namespace: classpath: classname: name:cvMoveWindow
+register (function) cvMoveWindow
+
+--- Incoming ---
+[u'cvDestroyWindow', u'void', ['/NW'], [[u'const char*', u'name', '', []]], '']
+parseName: cvDestroyWindow with ['', 'cv'] -> fullname:cvDestroyWindow namespace: classpath: classname: name:cvDestroyWindow
+register (function) cvDestroyWindow
+
+--- Incoming ---
+[u'cvDestroyAllWindows', u'void', ['/NW'], [], '']
+parseName: cvDestroyAllWindows with ['', 'cv'] -> fullname:cvDestroyAllWindows namespace: classpath: classname: name:cvDestroyAllWindows
+register (function) cvDestroyAllWindows
+
+--- Incoming ---
+[   u'cvGetWindowHandle',
+    u'void*',
+    ['/NW'],
+    [[u'const char*', u'name', '', []]],
+    '']
+parseName: cvGetWindowHandle with ['', 'cv'] -> fullname:cvGetWindowHandle namespace: classpath: classname: name:cvGetWindowHandle
+register (function) cvGetWindowHandle
+
+--- Incoming ---
+[   u'cvGetWindowName',
+    u'const char*',
+    ['/NW'],
+    [[u'void*', u'window_handle', '', []]],
+    '']
+parseName: cvGetWindowName with ['', 'cv'] -> fullname:cvGetWindowName namespace: classpath: classname: name:cvGetWindowName
+register (function) cvGetWindowName
+
+--- Incoming ---
+[   u'cvCreateTrackbar',
+    u'int',
+    ['/NW'],
+    [   [u'const char*', u'trackbar_name', '', []],
+        [u'const char*', u'window_name', '', []],
+        [u'int*', u'value', '', []],
+        [u'int', u'count', '', []],
+        [u'CvTrackbarCallback', u'on_change', u'NULL', []]],
+    '']
+parseName: cvCreateTrackbar with ['', 'cv'] -> fullname:cvCreateTrackbar namespace: classpath: classname: name:cvCreateTrackbar
+Registering an unknown type: CvTrackbarCallback
+register (function) cvCreateTrackbar
+
+--- Incoming ---
+[   u'cvCreateTrackbar2',
+    u'int',
+    ['/NW'],
+    [   [u'const char*', u'trackbar_name', '', []],
+        [u'const char*', u'window_name', '', []],
+        [u'int*', u'value', '', []],
+        [u'int', u'count', '', []],
+        [u'CvTrackbarCallback2', u'on_change', '', []],
+        [u'void*', u'userdata', u'0', []]],
+    '']
+parseName: cvCreateTrackbar2 with ['', 'cv'] -> fullname:cvCreateTrackbar2 namespace: classpath: classname: name:cvCreateTrackbar2
+Registering an unknown type: CvTrackbarCallback2
+register (function) cvCreateTrackbar2
+
+--- Incoming ---
+[   u'cvGetTrackbarPos',
+    u'int',
+    ['/NW'],
+    [   [u'const char*', u'trackbar_name', '', []],
+        [u'const char*', u'window_name', '', []]],
+    '']
+parseName: cvGetTrackbarPos with ['', 'cv'] -> fullname:cvGetTrackbarPos namespace: classpath: classname: name:cvGetTrackbarPos
+register (function) cvGetTrackbarPos
+
+--- Incoming ---
+[   u'cvSetTrackbarPos',
+    u'void',
+    ['/NW'],
+    [   [u'const char*', u'trackbar_name', '', []],
+        [u'const char*', u'window_name', '', []],
+        [u'int', u'pos', '', []]],
+    '']
+parseName: cvSetTrackbarPos with ['', 'cv'] -> fullname:cvSetTrackbarPos namespace: classpath: classname: name:cvSetTrackbarPos
+register (function) cvSetTrackbarPos
+
+--- Incoming ---
+[   u'cvSetTrackbarMax',
+    u'void',
+    ['/NW'],
+    [   [u'const char*', u'trackbar_name', '', []],
+        [u'const char*', u'window_name', '', []],
+        [u'int', u'maxval', '', []]],
+    '']
+parseName: cvSetTrackbarMax with ['', 'cv'] -> fullname:cvSetTrackbarMax namespace: classpath: classname: name:cvSetTrackbarMax
+register (function) cvSetTrackbarMax
+
+--- Incoming ---
+[u'const CV_EVENT_MOUSEMOVE', u'0', [], []]
+parseName: const CV_EVENT_MOUSEMOVE with ['', 'cv'] -> fullname:CV_EVENT_MOUSEMOVE namespace: classpath: classname: name:CV_EVENT_MOUSEMOVE
+
+--- Incoming ---
+[u'const CV_EVENT_LBUTTONDOWN', u'1', [], []]
+parseName: const CV_EVENT_LBUTTONDOWN with ['', 'cv'] -> fullname:CV_EVENT_LBUTTONDOWN namespace: classpath: classname: name:CV_EVENT_LBUTTONDOWN
+
+--- Incoming ---
+[u'const CV_EVENT_RBUTTONDOWN', u'2', [], []]
+parseName: const CV_EVENT_RBUTTONDOWN with ['', 'cv'] -> fullname:CV_EVENT_RBUTTONDOWN namespace: classpath: classname: name:CV_EVENT_RBUTTONDOWN
+
+--- Incoming ---
+[u'const CV_EVENT_MBUTTONDOWN', u'3', [], []]
+parseName: const CV_EVENT_MBUTTONDOWN with ['', 'cv'] -> fullname:CV_EVENT_MBUTTONDOWN namespace: classpath: classname: name:CV_EVENT_MBUTTONDOWN
+
+--- Incoming ---
+[u'const CV_EVENT_LBUTTONUP', u'4', [], []]
+parseName: const CV_EVENT_LBUTTONUP with ['', 'cv'] -> fullname:CV_EVENT_LBUTTONUP namespace: classpath: classname: name:CV_EVENT_LBUTTONUP
+
+--- Incoming ---
+[u'const CV_EVENT_RBUTTONUP', u'5', [], []]
+parseName: const CV_EVENT_RBUTTONUP with ['', 'cv'] -> fullname:CV_EVENT_RBUTTONUP namespace: classpath: classname: name:CV_EVENT_RBUTTONUP
+
+--- Incoming ---
+[u'const CV_EVENT_MBUTTONUP', u'6', [], []]
+parseName: const CV_EVENT_MBUTTONUP with ['', 'cv'] -> fullname:CV_EVENT_MBUTTONUP namespace: classpath: classname: name:CV_EVENT_MBUTTONUP
+
+--- Incoming ---
+[u'const CV_EVENT_LBUTTONDBLCLK', u'7', [], []]
+parseName: const CV_EVENT_LBUTTONDBLCLK with ['', 'cv'] -> fullname:CV_EVENT_LBUTTONDBLCLK namespace: classpath: classname: name:CV_EVENT_LBUTTONDBLCLK
+
+--- Incoming ---
+[u'const CV_EVENT_RBUTTONDBLCLK', u'8', [], []]
+parseName: const CV_EVENT_RBUTTONDBLCLK with ['', 'cv'] -> fullname:CV_EVENT_RBUTTONDBLCLK namespace: classpath: classname: name:CV_EVENT_RBUTTONDBLCLK
+
+--- Incoming ---
+[u'const CV_EVENT_MBUTTONDBLCLK', u'9', [], []]
+parseName: const CV_EVENT_MBUTTONDBLCLK with ['', 'cv'] -> fullname:CV_EVENT_MBUTTONDBLCLK namespace: classpath: classname: name:CV_EVENT_MBUTTONDBLCLK
+
+--- Incoming ---
+[u'const CV_EVENT_FLAG_LBUTTON', u'1', [], []]
+parseName: const CV_EVENT_FLAG_LBUTTON with ['', 'cv'] -> fullname:CV_EVENT_FLAG_LBUTTON namespace: classpath: classname: name:CV_EVENT_FLAG_LBUTTON
+
+--- Incoming ---
+[u'const CV_EVENT_FLAG_RBUTTON', u'2', [], []]
+parseName: const CV_EVENT_FLAG_RBUTTON with ['', 'cv'] -> fullname:CV_EVENT_FLAG_RBUTTON namespace: classpath: classname: name:CV_EVENT_FLAG_RBUTTON
+
+--- Incoming ---
+[u'const CV_EVENT_FLAG_MBUTTON', u'4', [], []]
+parseName: const CV_EVENT_FLAG_MBUTTON with ['', 'cv'] -> fullname:CV_EVENT_FLAG_MBUTTON namespace: classpath: classname: name:CV_EVENT_FLAG_MBUTTON
+
+--- Incoming ---
+[u'const CV_EVENT_FLAG_CTRLKEY', u'8', [], []]
+parseName: const CV_EVENT_FLAG_CTRLKEY with ['', 'cv'] -> fullname:CV_EVENT_FLAG_CTRLKEY namespace: classpath: classname: name:CV_EVENT_FLAG_CTRLKEY
+
+--- Incoming ---
+[u'const CV_EVENT_FLAG_SHIFTKEY', u'16', [], []]
+parseName: const CV_EVENT_FLAG_SHIFTKEY with ['', 'cv'] -> fullname:CV_EVENT_FLAG_SHIFTKEY namespace: classpath: classname: name:CV_EVENT_FLAG_SHIFTKEY
+
+--- Incoming ---
+[u'const CV_EVENT_FLAG_ALTKEY', u'32', [], []]
+parseName: const CV_EVENT_FLAG_ALTKEY with ['', 'cv'] -> fullname:CV_EVENT_FLAG_ALTKEY namespace: classpath: classname: name:CV_EVENT_FLAG_ALTKEY
+
+--- Incoming ---
+[   u'cvSetMouseCallback',
+    u'void',
+    ['/NW'],
+    [   [u'const char*', u'window_name', '', []],
+        [u'CvMouseCallback', u'on_mouse', '', []],
+        [u'void*', u'param', u'NULL', []]],
+    '']
+parseName: cvSetMouseCallback with ['', 'cv'] -> fullname:cvSetMouseCallback namespace: classpath: classname: name:cvSetMouseCallback
+Registering an unknown type: CvMouseCallback
+register (function) cvSetMouseCallback
+
+--- Incoming ---
+[u'const CV_LOAD_IMAGE_UNCHANGED', u'-1', [], []]
+parseName: const CV_LOAD_IMAGE_UNCHANGED with ['', 'cv'] -> fullname:CV_LOAD_IMAGE_UNCHANGED namespace: classpath: classname: name:CV_LOAD_IMAGE_UNCHANGED
+
+--- Incoming ---
+[u'const CV_LOAD_IMAGE_GRAYSCALE', u'0', [], []]
+parseName: const CV_LOAD_IMAGE_GRAYSCALE with ['', 'cv'] -> fullname:CV_LOAD_IMAGE_GRAYSCALE namespace: classpath: classname: name:CV_LOAD_IMAGE_GRAYSCALE
+
+--- Incoming ---
+[u'const CV_LOAD_IMAGE_COLOR', u'1', [], []]
+parseName: const CV_LOAD_IMAGE_COLOR with ['', 'cv'] -> fullname:CV_LOAD_IMAGE_COLOR namespace: classpath: classname: name:CV_LOAD_IMAGE_COLOR
+
+--- Incoming ---
+[u'const CV_LOAD_IMAGE_ANYDEPTH', u'2', [], []]
+parseName: const CV_LOAD_IMAGE_ANYDEPTH with ['', 'cv'] -> fullname:CV_LOAD_IMAGE_ANYDEPTH namespace: classpath: classname: name:CV_LOAD_IMAGE_ANYDEPTH
+
+--- Incoming ---
+[u'const CV_LOAD_IMAGE_ANYCOLOR', u'4', [], []]
+parseName: const CV_LOAD_IMAGE_ANYCOLOR with ['', 'cv'] -> fullname:CV_LOAD_IMAGE_ANYCOLOR namespace: classpath: classname: name:CV_LOAD_IMAGE_ANYCOLOR
+
+--- Incoming ---
+[   u'cvLoadImage',
+    u'IplImage*',
+    ['/NW'],
+    [   [u'const char*', u'filename', '', []],
+        [u'int', u'iscolor', u'CV_LOAD_IMAGE_COLOR', []]],
+    '']
+parseName: cvLoadImage with ['', 'cv'] -> fullname:cvLoadImage namespace: classpath: classname: name:cvLoadImage
+Registering an unknown type: IplImage
+register (function) cvLoadImage
+
+--- Incoming ---
+[   u'cvLoadImageM',
+    u'CvMat*',
+    ['/NW'],
+    [   [u'const char*', u'filename', '', []],
+        [u'int', u'iscolor', u'CV_LOAD_IMAGE_COLOR', []]],
+    '']
+parseName: cvLoadImageM with ['', 'cv'] -> fullname:cvLoadImageM namespace: classpath: classname: name:cvLoadImageM
+Registering an unknown type: CvMat
+register (function) cvLoadImageM
+
+--- Incoming ---
+[u'const CV_IMWRITE_JPEG_QUALITY', u'1', [], []]
+parseName: const CV_IMWRITE_JPEG_QUALITY with ['', 'cv'] -> fullname:CV_IMWRITE_JPEG_QUALITY namespace: classpath: classname: name:CV_IMWRITE_JPEG_QUALITY
+
+--- Incoming ---
+[u'const CV_IMWRITE_PNG_COMPRESSION', u'16', [], []]
+parseName: const CV_IMWRITE_PNG_COMPRESSION with ['', 'cv'] -> fullname:CV_IMWRITE_PNG_COMPRESSION namespace: classpath: classname: name:CV_IMWRITE_PNG_COMPRESSION
+
+--- Incoming ---
+[u'const CV_IMWRITE_PNG_STRATEGY', u'17', [], []]
+parseName: const CV_IMWRITE_PNG_STRATEGY with ['', 'cv'] -> fullname:CV_IMWRITE_PNG_STRATEGY namespace: classpath: classname: name:CV_IMWRITE_PNG_STRATEGY
+
+--- Incoming ---
+[u'const CV_IMWRITE_PNG_BILEVEL', u'18', [], []]
+parseName: const CV_IMWRITE_PNG_BILEVEL with ['', 'cv'] -> fullname:CV_IMWRITE_PNG_BILEVEL namespace: classpath: classname: name:CV_IMWRITE_PNG_BILEVEL
+
+--- Incoming ---
+[u'const CV_IMWRITE_PNG_STRATEGY_DEFAULT', u'0', [], []]
+parseName: const CV_IMWRITE_PNG_STRATEGY_DEFAULT with ['', 'cv'] -> fullname:CV_IMWRITE_PNG_STRATEGY_DEFAULT namespace: classpath: classname: name:CV_IMWRITE_PNG_STRATEGY_DEFAULT
+
+--- Incoming ---
+[u'const CV_IMWRITE_PNG_STRATEGY_FILTERED', u'1', [], []]
+parseName: const CV_IMWRITE_PNG_STRATEGY_FILTERED with ['', 'cv'] -> fullname:CV_IMWRITE_PNG_STRATEGY_FILTERED namespace: classpath: classname: name:CV_IMWRITE_PNG_STRATEGY_FILTERED
+
+--- Incoming ---
+[u'const CV_IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY', u'2', [], []]
+parseName: const CV_IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY with ['', 'cv'] -> fullname:CV_IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY namespace: classpath: classname: name:CV_IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY
+
+--- Incoming ---
+[u'const CV_IMWRITE_PNG_STRATEGY_RLE', u'3', [], []]
+parseName: const CV_IMWRITE_PNG_STRATEGY_RLE with ['', 'cv'] -> fullname:CV_IMWRITE_PNG_STRATEGY_RLE namespace: classpath: classname: name:CV_IMWRITE_PNG_STRATEGY_RLE
+
+--- Incoming ---
+[u'const CV_IMWRITE_PNG_STRATEGY_FIXED', u'4', [], []]
+parseName: const CV_IMWRITE_PNG_STRATEGY_FIXED with ['', 'cv'] -> fullname:CV_IMWRITE_PNG_STRATEGY_FIXED namespace: classpath: classname: name:CV_IMWRITE_PNG_STRATEGY_FIXED
+
+--- Incoming ---
+[u'const CV_IMWRITE_PXM_BINARY', u'32', [], []]
+parseName: const CV_IMWRITE_PXM_BINARY with ['', 'cv'] -> fullname:CV_IMWRITE_PXM_BINARY namespace: classpath: classname: name:CV_IMWRITE_PXM_BINARY
+
+--- Incoming ---
+[   u'cvSaveImage',
+    u'int',
+    ['/NW'],
+    [   [u'const char*', u'filename', '', []],
+        [u'const CvArr*', u'image', '', []],
+        [u'const int*', u'params', u'0', []]],
+    '']
+parseName: cvSaveImage with ['', 'cv'] -> fullname:cvSaveImage namespace: classpath: classname: name:cvSaveImage
+register (function) cvSaveImage
+
+--- Incoming ---
+[   u'cvDecodeImage',
+    u'IplImage*',
+    ['/NW'],
+    [   [u'const CvMat*', u'buf', '', []],
+        [u'int', u'iscolor', u'CV_LOAD_IMAGE_COLOR', []]],
+    '']
+parseName: cvDecodeImage with ['', 'cv'] -> fullname:cvDecodeImage namespace: classpath: classname: name:cvDecodeImage
+Registering an unknown type: CvMat
+register (function) cvDecodeImage
+
+--- Incoming ---
+[   u'cvDecodeImageM',
+    u'CvMat*',
+    ['/NW'],
+    [   [u'const CvMat*', u'buf', '', []],
+        [u'int', u'iscolor', u'CV_LOAD_IMAGE_COLOR', []]],
+    '']
+parseName: cvDecodeImageM with ['', 'cv'] -> fullname:cvDecodeImageM namespace: classpath: classname: name:cvDecodeImageM
+register (function) cvDecodeImageM
+
+--- Incoming ---
+[   u'cvEncodeImage',
+    u'CvMat*',
+    ['/NW'],
+    [   [u'const char*', u'ext', '', []],
+        [u'const CvArr*', u'image', '', []],
+        [u'const int*', u'params', u'0', []]],
+    '']
+parseName: cvEncodeImage with ['', 'cv'] -> fullname:cvEncodeImage namespace: classpath: classname: name:cvEncodeImage
+register (function) cvEncodeImage
+
+--- Incoming ---
+[u'const CV_CVTIMG_FLIP', u'1', [], []]
+parseName: const CV_CVTIMG_FLIP with ['', 'cv'] -> fullname:CV_CVTIMG_FLIP namespace: classpath: classname: name:CV_CVTIMG_FLIP
+
+--- Incoming ---
+[u'const CV_CVTIMG_SWAP_RB', u'2', [], []]
+parseName: const CV_CVTIMG_SWAP_RB with ['', 'cv'] -> fullname:CV_CVTIMG_SWAP_RB namespace: classpath: classname: name:CV_CVTIMG_SWAP_RB
+
+--- Incoming ---
+[   u'cvConvertImage',
+    u'void',
+    ['/NW'],
+    [   [u'const CvArr*', u'src', '', []],
+        [u'CvArr*', u'dst', '', []],
+        [u'int', u'flags', u'0', []]],
+    '']
+parseName: cvConvertImage with ['', 'cv'] -> fullname:cvConvertImage namespace: classpath: classname: name:cvConvertImage
+Registering an unknown type: CvArr
+register (function) cvConvertImage
+
+--- Incoming ---
+[u'cvWaitKey', u'int', ['/NW'], [[u'int', u'delay', u'0', []]], '']
+parseName: cvWaitKey with ['', 'cv'] -> fullname:cvWaitKey namespace: classpath: classname: name:cvWaitKey
+register (function) cvWaitKey
+
+--- Incoming ---
+[   u'cvSetOpenGlDrawCallback',
+    u'void',
+    ['/NW'],
+    [   [u'const char*', u'window_name', '', []],
+        [u'CvOpenGlDrawCallback', u'callback', '', []],
+        [u'void*', u'userdata', u'NULL', []]],
+    '']
+parseName: cvSetOpenGlDrawCallback with ['', 'cv'] -> fullname:cvSetOpenGlDrawCallback namespace: classpath: classname: name:cvSetOpenGlDrawCallback
+Registering an unknown type: CvOpenGlDrawCallback
+register (function) cvSetOpenGlDrawCallback
+
+--- Incoming ---
+[   u'cvSetOpenGlContext',
+    u'void',
+    ['/NW'],
+    [[u'const char*', u'window_name', '', []]],
+    '']
+parseName: cvSetOpenGlContext with ['', 'cv'] -> fullname:cvSetOpenGlContext namespace: classpath: classname: name:cvSetOpenGlContext
+register (function) cvSetOpenGlContext
+
+--- Incoming ---
+[   u'cvUpdateWindow',
+    u'void',
+    ['/NW'],
+    [[u'const char*', u'window_name', '', []]],
+    '']
+parseName: cvUpdateWindow with ['', 'cv'] -> fullname:cvUpdateWindow namespace: classpath: classname: name:cvUpdateWindow
+register (function) cvUpdateWindow
+
+--- Incoming ---
+[   u'cvCreateFileCapture',
+    u'CvCapture*',
+    ['/NW'],
+    [[u'const char*', u'filename', '', []]],
+    '']
+parseName: cvCreateFileCapture with ['', 'cv'] -> fullname:cvCreateFileCapture namespace: classpath: classname: name:cvCreateFileCapture
+Registering an unknown type: CvCapture
+register (function) cvCreateFileCapture
+
+--- Incoming ---
+[u'const CV_CAP_ANY', u'0', [], []]
+parseName: const CV_CAP_ANY with ['', 'cv'] -> fullname:CV_CAP_ANY namespace: classpath: classname: name:CV_CAP_ANY
+
+--- Incoming ---
+[u'const CV_CAP_MIL', u'100', [], []]
+parseName: const CV_CAP_MIL with ['', 'cv'] -> fullname:CV_CAP_MIL namespace: classpath: classname: name:CV_CAP_MIL
+
+--- Incoming ---
+[u'const CV_CAP_VFW', u'200', [], []]
+parseName: const CV_CAP_VFW with ['', 'cv'] -> fullname:CV_CAP_VFW namespace: classpath: classname: name:CV_CAP_VFW
+
+--- Incoming ---
+[u'const CV_CAP_V4L', u'200', [], []]
+parseName: const CV_CAP_V4L with ['', 'cv'] -> fullname:CV_CAP_V4L namespace: classpath: classname: name:CV_CAP_V4L
+
+--- Incoming ---
+[u'const CV_CAP_V4L2', u'200', [], []]
+parseName: const CV_CAP_V4L2 with ['', 'cv'] -> fullname:CV_CAP_V4L2 namespace: classpath: classname: name:CV_CAP_V4L2
+
+--- Incoming ---
+[u'const CV_CAP_FIREWARE', u'300', [], []]
+parseName: const CV_CAP_FIREWARE with ['', 'cv'] -> fullname:CV_CAP_FIREWARE namespace: classpath: classname: name:CV_CAP_FIREWARE
+
+--- Incoming ---
+[u'const CV_CAP_FIREWIRE', u'300', [], []]
+parseName: const CV_CAP_FIREWIRE with ['', 'cv'] -> fullname:CV_CAP_FIREWIRE namespace: classpath: classname: name:CV_CAP_FIREWIRE
+
+--- Incoming ---
+[u'const CV_CAP_IEEE1394', u'300', [], []]
+parseName: const CV_CAP_IEEE1394 with ['', 'cv'] -> fullname:CV_CAP_IEEE1394 namespace: classpath: classname: name:CV_CAP_IEEE1394
+
+--- Incoming ---
+[u'const CV_CAP_DC1394', u'300', [], []]
+parseName: const CV_CAP_DC1394 with ['', 'cv'] -> fullname:CV_CAP_DC1394 namespace: classpath: classname: name:CV_CAP_DC1394
+
+--- Incoming ---
+[u'const CV_CAP_CMU1394', u'300', [], []]
+parseName: const CV_CAP_CMU1394 with ['', 'cv'] -> fullname:CV_CAP_CMU1394 namespace: classpath: classname: name:CV_CAP_CMU1394
+
+--- Incoming ---
+[u'const CV_CAP_STEREO', u'400', [], []]
+parseName: const CV_CAP_STEREO with ['', 'cv'] -> fullname:CV_CAP_STEREO namespace: classpath: classname: name:CV_CAP_STEREO
+
+--- Incoming ---
+[u'const CV_CAP_TYZX', u'400', [], []]
+parseName: const CV_CAP_TYZX with ['', 'cv'] -> fullname:CV_CAP_TYZX namespace: classpath: classname: name:CV_CAP_TYZX
+
+--- Incoming ---
+[u'const CV_TYZX_LEFT', u'400', [], []]
+parseName: const CV_TYZX_LEFT with ['', 'cv'] -> fullname:CV_TYZX_LEFT namespace: classpath: classname: name:CV_TYZX_LEFT
+
+--- Incoming ---
+[u'const CV_TYZX_RIGHT', u'401', [], []]
+parseName: const CV_TYZX_RIGHT with ['', 'cv'] -> fullname:CV_TYZX_RIGHT namespace: classpath: classname: name:CV_TYZX_RIGHT
+
+--- Incoming ---
+[u'const CV_TYZX_COLOR', u'402', [], []]
+parseName: const CV_TYZX_COLOR with ['', 'cv'] -> fullname:CV_TYZX_COLOR namespace: classpath: classname: name:CV_TYZX_COLOR
+
+--- Incoming ---
+[u'const CV_TYZX_Z', u'403', [], []]
+parseName: const CV_TYZX_Z with ['', 'cv'] -> fullname:CV_TYZX_Z namespace: classpath: classname: name:CV_TYZX_Z
+
+--- Incoming ---
+[u'const CV_CAP_QT', u'500', [], []]
+parseName: const CV_CAP_QT with ['', 'cv'] -> fullname:CV_CAP_QT namespace: classpath: classname: name:CV_CAP_QT
+
+--- Incoming ---
+[u'const CV_CAP_UNICAP', u'600', [], []]
+parseName: const CV_CAP_UNICAP with ['', 'cv'] -> fullname:CV_CAP_UNICAP namespace: classpath: classname: name:CV_CAP_UNICAP
+
+--- Incoming ---
+[u'const CV_CAP_DSHOW', u'700', [], []]
+parseName: const CV_CAP_DSHOW with ['', 'cv'] -> fullname:CV_CAP_DSHOW namespace: classpath: classname: name:CV_CAP_DSHOW
+
+--- Incoming ---
+[u'const CV_CAP_MSMF', u'1400', [], []]
+parseName: const CV_CAP_MSMF with ['', 'cv'] -> fullname:CV_CAP_MSMF namespace: classpath: classname: name:CV_CAP_MSMF
+
+--- Incoming ---
+[u'const CV_CAP_PVAPI', u'800', [], []]
+parseName: const CV_CAP_PVAPI with ['', 'cv'] -> fullname:CV_CAP_PVAPI namespace: classpath: classname: name:CV_CAP_PVAPI
+
+--- Incoming ---
+[u'const CV_CAP_OPENNI', u'900', [], []]
+parseName: const CV_CAP_OPENNI with ['', 'cv'] -> fullname:CV_CAP_OPENNI namespace: classpath: classname: name:CV_CAP_OPENNI
+
+--- Incoming ---
+[u'const CV_CAP_OPENNI_ASUS', u'910', [], []]
+parseName: const CV_CAP_OPENNI_ASUS with ['', 'cv'] -> fullname:CV_CAP_OPENNI_ASUS namespace: classpath: classname: name:CV_CAP_OPENNI_ASUS
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID', u'1000', [], []]
+parseName: const CV_CAP_ANDROID with ['', 'cv'] -> fullname:CV_CAP_ANDROID namespace: classpath: classname: name:CV_CAP_ANDROID
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_BACK', u'CV_CAP_ANDROID+99', [], []]
+parseName: const CV_CAP_ANDROID_BACK with ['', 'cv'] -> fullname:CV_CAP_ANDROID_BACK namespace: classpath: classname: name:CV_CAP_ANDROID_BACK
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_FRONT', u'CV_CAP_ANDROID+98', [], []]
+parseName: const CV_CAP_ANDROID_FRONT with ['', 'cv'] -> fullname:CV_CAP_ANDROID_FRONT namespace: classpath: classname: name:CV_CAP_ANDROID_FRONT
+
+--- Incoming ---
+[u'const CV_CAP_XIAPI', u'1100', [], []]
+parseName: const CV_CAP_XIAPI with ['', 'cv'] -> fullname:CV_CAP_XIAPI namespace: classpath: classname: name:CV_CAP_XIAPI
+
+--- Incoming ---
+[u'const CV_CAP_AVFOUNDATION', u'1200', [], []]
+parseName: const CV_CAP_AVFOUNDATION with ['', 'cv'] -> fullname:CV_CAP_AVFOUNDATION namespace: classpath: classname: name:CV_CAP_AVFOUNDATION
+
+--- Incoming ---
+[u'const CV_CAP_GIGANETIX', u'1300', [], []]
+parseName: const CV_CAP_GIGANETIX with ['', 'cv'] -> fullname:CV_CAP_GIGANETIX namespace: classpath: classname: name:CV_CAP_GIGANETIX
+
+--- Incoming ---
+[u'const CV_CAP_INTELPERC', u'1500', [], []]
+parseName: const CV_CAP_INTELPERC with ['', 'cv'] -> fullname:CV_CAP_INTELPERC namespace: classpath: classname: name:CV_CAP_INTELPERC
+
+--- Incoming ---
+[   u'cvCreateCameraCapture',
+    u'CvCapture*',
+    ['/NW'],
+    [[u'int', u'index', '', []]],
+    '']
+parseName: cvCreateCameraCapture with ['', 'cv'] -> fullname:cvCreateCameraCapture namespace: classpath: classname: name:cvCreateCameraCapture
+register (function) cvCreateCameraCapture
+
+--- Incoming ---
+[u'cvGrabFrame', u'int', ['/NW'], [[u'CvCapture*', u'capture', '', []]], '']
+parseName: cvGrabFrame with ['', 'cv'] -> fullname:cvGrabFrame namespace: classpath: classname: name:cvGrabFrame
+register (function) cvGrabFrame
+
+--- Incoming ---
+[   u'cvRetrieveFrame',
+    u'IplImage*',
+    ['/NW'],
+    [[u'CvCapture*', u'capture', '', []], [u'int', u'streamIdx', u'0', []]],
+    '']
+parseName: cvRetrieveFrame with ['', 'cv'] -> fullname:cvRetrieveFrame namespace: classpath: classname: name:cvRetrieveFrame
+register (function) cvRetrieveFrame
+
+--- Incoming ---
+[   u'cvQueryFrame',
+    u'IplImage*',
+    ['/NW'],
+    [[u'CvCapture*', u'capture', '', []]],
+    '']
+parseName: cvQueryFrame with ['', 'cv'] -> fullname:cvQueryFrame namespace: classpath: classname: name:cvQueryFrame
+register (function) cvQueryFrame
+
+--- Incoming ---
+[   u'cvReleaseCapture',
+    u'void',
+    ['/NW'],
+    [[u'CvCapture**', u'capture', '', []]],
+    '']
+parseName: cvReleaseCapture with ['', 'cv'] -> fullname:cvReleaseCapture namespace: classpath: classname: name:cvReleaseCapture
+register (function) cvReleaseCapture
+
+--- Incoming ---
+[u'const CV_CAP_PROP_DC1394_OFF', u'-4', [], []]
+parseName: const CV_CAP_PROP_DC1394_OFF with ['', 'cv'] -> fullname:CV_CAP_PROP_DC1394_OFF namespace: classpath: classname: name:CV_CAP_PROP_DC1394_OFF
+
+--- Incoming ---
+[u'const CV_CAP_PROP_DC1394_MODE_MANUAL', u'-3', [], []]
+parseName: const CV_CAP_PROP_DC1394_MODE_MANUAL with ['', 'cv'] -> fullname:CV_CAP_PROP_DC1394_MODE_MANUAL namespace: classpath: classname: name:CV_CAP_PROP_DC1394_MODE_MANUAL
+
+--- Incoming ---
+[u'const CV_CAP_PROP_DC1394_MODE_AUTO', u'-2', [], []]
+parseName: const CV_CAP_PROP_DC1394_MODE_AUTO with ['', 'cv'] -> fullname:CV_CAP_PROP_DC1394_MODE_AUTO namespace: classpath: classname: name:CV_CAP_PROP_DC1394_MODE_AUTO
+
+--- Incoming ---
+[u'const CV_CAP_PROP_DC1394_MODE_ONE_PUSH_AUTO', u'-1', [], []]
+parseName: const CV_CAP_PROP_DC1394_MODE_ONE_PUSH_AUTO with ['', 'cv'] -> fullname:CV_CAP_PROP_DC1394_MODE_ONE_PUSH_AUTO namespace: classpath: classname: name:CV_CAP_PROP_DC1394_MODE_ONE_PUSH_AUTO
+
+--- Incoming ---
+[u'const CV_CAP_PROP_POS_MSEC', u'0', [], []]
+parseName: const CV_CAP_PROP_POS_MSEC with ['', 'cv'] -> fullname:CV_CAP_PROP_POS_MSEC namespace: classpath: classname: name:CV_CAP_PROP_POS_MSEC
+
+--- Incoming ---
+[u'const CV_CAP_PROP_POS_FRAMES', u'1', [], []]
+parseName: const CV_CAP_PROP_POS_FRAMES with ['', 'cv'] -> fullname:CV_CAP_PROP_POS_FRAMES namespace: classpath: classname: name:CV_CAP_PROP_POS_FRAMES
+
+--- Incoming ---
+[u'const CV_CAP_PROP_POS_AVI_RATIO', u'2', [], []]
+parseName: const CV_CAP_PROP_POS_AVI_RATIO with ['', 'cv'] -> fullname:CV_CAP_PROP_POS_AVI_RATIO namespace: classpath: classname: name:CV_CAP_PROP_POS_AVI_RATIO
+
+--- Incoming ---
+[u'const CV_CAP_PROP_FRAME_WIDTH', u'3', [], []]
+parseName: const CV_CAP_PROP_FRAME_WIDTH with ['', 'cv'] -> fullname:CV_CAP_PROP_FRAME_WIDTH namespace: classpath: classname: name:CV_CAP_PROP_FRAME_WIDTH
+
+--- Incoming ---
+[u'const CV_CAP_PROP_FRAME_HEIGHT', u'4', [], []]
+parseName: const CV_CAP_PROP_FRAME_HEIGHT with ['', 'cv'] -> fullname:CV_CAP_PROP_FRAME_HEIGHT namespace: classpath: classname: name:CV_CAP_PROP_FRAME_HEIGHT
+
+--- Incoming ---
+[u'const CV_CAP_PROP_FPS', u'5', [], []]
+parseName: const CV_CAP_PROP_FPS with ['', 'cv'] -> fullname:CV_CAP_PROP_FPS namespace: classpath: classname: name:CV_CAP_PROP_FPS
+
+--- Incoming ---
+[u'const CV_CAP_PROP_FOURCC', u'6', [], []]
+parseName: const CV_CAP_PROP_FOURCC with ['', 'cv'] -> fullname:CV_CAP_PROP_FOURCC namespace: classpath: classname: name:CV_CAP_PROP_FOURCC
+
+--- Incoming ---
+[u'const CV_CAP_PROP_FRAME_COUNT', u'7', [], []]
+parseName: const CV_CAP_PROP_FRAME_COUNT with ['', 'cv'] -> fullname:CV_CAP_PROP_FRAME_COUNT namespace: classpath: classname: name:CV_CAP_PROP_FRAME_COUNT
+
+--- Incoming ---
+[u'const CV_CAP_PROP_FORMAT', u'8', [], []]
+parseName: const CV_CAP_PROP_FORMAT with ['', 'cv'] -> fullname:CV_CAP_PROP_FORMAT namespace: classpath: classname: name:CV_CAP_PROP_FORMAT
+
+--- Incoming ---
+[u'const CV_CAP_PROP_MODE', u'9', [], []]
+parseName: const CV_CAP_PROP_MODE with ['', 'cv'] -> fullname:CV_CAP_PROP_MODE namespace: classpath: classname: name:CV_CAP_PROP_MODE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_BRIGHTNESS', u'10', [], []]
+parseName: const CV_CAP_PROP_BRIGHTNESS with ['', 'cv'] -> fullname:CV_CAP_PROP_BRIGHTNESS namespace: classpath: classname: name:CV_CAP_PROP_BRIGHTNESS
+
+--- Incoming ---
+[u'const CV_CAP_PROP_CONTRAST', u'11', [], []]
+parseName: const CV_CAP_PROP_CONTRAST with ['', 'cv'] -> fullname:CV_CAP_PROP_CONTRAST namespace: classpath: classname: name:CV_CAP_PROP_CONTRAST
+
+--- Incoming ---
+[u'const CV_CAP_PROP_SATURATION', u'12', [], []]
+parseName: const CV_CAP_PROP_SATURATION with ['', 'cv'] -> fullname:CV_CAP_PROP_SATURATION namespace: classpath: classname: name:CV_CAP_PROP_SATURATION
+
+--- Incoming ---
+[u'const CV_CAP_PROP_HUE', u'13', [], []]
+parseName: const CV_CAP_PROP_HUE with ['', 'cv'] -> fullname:CV_CAP_PROP_HUE namespace: classpath: classname: name:CV_CAP_PROP_HUE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_GAIN', u'14', [], []]
+parseName: const CV_CAP_PROP_GAIN with ['', 'cv'] -> fullname:CV_CAP_PROP_GAIN namespace: classpath: classname: name:CV_CAP_PROP_GAIN
+
+--- Incoming ---
+[u'const CV_CAP_PROP_EXPOSURE', u'15', [], []]
+parseName: const CV_CAP_PROP_EXPOSURE with ['', 'cv'] -> fullname:CV_CAP_PROP_EXPOSURE namespace: classpath: classname: name:CV_CAP_PROP_EXPOSURE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_CONVERT_RGB', u'16', [], []]
+parseName: const CV_CAP_PROP_CONVERT_RGB with ['', 'cv'] -> fullname:CV_CAP_PROP_CONVERT_RGB namespace: classpath: classname: name:CV_CAP_PROP_CONVERT_RGB
+
+--- Incoming ---
+[u'const CV_CAP_PROP_WHITE_BALANCE_U', u'17', [], []]
+parseName: const CV_CAP_PROP_WHITE_BALANCE_U with ['', 'cv'] -> fullname:CV_CAP_PROP_WHITE_BALANCE_U namespace: classpath: classname: name:CV_CAP_PROP_WHITE_BALANCE_U
+
+--- Incoming ---
+[u'const CV_CAP_PROP_RECTIFICATION', u'18', [], []]
+parseName: const CV_CAP_PROP_RECTIFICATION with ['', 'cv'] -> fullname:CV_CAP_PROP_RECTIFICATION namespace: classpath: classname: name:CV_CAP_PROP_RECTIFICATION
+
+--- Incoming ---
+[u'const CV_CAP_PROP_MONOCROME', u'19', [], []]
+parseName: const CV_CAP_PROP_MONOCROME with ['', 'cv'] -> fullname:CV_CAP_PROP_MONOCROME namespace: classpath: classname: name:CV_CAP_PROP_MONOCROME
+
+--- Incoming ---
+[u'const CV_CAP_PROP_SHARPNESS', u'20', [], []]
+parseName: const CV_CAP_PROP_SHARPNESS with ['', 'cv'] -> fullname:CV_CAP_PROP_SHARPNESS namespace: classpath: classname: name:CV_CAP_PROP_SHARPNESS
+
+--- Incoming ---
+[u'const CV_CAP_PROP_AUTO_EXPOSURE', u'21', [], []]
+parseName: const CV_CAP_PROP_AUTO_EXPOSURE with ['', 'cv'] -> fullname:CV_CAP_PROP_AUTO_EXPOSURE namespace: classpath: classname: name:CV_CAP_PROP_AUTO_EXPOSURE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_GAMMA', u'22', [], []]
+parseName: const CV_CAP_PROP_GAMMA with ['', 'cv'] -> fullname:CV_CAP_PROP_GAMMA namespace: classpath: classname: name:CV_CAP_PROP_GAMMA
+
+--- Incoming ---
+[u'const CV_CAP_PROP_TEMPERATURE', u'23', [], []]
+parseName: const CV_CAP_PROP_TEMPERATURE with ['', 'cv'] -> fullname:CV_CAP_PROP_TEMPERATURE namespace: classpath: classname: name:CV_CAP_PROP_TEMPERATURE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_TRIGGER', u'24', [], []]
+parseName: const CV_CAP_PROP_TRIGGER with ['', 'cv'] -> fullname:CV_CAP_PROP_TRIGGER namespace: classpath: classname: name:CV_CAP_PROP_TRIGGER
+
+--- Incoming ---
+[u'const CV_CAP_PROP_TRIGGER_DELAY', u'25', [], []]
+parseName: const CV_CAP_PROP_TRIGGER_DELAY with ['', 'cv'] -> fullname:CV_CAP_PROP_TRIGGER_DELAY namespace: classpath: classname: name:CV_CAP_PROP_TRIGGER_DELAY
+
+--- Incoming ---
+[u'const CV_CAP_PROP_WHITE_BALANCE_V', u'26', [], []]
+parseName: const CV_CAP_PROP_WHITE_BALANCE_V with ['', 'cv'] -> fullname:CV_CAP_PROP_WHITE_BALANCE_V namespace: classpath: classname: name:CV_CAP_PROP_WHITE_BALANCE_V
+
+--- Incoming ---
+[u'const CV_CAP_PROP_ZOOM', u'27', [], []]
+parseName: const CV_CAP_PROP_ZOOM with ['', 'cv'] -> fullname:CV_CAP_PROP_ZOOM namespace: classpath: classname: name:CV_CAP_PROP_ZOOM
+
+--- Incoming ---
+[u'const CV_CAP_PROP_FOCUS', u'28', [], []]
+parseName: const CV_CAP_PROP_FOCUS with ['', 'cv'] -> fullname:CV_CAP_PROP_FOCUS namespace: classpath: classname: name:CV_CAP_PROP_FOCUS
+
+--- Incoming ---
+[u'const CV_CAP_PROP_GUID', u'29', [], []]
+parseName: const CV_CAP_PROP_GUID with ['', 'cv'] -> fullname:CV_CAP_PROP_GUID namespace: classpath: classname: name:CV_CAP_PROP_GUID
+
+--- Incoming ---
+[u'const CV_CAP_PROP_ISO_SPEED', u'30', [], []]
+parseName: const CV_CAP_PROP_ISO_SPEED with ['', 'cv'] -> fullname:CV_CAP_PROP_ISO_SPEED namespace: classpath: classname: name:CV_CAP_PROP_ISO_SPEED
+
+--- Incoming ---
+[u'const CV_CAP_PROP_MAX_DC1394', u'31', [], []]
+parseName: const CV_CAP_PROP_MAX_DC1394 with ['', 'cv'] -> fullname:CV_CAP_PROP_MAX_DC1394 namespace: classpath: classname: name:CV_CAP_PROP_MAX_DC1394
+
+--- Incoming ---
+[u'const CV_CAP_PROP_BACKLIGHT', u'32', [], []]
+parseName: const CV_CAP_PROP_BACKLIGHT with ['', 'cv'] -> fullname:CV_CAP_PROP_BACKLIGHT namespace: classpath: classname: name:CV_CAP_PROP_BACKLIGHT
+
+--- Incoming ---
+[u'const CV_CAP_PROP_PAN', u'33', [], []]
+parseName: const CV_CAP_PROP_PAN with ['', 'cv'] -> fullname:CV_CAP_PROP_PAN namespace: classpath: classname: name:CV_CAP_PROP_PAN
+
+--- Incoming ---
+[u'const CV_CAP_PROP_TILT', u'34', [], []]
+parseName: const CV_CAP_PROP_TILT with ['', 'cv'] -> fullname:CV_CAP_PROP_TILT namespace: classpath: classname: name:CV_CAP_PROP_TILT
+
+--- Incoming ---
+[u'const CV_CAP_PROP_ROLL', u'35', [], []]
+parseName: const CV_CAP_PROP_ROLL with ['', 'cv'] -> fullname:CV_CAP_PROP_ROLL namespace: classpath: classname: name:CV_CAP_PROP_ROLL
+
+--- Incoming ---
+[u'const CV_CAP_PROP_IRIS', u'36', [], []]
+parseName: const CV_CAP_PROP_IRIS with ['', 'cv'] -> fullname:CV_CAP_PROP_IRIS namespace: classpath: classname: name:CV_CAP_PROP_IRIS
+
+--- Incoming ---
+[u'const CV_CAP_PROP_SETTINGS', u'37', [], []]
+parseName: const CV_CAP_PROP_SETTINGS with ['', 'cv'] -> fullname:CV_CAP_PROP_SETTINGS namespace: classpath: classname: name:CV_CAP_PROP_SETTINGS
+
+--- Incoming ---
+[u'const CV_CAP_PROP_BUFFERSIZE', u'38', [], []]
+parseName: const CV_CAP_PROP_BUFFERSIZE with ['', 'cv'] -> fullname:CV_CAP_PROP_BUFFERSIZE namespace: classpath: classname: name:CV_CAP_PROP_BUFFERSIZE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_AUTOGRAB', u'1024', [], []]
+parseName: const CV_CAP_PROP_AUTOGRAB with ['', 'cv'] -> fullname:CV_CAP_PROP_AUTOGRAB namespace: classpath: classname: name:CV_CAP_PROP_AUTOGRAB
+
+--- Incoming ---
+[u'const CV_CAP_PROP_SUPPORTED_PREVIEW_SIZES_STRING', u'1025', [], []]
+parseName: const CV_CAP_PROP_SUPPORTED_PREVIEW_SIZES_STRING with ['', 'cv'] -> fullname:CV_CAP_PROP_SUPPORTED_PREVIEW_SIZES_STRING namespace: classpath: classname: name:CV_CAP_PROP_SUPPORTED_PREVIEW_SIZES_STRING
+
+--- Incoming ---
+[u'const CV_CAP_PROP_PREVIEW_FORMAT', u'1026', [], []]
+parseName: const CV_CAP_PROP_PREVIEW_FORMAT with ['', 'cv'] -> fullname:CV_CAP_PROP_PREVIEW_FORMAT namespace: classpath: classname: name:CV_CAP_PROP_PREVIEW_FORMAT
+
+--- Incoming ---
+[u'const CV_CAP_OPENNI_DEPTH_GENERATOR', u'1 << 31', [], []]
+parseName: const CV_CAP_OPENNI_DEPTH_GENERATOR with ['', 'cv'] -> fullname:CV_CAP_OPENNI_DEPTH_GENERATOR namespace: classpath: classname: name:CV_CAP_OPENNI_DEPTH_GENERATOR
+
+--- Incoming ---
+[u'const CV_CAP_OPENNI_IMAGE_GENERATOR', u'1 << 30', [], []]
+parseName: const CV_CAP_OPENNI_IMAGE_GENERATOR with ['', 'cv'] -> fullname:CV_CAP_OPENNI_IMAGE_GENERATOR namespace: classpath: classname: name:CV_CAP_OPENNI_IMAGE_GENERATOR
+
+--- Incoming ---
+[   u'const CV_CAP_OPENNI_GENERATORS_MASK',
+    u'CV_CAP_OPENNI_DEPTH_GENERATOR + CV_CAP_OPENNI_IMAGE_GENERATOR',
+    [],
+    []]
+parseName: const CV_CAP_OPENNI_GENERATORS_MASK with ['', 'cv'] -> fullname:CV_CAP_OPENNI_GENERATORS_MASK namespace: classpath: classname: name:CV_CAP_OPENNI_GENERATORS_MASK
+
+--- Incoming ---
+[u'const CV_CAP_PROP_OPENNI_OUTPUT_MODE', u'100', [], []]
+parseName: const CV_CAP_PROP_OPENNI_OUTPUT_MODE with ['', 'cv'] -> fullname:CV_CAP_PROP_OPENNI_OUTPUT_MODE namespace: classpath: classname: name:CV_CAP_PROP_OPENNI_OUTPUT_MODE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_OPENNI_FRAME_MAX_DEPTH', u'101', [], []]
+parseName: const CV_CAP_PROP_OPENNI_FRAME_MAX_DEPTH with ['', 'cv'] -> fullname:CV_CAP_PROP_OPENNI_FRAME_MAX_DEPTH namespace: classpath: classname: name:CV_CAP_PROP_OPENNI_FRAME_MAX_DEPTH
+
+--- Incoming ---
+[u'const CV_CAP_PROP_OPENNI_BASELINE', u'102', [], []]
+parseName: const CV_CAP_PROP_OPENNI_BASELINE with ['', 'cv'] -> fullname:CV_CAP_PROP_OPENNI_BASELINE namespace: classpath: classname: name:CV_CAP_PROP_OPENNI_BASELINE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_OPENNI_FOCAL_LENGTH', u'103', [], []]
+parseName: const CV_CAP_PROP_OPENNI_FOCAL_LENGTH with ['', 'cv'] -> fullname:CV_CAP_PROP_OPENNI_FOCAL_LENGTH namespace: classpath: classname: name:CV_CAP_PROP_OPENNI_FOCAL_LENGTH
+
+--- Incoming ---
+[u'const CV_CAP_PROP_OPENNI_REGISTRATION', u'104', [], []]
+parseName: const CV_CAP_PROP_OPENNI_REGISTRATION with ['', 'cv'] -> fullname:CV_CAP_PROP_OPENNI_REGISTRATION namespace: classpath: classname: name:CV_CAP_PROP_OPENNI_REGISTRATION
+
+--- Incoming ---
+[   u'const CV_CAP_PROP_OPENNI_REGISTRATION_ON',
+    u'CV_CAP_PROP_OPENNI_REGISTRATION',
+    [],
+    []]
+parseName: const CV_CAP_PROP_OPENNI_REGISTRATION_ON with ['', 'cv'] -> fullname:CV_CAP_PROP_OPENNI_REGISTRATION_ON namespace: classpath: classname: name:CV_CAP_PROP_OPENNI_REGISTRATION_ON
+
+--- Incoming ---
+[u'const CV_CAP_PROP_OPENNI_APPROX_FRAME_SYNC', u'105', [], []]
+parseName: const CV_CAP_PROP_OPENNI_APPROX_FRAME_SYNC with ['', 'cv'] -> fullname:CV_CAP_PROP_OPENNI_APPROX_FRAME_SYNC namespace: classpath: classname: name:CV_CAP_PROP_OPENNI_APPROX_FRAME_SYNC
+
+--- Incoming ---
+[u'const CV_CAP_PROP_OPENNI_MAX_BUFFER_SIZE', u'106', [], []]
+parseName: const CV_CAP_PROP_OPENNI_MAX_BUFFER_SIZE with ['', 'cv'] -> fullname:CV_CAP_PROP_OPENNI_MAX_BUFFER_SIZE namespace: classpath: classname: name:CV_CAP_PROP_OPENNI_MAX_BUFFER_SIZE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_OPENNI_CIRCLE_BUFFER', u'107', [], []]
+parseName: const CV_CAP_PROP_OPENNI_CIRCLE_BUFFER with ['', 'cv'] -> fullname:CV_CAP_PROP_OPENNI_CIRCLE_BUFFER namespace: classpath: classname: name:CV_CAP_PROP_OPENNI_CIRCLE_BUFFER
+
+--- Incoming ---
+[u'const CV_CAP_PROP_OPENNI_MAX_TIME_DURATION', u'108', [], []]
+parseName: const CV_CAP_PROP_OPENNI_MAX_TIME_DURATION with ['', 'cv'] -> fullname:CV_CAP_PROP_OPENNI_MAX_TIME_DURATION namespace: classpath: classname: name:CV_CAP_PROP_OPENNI_MAX_TIME_DURATION
+
+--- Incoming ---
+[u'const CV_CAP_PROP_OPENNI_GENERATOR_PRESENT', u'109', [], []]
+parseName: const CV_CAP_PROP_OPENNI_GENERATOR_PRESENT with ['', 'cv'] -> fullname:CV_CAP_PROP_OPENNI_GENERATOR_PRESENT namespace: classpath: classname: name:CV_CAP_PROP_OPENNI_GENERATOR_PRESENT
+
+--- Incoming ---
+[   u'const CV_CAP_OPENNI_IMAGE_GENERATOR_PRESENT',
+    u'CV_CAP_OPENNI_IMAGE_GENERATOR + CV_CAP_PROP_OPENNI_GENERATOR_PRESENT',
+    [],
+    []]
+parseName: const CV_CAP_OPENNI_IMAGE_GENERATOR_PRESENT with ['', 'cv'] -> fullname:CV_CAP_OPENNI_IMAGE_GENERATOR_PRESENT namespace: classpath: classname: name:CV_CAP_OPENNI_IMAGE_GENERATOR_PRESENT
+
+--- Incoming ---
+[   u'const CV_CAP_OPENNI_IMAGE_GENERATOR_OUTPUT_MODE',
+    u'CV_CAP_OPENNI_IMAGE_GENERATOR + CV_CAP_PROP_OPENNI_OUTPUT_MODE',
+    [],
+    []]
+parseName: const CV_CAP_OPENNI_IMAGE_GENERATOR_OUTPUT_MODE with ['', 'cv'] -> fullname:CV_CAP_OPENNI_IMAGE_GENERATOR_OUTPUT_MODE namespace: classpath: classname: name:CV_CAP_OPENNI_IMAGE_GENERATOR_OUTPUT_MODE
+
+--- Incoming ---
+[   u'const CV_CAP_OPENNI_DEPTH_GENERATOR_BASELINE',
+    u'CV_CAP_OPENNI_DEPTH_GENERATOR + CV_CAP_PROP_OPENNI_BASELINE',
+    [],
+    []]
+parseName: const CV_CAP_OPENNI_DEPTH_GENERATOR_BASELINE with ['', 'cv'] -> fullname:CV_CAP_OPENNI_DEPTH_GENERATOR_BASELINE namespace: classpath: classname: name:CV_CAP_OPENNI_DEPTH_GENERATOR_BASELINE
+
+--- Incoming ---
+[   u'const CV_CAP_OPENNI_DEPTH_GENERATOR_FOCAL_LENGTH',
+    u'CV_CAP_OPENNI_DEPTH_GENERATOR + CV_CAP_PROP_OPENNI_FOCAL_LENGTH',
+    [],
+    []]
+parseName: const CV_CAP_OPENNI_DEPTH_GENERATOR_FOCAL_LENGTH with ['', 'cv'] -> fullname:CV_CAP_OPENNI_DEPTH_GENERATOR_FOCAL_LENGTH namespace: classpath: classname: name:CV_CAP_OPENNI_DEPTH_GENERATOR_FOCAL_LENGTH
+
+--- Incoming ---
+[   u'const CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION',
+    u'CV_CAP_OPENNI_DEPTH_GENERATOR + CV_CAP_PROP_OPENNI_REGISTRATION',
+    [],
+    []]
+parseName: const CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION with ['', 'cv'] -> fullname:CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION namespace: classpath: classname: name:CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION
+
+--- Incoming ---
+[   u'const CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION_ON',
+    u'CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION',
+    [],
+    []]
+parseName: const CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION_ON with ['', 'cv'] -> fullname:CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION_ON namespace: classpath: classname: name:CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION_ON
+
+--- Incoming ---
+[u'const CV_CAP_GSTREAMER_QUEUE_LENGTH', u'200', [], []]
+parseName: const CV_CAP_GSTREAMER_QUEUE_LENGTH with ['', 'cv'] -> fullname:CV_CAP_GSTREAMER_QUEUE_LENGTH namespace: classpath: classname: name:CV_CAP_GSTREAMER_QUEUE_LENGTH
+
+--- Incoming ---
+[u'const CV_CAP_PROP_PVAPI_MULTICASTIP', u'300', [], []]
+parseName: const CV_CAP_PROP_PVAPI_MULTICASTIP with ['', 'cv'] -> fullname:CV_CAP_PROP_PVAPI_MULTICASTIP namespace: classpath: classname: name:CV_CAP_PROP_PVAPI_MULTICASTIP
+
+--- Incoming ---
+[u'const CV_CAP_PROP_PVAPI_FRAMESTARTTRIGGERMODE', u'301', [], []]
+parseName: const CV_CAP_PROP_PVAPI_FRAMESTARTTRIGGERMODE with ['', 'cv'] -> fullname:CV_CAP_PROP_PVAPI_FRAMESTARTTRIGGERMODE namespace: classpath: classname: name:CV_CAP_PROP_PVAPI_FRAMESTARTTRIGGERMODE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_PVAPI_DECIMATIONHORIZONTAL', u'302', [], []]
+parseName: const CV_CAP_PROP_PVAPI_DECIMATIONHORIZONTAL with ['', 'cv'] -> fullname:CV_CAP_PROP_PVAPI_DECIMATIONHORIZONTAL namespace: classpath: classname: name:CV_CAP_PROP_PVAPI_DECIMATIONHORIZONTAL
+
+--- Incoming ---
+[u'const CV_CAP_PROP_PVAPI_DECIMATIONVERTICAL', u'303', [], []]
+parseName: const CV_CAP_PROP_PVAPI_DECIMATIONVERTICAL with ['', 'cv'] -> fullname:CV_CAP_PROP_PVAPI_DECIMATIONVERTICAL namespace: classpath: classname: name:CV_CAP_PROP_PVAPI_DECIMATIONVERTICAL
+
+--- Incoming ---
+[u'const CV_CAP_PROP_PVAPI_BINNINGX', u'304', [], []]
+parseName: const CV_CAP_PROP_PVAPI_BINNINGX with ['', 'cv'] -> fullname:CV_CAP_PROP_PVAPI_BINNINGX namespace: classpath: classname: name:CV_CAP_PROP_PVAPI_BINNINGX
+
+--- Incoming ---
+[u'const CV_CAP_PROP_PVAPI_BINNINGY', u'305', [], []]
+parseName: const CV_CAP_PROP_PVAPI_BINNINGY with ['', 'cv'] -> fullname:CV_CAP_PROP_PVAPI_BINNINGY namespace: classpath: classname: name:CV_CAP_PROP_PVAPI_BINNINGY
+
+--- Incoming ---
+[u'const CV_CAP_PROP_PVAPI_PIXELFORMAT', u'306', [], []]
+parseName: const CV_CAP_PROP_PVAPI_PIXELFORMAT with ['', 'cv'] -> fullname:CV_CAP_PROP_PVAPI_PIXELFORMAT namespace: classpath: classname: name:CV_CAP_PROP_PVAPI_PIXELFORMAT
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_DOWNSAMPLING', u'400', [], []]
+parseName: const CV_CAP_PROP_XI_DOWNSAMPLING with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_DOWNSAMPLING namespace: classpath: classname: name:CV_CAP_PROP_XI_DOWNSAMPLING
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_DATA_FORMAT', u'401', [], []]
+parseName: const CV_CAP_PROP_XI_DATA_FORMAT with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_DATA_FORMAT namespace: classpath: classname: name:CV_CAP_PROP_XI_DATA_FORMAT
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_OFFSET_X', u'402', [], []]
+parseName: const CV_CAP_PROP_XI_OFFSET_X with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_OFFSET_X namespace: classpath: classname: name:CV_CAP_PROP_XI_OFFSET_X
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_OFFSET_Y', u'403', [], []]
+parseName: const CV_CAP_PROP_XI_OFFSET_Y with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_OFFSET_Y namespace: classpath: classname: name:CV_CAP_PROP_XI_OFFSET_Y
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_TRG_SOURCE', u'404', [], []]
+parseName: const CV_CAP_PROP_XI_TRG_SOURCE with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_TRG_SOURCE namespace: classpath: classname: name:CV_CAP_PROP_XI_TRG_SOURCE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_TRG_SOFTWARE', u'405', [], []]
+parseName: const CV_CAP_PROP_XI_TRG_SOFTWARE with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_TRG_SOFTWARE namespace: classpath: classname: name:CV_CAP_PROP_XI_TRG_SOFTWARE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_GPI_SELECTOR', u'406', [], []]
+parseName: const CV_CAP_PROP_XI_GPI_SELECTOR with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_GPI_SELECTOR namespace: classpath: classname: name:CV_CAP_PROP_XI_GPI_SELECTOR
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_GPI_MODE', u'407', [], []]
+parseName: const CV_CAP_PROP_XI_GPI_MODE with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_GPI_MODE namespace: classpath: classname: name:CV_CAP_PROP_XI_GPI_MODE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_GPI_LEVEL', u'408', [], []]
+parseName: const CV_CAP_PROP_XI_GPI_LEVEL with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_GPI_LEVEL namespace: classpath: classname: name:CV_CAP_PROP_XI_GPI_LEVEL
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_GPO_SELECTOR', u'409', [], []]
+parseName: const CV_CAP_PROP_XI_GPO_SELECTOR with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_GPO_SELECTOR namespace: classpath: classname: name:CV_CAP_PROP_XI_GPO_SELECTOR
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_GPO_MODE', u'410', [], []]
+parseName: const CV_CAP_PROP_XI_GPO_MODE with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_GPO_MODE namespace: classpath: classname: name:CV_CAP_PROP_XI_GPO_MODE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_LED_SELECTOR', u'411', [], []]
+parseName: const CV_CAP_PROP_XI_LED_SELECTOR with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_LED_SELECTOR namespace: classpath: classname: name:CV_CAP_PROP_XI_LED_SELECTOR
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_LED_MODE', u'412', [], []]
+parseName: const CV_CAP_PROP_XI_LED_MODE with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_LED_MODE namespace: classpath: classname: name:CV_CAP_PROP_XI_LED_MODE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_MANUAL_WB', u'413', [], []]
+parseName: const CV_CAP_PROP_XI_MANUAL_WB with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_MANUAL_WB namespace: classpath: classname: name:CV_CAP_PROP_XI_MANUAL_WB
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_AUTO_WB', u'414', [], []]
+parseName: const CV_CAP_PROP_XI_AUTO_WB with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_AUTO_WB namespace: classpath: classname: name:CV_CAP_PROP_XI_AUTO_WB
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_AEAG', u'415', [], []]
+parseName: const CV_CAP_PROP_XI_AEAG with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_AEAG namespace: classpath: classname: name:CV_CAP_PROP_XI_AEAG
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_EXP_PRIORITY', u'416', [], []]
+parseName: const CV_CAP_PROP_XI_EXP_PRIORITY with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_EXP_PRIORITY namespace: classpath: classname: name:CV_CAP_PROP_XI_EXP_PRIORITY
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_AE_MAX_LIMIT', u'417', [], []]
+parseName: const CV_CAP_PROP_XI_AE_MAX_LIMIT with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_AE_MAX_LIMIT namespace: classpath: classname: name:CV_CAP_PROP_XI_AE_MAX_LIMIT
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_AG_MAX_LIMIT', u'418', [], []]
+parseName: const CV_CAP_PROP_XI_AG_MAX_LIMIT with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_AG_MAX_LIMIT namespace: classpath: classname: name:CV_CAP_PROP_XI_AG_MAX_LIMIT
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_AEAG_LEVEL', u'419', [], []]
+parseName: const CV_CAP_PROP_XI_AEAG_LEVEL with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_AEAG_LEVEL namespace: classpath: classname: name:CV_CAP_PROP_XI_AEAG_LEVEL
+
+--- Incoming ---
+[u'const CV_CAP_PROP_XI_TIMEOUT', u'420', [], []]
+parseName: const CV_CAP_PROP_XI_TIMEOUT with ['', 'cv'] -> fullname:CV_CAP_PROP_XI_TIMEOUT namespace: classpath: classname: name:CV_CAP_PROP_XI_TIMEOUT
+
+--- Incoming ---
+[u'const CV_CAP_PROP_ANDROID_FLASH_MODE', u'8001', [], []]
+parseName: const CV_CAP_PROP_ANDROID_FLASH_MODE with ['', 'cv'] -> fullname:CV_CAP_PROP_ANDROID_FLASH_MODE namespace: classpath: classname: name:CV_CAP_PROP_ANDROID_FLASH_MODE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_ANDROID_FOCUS_MODE', u'8002', [], []]
+parseName: const CV_CAP_PROP_ANDROID_FOCUS_MODE with ['', 'cv'] -> fullname:CV_CAP_PROP_ANDROID_FOCUS_MODE namespace: classpath: classname: name:CV_CAP_PROP_ANDROID_FOCUS_MODE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_ANDROID_WHITE_BALANCE', u'8003', [], []]
+parseName: const CV_CAP_PROP_ANDROID_WHITE_BALANCE with ['', 'cv'] -> fullname:CV_CAP_PROP_ANDROID_WHITE_BALANCE namespace: classpath: classname: name:CV_CAP_PROP_ANDROID_WHITE_BALANCE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_ANDROID_ANTIBANDING', u'8004', [], []]
+parseName: const CV_CAP_PROP_ANDROID_ANTIBANDING with ['', 'cv'] -> fullname:CV_CAP_PROP_ANDROID_ANTIBANDING namespace: classpath: classname: name:CV_CAP_PROP_ANDROID_ANTIBANDING
+
+--- Incoming ---
+[u'const CV_CAP_PROP_ANDROID_FOCAL_LENGTH', u'8005', [], []]
+parseName: const CV_CAP_PROP_ANDROID_FOCAL_LENGTH with ['', 'cv'] -> fullname:CV_CAP_PROP_ANDROID_FOCAL_LENGTH namespace: classpath: classname: name:CV_CAP_PROP_ANDROID_FOCAL_LENGTH
+
+--- Incoming ---
+[u'const CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_NEAR', u'8006', [], []]
+parseName: const CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_NEAR with ['', 'cv'] -> fullname:CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_NEAR namespace: classpath: classname: name:CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_NEAR
+
+--- Incoming ---
+[u'const CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_OPTIMAL', u'8007', [], []]
+parseName: const CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_OPTIMAL with ['', 'cv'] -> fullname:CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_OPTIMAL namespace: classpath: classname: name:CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_OPTIMAL
+
+--- Incoming ---
+[u'const CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_FAR', u'8008', [], []]
+parseName: const CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_FAR with ['', 'cv'] -> fullname:CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_FAR namespace: classpath: classname: name:CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_FAR
+
+--- Incoming ---
+[u'const CV_CAP_PROP_ANDROID_EXPOSE_LOCK', u'8009', [], []]
+parseName: const CV_CAP_PROP_ANDROID_EXPOSE_LOCK with ['', 'cv'] -> fullname:CV_CAP_PROP_ANDROID_EXPOSE_LOCK namespace: classpath: classname: name:CV_CAP_PROP_ANDROID_EXPOSE_LOCK
+
+--- Incoming ---
+[u'const CV_CAP_PROP_ANDROID_WHITEBALANCE_LOCK', u'8010', [], []]
+parseName: const CV_CAP_PROP_ANDROID_WHITEBALANCE_LOCK with ['', 'cv'] -> fullname:CV_CAP_PROP_ANDROID_WHITEBALANCE_LOCK namespace: classpath: classname: name:CV_CAP_PROP_ANDROID_WHITEBALANCE_LOCK
+
+--- Incoming ---
+[u'const CV_CAP_PROP_IOS_DEVICE_FOCUS', u'9001', [], []]
+parseName: const CV_CAP_PROP_IOS_DEVICE_FOCUS with ['', 'cv'] -> fullname:CV_CAP_PROP_IOS_DEVICE_FOCUS namespace: classpath: classname: name:CV_CAP_PROP_IOS_DEVICE_FOCUS
+
+--- Incoming ---
+[u'const CV_CAP_PROP_IOS_DEVICE_EXPOSURE', u'9002', [], []]
+parseName: const CV_CAP_PROP_IOS_DEVICE_EXPOSURE with ['', 'cv'] -> fullname:CV_CAP_PROP_IOS_DEVICE_EXPOSURE namespace: classpath: classname: name:CV_CAP_PROP_IOS_DEVICE_EXPOSURE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_IOS_DEVICE_FLASH', u'9003', [], []]
+parseName: const CV_CAP_PROP_IOS_DEVICE_FLASH with ['', 'cv'] -> fullname:CV_CAP_PROP_IOS_DEVICE_FLASH namespace: classpath: classname: name:CV_CAP_PROP_IOS_DEVICE_FLASH
+
+--- Incoming ---
+[u'const CV_CAP_PROP_IOS_DEVICE_WHITEBALANCE', u'9004', [], []]
+parseName: const CV_CAP_PROP_IOS_DEVICE_WHITEBALANCE with ['', 'cv'] -> fullname:CV_CAP_PROP_IOS_DEVICE_WHITEBALANCE namespace: classpath: classname: name:CV_CAP_PROP_IOS_DEVICE_WHITEBALANCE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_IOS_DEVICE_TORCH', u'9005', [], []]
+parseName: const CV_CAP_PROP_IOS_DEVICE_TORCH with ['', 'cv'] -> fullname:CV_CAP_PROP_IOS_DEVICE_TORCH namespace: classpath: classname: name:CV_CAP_PROP_IOS_DEVICE_TORCH
+
+--- Incoming ---
+[u'const CV_CAP_PROP_GIGA_FRAME_OFFSET_X', u'10001', [], []]
+parseName: const CV_CAP_PROP_GIGA_FRAME_OFFSET_X with ['', 'cv'] -> fullname:CV_CAP_PROP_GIGA_FRAME_OFFSET_X namespace: classpath: classname: name:CV_CAP_PROP_GIGA_FRAME_OFFSET_X
+
+--- Incoming ---
+[u'const CV_CAP_PROP_GIGA_FRAME_OFFSET_Y', u'10002', [], []]
+parseName: const CV_CAP_PROP_GIGA_FRAME_OFFSET_Y with ['', 'cv'] -> fullname:CV_CAP_PROP_GIGA_FRAME_OFFSET_Y namespace: classpath: classname: name:CV_CAP_PROP_GIGA_FRAME_OFFSET_Y
+
+--- Incoming ---
+[u'const CV_CAP_PROP_GIGA_FRAME_WIDTH_MAX', u'10003', [], []]
+parseName: const CV_CAP_PROP_GIGA_FRAME_WIDTH_MAX with ['', 'cv'] -> fullname:CV_CAP_PROP_GIGA_FRAME_WIDTH_MAX namespace: classpath: classname: name:CV_CAP_PROP_GIGA_FRAME_WIDTH_MAX
+
+--- Incoming ---
+[u'const CV_CAP_PROP_GIGA_FRAME_HEIGH_MAX', u'10004', [], []]
+parseName: const CV_CAP_PROP_GIGA_FRAME_HEIGH_MAX with ['', 'cv'] -> fullname:CV_CAP_PROP_GIGA_FRAME_HEIGH_MAX namespace: classpath: classname: name:CV_CAP_PROP_GIGA_FRAME_HEIGH_MAX
+
+--- Incoming ---
+[u'const CV_CAP_PROP_GIGA_FRAME_SENS_WIDTH', u'10005', [], []]
+parseName: const CV_CAP_PROP_GIGA_FRAME_SENS_WIDTH with ['', 'cv'] -> fullname:CV_CAP_PROP_GIGA_FRAME_SENS_WIDTH namespace: classpath: classname: name:CV_CAP_PROP_GIGA_FRAME_SENS_WIDTH
+
+--- Incoming ---
+[u'const CV_CAP_PROP_GIGA_FRAME_SENS_HEIGH', u'10006', [], []]
+parseName: const CV_CAP_PROP_GIGA_FRAME_SENS_HEIGH with ['', 'cv'] -> fullname:CV_CAP_PROP_GIGA_FRAME_SENS_HEIGH namespace: classpath: classname: name:CV_CAP_PROP_GIGA_FRAME_SENS_HEIGH
+
+--- Incoming ---
+[u'const CV_CAP_PROP_INTELPERC_PROFILE_COUNT', u'11001', [], []]
+parseName: const CV_CAP_PROP_INTELPERC_PROFILE_COUNT with ['', 'cv'] -> fullname:CV_CAP_PROP_INTELPERC_PROFILE_COUNT namespace: classpath: classname: name:CV_CAP_PROP_INTELPERC_PROFILE_COUNT
+
+--- Incoming ---
+[u'const CV_CAP_PROP_INTELPERC_PROFILE_IDX', u'11002', [], []]
+parseName: const CV_CAP_PROP_INTELPERC_PROFILE_IDX with ['', 'cv'] -> fullname:CV_CAP_PROP_INTELPERC_PROFILE_IDX namespace: classpath: classname: name:CV_CAP_PROP_INTELPERC_PROFILE_IDX
+
+--- Incoming ---
+[u'const CV_CAP_PROP_INTELPERC_DEPTH_LOW_CONFIDENCE_VALUE', u'11003', [], []]
+parseName: const CV_CAP_PROP_INTELPERC_DEPTH_LOW_CONFIDENCE_VALUE with ['', 'cv'] -> fullname:CV_CAP_PROP_INTELPERC_DEPTH_LOW_CONFIDENCE_VALUE namespace: classpath: classname: name:CV_CAP_PROP_INTELPERC_DEPTH_LOW_CONFIDENCE_VALUE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_INTELPERC_DEPTH_SATURATION_VALUE', u'11004', [], []]
+parseName: const CV_CAP_PROP_INTELPERC_DEPTH_SATURATION_VALUE with ['', 'cv'] -> fullname:CV_CAP_PROP_INTELPERC_DEPTH_SATURATION_VALUE namespace: classpath: classname: name:CV_CAP_PROP_INTELPERC_DEPTH_SATURATION_VALUE
+
+--- Incoming ---
+[u'const CV_CAP_PROP_INTELPERC_DEPTH_CONFIDENCE_THRESHOLD', u'11005', [], []]
+parseName: const CV_CAP_PROP_INTELPERC_DEPTH_CONFIDENCE_THRESHOLD with ['', 'cv'] -> fullname:CV_CAP_PROP_INTELPERC_DEPTH_CONFIDENCE_THRESHOLD namespace: classpath: classname: name:CV_CAP_PROP_INTELPERC_DEPTH_CONFIDENCE_THRESHOLD
+
+--- Incoming ---
+[u'const CV_CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_HORZ', u'11006', [], []]
+parseName: const CV_CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_HORZ with ['', 'cv'] -> fullname:CV_CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_HORZ namespace: classpath: classname: name:CV_CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_HORZ
+
+--- Incoming ---
+[u'const CV_CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_VERT', u'11007', [], []]
+parseName: const CV_CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_VERT with ['', 'cv'] -> fullname:CV_CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_VERT namespace: classpath: classname: name:CV_CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_VERT
+
+--- Incoming ---
+[u'const CV_CAP_INTELPERC_DEPTH_GENERATOR', u'1 << 29', [], []]
+parseName: const CV_CAP_INTELPERC_DEPTH_GENERATOR with ['', 'cv'] -> fullname:CV_CAP_INTELPERC_DEPTH_GENERATOR namespace: classpath: classname: name:CV_CAP_INTELPERC_DEPTH_GENERATOR
+
+--- Incoming ---
+[u'const CV_CAP_INTELPERC_IMAGE_GENERATOR', u'1 << 28', [], []]
+parseName: const CV_CAP_INTELPERC_IMAGE_GENERATOR with ['', 'cv'] -> fullname:CV_CAP_INTELPERC_IMAGE_GENERATOR namespace: classpath: classname: name:CV_CAP_INTELPERC_IMAGE_GENERATOR
+
+--- Incoming ---
+[   u'const CV_CAP_INTELPERC_GENERATORS_MASK',
+    u'CV_CAP_INTELPERC_DEPTH_GENERATOR + CV_CAP_INTELPERC_IMAGE_GENERATOR',
+    [],
+    []]
+parseName: const CV_CAP_INTELPERC_GENERATORS_MASK with ['', 'cv'] -> fullname:CV_CAP_INTELPERC_GENERATORS_MASK namespace: classpath: classname: name:CV_CAP_INTELPERC_GENERATORS_MASK
+
+--- Incoming ---
+[u'const CV_CAP_OPENNI_DEPTH_MAP', u'0', [], []]
+parseName: const CV_CAP_OPENNI_DEPTH_MAP with ['', 'cv'] -> fullname:CV_CAP_OPENNI_DEPTH_MAP namespace: classpath: classname: name:CV_CAP_OPENNI_DEPTH_MAP
+
+--- Incoming ---
+[u'const CV_CAP_OPENNI_POINT_CLOUD_MAP', u'1', [], []]
+parseName: const CV_CAP_OPENNI_POINT_CLOUD_MAP with ['', 'cv'] -> fullname:CV_CAP_OPENNI_POINT_CLOUD_MAP namespace: classpath: classname: name:CV_CAP_OPENNI_POINT_CLOUD_MAP
+
+--- Incoming ---
+[u'const CV_CAP_OPENNI_DISPARITY_MAP', u'2', [], []]
+parseName: const CV_CAP_OPENNI_DISPARITY_MAP with ['', 'cv'] -> fullname:CV_CAP_OPENNI_DISPARITY_MAP namespace: classpath: classname: name:CV_CAP_OPENNI_DISPARITY_MAP
+
+--- Incoming ---
+[u'const CV_CAP_OPENNI_DISPARITY_MAP_32F', u'3', [], []]
+parseName: const CV_CAP_OPENNI_DISPARITY_MAP_32F with ['', 'cv'] -> fullname:CV_CAP_OPENNI_DISPARITY_MAP_32F namespace: classpath: classname: name:CV_CAP_OPENNI_DISPARITY_MAP_32F
+
+--- Incoming ---
+[u'const CV_CAP_OPENNI_VALID_DEPTH_MASK', u'4', [], []]
+parseName: const CV_CAP_OPENNI_VALID_DEPTH_MASK with ['', 'cv'] -> fullname:CV_CAP_OPENNI_VALID_DEPTH_MASK namespace: classpath: classname: name:CV_CAP_OPENNI_VALID_DEPTH_MASK
+
+--- Incoming ---
+[u'const CV_CAP_OPENNI_BGR_IMAGE', u'5', [], []]
+parseName: const CV_CAP_OPENNI_BGR_IMAGE with ['', 'cv'] -> fullname:CV_CAP_OPENNI_BGR_IMAGE namespace: classpath: classname: name:CV_CAP_OPENNI_BGR_IMAGE
+
+--- Incoming ---
+[u'const CV_CAP_OPENNI_GRAY_IMAGE', u'6', [], []]
+parseName: const CV_CAP_OPENNI_GRAY_IMAGE with ['', 'cv'] -> fullname:CV_CAP_OPENNI_GRAY_IMAGE namespace: classpath: classname: name:CV_CAP_OPENNI_GRAY_IMAGE
+
+--- Incoming ---
+[u'const CV_CAP_OPENNI_VGA_30HZ', u'0', [], []]
+parseName: const CV_CAP_OPENNI_VGA_30HZ with ['', 'cv'] -> fullname:CV_CAP_OPENNI_VGA_30HZ namespace: classpath: classname: name:CV_CAP_OPENNI_VGA_30HZ
+
+--- Incoming ---
+[u'const CV_CAP_OPENNI_SXGA_15HZ', u'1', [], []]
+parseName: const CV_CAP_OPENNI_SXGA_15HZ with ['', 'cv'] -> fullname:CV_CAP_OPENNI_SXGA_15HZ namespace: classpath: classname: name:CV_CAP_OPENNI_SXGA_15HZ
+
+--- Incoming ---
+[u'const CV_CAP_OPENNI_SXGA_30HZ', u'2', [], []]
+parseName: const CV_CAP_OPENNI_SXGA_30HZ with ['', 'cv'] -> fullname:CV_CAP_OPENNI_SXGA_30HZ namespace: classpath: classname: name:CV_CAP_OPENNI_SXGA_30HZ
+
+--- Incoming ---
+[u'const CV_CAP_OPENNI_QVGA_30HZ', u'3', [], []]
+parseName: const CV_CAP_OPENNI_QVGA_30HZ with ['', 'cv'] -> fullname:CV_CAP_OPENNI_QVGA_30HZ namespace: classpath: classname: name:CV_CAP_OPENNI_QVGA_30HZ
+
+--- Incoming ---
+[u'const CV_CAP_OPENNI_QVGA_60HZ', u'4', [], []]
+parseName: const CV_CAP_OPENNI_QVGA_60HZ with ['', 'cv'] -> fullname:CV_CAP_OPENNI_QVGA_60HZ namespace: classpath: classname: name:CV_CAP_OPENNI_QVGA_60HZ
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_COLOR_FRAME_BGR', u'0', [], []]
+parseName: const CV_CAP_ANDROID_COLOR_FRAME_BGR with ['', 'cv'] -> fullname:CV_CAP_ANDROID_COLOR_FRAME_BGR namespace: classpath: classname: name:CV_CAP_ANDROID_COLOR_FRAME_BGR
+
+--- Incoming ---
+[   u'const CV_CAP_ANDROID_COLOR_FRAME',
+    u'CV_CAP_ANDROID_COLOR_FRAME_BGR',
+    [],
+    []]
+parseName: const CV_CAP_ANDROID_COLOR_FRAME with ['', 'cv'] -> fullname:CV_CAP_ANDROID_COLOR_FRAME namespace: classpath: classname: name:CV_CAP_ANDROID_COLOR_FRAME
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_GREY_FRAME', u'1', [], []]
+parseName: const CV_CAP_ANDROID_GREY_FRAME with ['', 'cv'] -> fullname:CV_CAP_ANDROID_GREY_FRAME namespace: classpath: classname: name:CV_CAP_ANDROID_GREY_FRAME
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_COLOR_FRAME_RGB', u'2', [], []]
+parseName: const CV_CAP_ANDROID_COLOR_FRAME_RGB with ['', 'cv'] -> fullname:CV_CAP_ANDROID_COLOR_FRAME_RGB namespace: classpath: classname: name:CV_CAP_ANDROID_COLOR_FRAME_RGB
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_COLOR_FRAME_BGRA', u'3', [], []]
+parseName: const CV_CAP_ANDROID_COLOR_FRAME_BGRA with ['', 'cv'] -> fullname:CV_CAP_ANDROID_COLOR_FRAME_BGRA namespace: classpath: classname: name:CV_CAP_ANDROID_COLOR_FRAME_BGRA
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_COLOR_FRAME_RGBA', u'4', [], []]
+parseName: const CV_CAP_ANDROID_COLOR_FRAME_RGBA with ['', 'cv'] -> fullname:CV_CAP_ANDROID_COLOR_FRAME_RGBA namespace: classpath: classname: name:CV_CAP_ANDROID_COLOR_FRAME_RGBA
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_FLASH_MODE_AUTO', u'0', [], []]
+parseName: const CV_CAP_ANDROID_FLASH_MODE_AUTO with ['', 'cv'] -> fullname:CV_CAP_ANDROID_FLASH_MODE_AUTO namespace: classpath: classname: name:CV_CAP_ANDROID_FLASH_MODE_AUTO
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_FLASH_MODE_OFF', u'0+1', [], []]
+parseName: const CV_CAP_ANDROID_FLASH_MODE_OFF with ['', 'cv'] -> fullname:CV_CAP_ANDROID_FLASH_MODE_OFF namespace: classpath: classname: name:CV_CAP_ANDROID_FLASH_MODE_OFF
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_FLASH_MODE_ON', u'0+2', [], []]
+parseName: const CV_CAP_ANDROID_FLASH_MODE_ON with ['', 'cv'] -> fullname:CV_CAP_ANDROID_FLASH_MODE_ON namespace: classpath: classname: name:CV_CAP_ANDROID_FLASH_MODE_ON
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_FLASH_MODE_RED_EYE', u'0+3', [], []]
+parseName: const CV_CAP_ANDROID_FLASH_MODE_RED_EYE with ['', 'cv'] -> fullname:CV_CAP_ANDROID_FLASH_MODE_RED_EYE namespace: classpath: classname: name:CV_CAP_ANDROID_FLASH_MODE_RED_EYE
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_FLASH_MODE_TORCH', u'0+4', [], []]
+parseName: const CV_CAP_ANDROID_FLASH_MODE_TORCH with ['', 'cv'] -> fullname:CV_CAP_ANDROID_FLASH_MODE_TORCH namespace: classpath: classname: name:CV_CAP_ANDROID_FLASH_MODE_TORCH
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_FOCUS_MODE_AUTO', u'0', [], []]
+parseName: const CV_CAP_ANDROID_FOCUS_MODE_AUTO with ['', 'cv'] -> fullname:CV_CAP_ANDROID_FOCUS_MODE_AUTO namespace: classpath: classname: name:CV_CAP_ANDROID_FOCUS_MODE_AUTO
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_FOCUS_MODE_CONTINUOUS_PICTURE', u'0+1', [], []]
+parseName: const CV_CAP_ANDROID_FOCUS_MODE_CONTINUOUS_PICTURE with ['', 'cv'] -> fullname:CV_CAP_ANDROID_FOCUS_MODE_CONTINUOUS_PICTURE namespace: classpath: classname: name:CV_CAP_ANDROID_FOCUS_MODE_CONTINUOUS_PICTURE
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_FOCUS_MODE_CONTINUOUS_VIDEO', u'0+2', [], []]
+parseName: const CV_CAP_ANDROID_FOCUS_MODE_CONTINUOUS_VIDEO with ['', 'cv'] -> fullname:CV_CAP_ANDROID_FOCUS_MODE_CONTINUOUS_VIDEO namespace: classpath: classname: name:CV_CAP_ANDROID_FOCUS_MODE_CONTINUOUS_VIDEO
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_FOCUS_MODE_EDOF', u'0+3', [], []]
+parseName: const CV_CAP_ANDROID_FOCUS_MODE_EDOF with ['', 'cv'] -> fullname:CV_CAP_ANDROID_FOCUS_MODE_EDOF namespace: classpath: classname: name:CV_CAP_ANDROID_FOCUS_MODE_EDOF
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_FOCUS_MODE_FIXED', u'0+4', [], []]
+parseName: const CV_CAP_ANDROID_FOCUS_MODE_FIXED with ['', 'cv'] -> fullname:CV_CAP_ANDROID_FOCUS_MODE_FIXED namespace: classpath: classname: name:CV_CAP_ANDROID_FOCUS_MODE_FIXED
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_FOCUS_MODE_INFINITY', u'0+5', [], []]
+parseName: const CV_CAP_ANDROID_FOCUS_MODE_INFINITY with ['', 'cv'] -> fullname:CV_CAP_ANDROID_FOCUS_MODE_INFINITY namespace: classpath: classname: name:CV_CAP_ANDROID_FOCUS_MODE_INFINITY
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_FOCUS_MODE_MACRO', u'0+6', [], []]
+parseName: const CV_CAP_ANDROID_FOCUS_MODE_MACRO with ['', 'cv'] -> fullname:CV_CAP_ANDROID_FOCUS_MODE_MACRO namespace: classpath: classname: name:CV_CAP_ANDROID_FOCUS_MODE_MACRO
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_WHITE_BALANCE_AUTO', u'0', [], []]
+parseName: const CV_CAP_ANDROID_WHITE_BALANCE_AUTO with ['', 'cv'] -> fullname:CV_CAP_ANDROID_WHITE_BALANCE_AUTO namespace: classpath: classname: name:CV_CAP_ANDROID_WHITE_BALANCE_AUTO
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_WHITE_BALANCE_CLOUDY_DAYLIGHT', u'0+1', [], []]
+parseName: const CV_CAP_ANDROID_WHITE_BALANCE_CLOUDY_DAYLIGHT with ['', 'cv'] -> fullname:CV_CAP_ANDROID_WHITE_BALANCE_CLOUDY_DAYLIGHT namespace: classpath: classname: name:CV_CAP_ANDROID_WHITE_BALANCE_CLOUDY_DAYLIGHT
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_WHITE_BALANCE_DAYLIGHT', u'0+2', [], []]
+parseName: const CV_CAP_ANDROID_WHITE_BALANCE_DAYLIGHT with ['', 'cv'] -> fullname:CV_CAP_ANDROID_WHITE_BALANCE_DAYLIGHT namespace: classpath: classname: name:CV_CAP_ANDROID_WHITE_BALANCE_DAYLIGHT
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_WHITE_BALANCE_FLUORESCENT', u'0+3', [], []]
+parseName: const CV_CAP_ANDROID_WHITE_BALANCE_FLUORESCENT with ['', 'cv'] -> fullname:CV_CAP_ANDROID_WHITE_BALANCE_FLUORESCENT namespace: classpath: classname: name:CV_CAP_ANDROID_WHITE_BALANCE_FLUORESCENT
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_WHITE_BALANCE_INCANDESCENT', u'0+4', [], []]
+parseName: const CV_CAP_ANDROID_WHITE_BALANCE_INCANDESCENT with ['', 'cv'] -> fullname:CV_CAP_ANDROID_WHITE_BALANCE_INCANDESCENT namespace: classpath: classname: name:CV_CAP_ANDROID_WHITE_BALANCE_INCANDESCENT
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_WHITE_BALANCE_SHADE', u'0+5', [], []]
+parseName: const CV_CAP_ANDROID_WHITE_BALANCE_SHADE with ['', 'cv'] -> fullname:CV_CAP_ANDROID_WHITE_BALANCE_SHADE namespace: classpath: classname: name:CV_CAP_ANDROID_WHITE_BALANCE_SHADE
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_WHITE_BALANCE_TWILIGHT', u'0+6', [], []]
+parseName: const CV_CAP_ANDROID_WHITE_BALANCE_TWILIGHT with ['', 'cv'] -> fullname:CV_CAP_ANDROID_WHITE_BALANCE_TWILIGHT namespace: classpath: classname: name:CV_CAP_ANDROID_WHITE_BALANCE_TWILIGHT
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_WHITE_BALANCE_WARM_FLUORESCENT', u'0+7', [], []]
+parseName: const CV_CAP_ANDROID_WHITE_BALANCE_WARM_FLUORESCENT with ['', 'cv'] -> fullname:CV_CAP_ANDROID_WHITE_BALANCE_WARM_FLUORESCENT namespace: classpath: classname: name:CV_CAP_ANDROID_WHITE_BALANCE_WARM_FLUORESCENT
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_ANTIBANDING_50HZ', u'0', [], []]
+parseName: const CV_CAP_ANDROID_ANTIBANDING_50HZ with ['', 'cv'] -> fullname:CV_CAP_ANDROID_ANTIBANDING_50HZ namespace: classpath: classname: name:CV_CAP_ANDROID_ANTIBANDING_50HZ
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_ANTIBANDING_60HZ', u'0+1', [], []]
+parseName: const CV_CAP_ANDROID_ANTIBANDING_60HZ with ['', 'cv'] -> fullname:CV_CAP_ANDROID_ANTIBANDING_60HZ namespace: classpath: classname: name:CV_CAP_ANDROID_ANTIBANDING_60HZ
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_ANTIBANDING_AUTO', u'0+2', [], []]
+parseName: const CV_CAP_ANDROID_ANTIBANDING_AUTO with ['', 'cv'] -> fullname:CV_CAP_ANDROID_ANTIBANDING_AUTO namespace: classpath: classname: name:CV_CAP_ANDROID_ANTIBANDING_AUTO
+
+--- Incoming ---
+[u'const CV_CAP_ANDROID_ANTIBANDING_OFF', u'0+3', [], []]
+parseName: const CV_CAP_ANDROID_ANTIBANDING_OFF with ['', 'cv'] -> fullname:CV_CAP_ANDROID_ANTIBANDING_OFF namespace: classpath: classname: name:CV_CAP_ANDROID_ANTIBANDING_OFF
+
+--- Incoming ---
+[u'const CV_CAP_INTELPERC_DEPTH_MAP', u'0', [], []]
+parseName: const CV_CAP_INTELPERC_DEPTH_MAP with ['', 'cv'] -> fullname:CV_CAP_INTELPERC_DEPTH_MAP namespace: classpath: classname: name:CV_CAP_INTELPERC_DEPTH_MAP
+
+--- Incoming ---
+[u'const CV_CAP_INTELPERC_UVDEPTH_MAP', u'1', [], []]
+parseName: const CV_CAP_INTELPERC_UVDEPTH_MAP with ['', 'cv'] -> fullname:CV_CAP_INTELPERC_UVDEPTH_MAP namespace: classpath: classname: name:CV_CAP_INTELPERC_UVDEPTH_MAP
+
+--- Incoming ---
+[u'const CV_CAP_INTELPERC_IR_MAP', u'2', [], []]
+parseName: const CV_CAP_INTELPERC_IR_MAP with ['', 'cv'] -> fullname:CV_CAP_INTELPERC_IR_MAP namespace: classpath: classname: name:CV_CAP_INTELPERC_IR_MAP
+
+--- Incoming ---
+[u'const CV_CAP_INTELPERC_IMAGE', u'3', [], []]
+parseName: const CV_CAP_INTELPERC_IMAGE with ['', 'cv'] -> fullname:CV_CAP_INTELPERC_IMAGE namespace: classpath: classname: name:CV_CAP_INTELPERC_IMAGE
+
+--- Incoming ---
+[   u'cvGetCaptureProperty',
+    u'double',
+    ['/NW'],
+    [[u'CvCapture*', u'capture', '', []], [u'int', u'property_id', '', []]],
+    '']
+parseName: cvGetCaptureProperty with ['', 'cv'] -> fullname:cvGetCaptureProperty namespace: classpath: classname: name:cvGetCaptureProperty
+register (function) cvGetCaptureProperty
+
+--- Incoming ---
+[   u'cvSetCaptureProperty',
+    u'int',
+    ['/NW'],
+    [   [u'CvCapture*', u'capture', '', []],
+        [u'int', u'property_id', '', []],
+        [u'double', u'value', '', []]],
+    '']
+parseName: cvSetCaptureProperty with ['', 'cv'] -> fullname:cvSetCaptureProperty namespace: classpath: classname: name:cvSetCaptureProperty
+register (function) cvSetCaptureProperty
+
+--- Incoming ---
+[   u'cvGetCaptureDomain',
+    u'int',
+    ['/NW'],
+    [[u'CvCapture*', u'capture', '', []]],
+    '']
+parseName: cvGetCaptureDomain with ['', 'cv'] -> fullname:cvGetCaptureDomain namespace: classpath: classname: name:cvGetCaptureDomain
+register (function) cvGetCaptureDomain
+
+--- Incoming ---
+[   u'CV_FOURCC',
+    u'int',
+    ['/NW'],
+    [   [u'char', u'c1', '', []],
+        [u'char', u'c2', '', []],
+        [u'char', u'c3', '', []],
+        [u'char', u'c4', '', []]],
+    '']
+parseName: CV_FOURCC with ['', 'cv'] -> fullname:CV_FOURCC namespace: classpath: classname: name:CV_FOURCC
+register (function) CV_FOURCC
+
+--- Incoming ---
+[   u'const CV_FOURCC_PROMPT',
+    u'-1  /* Open Codec Selection Dialog (Windows only) */',
+    [],
+    [],
+    '']
+parseName: const CV_FOURCC_PROMPT with ['', 'cv'] -> fullname:CV_FOURCC_PROMPT namespace: classpath: classname: name:CV_FOURCC_PROMPT
+
+--- Incoming ---
+[   u'const CV_FOURCC_DEFAULT',
+    u"CV_FOURCC('I', 'Y', 'U', 'V') /* Use default codec for specified filename (Linux only) */",
+    [],
+    [],
+    '']
+parseName: const CV_FOURCC_DEFAULT with ['', 'cv'] -> fullname:CV_FOURCC_DEFAULT namespace: classpath: classname: name:CV_FOURCC_DEFAULT
+ignored: CONST CV_FOURCC_DEFAULT=CV_FOURCC('I', 'Y', 'U', 'V') /* Use default codec for specified filename (Linux only) */
+
+--- Incoming ---
+[   u'cvCreateVideoWriter',
+    u'CvVideoWriter*',
+    ['/NW'],
+    [   [u'const char*', u'filename', '', []],
+        [u'int', u'fourcc', '', []],
+        [u'double', u'fps', '', []],
+        [u'CvSize', u'frame_size', '', []],
+        [u'int', u'is_color', u'1', []]],
+    '']
+parseName: cvCreateVideoWriter with ['', 'cv'] -> fullname:cvCreateVideoWriter namespace: classpath: classname: name:cvCreateVideoWriter
+Registering an unknown type: CvVideoWriter
+Registering an unknown type: CvSize
+register (function) cvCreateVideoWriter
+
+--- Incoming ---
+[   u'cvWriteFrame',
+    u'int',
+    ['/NW'],
+    [   [u'CvVideoWriter*', u'writer', '', []],
+        [u'const IplImage*', u'image', '', []]],
+    '']
+parseName: cvWriteFrame with ['', 'cv'] -> fullname:cvWriteFrame namespace: classpath: classname: name:cvWriteFrame
+Registering an unknown type: IplImage
+register (function) cvWriteFrame
+
+--- Incoming ---
+[   u'cvReleaseVideoWriter',
+    u'void',
+    ['/NW'],
+    [[u'CvVideoWriter**', u'writer', '', []]],
+    '']
+parseName: cvReleaseVideoWriter with ['', 'cv'] -> fullname:cvReleaseVideoWriter namespace: classpath: classname: name:cvReleaseVideoWriter
+register (function) cvReleaseVideoWriter
+
+--- Incoming ---
+[u'const HG_AUTOSIZE', u'CV_WINDOW_AUTOSIZE', [], [], '']
+parseName: const HG_AUTOSIZE with ['', 'cv'] -> fullname:HG_AUTOSIZE namespace: classpath: classname: name:HG_AUTOSIZE
+
+--- Incoming ---
+[   u'cvSetPreprocessFuncWin32_',
+    u'void',
+    ['/NW'],
+    [[u'const void*', u'callback', '', []]],
+    '']
+parseName: cvSetPreprocessFuncWin32_ with ['', 'cv'] -> fullname:cvSetPreprocessFuncWin32_ namespace: classpath: classname: name:cvSetPreprocessFuncWin32_
+register (function) cvSetPreprocessFuncWin32_
+
+--- Incoming ---
+[   u'cvSetPostprocessFuncWin32_',
+    u'void',
+    ['/NW'],
+    [[u'const void*', u'callback', '', []]],
+    '']
+parseName: cvSetPostprocessFuncWin32_ with ['', 'cv'] -> fullname:cvSetPostprocessFuncWin32_ namespace: classpath: classname: name:cvSetPostprocessFuncWin32_
+register (function) cvSetPostprocessFuncWin32_
+
+
+===== Generating... =====
+Generating func CV_FOURCC (function)
+Generating func cvAddText (function)
+  ignored: can not map type Unknown[CvArr] yet
+Generating func cvConvertImage (function)
+  ignored: can not map type Unknown[CvArr] yet
+Generating func cvCreateButton (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvCreateCameraCapture (function)
+  ignored: return type class RawPtr[Unknown[CvCapture]] is ignored
+Generating func cvCreateFileCapture (function)
+  ignored: return type class RawPtr[Unknown[CvCapture]] is ignored
+Generating func cvCreateTrackbar2 (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvCreateTrackbar (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvCreateVideoWriter (function)
+  ignored: return type class RawPtr[Unknown[CvVideoWriter]] is ignored
+Generating func cvDecodeImageM (function)
+  ignored: return type class RawPtr[Unknown[CvMat]] is ignored
+Generating func cvDecodeImage (function)
+  ignored: return type class RawPtr[Unknown[IplImage]] is ignored
+Generating func cvDestroyAllWindows (function)
+Generating func cvDestroyWindow (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvDisplayOverlay (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvDisplayStatusBar (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvEncodeImage (function)
+  ignored: return type class RawPtr[Unknown[CvMat]] is ignored
+Generating func cvFontQt (function)
+  ignored: return type class Unknown[CvFont] is ignored
+Generating func cvGetCaptureDomain (function)
+  ignored: can not map type Unknown[CvCapture] yet
+Generating func cvGetCaptureProperty (function)
+  ignored: can not map type Unknown[CvCapture] yet
+Generating func cvGetTrackbarPos (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvGetWindowHandle (function)
+  ignored: return type class RawPtr[Primitive(void)] is ignored
+Generating func cvGetWindowName (function)
+  ignored: return type class RawPtr[Primitive(char)] is ignored
+Generating func cvGetWindowProperty (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvGrabFrame (function)
+  ignored: can not map type Unknown[CvCapture] yet
+Generating func cvInitSystem (function)
+  ignored: can not map type RawPtr[Primitive(char)] yet
+Generating func cvLoadImageM (function)
+  ignored: return type class RawPtr[Unknown[CvMat]] is ignored
+Generating func cvLoadImage (function)
+  ignored: return type class RawPtr[Unknown[IplImage]] is ignored
+Generating func cvLoadWindowParameters (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvMoveWindow (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvNamedWindow (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvQueryFrame (function)
+  ignored: return type class RawPtr[Unknown[IplImage]] is ignored
+Generating func cvReleaseCapture (function)
+  ignored: can not map type RawPtr[Unknown[CvCapture]] yet
+Generating func cvReleaseVideoWriter (function)
+  ignored: can not map type RawPtr[Unknown[CvVideoWriter]] yet
+Generating func cvResizeWindow (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvRetrieveFrame (function)
+  ignored: return type class RawPtr[Unknown[IplImage]] is ignored
+Generating func cvSaveImage (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvSaveWindowParameters (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvSetCaptureProperty (function)
+  ignored: can not map type Unknown[CvCapture] yet
+Generating func cvSetMouseCallback (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvSetOpenGlContext (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvSetOpenGlDrawCallback (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvSetPostprocessFuncWin32_ (function)
+  ignored: manual ignore from list
+Generating func cvSetPreprocessFuncWin32_ (function)
+  ignored: manual ignore from list
+Generating func cvSetTrackbarMax (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvSetTrackbarPos (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvSetWindowProperty (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvShowImage (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvStartLoop (function)
+  ignored: can not map type Unknown[int (*pt2Func)(int argc@comma@ char *argv[])] yet
+Generating func cvStartWindowThread (function)
+Generating func cvStopLoop (function)
+Generating func cvUpdateWindow (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvWaitKey (function)
+Generating func cvWriteFrame (function)
+  ignored: can not map type Unknown[CvVideoWriter] yet
+Generating func cv::addText (function)
+  ignored: can not map type Unknown[CvFont] yet
+Generating func cv::createButton (function)
+  ignored: can not map type Unknown[ButtonCallback] yet
+Generating func cv::createTrackbar (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cv::destroyAllWindows (function)
+Generating func cv::destroyWindow (function)
+Generating func cv::displayOverlay (function)
+Generating func cv::displayStatusBar (function)
+Generating func cv::fontQt (function)
+  ignored: return type class Unknown[CvFont] is ignored
+Generating func cv::getTrackbarPos (function)
+Generating func cv::getWindowProperty (function)
+Generating func cv::imdecode (function)
+  ignored: ignored by renamed table
+Generating func cv::imdecode (function)
+  ignored: ignored by renamed table
+Generating func cv::imencode (function)
+Generating func cv::imread (function)
+Generating func cv::imshow (function)
+Generating func cv::imwrite (function)
+Generating func cv::loadWindowParameters (function)
+Generating func cv::moveWindow (function)
+Generating func cv::namedWindow (function)
+Generating func cv::pointCloudShow (function)
+  ignored: can not map type Unknown[GlCamera] yet
+Generating func cv::pointCloudShow (function)
+  ignored: can not map type Unknown[GlCamera] yet
+Generating func cv::resizeWindow (function)
+Generating func cv::saveWindowParameters (function)
+Generating func cv::setMouseCallback (function)
+  ignored: can not map type Unknown[MouseCallback] yet
+Generating func cv::setOpenGlContext (function)
+Generating func cv::setOpenGlDrawCallback (function)
+  ignored: can not map type Unknown[OpenGlDrawCallback] yet
+Generating func cv::setTrackbarPos (function)
+Generating func cv::setWindowProperty (function)
+Generating func cv::startLoop (function)
+  ignored: can not map type Unknown[int (*pt2Func)(int argc@comma@ char *argv[])] yet
+Generating func cv::startWindowThread (function)
+Generating func cv::stopLoop (function)
+Generating func cv::updateWindow (function)
+Generating func cv::waitKey (function)
+Generating box for struct cv::VideoCapture
+Generating box for cv::VideoCapture
+Generating impl for struct cv::VideoCapture
+Generating func cv::VideoCapture::VideoCapture (constructor) cv::VideoCapture . new
+Generating func cv::VideoCapture::VideoCapture (constructor) cv::VideoCapture . new
+Generating func cv::VideoCapture::VideoCapture (constructor) cv::VideoCapture . new
+Generating func cv::VideoCapture::open (method) cv::VideoCapture . open
+Generating func cv::VideoCapture::open (method) cv::VideoCapture . open
+Generating func cv::VideoCapture::isOpened (method) cv::VideoCapture . isOpened
+Generating func cv::VideoCapture::release (method) cv::VideoCapture . release
+Generating func cv::VideoCapture::grab (method) cv::VideoCapture . grab
+Generating func cv::VideoCapture::retrieve (method) cv::VideoCapture . retrieve
+Generating func cv::VideoCapture::read (method) cv::VideoCapture . read
+Generating func cv::VideoCapture::set (method) cv::VideoCapture . set
+Generating func cv::VideoCapture::get (method) cv::VideoCapture . get
+Generating box for struct cv::VideoWriter
+Generating box for cv::VideoWriter
+Generating impl for struct cv::VideoWriter
+Generating func cv::VideoWriter::VideoWriter (constructor) cv::VideoWriter . new
+Generating func cv::VideoWriter::VideoWriter (constructor) cv::VideoWriter . new
+Generating func cv::VideoWriter::open (method) cv::VideoWriter . open
+Generating func cv::VideoWriter::isOpened (method) cv::VideoWriter . isOpened
+Generating func cv::VideoWriter::release (method) cv::VideoWriter . release
+Generating func cv::VideoWriter::write (method) cv::VideoWriter . write

@@ -1,0 +1,8 @@
+[package]
+name = "focus_tv"
+version = "0.1.0"
+authors = ["amar-laksh <amar.lakshya@xaviers.edu.in>"]
+
+[dependencies]
+inputbot = "0.2.3"
+opencv = "0.2.3"

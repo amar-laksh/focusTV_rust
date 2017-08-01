@@ -1,0 +1,1897 @@
+parseName: class cv.Mat with set(['cv']) -> fullname:cv::Mat namespace:cv classpath: classname: name:Mat
+register class cv::Mat (['class cv.Mat', '', ['/Ghost'], []])
+parseName: class cv.Algorithm with set(['cv']) -> fullname:cv::Algorithm namespace:cv classpath: classname: name:Algorithm
+register class cv::Algorithm (['class cv.Algorithm', '', ['/Ghost'], []])
+
+
+===== Header: /usr/include/opencv2/calib3d/calib3d.hpp =====
+Namespaces: set(['', u'cv.fisheye', 'cv'])
+
+--- Incoming ---
+[   u'cvCreatePOSITObject',
+    u'CvPOSITObject*',
+    ['/NW'],
+    [[u'CvPoint3D32f*', u'points', '', []], [u'int', u'point_count', '', []]],
+    '']
+parseName: cvCreatePOSITObject with ['', u'cv::fisheye', 'cv'] -> fullname:cvCreatePOSITObject namespace: classpath: classname: name:cvCreatePOSITObject
+Registering an unknown type: CvPOSITObject
+Registering an unknown type: CvPoint3D32f
+register (function) cvCreatePOSITObject
+
+--- Incoming ---
+[   u'cvPOSIT',
+    u'void',
+    ['/NW'],
+    [   [u'CvPOSITObject*', u'posit_object', '', []],
+        [u'CvPoint2D32f*', u'image_points', '', []],
+        [u'double', u'focal_length', '', []],
+        [u'CvTermCriteria', u'criteria', '', []],
+        [u'float*', u'rotation_matrix', '', []],
+        [u'float*', u'translation_vector', '', []]],
+    '']
+parseName: cvPOSIT with ['', u'cv::fisheye', 'cv'] -> fullname:cvPOSIT namespace: classpath: classname: name:cvPOSIT
+Registering an unknown type: CvPoint2D32f
+Registering an unknown type: CvTermCriteria
+register (function) cvPOSIT
+
+--- Incoming ---
+[   u'cvReleasePOSITObject',
+    u'void',
+    ['/NW'],
+    [[u'CvPOSITObject**', u'posit_object', '', []]],
+    '']
+parseName: cvReleasePOSITObject with ['', u'cv::fisheye', 'cv'] -> fullname:cvReleasePOSITObject namespace: classpath: classname: name:cvReleasePOSITObject
+register (function) cvReleasePOSITObject
+
+--- Incoming ---
+[   u'cvRANSACUpdateNumIters',
+    u'int',
+    ['/NW'],
+    [   [u'double', u'p', '', []],
+        [u'double', u'err_prob', '', []],
+        [u'int', u'model_points', '', []],
+        [u'int', u'max_iters', '', []]],
+    '']
+parseName: cvRANSACUpdateNumIters with ['', u'cv::fisheye', 'cv'] -> fullname:cvRANSACUpdateNumIters namespace: classpath: classname: name:cvRANSACUpdateNumIters
+register (function) cvRANSACUpdateNumIters
+
+--- Incoming ---
+[   u'cvConvertPointsHomogeneous',
+    u'void',
+    ['/NW'],
+    [[u'const CvMat*', u'src', '', []], [u'CvMat*', u'dst', '', []]],
+    '']
+parseName: cvConvertPointsHomogeneous with ['', u'cv::fisheye', 'cv'] -> fullname:cvConvertPointsHomogeneous namespace: classpath: classname: name:cvConvertPointsHomogeneous
+Registering an unknown type: CvMat
+Registering an unknown type: CvMat
+register (function) cvConvertPointsHomogeneous
+
+--- Incoming ---
+[u'const CV_FM_7POINT', u'1', [], [], '']
+parseName: const CV_FM_7POINT with ['', u'cv::fisheye', 'cv'] -> fullname:CV_FM_7POINT namespace: classpath: classname: name:CV_FM_7POINT
+
+--- Incoming ---
+[u'const CV_FM_8POINT', u'2', [], [], '']
+parseName: const CV_FM_8POINT with ['', u'cv::fisheye', 'cv'] -> fullname:CV_FM_8POINT namespace: classpath: classname: name:CV_FM_8POINT
+
+--- Incoming ---
+[u'const CV_LMEDS', u'4', [], [], '']
+parseName: const CV_LMEDS with ['', u'cv::fisheye', 'cv'] -> fullname:CV_LMEDS namespace: classpath: classname: name:CV_LMEDS
+
+--- Incoming ---
+[u'const CV_RANSAC', u'8', [], [], '']
+parseName: const CV_RANSAC with ['', u'cv::fisheye', 'cv'] -> fullname:CV_RANSAC namespace: classpath: classname: name:CV_RANSAC
+
+--- Incoming ---
+[u'const CV_FM_LMEDS_ONLY', u'CV_LMEDS', [], [], '']
+parseName: const CV_FM_LMEDS_ONLY with ['', u'cv::fisheye', 'cv'] -> fullname:CV_FM_LMEDS_ONLY namespace: classpath: classname: name:CV_FM_LMEDS_ONLY
+
+--- Incoming ---
+[u'const CV_FM_RANSAC_ONLY', u'CV_RANSAC', [], [], '']
+parseName: const CV_FM_RANSAC_ONLY with ['', u'cv::fisheye', 'cv'] -> fullname:CV_FM_RANSAC_ONLY namespace: classpath: classname: name:CV_FM_RANSAC_ONLY
+
+--- Incoming ---
+[u'const CV_FM_LMEDS', u'CV_LMEDS', [], [], '']
+parseName: const CV_FM_LMEDS with ['', u'cv::fisheye', 'cv'] -> fullname:CV_FM_LMEDS namespace: classpath: classname: name:CV_FM_LMEDS
+
+--- Incoming ---
+[u'const CV_FM_RANSAC', u'CV_RANSAC', [], [], '']
+parseName: const CV_FM_RANSAC with ['', u'cv::fisheye', 'cv'] -> fullname:CV_FM_RANSAC namespace: classpath: classname: name:CV_FM_RANSAC
+
+--- Incoming ---
+[u'const CV_ITERATIVE', u'0', [], []]
+parseName: const CV_ITERATIVE with ['', u'cv::fisheye', 'cv'] -> fullname:CV_ITERATIVE namespace: classpath: classname: name:CV_ITERATIVE
+
+--- Incoming ---
+[u'const CV_EPNP', u'1', [], []]
+parseName: const CV_EPNP with ['', u'cv::fisheye', 'cv'] -> fullname:CV_EPNP namespace: classpath: classname: name:CV_EPNP
+
+--- Incoming ---
+[u'const CV_P3P', u'2', [], []]
+parseName: const CV_P3P with ['', u'cv::fisheye', 'cv'] -> fullname:CV_P3P namespace: classpath: classname: name:CV_P3P
+
+--- Incoming ---
+[   u'cvFindFundamentalMat',
+    u'int',
+    ['/NW'],
+    [   [u'const CvMat*', u'points1', '', []],
+        [u'const CvMat*', u'points2', '', []],
+        [u'CvMat*', u'fundamental_matrix', '', []],
+        [u'int', u'method', u'CV_FM_RANSAC', []],
+        [u'double', u'param1', u'3.', []],
+        [u'double', u'param2', u'0.99', []],
+        [u'CvMat*', u'status', u'NULL', []]],
+    '']
+parseName: cvFindFundamentalMat with ['', u'cv::fisheye', 'cv'] -> fullname:cvFindFundamentalMat namespace: classpath: classname: name:cvFindFundamentalMat
+register (function) cvFindFundamentalMat
+
+--- Incoming ---
+[   u'cvComputeCorrespondEpilines',
+    u'void',
+    ['/NW'],
+    [   [u'const CvMat*', u'points', '', []],
+        [u'int', u'which_image', '', []],
+        [u'const CvMat*', u'fundamental_matrix', '', []],
+        [u'CvMat*', u'correspondent_lines', '', []]],
+    '']
+parseName: cvComputeCorrespondEpilines with ['', u'cv::fisheye', 'cv'] -> fullname:cvComputeCorrespondEpilines namespace: classpath: classname: name:cvComputeCorrespondEpilines
+register (function) cvComputeCorrespondEpilines
+
+--- Incoming ---
+[   u'cvTriangulatePoints',
+    u'void',
+    ['/NW'],
+    [   [u'CvMat*', u'projMatr1', '', []],
+        [u'CvMat*', u'projMatr2', '', []],
+        [u'CvMat*', u'projPoints1', '', []],
+        [u'CvMat*', u'projPoints2', '', []],
+        [u'CvMat*', u'points4D', '', []]],
+    '']
+parseName: cvTriangulatePoints with ['', u'cv::fisheye', 'cv'] -> fullname:cvTriangulatePoints namespace: classpath: classname: name:cvTriangulatePoints
+register (function) cvTriangulatePoints
+
+--- Incoming ---
+[   u'cvCorrectMatches',
+    u'void',
+    ['/NW'],
+    [   [u'CvMat*', u'F', '', []],
+        [u'CvMat*', u'points1', '', []],
+        [u'CvMat*', u'points2', '', []],
+        [u'CvMat*', u'new_points1', '', []],
+        [u'CvMat*', u'new_points2', '', []]],
+    '']
+parseName: cvCorrectMatches with ['', u'cv::fisheye', 'cv'] -> fullname:cvCorrectMatches namespace: classpath: classname: name:cvCorrectMatches
+register (function) cvCorrectMatches
+
+--- Incoming ---
+[   u'cvGetOptimalNewCameraMatrix',
+    u'void',
+    ['/NW'],
+    [   [u'const CvMat*', u'camera_matrix', '', []],
+        [u'const CvMat*', u'dist_coeffs', '', []],
+        [u'CvSize', u'image_size', '', []],
+        [u'double', u'alpha', '', []],
+        [u'CvMat*', u'new_camera_matrix', '', []],
+        [u'CvSize', u'new_imag_size', u'cvSize(0,0)', []],
+        [u'CvRect*', u'valid_pixel_ROI', u'0', []],
+        [u'int', u'center_principal_point', u'0', []]],
+    '']
+parseName: cvGetOptimalNewCameraMatrix with ['', u'cv::fisheye', 'cv'] -> fullname:cvGetOptimalNewCameraMatrix namespace: classpath: classname: name:cvGetOptimalNewCameraMatrix
+Registering an unknown type: CvSize
+Registering an unknown type: CvRect
+register (function) cvGetOptimalNewCameraMatrix
+
+--- Incoming ---
+[   u'cvRodrigues2',
+    u'int',
+    ['/NW'],
+    [   [u'const CvMat*', u'src', '', []],
+        [u'CvMat*', u'dst', '', []],
+        [u'CvMat*', u'jacobian', u'0', []]],
+    '']
+parseName: cvRodrigues2 with ['', u'cv::fisheye', 'cv'] -> fullname:cvRodrigues2 namespace: classpath: classname: name:cvRodrigues2
+register (function) cvRodrigues2
+
+--- Incoming ---
+[   u'cvFindHomography',
+    u'int',
+    ['/NW'],
+    [   [u'const CvMat*', u'src_points', '', []],
+        [u'const CvMat*', u'dst_points', '', []],
+        [u'CvMat*', u'homography', '', []],
+        [u'int', u'method', u'0', []],
+        [u'double', u'ransacReprojThreshold', u'3', []],
+        [u'CvMat*', u'mask', u'0', []]],
+    '']
+parseName: cvFindHomography with ['', u'cv::fisheye', 'cv'] -> fullname:cvFindHomography namespace: classpath: classname: name:cvFindHomography
+register (function) cvFindHomography
+
+--- Incoming ---
+[   u'cvRQDecomp3x3',
+    u'void',
+    ['/NW'],
+    [   [u'const CvMat *', u'matrixM', '', []],
+        [u'CvMat *', u'matrixR', '', []],
+        [u'CvMat *', u'matrixQ', '', []],
+        [u'CvMat *', u'matrixQx', u'NULL', []],
+        [u'CvMat *', u'matrixQy', u'NULL', []],
+        [u'CvMat *', u'matrixQz', u'NULL', []],
+        [u'CvPoint3D64f *', u'eulerAngles', u'NULL', []]],
+    '']
+parseName: cvRQDecomp3x3 with ['', u'cv::fisheye', 'cv'] -> fullname:cvRQDecomp3x3 namespace: classpath: classname: name:cvRQDecomp3x3
+Registering an unknown type: CvMat
+Registering an unknown type: CvMat
+Registering an unknown type: CvPoint3D64f
+register (function) cvRQDecomp3x3
+
+--- Incoming ---
+[   u'cvDecomposeProjectionMatrix',
+    u'void',
+    ['/NW'],
+    [   [u'const CvMat *', u'projMatr', '', []],
+        [u'CvMat *', u'calibMatr', '', []],
+        [u'CvMat *', u'rotMatr', '', []],
+        [u'CvMat *', u'posVect', '', []],
+        [u'CvMat *', u'rotMatrX', u'NULL', []],
+        [u'CvMat *', u'rotMatrY', u'NULL', []],
+        [u'CvMat *', u'rotMatrZ', u'NULL', []],
+        [u'CvPoint3D64f *', u'eulerAngles', u'NULL', []]],
+    '']
+parseName: cvDecomposeProjectionMatrix with ['', u'cv::fisheye', 'cv'] -> fullname:cvDecomposeProjectionMatrix namespace: classpath: classname: name:cvDecomposeProjectionMatrix
+register (function) cvDecomposeProjectionMatrix
+
+--- Incoming ---
+[   u'cvCalcMatMulDeriv',
+    u'void',
+    ['/NW'],
+    [   [u'const CvMat*', u'A', '', []],
+        [u'const CvMat*', u'B', '', []],
+        [u'CvMat*', u'dABdA', '', []],
+        [u'CvMat*', u'dABdB', '', []]],
+    '']
+parseName: cvCalcMatMulDeriv with ['', u'cv::fisheye', 'cv'] -> fullname:cvCalcMatMulDeriv namespace: classpath: classname: name:cvCalcMatMulDeriv
+register (function) cvCalcMatMulDeriv
+
+--- Incoming ---
+[   u'cvComposeRT',
+    u'void',
+    ['/NW'],
+    [   [u'const CvMat*', u'_rvec1', '', []],
+        [u'const CvMat*', u'_tvec1', '', []],
+        [u'const CvMat*', u'_rvec2', '', []],
+        [u'const CvMat*', u'_tvec2', '', []],
+        [u'CvMat*', u'_rvec3', '', []],
+        [u'CvMat*', u'_tvec3', '', []],
+        [u'CvMat*', u'dr3dr1', u'0', []],
+        [u'CvMat*', u'dr3dt1', u'0', []],
+        [u'CvMat*', u'dr3dr2', u'0', []],
+        [u'CvMat*', u'dr3dt2', u'0', []],
+        [u'CvMat*', u'dt3dr1', u'0', []],
+        [u'CvMat*', u'dt3dt1', u'0', []],
+        [u'CvMat*', u'dt3dr2', u'0', []],
+        [u'CvMat*', u'dt3dt2', u'0', []]],
+    '']
+parseName: cvComposeRT with ['', u'cv::fisheye', 'cv'] -> fullname:cvComposeRT namespace: classpath: classname: name:cvComposeRT
+register (function) cvComposeRT
+
+--- Incoming ---
+[   u'cvProjectPoints2',
+    u'void',
+    ['/NW'],
+    [   [u'const CvMat*', u'object_points', '', []],
+        [u'const CvMat*', u'rotation_vector', '', []],
+        [u'const CvMat*', u'translation_vector', '', []],
+        [u'const CvMat*', u'camera_matrix', '', []],
+        [u'const CvMat*', u'distortion_coeffs', '', []],
+        [u'CvMat*', u'image_points', '', []],
+        [u'CvMat*', u'dpdrot', u'NULL', []],
+        [u'CvMat*', u'dpdt', u'NULL', []],
+        [u'CvMat*', u'dpdf', u'NULL', []],
+        [u'CvMat*', u'dpdc', u'NULL', []],
+        [u'CvMat*', u'dpddist', u'NULL', []],
+        [u'double', u'aspect_ratio', u'0', []]],
+    '']
+parseName: cvProjectPoints2 with ['', u'cv::fisheye', 'cv'] -> fullname:cvProjectPoints2 namespace: classpath: classname: name:cvProjectPoints2
+register (function) cvProjectPoints2
+
+--- Incoming ---
+[   u'cvFindExtrinsicCameraParams2',
+    u'void',
+    ['/NW'],
+    [   [u'const CvMat*', u'object_points', '', []],
+        [u'const CvMat*', u'image_points', '', []],
+        [u'const CvMat*', u'camera_matrix', '', []],
+        [u'const CvMat*', u'distortion_coeffs', '', []],
+        [u'CvMat*', u'rotation_vector', '', []],
+        [u'CvMat*', u'translation_vector', '', []],
+        [u'int', u'use_extrinsic_guess', u'0', []]],
+    '']
+parseName: cvFindExtrinsicCameraParams2 with ['', u'cv::fisheye', 'cv'] -> fullname:cvFindExtrinsicCameraParams2 namespace: classpath: classname: name:cvFindExtrinsicCameraParams2
+register (function) cvFindExtrinsicCameraParams2
+
+--- Incoming ---
+[   u'cvInitIntrinsicParams2D',
+    u'void',
+    ['/NW'],
+    [   [u'const CvMat*', u'object_points', '', []],
+        [u'const CvMat*', u'image_points', '', []],
+        [u'const CvMat*', u'npoints', '', []],
+        [u'CvSize', u'image_size', '', []],
+        [u'CvMat*', u'camera_matrix', '', []],
+        [u'double', u'aspect_ratio', u'1.', []]],
+    '']
+parseName: cvInitIntrinsicParams2D with ['', u'cv::fisheye', 'cv'] -> fullname:cvInitIntrinsicParams2D namespace: classpath: classname: name:cvInitIntrinsicParams2D
+register (function) cvInitIntrinsicParams2D
+
+--- Incoming ---
+[u'const CV_CALIB_CB_ADAPTIVE_THRESH', u'1', [], [], '']
+parseName: const CV_CALIB_CB_ADAPTIVE_THRESH with ['', u'cv::fisheye', 'cv'] -> fullname:CV_CALIB_CB_ADAPTIVE_THRESH namespace: classpath: classname: name:CV_CALIB_CB_ADAPTIVE_THRESH
+
+--- Incoming ---
+[u'const CV_CALIB_CB_NORMALIZE_IMAGE', u'2', [], [], '']
+parseName: const CV_CALIB_CB_NORMALIZE_IMAGE with ['', u'cv::fisheye', 'cv'] -> fullname:CV_CALIB_CB_NORMALIZE_IMAGE namespace: classpath: classname: name:CV_CALIB_CB_NORMALIZE_IMAGE
+
+--- Incoming ---
+[u'const CV_CALIB_CB_FILTER_QUADS', u'4', [], [], '']
+parseName: const CV_CALIB_CB_FILTER_QUADS with ['', u'cv::fisheye', 'cv'] -> fullname:CV_CALIB_CB_FILTER_QUADS namespace: classpath: classname: name:CV_CALIB_CB_FILTER_QUADS
+
+--- Incoming ---
+[u'const CV_CALIB_CB_FAST_CHECK', u'8', [], [], '']
+parseName: const CV_CALIB_CB_FAST_CHECK with ['', u'cv::fisheye', 'cv'] -> fullname:CV_CALIB_CB_FAST_CHECK namespace: classpath: classname: name:CV_CALIB_CB_FAST_CHECK
+
+--- Incoming ---
+[   u'cvCheckChessboard',
+    u'int',
+    ['/NW'],
+    [[u'IplImage*', u'src', '', []], [u'CvSize', u'size', '', []]],
+    '']
+parseName: cvCheckChessboard with ['', u'cv::fisheye', 'cv'] -> fullname:cvCheckChessboard namespace: classpath: classname: name:cvCheckChessboard
+Registering an unknown type: IplImage
+register (function) cvCheckChessboard
+
+--- Incoming ---
+[   u'cvFindChessboardCorners',
+    u'int',
+    ['/NW'],
+    [   [u'const void*', u'image', '', []],
+        [u'CvSize', u'pattern_size', '', []],
+        [u'CvPoint2D32f*', u'corners', '', []],
+        [u'int*', u'corner_count', u'NULL', []],
+        [   u'int',
+            u'flags',
+            u'CV_CALIB_CB_ADAPTIVE_THRESH+CV_CALIB_CB_NORMALIZE_IMAGE',
+            []]],
+    '']
+parseName: cvFindChessboardCorners with ['', u'cv::fisheye', 'cv'] -> fullname:cvFindChessboardCorners namespace: classpath: classname: name:cvFindChessboardCorners
+register (function) cvFindChessboardCorners
+
+--- Incoming ---
+[   u'cvDrawChessboardCorners',
+    u'void',
+    ['/NW'],
+    [   [u'CvArr*', u'image', '', []],
+        [u'CvSize', u'pattern_size', '', []],
+        [u'CvPoint2D32f*', u'corners', '', []],
+        [u'int', u'count', '', []],
+        [u'int', u'pattern_was_found', '', []]],
+    '']
+parseName: cvDrawChessboardCorners with ['', u'cv::fisheye', 'cv'] -> fullname:cvDrawChessboardCorners namespace: classpath: classname: name:cvDrawChessboardCorners
+Registering an unknown type: CvArr
+register (function) cvDrawChessboardCorners
+
+--- Incoming ---
+[u'const CV_CALIB_USE_INTRINSIC_GUESS', u'1', [], [], '']
+parseName: const CV_CALIB_USE_INTRINSIC_GUESS with ['', u'cv::fisheye', 'cv'] -> fullname:CV_CALIB_USE_INTRINSIC_GUESS namespace: classpath: classname: name:CV_CALIB_USE_INTRINSIC_GUESS
+
+--- Incoming ---
+[u'const CV_CALIB_FIX_ASPECT_RATIO', u'2', [], [], '']
+parseName: const CV_CALIB_FIX_ASPECT_RATIO with ['', u'cv::fisheye', 'cv'] -> fullname:CV_CALIB_FIX_ASPECT_RATIO namespace: classpath: classname: name:CV_CALIB_FIX_ASPECT_RATIO
+
+--- Incoming ---
+[u'const CV_CALIB_FIX_PRINCIPAL_POINT', u'4', [], [], '']
+parseName: const CV_CALIB_FIX_PRINCIPAL_POINT with ['', u'cv::fisheye', 'cv'] -> fullname:CV_CALIB_FIX_PRINCIPAL_POINT namespace: classpath: classname: name:CV_CALIB_FIX_PRINCIPAL_POINT
+
+--- Incoming ---
+[u'const CV_CALIB_ZERO_TANGENT_DIST', u'8', [], [], '']
+parseName: const CV_CALIB_ZERO_TANGENT_DIST with ['', u'cv::fisheye', 'cv'] -> fullname:CV_CALIB_ZERO_TANGENT_DIST namespace: classpath: classname: name:CV_CALIB_ZERO_TANGENT_DIST
+
+--- Incoming ---
+[u'const CV_CALIB_FIX_FOCAL_LENGTH', u'16', [], [], '']
+parseName: const CV_CALIB_FIX_FOCAL_LENGTH with ['', u'cv::fisheye', 'cv'] -> fullname:CV_CALIB_FIX_FOCAL_LENGTH namespace: classpath: classname: name:CV_CALIB_FIX_FOCAL_LENGTH
+
+--- Incoming ---
+[u'const CV_CALIB_FIX_K1', u'32', [], [], '']
+parseName: const CV_CALIB_FIX_K1 with ['', u'cv::fisheye', 'cv'] -> fullname:CV_CALIB_FIX_K1 namespace: classpath: classname: name:CV_CALIB_FIX_K1
+
+--- Incoming ---
+[u'const CV_CALIB_FIX_K2', u'64', [], [], '']
+parseName: const CV_CALIB_FIX_K2 with ['', u'cv::fisheye', 'cv'] -> fullname:CV_CALIB_FIX_K2 namespace: classpath: classname: name:CV_CALIB_FIX_K2
+
+--- Incoming ---
+[u'const CV_CALIB_FIX_K3', u'128', [], [], '']
+parseName: const CV_CALIB_FIX_K3 with ['', u'cv::fisheye', 'cv'] -> fullname:CV_CALIB_FIX_K3 namespace: classpath: classname: name:CV_CALIB_FIX_K3
+
+--- Incoming ---
+[u'const CV_CALIB_FIX_K4', u'2048', [], [], '']
+parseName: const CV_CALIB_FIX_K4 with ['', u'cv::fisheye', 'cv'] -> fullname:CV_CALIB_FIX_K4 namespace: classpath: classname: name:CV_CALIB_FIX_K4
+
+--- Incoming ---
+[u'const CV_CALIB_FIX_K5', u'4096', [], [], '']
+parseName: const CV_CALIB_FIX_K5 with ['', u'cv::fisheye', 'cv'] -> fullname:CV_CALIB_FIX_K5 namespace: classpath: classname: name:CV_CALIB_FIX_K5
+
+--- Incoming ---
+[u'const CV_CALIB_FIX_K6', u'8192', [], [], '']
+parseName: const CV_CALIB_FIX_K6 with ['', u'cv::fisheye', 'cv'] -> fullname:CV_CALIB_FIX_K6 namespace: classpath: classname: name:CV_CALIB_FIX_K6
+
+--- Incoming ---
+[u'const CV_CALIB_RATIONAL_MODEL', u'16384', [], [], '']
+parseName: const CV_CALIB_RATIONAL_MODEL with ['', u'cv::fisheye', 'cv'] -> fullname:CV_CALIB_RATIONAL_MODEL namespace: classpath: classname: name:CV_CALIB_RATIONAL_MODEL
+
+--- Incoming ---
+[   u'cvCalibrateCamera2',
+    u'double',
+    ['/NW'],
+    [   [u'const CvMat*', u'object_points', '', []],
+        [u'const CvMat*', u'image_points', '', []],
+        [u'const CvMat*', u'point_counts', '', []],
+        [u'CvSize', u'image_size', '', []],
+        [u'CvMat*', u'camera_matrix', '', []],
+        [u'CvMat*', u'distortion_coeffs', '', []],
+        [u'CvMat*', u'rotation_vectors', u'NULL', []],
+        [u'CvMat*', u'translation_vectors', u'NULL', []],
+        [u'int', u'flags', u'0', []],
+        [   u'CvTermCriteria',
+            u'term_crit',
+            u'cvTermCriteria( CV_TERMCRIT_ITER+CV_TERMCRIT_EPS,30,DBL_EPSILON)',
+            []]],
+    '']
+parseName: cvCalibrateCamera2 with ['', u'cv::fisheye', 'cv'] -> fullname:cvCalibrateCamera2 namespace: classpath: classname: name:cvCalibrateCamera2
+register (function) cvCalibrateCamera2
+
+--- Incoming ---
+[   u'cvCalibrationMatrixValues',
+    u'void',
+    ['/NW'],
+    [   [u'const CvMat *', u'camera_matrix', '', []],
+        [u'CvSize', u'image_size', '', []],
+        [u'double', u'aperture_width', u'0', []],
+        [u'double', u'aperture_height', u'0', []],
+        [u'double *', u'fovx', u'NULL', []],
+        [u'double *', u'fovy', u'NULL', []],
+        [u'double *', u'focal_length', u'NULL', []],
+        [u'CvPoint2D64f *', u'principal_point', u'NULL', []],
+        [u'double *', u'pixel_aspect_ratio', u'NULL', []]],
+    '']
+parseName: cvCalibrationMatrixValues with ['', u'cv::fisheye', 'cv'] -> fullname:cvCalibrationMatrixValues namespace: classpath: classname: name:cvCalibrationMatrixValues
+Registering an unknown type: CvPoint2D64f
+register (function) cvCalibrationMatrixValues
+
+--- Incoming ---
+[u'const CV_CALIB_FIX_INTRINSIC', u'256', [], [], '']
+parseName: const CV_CALIB_FIX_INTRINSIC with ['', u'cv::fisheye', 'cv'] -> fullname:CV_CALIB_FIX_INTRINSIC namespace: classpath: classname: name:CV_CALIB_FIX_INTRINSIC
+
+--- Incoming ---
+[u'const CV_CALIB_SAME_FOCAL_LENGTH', u'512', [], [], '']
+parseName: const CV_CALIB_SAME_FOCAL_LENGTH with ['', u'cv::fisheye', 'cv'] -> fullname:CV_CALIB_SAME_FOCAL_LENGTH namespace: classpath: classname: name:CV_CALIB_SAME_FOCAL_LENGTH
+
+--- Incoming ---
+[   u'cvStereoCalibrate',
+    u'double',
+    ['/NW'],
+    [   [u'const CvMat*', u'object_points', '', []],
+        [u'const CvMat*', u'image_points1', '', []],
+        [u'const CvMat*', u'image_points2', '', []],
+        [u'const CvMat*', u'npoints', '', []],
+        [u'CvMat*', u'camera_matrix1', '', []],
+        [u'CvMat*', u'dist_coeffs1', '', []],
+        [u'CvMat*', u'camera_matrix2', '', []],
+        [u'CvMat*', u'dist_coeffs2', '', []],
+        [u'CvSize', u'image_size', '', []],
+        [u'CvMat*', u'R', '', []],
+        [u'CvMat*', u'T', '', []],
+        [u'CvMat*', u'E', u'0', []],
+        [u'CvMat*', u'F', u'0', []],
+        [   u'CvTermCriteria',
+            u'term_crit',
+            u'cvTermCriteria( CV_TERMCRIT_ITER+CV_TERMCRIT_EPS,30,1e-6)',
+            []],
+        [u'int', u'flags', u'CV_CALIB_FIX_INTRINSIC', []]],
+    '']
+parseName: cvStereoCalibrate with ['', u'cv::fisheye', 'cv'] -> fullname:cvStereoCalibrate namespace: classpath: classname: name:cvStereoCalibrate
+register (function) cvStereoCalibrate
+
+--- Incoming ---
+[u'const CV_CALIB_ZERO_DISPARITY', u'1024', [], [], '']
+parseName: const CV_CALIB_ZERO_DISPARITY with ['', u'cv::fisheye', 'cv'] -> fullname:CV_CALIB_ZERO_DISPARITY namespace: classpath: classname: name:CV_CALIB_ZERO_DISPARITY
+
+--- Incoming ---
+[   u'cvStereoRectify',
+    u'void',
+    ['/NW'],
+    [   [u'const CvMat*', u'camera_matrix1', '', []],
+        [u'const CvMat*', u'camera_matrix2', '', []],
+        [u'const CvMat*', u'dist_coeffs1', '', []],
+        [u'const CvMat*', u'dist_coeffs2', '', []],
+        [u'CvSize', u'image_size', '', []],
+        [u'const CvMat*', u'R', '', []],
+        [u'const CvMat*', u'T', '', []],
+        [u'CvMat*', u'R1', '', []],
+        [u'CvMat*', u'R2', '', []],
+        [u'CvMat*', u'P1', '', []],
+        [u'CvMat*', u'P2', '', []],
+        [u'CvMat*', u'Q', u'0', []],
+        [u'int', u'flags', u'CV_CALIB_ZERO_DISPARITY', []],
+        [u'double', u'alpha', u'-1', []],
+        [u'CvSize', u'new_image_size', u'cvSize(0,0)', []],
+        [u'CvRect*', u'valid_pix_ROI1', u'0', []],
+        [u'CvRect*', u'valid_pix_ROI2', u'0', []]],
+    '']
+parseName: cvStereoRectify with ['', u'cv::fisheye', 'cv'] -> fullname:cvStereoRectify namespace: classpath: classname: name:cvStereoRectify
+register (function) cvStereoRectify
+
+--- Incoming ---
+[   u'cvStereoRectifyUncalibrated',
+    u'int',
+    ['/NW'],
+    [   [u'const CvMat*', u'points1', '', []],
+        [u'const CvMat*', u'points2', '', []],
+        [u'const CvMat*', u'F', '', []],
+        [u'CvSize', u'img_size', '', []],
+        [u'CvMat*', u'H1', '', []],
+        [u'CvMat*', u'H2', '', []],
+        [u'double', u'threshold', u'5', []]],
+    '']
+parseName: cvStereoRectifyUncalibrated with ['', u'cv::fisheye', 'cv'] -> fullname:cvStereoRectifyUncalibrated namespace: classpath: classname: name:cvStereoRectifyUncalibrated
+register (function) cvStereoRectifyUncalibrated
+
+--- Incoming ---
+[u'const CV_STEREO_BM_NORMALIZED_RESPONSE', u'0', [], [], '']
+parseName: const CV_STEREO_BM_NORMALIZED_RESPONSE with ['', u'cv::fisheye', 'cv'] -> fullname:CV_STEREO_BM_NORMALIZED_RESPONSE namespace: classpath: classname: name:CV_STEREO_BM_NORMALIZED_RESPONSE
+
+--- Incoming ---
+[u'const CV_STEREO_BM_XSOBEL', u'1', [], [], '']
+parseName: const CV_STEREO_BM_XSOBEL with ['', u'cv::fisheye', 'cv'] -> fullname:CV_STEREO_BM_XSOBEL namespace: classpath: classname: name:CV_STEREO_BM_XSOBEL
+
+--- Incoming ---
+[u'struct CvStereoBMState', '', [], [], '']
+parseName: struct CvStereoBMState with ['', u'cv::fisheye', 'cv'] -> fullname:CvStereoBMState namespace: classpath: classname: name:CvStereoBMState
+register class CvStereoBMState ([u'struct CvStereoBMState', '', [], [], '']) [ignored]
+
+--- Incoming ---
+[u'const CV_STEREO_BM_BASIC', u'0', [], [], '']
+parseName: const CV_STEREO_BM_BASIC with ['', u'cv::fisheye', 'cv'] -> fullname:CV_STEREO_BM_BASIC namespace: classpath: classname: name:CV_STEREO_BM_BASIC
+
+--- Incoming ---
+[u'const CV_STEREO_BM_FISH_EYE', u'1', [], [], '']
+parseName: const CV_STEREO_BM_FISH_EYE with ['', u'cv::fisheye', 'cv'] -> fullname:CV_STEREO_BM_FISH_EYE namespace: classpath: classname: name:CV_STEREO_BM_FISH_EYE
+
+--- Incoming ---
+[u'const CV_STEREO_BM_NARROW', u'2', [], [], '']
+parseName: const CV_STEREO_BM_NARROW with ['', u'cv::fisheye', 'cv'] -> fullname:CV_STEREO_BM_NARROW namespace: classpath: classname: name:CV_STEREO_BM_NARROW
+
+--- Incoming ---
+[   u'cvCreateStereoBMState',
+    u'CvStereoBMState*',
+    ['/NW'],
+    [   [u'int', u'preset', u'CV_STEREO_BM_BASIC', []],
+        [u'int', u'numberOfDisparities', u'0', []]],
+    '']
+parseName: cvCreateStereoBMState with ['', u'cv::fisheye', 'cv'] -> fullname:cvCreateStereoBMState namespace: classpath: classname: name:cvCreateStereoBMState
+register (function) cvCreateStereoBMState
+
+--- Incoming ---
+[   u'cvReleaseStereoBMState',
+    u'void',
+    ['/NW'],
+    [[u'CvStereoBMState**', u'state', '', []]],
+    '']
+parseName: cvReleaseStereoBMState with ['', u'cv::fisheye', 'cv'] -> fullname:cvReleaseStereoBMState namespace: classpath: classname: name:cvReleaseStereoBMState
+register (function) cvReleaseStereoBMState
+
+--- Incoming ---
+[   u'cvFindStereoCorrespondenceBM',
+    u'void',
+    ['/NW'],
+    [   [u'const CvArr*', u'left', '', []],
+        [u'const CvArr*', u'right', '', []],
+        [u'CvArr*', u'disparity', '', []],
+        [u'CvStereoBMState*', u'state', '', []]],
+    '']
+parseName: cvFindStereoCorrespondenceBM with ['', u'cv::fisheye', 'cv'] -> fullname:cvFindStereoCorrespondenceBM namespace: classpath: classname: name:cvFindStereoCorrespondenceBM
+Registering an unknown type: CvArr
+register (function) cvFindStereoCorrespondenceBM
+
+--- Incoming ---
+[   u'cvGetValidDisparityROI',
+    u'CvRect',
+    ['/NW'],
+    [   [u'CvRect', u'roi1', '', []],
+        [u'CvRect', u'roi2', '', []],
+        [u'int', u'minDisparity', '', []],
+        [u'int', u'numberOfDisparities', '', []],
+        [u'int', u'SADWindowSize', '', []]],
+    '']
+parseName: cvGetValidDisparityROI with ['', u'cv::fisheye', 'cv'] -> fullname:cvGetValidDisparityROI namespace: classpath: classname: name:cvGetValidDisparityROI
+register (function) cvGetValidDisparityROI
+
+--- Incoming ---
+[   u'cvValidateDisparity',
+    u'void',
+    ['/NW'],
+    [   [u'CvArr*', u'disparity', '', []],
+        [u'const CvArr*', u'cost', '', []],
+        [u'int', u'minDisparity', '', []],
+        [u'int', u'numberOfDisparities', '', []],
+        [u'int', u'disp12MaxDiff', u'1', []]],
+    '']
+parseName: cvValidateDisparity with ['', u'cv::fisheye', 'cv'] -> fullname:cvValidateDisparity namespace: classpath: classname: name:cvValidateDisparity
+register (function) cvValidateDisparity
+
+--- Incoming ---
+[   u'cvReprojectImageTo3D',
+    u'void',
+    ['/NW'],
+    [   [u'const CvArr*', u'disparityImage', '', []],
+        [u'CvArr*', u'_3dImage', '', []],
+        [u'const CvMat*', u'Q', '', []],
+        [u'int', u'handleMissingValues', u'0', []]],
+    '']
+parseName: cvReprojectImageTo3D with ['', u'cv::fisheye', 'cv'] -> fullname:cvReprojectImageTo3D namespace: classpath: classname: name:cvReprojectImageTo3D
+register (function) cvReprojectImageTo3D
+
+--- Incoming ---
+[u'class CvLevMarq', '', [], [], '']
+parseName: class CvLevMarq with ['', u'cv::fisheye', 'cv'] -> fullname:CvLevMarq namespace: classpath: classname: name:CvLevMarq
+register class CvLevMarq ([u'class CvLevMarq', '', [], [], '']) [ignored]
+
+--- Incoming ---
+[u'CvLevMarq.CvLevMarq', u'', ['/NW'], [], '']
+parseName: CvLevMarq.CvLevMarq with ['', u'cv::fisheye', 'cv'] -> fullname:CvLevMarq::CvLevMarq namespace: classpath:CvLevMarq classname:CvLevMarq name:CvLevMarq
+register (constructor) new in CvLevMarq
+
+--- Incoming ---
+[   u'CvLevMarq.CvLevMarq',
+    u'',
+    ['/NW'],
+    [   [u'int', u'nparams', '', []],
+        [u'int', u'nerrs', '', []],
+        [   u'CvTermCriteria',
+            u'criteria',
+            u'cvTermCriteria(CV_TERMCRIT_EPS+CV_TERMCRIT_ITER,30,DBL_EPSILON)',
+            []],
+        [u'bool', u'completeSymmFlag', u'false', []]],
+    '']
+parseName: CvLevMarq.CvLevMarq with ['', u'cv::fisheye', 'cv'] -> fullname:CvLevMarq::CvLevMarq namespace: classpath:CvLevMarq classname:CvLevMarq name:CvLevMarq
+register (constructor) new in CvLevMarq
+
+--- Incoming ---
+[u'CvLevMarq.~CvLevMarq', u'', ['/NW'], [], '']
+parseName: CvLevMarq.~CvLevMarq with ['', u'cv::fisheye', 'cv'] -> fullname:CvLevMarq::~CvLevMarq namespace: classpath:CvLevMarq classname:CvLevMarq name:~CvLevMarq
+ignore destructor (method) ~CvLevMarq in CvLevMarq
+
+--- Incoming ---
+[   u'CvLevMarq.init',
+    u'void',
+    ['/NW'],
+    [   [u'int', u'nparams', '', []],
+        [u'int', u'nerrs', '', []],
+        [   u'CvTermCriteria',
+            u'criteria',
+            u'cvTermCriteria(CV_TERMCRIT_EPS+CV_TERMCRIT_ITER,30,DBL_EPSILON)',
+            []],
+        [u'bool', u'completeSymmFlag', u'false', []]],
+    '']
+parseName: CvLevMarq.init with ['', u'cv::fisheye', 'cv'] -> fullname:CvLevMarq::init namespace: classpath:CvLevMarq classname:CvLevMarq name:init
+register (method) init in CvLevMarq
+
+--- Incoming ---
+[   u'CvLevMarq.update',
+    u'bool',
+    ['/NW'],
+    [   [u'const CvMat*&', u'param', '', []],
+        [u'CvMat*&', u'J', '', []],
+        [u'CvMat*&', u'err', '', []]],
+    '']
+parseName: CvLevMarq.update with ['', u'cv::fisheye', 'cv'] -> fullname:CvLevMarq::update namespace: classpath:CvLevMarq classname:CvLevMarq name:update
+register (method) update in CvLevMarq
+
+--- Incoming ---
+[   u'CvLevMarq.updateAlt',
+    u'bool',
+    ['/NW'],
+    [   [u'const CvMat*&', u'param', '', []],
+        [u'CvMat*&', u'JtJ', '', []],
+        [u'CvMat*&', u'JtErr', '', []],
+        [u'double*&', u'errNorm', '', []]],
+    '']
+parseName: CvLevMarq.updateAlt with ['', u'cv::fisheye', 'cv'] -> fullname:CvLevMarq::updateAlt namespace: classpath:CvLevMarq classname:CvLevMarq name:updateAlt
+register (method) updateAlt in CvLevMarq
+
+--- Incoming ---
+[u'CvLevMarq.clear', u'void', ['/NW'], [], '']
+parseName: CvLevMarq.clear with ['', u'cv::fisheye', 'cv'] -> fullname:CvLevMarq::clear namespace: classpath:CvLevMarq classname:CvLevMarq name:clear
+register (method) clear in CvLevMarq
+
+--- Incoming ---
+[u'CvLevMarq.step', u'void', ['/NW'], [], '']
+parseName: CvLevMarq.step with ['', u'cv::fisheye', 'cv'] -> fullname:CvLevMarq::step namespace: classpath:CvLevMarq classname:CvLevMarq name:step
+register (method) step in CvLevMarq
+
+--- Incoming ---
+[u'const CvLevMarq.DONE', u'0', [], []]
+parseName: const CvLevMarq.DONE with ['', u'cv::fisheye', 'cv'] -> fullname:CvLevMarq::DONE namespace: classpath:CvLevMarq classname:CvLevMarq name:DONE
+
+--- Incoming ---
+[u'const CvLevMarq.STARTED', u'1', [], []]
+parseName: const CvLevMarq.STARTED with ['', u'cv::fisheye', 'cv'] -> fullname:CvLevMarq::STARTED namespace: classpath:CvLevMarq classname:CvLevMarq name:STARTED
+
+--- Incoming ---
+[u'const CvLevMarq.CALC_J', u'2', [], []]
+parseName: const CvLevMarq.CALC_J with ['', u'cv::fisheye', 'cv'] -> fullname:CvLevMarq::CALC_J namespace: classpath:CvLevMarq classname:CvLevMarq name:CALC_J
+
+--- Incoming ---
+[u'const CvLevMarq.CHECK_ERR', u'3', [], []]
+parseName: const CvLevMarq.CHECK_ERR with ['', u'cv::fisheye', 'cv'] -> fullname:CvLevMarq::CHECK_ERR namespace: classpath:CvLevMarq classname:CvLevMarq name:CHECK_ERR
+
+--- Incoming ---
+[   u'cv.Rodrigues',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'src', '', []],
+        [u'OutputArray', u'dst', '', []],
+        [u'OutputArray', u'jacobian', u'noArray()', []]],
+    u'converts rotation vector to rotation matrix or vice versa using Rodrigues transformation\n']
+parseName: cv.Rodrigues with ['', u'cv::fisheye', 'cv'] -> fullname:cv::Rodrigues namespace:cv classpath: classname: name:Rodrigues
+register (function) Rodrigues
+
+--- Incoming ---
+[u'const cv.LMEDS', u'CV_LMEDS', [], []]
+parseName: const cv.LMEDS with ['', u'cv::fisheye', 'cv'] -> fullname:cv::LMEDS namespace:cv classpath: classname: name:LMEDS
+
+--- Incoming ---
+[u'const cv.RANSAC', u'CV_RANSAC', [], []]
+parseName: const cv.RANSAC with ['', u'cv::fisheye', 'cv'] -> fullname:cv::RANSAC namespace:cv classpath: classname: name:RANSAC
+
+--- Incoming ---
+[   u'cv.findHomography',
+    u'Mat',
+    ['/NW'],
+    [   [u'InputArray', u'srcPoints', '', []],
+        [u'InputArray', u'dstPoints', '', []],
+        [u'int', u'method', u'0', []],
+        [u'double', u'ransacReprojThreshold', u'3', []],
+        [u'OutputArray', u'mask', u'noArray()', []]],
+    u'computes the best-fit perspective transformation mapping srcPoints to dstPoints.\n']
+parseName: cv.findHomography with ['', u'cv::fisheye', 'cv'] -> fullname:cv::findHomography namespace:cv classpath: classname: name:findHomography
+register (function) findHomography
+
+--- Incoming ---
+[   u'cv.findHomography',
+    u'Mat',
+    ['/NW'],
+    [   [u'InputArray', u'srcPoints', '', []],
+        [u'InputArray', u'dstPoints', '', []],
+        [u'OutputArray', u'mask', '', []],
+        [u'int', u'method', u'0', []],
+        [u'double', u'ransacReprojThreshold', u'3', []]],
+    u'variant of findHomography for backward compatibility\n']
+parseName: cv.findHomography with ['', u'cv::fisheye', 'cv'] -> fullname:cv::findHomography namespace:cv classpath: classname: name:findHomography
+register (function) findHomography
+
+--- Incoming ---
+[   u'cv.RQDecomp3x3',
+    u'Vec3d',
+    ['/NW'],
+    [   [u'InputArray', u'src', '', []],
+        [u'OutputArray', u'mtxR', '', []],
+        [u'OutputArray', u'mtxQ', '', []],
+        [u'OutputArray', u'Qx', u'noArray()', []],
+        [u'OutputArray', u'Qy', u'noArray()', []],
+        [u'OutputArray', u'Qz', u'noArray()', []]],
+    u'Computes RQ decomposition of 3x3 matrix\n']
+parseName: cv.RQDecomp3x3 with ['', u'cv::fisheye', 'cv'] -> fullname:cv::RQDecomp3x3 namespace:cv classpath: classname: name:RQDecomp3x3
+register (function) RQDecomp3x3
+
+--- Incoming ---
+[   u'cv.decomposeProjectionMatrix',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'projMatrix', '', []],
+        [u'OutputArray', u'cameraMatrix', '', []],
+        [u'OutputArray', u'rotMatrix', '', []],
+        [u'OutputArray', u'transVect', '', []],
+        [u'OutputArray', u'rotMatrixX', u'noArray()', []],
+        [u'OutputArray', u'rotMatrixY', u'noArray()', []],
+        [u'OutputArray', u'rotMatrixZ', u'noArray()', []],
+        [u'OutputArray', u'eulerAngles', u'noArray()', []]],
+    u'Decomposes the projection matrix into camera matrix and the rotation martix and the translation vector\n']
+parseName: cv.decomposeProjectionMatrix with ['', u'cv::fisheye', 'cv'] -> fullname:cv::decomposeProjectionMatrix namespace:cv classpath: classname: name:decomposeProjectionMatrix
+register (function) decomposeProjectionMatrix
+
+--- Incoming ---
+[   u'cv.matMulDeriv',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'A', '', []],
+        [u'InputArray', u'B', '', []],
+        [u'OutputArray', u'dABdA', '', []],
+        [u'OutputArray', u'dABdB', '', []]],
+    u'computes derivatives of the matrix product w.r.t each of the multiplied matrix coefficients\n']
+parseName: cv.matMulDeriv with ['', u'cv::fisheye', 'cv'] -> fullname:cv::matMulDeriv namespace:cv classpath: classname: name:matMulDeriv
+register (function) matMulDeriv
+
+--- Incoming ---
+[   u'cv.composeRT',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'rvec1', '', []],
+        [u'InputArray', u'tvec1', '', []],
+        [u'InputArray', u'rvec2', '', []],
+        [u'InputArray', u'tvec2', '', []],
+        [u'OutputArray', u'rvec3', '', []],
+        [u'OutputArray', u'tvec3', '', []],
+        [u'OutputArray', u'dr3dr1', u'noArray()', []],
+        [u'OutputArray', u'dr3dt1', u'noArray()', []],
+        [u'OutputArray', u'dr3dr2', u'noArray()', []],
+        [u'OutputArray', u'dr3dt2', u'noArray()', []],
+        [u'OutputArray', u'dt3dr1', u'noArray()', []],
+        [u'OutputArray', u'dt3dt1', u'noArray()', []],
+        [u'OutputArray', u'dt3dr2', u'noArray()', []],
+        [u'OutputArray', u'dt3dt2', u'noArray()', []]],
+    u'composes 2 [R|t] transformations together. Also computes the derivatives of the result w.r.t the arguments\n']
+parseName: cv.composeRT with ['', u'cv::fisheye', 'cv'] -> fullname:cv::composeRT namespace:cv classpath: classname: name:composeRT
+register (function) composeRT
+
+--- Incoming ---
+[   u'cv.projectPoints',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'objectPoints', '', []],
+        [u'InputArray', u'rvec', '', []],
+        [u'InputArray', u'tvec', '', []],
+        [u'InputArray', u'cameraMatrix', '', []],
+        [u'InputArray', u'distCoeffs', '', []],
+        [u'OutputArray', u'imagePoints', '', []],
+        [u'OutputArray', u'jacobian', u'noArray()', []],
+        [u'double', u'aspectRatio', u'0', []]],
+    u'projects points from the model coordinate space to the image coordinates. Also computes derivatives of the image coordinates w.r.t the intrinsic and extrinsic camera parameters\n']
+parseName: cv.projectPoints with ['', u'cv::fisheye', 'cv'] -> fullname:cv::projectPoints namespace:cv classpath: classname: name:projectPoints
+register (function) projectPoints
+
+--- Incoming ---
+[u'const cv.ITERATIVE', u'CV_ITERATIVE', [], []]
+parseName: const cv.ITERATIVE with ['', u'cv::fisheye', 'cv'] -> fullname:cv::ITERATIVE namespace:cv classpath: classname: name:ITERATIVE
+
+--- Incoming ---
+[u'const cv.EPNP', u'CV_EPNP', [], []]
+parseName: const cv.EPNP with ['', u'cv::fisheye', 'cv'] -> fullname:cv::EPNP namespace:cv classpath: classname: name:EPNP
+
+--- Incoming ---
+[u'const cv.P3P', u'CV_P3P', [], []]
+parseName: const cv.P3P with ['', u'cv::fisheye', 'cv'] -> fullname:cv::P3P namespace:cv classpath: classname: name:P3P
+
+--- Incoming ---
+[   u'cv.solvePnP',
+    u'bool',
+    ['/NW'],
+    [   [u'InputArray', u'objectPoints', '', []],
+        [u'InputArray', u'imagePoints', '', []],
+        [u'InputArray', u'cameraMatrix', '', []],
+        [u'InputArray', u'distCoeffs', '', []],
+        [u'OutputArray', u'rvec', '', []],
+        [u'OutputArray', u'tvec', '', []],
+        [u'bool', u'useExtrinsicGuess', u'false', []],
+        [u'int', u'flags', u'ITERATIVE', []]],
+    '']
+parseName: cv.solvePnP with ['', u'cv::fisheye', 'cv'] -> fullname:cv::solvePnP namespace:cv classpath: classname: name:solvePnP
+register (function) solvePnP
+
+--- Incoming ---
+[   u'cv.solvePnPRansac',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'objectPoints', '', []],
+        [u'InputArray', u'imagePoints', '', []],
+        [u'InputArray', u'cameraMatrix', '', []],
+        [u'InputArray', u'distCoeffs', '', []],
+        [u'OutputArray', u'rvec', '', []],
+        [u'OutputArray', u'tvec', '', []],
+        [u'bool', u'useExtrinsicGuess', u'false', []],
+        [u'int', u'iterationsCount', u'100', []],
+        [u'float', u'reprojectionError', u'8.0', []],
+        [u'int', u'minInliersCount', u'100', []],
+        [u'OutputArray', u'inliers', u'noArray()', []],
+        [u'int', u'flags', u'ITERATIVE', []]],
+    u'computes the camera pose from a few 3D points and the corresponding projections. The outliers are possible.\n']
+parseName: cv.solvePnPRansac with ['', u'cv::fisheye', 'cv'] -> fullname:cv::solvePnPRansac namespace:cv classpath: classname: name:solvePnPRansac
+register (function) solvePnPRansac
+
+--- Incoming ---
+[   u'cv.initCameraMatrix2D',
+    u'Mat',
+    ['/NW'],
+    [   [u'InputArrayOfArrays', u'objectPoints', '', []],
+        [u'InputArrayOfArrays', u'imagePoints', '', []],
+        [u'Size', u'imageSize', '', []],
+        [u'double', u'aspectRatio', u'1.', []]],
+    u'initializes camera matrix from a few 3D points and the corresponding projections.\n']
+parseName: cv.initCameraMatrix2D with ['', u'cv::fisheye', 'cv'] -> fullname:cv::initCameraMatrix2D namespace:cv classpath: classname: name:initCameraMatrix2D
+Registering an unknown type: InputArrayOfArrays
+register (function) initCameraMatrix2D
+
+--- Incoming ---
+[u'const cv.CALIB_CB_ADAPTIVE_THRESH', u'1', [], []]
+parseName: const cv.CALIB_CB_ADAPTIVE_THRESH with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_CB_ADAPTIVE_THRESH namespace:cv classpath: classname: name:CALIB_CB_ADAPTIVE_THRESH
+
+--- Incoming ---
+[u'const cv.CALIB_CB_NORMALIZE_IMAGE', u'2', [], []]
+parseName: const cv.CALIB_CB_NORMALIZE_IMAGE with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_CB_NORMALIZE_IMAGE namespace:cv classpath: classname: name:CALIB_CB_NORMALIZE_IMAGE
+
+--- Incoming ---
+[u'const cv.CALIB_CB_FILTER_QUADS', u'4', [], []]
+parseName: const cv.CALIB_CB_FILTER_QUADS with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_CB_FILTER_QUADS namespace:cv classpath: classname: name:CALIB_CB_FILTER_QUADS
+
+--- Incoming ---
+[u'const cv.CALIB_CB_FAST_CHECK', u'8', [], []]
+parseName: const cv.CALIB_CB_FAST_CHECK with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_CB_FAST_CHECK namespace:cv classpath: classname: name:CALIB_CB_FAST_CHECK
+
+--- Incoming ---
+[   u'cv.findChessboardCorners',
+    u'bool',
+    ['/NW'],
+    [   [u'InputArray', u'image', '', []],
+        [u'Size', u'patternSize', '', []],
+        [u'OutputArray', u'corners', '', []],
+        [   u'int',
+            u'flags',
+            u'CALIB_CB_ADAPTIVE_THRESH+CALIB_CB_NORMALIZE_IMAGE',
+            []]],
+    u'finds checkerboard pattern of the specified size in the image\n']
+parseName: cv.findChessboardCorners with ['', u'cv::fisheye', 'cv'] -> fullname:cv::findChessboardCorners namespace:cv classpath: classname: name:findChessboardCorners
+register (function) findChessboardCorners
+
+--- Incoming ---
+[   u'cv.find4QuadCornerSubpix',
+    u'bool',
+    ['/NW'],
+    [   [u'InputArray', u'img', '', []],
+        [u'InputOutputArray', u'corners', '', []],
+        [u'Size', u'region_size', '', []]],
+    u'finds subpixel-accurate positions of the chessboard corners\n']
+parseName: cv.find4QuadCornerSubpix with ['', u'cv::fisheye', 'cv'] -> fullname:cv::find4QuadCornerSubpix namespace:cv classpath: classname: name:find4QuadCornerSubpix
+Registering an unknown type: InputOutputArray
+register (function) find4QuadCornerSubpix
+
+--- Incoming ---
+[   u'cv.drawChessboardCorners',
+    u'void',
+    ['/NW'],
+    [   [u'InputOutputArray', u'image', '', []],
+        [u'Size', u'patternSize', '', []],
+        [u'InputArray', u'corners', '', []],
+        [u'bool', u'patternWasFound', '', []]],
+    u'draws the checkerboard pattern (found or partly found) in the image\n']
+parseName: cv.drawChessboardCorners with ['', u'cv::fisheye', 'cv'] -> fullname:cv::drawChessboardCorners namespace:cv classpath: classname: name:drawChessboardCorners
+register (function) drawChessboardCorners
+
+--- Incoming ---
+[u'const cv.CALIB_CB_SYMMETRIC_GRID', u'1', [], []]
+parseName: const cv.CALIB_CB_SYMMETRIC_GRID with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_CB_SYMMETRIC_GRID namespace:cv classpath: classname: name:CALIB_CB_SYMMETRIC_GRID
+
+--- Incoming ---
+[u'const cv.CALIB_CB_ASYMMETRIC_GRID', u'2', [], []]
+parseName: const cv.CALIB_CB_ASYMMETRIC_GRID with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_CB_ASYMMETRIC_GRID namespace:cv classpath: classname: name:CALIB_CB_ASYMMETRIC_GRID
+
+--- Incoming ---
+[u'const cv.CALIB_CB_CLUSTERING', u'4', [], []]
+parseName: const cv.CALIB_CB_CLUSTERING with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_CB_CLUSTERING namespace:cv classpath: classname: name:CALIB_CB_CLUSTERING
+
+--- Incoming ---
+[   u'cv.findCirclesGrid',
+    u'bool',
+    ['/NW'],
+    [   [u'InputArray', u'image', '', []],
+        [u'Size', u'patternSize', '', []],
+        [u'OutputArray', u'centers', '', []],
+        [u'int', u'flags', u'CALIB_CB_SYMMETRIC_GRID', []],
+        [   u'const Ptr<FeatureDetector> &',
+            u'blobDetector',
+            u'new SimpleBlobDetector()',
+            []]],
+    u"finds circles' grid pattern of the specified size in the image\n"]
+parseName: cv.findCirclesGrid with ['', u'cv::fisheye', 'cv'] -> fullname:cv::findCirclesGrid namespace:cv classpath: classname: name:findCirclesGrid
+Registering an unknown type: FeatureDetector>
+register (function) findCirclesGrid
+
+--- Incoming ---
+[   u'cv.findCirclesGridDefault',
+    u'bool',
+    ['/NW'],
+    [   [u'InputArray', u'image', '', []],
+        [u'Size', u'patternSize', '', []],
+        [u'OutputArray', u'centers', '', []],
+        [u'int', u'flags', u'CALIB_CB_SYMMETRIC_GRID', []]],
+    u'the deprecated function. Use findCirclesGrid() instead of it.\n']
+parseName: cv.findCirclesGridDefault with ['', u'cv::fisheye', 'cv'] -> fullname:cv::findCirclesGridDefault namespace:cv classpath: classname: name:findCirclesGridDefault
+register (function) findCirclesGridDefault
+
+--- Incoming ---
+[   u'const cv.CALIB_USE_INTRINSIC_GUESS',
+    u'CV_CALIB_USE_INTRINSIC_GUESS',
+    [],
+    []]
+parseName: const cv.CALIB_USE_INTRINSIC_GUESS with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_USE_INTRINSIC_GUESS namespace:cv classpath: classname: name:CALIB_USE_INTRINSIC_GUESS
+
+--- Incoming ---
+[u'const cv.CALIB_FIX_ASPECT_RATIO', u'CV_CALIB_FIX_ASPECT_RATIO', [], []]
+parseName: const cv.CALIB_FIX_ASPECT_RATIO with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_FIX_ASPECT_RATIO namespace:cv classpath: classname: name:CALIB_FIX_ASPECT_RATIO
+
+--- Incoming ---
+[   u'const cv.CALIB_FIX_PRINCIPAL_POINT',
+    u'CV_CALIB_FIX_PRINCIPAL_POINT',
+    [],
+    []]
+parseName: const cv.CALIB_FIX_PRINCIPAL_POINT with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_FIX_PRINCIPAL_POINT namespace:cv classpath: classname: name:CALIB_FIX_PRINCIPAL_POINT
+
+--- Incoming ---
+[u'const cv.CALIB_ZERO_TANGENT_DIST', u'CV_CALIB_ZERO_TANGENT_DIST', [], []]
+parseName: const cv.CALIB_ZERO_TANGENT_DIST with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_ZERO_TANGENT_DIST namespace:cv classpath: classname: name:CALIB_ZERO_TANGENT_DIST
+
+--- Incoming ---
+[u'const cv.CALIB_FIX_FOCAL_LENGTH', u'CV_CALIB_FIX_FOCAL_LENGTH', [], []]
+parseName: const cv.CALIB_FIX_FOCAL_LENGTH with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_FIX_FOCAL_LENGTH namespace:cv classpath: classname: name:CALIB_FIX_FOCAL_LENGTH
+
+--- Incoming ---
+[u'const cv.CALIB_FIX_K1', u'CV_CALIB_FIX_K1', [], []]
+parseName: const cv.CALIB_FIX_K1 with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_FIX_K1 namespace:cv classpath: classname: name:CALIB_FIX_K1
+
+--- Incoming ---
+[u'const cv.CALIB_FIX_K2', u'CV_CALIB_FIX_K2', [], []]
+parseName: const cv.CALIB_FIX_K2 with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_FIX_K2 namespace:cv classpath: classname: name:CALIB_FIX_K2
+
+--- Incoming ---
+[u'const cv.CALIB_FIX_K3', u'CV_CALIB_FIX_K3', [], []]
+parseName: const cv.CALIB_FIX_K3 with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_FIX_K3 namespace:cv classpath: classname: name:CALIB_FIX_K3
+
+--- Incoming ---
+[u'const cv.CALIB_FIX_K4', u'CV_CALIB_FIX_K4', [], []]
+parseName: const cv.CALIB_FIX_K4 with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_FIX_K4 namespace:cv classpath: classname: name:CALIB_FIX_K4
+
+--- Incoming ---
+[u'const cv.CALIB_FIX_K5', u'CV_CALIB_FIX_K5', [], []]
+parseName: const cv.CALIB_FIX_K5 with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_FIX_K5 namespace:cv classpath: classname: name:CALIB_FIX_K5
+
+--- Incoming ---
+[u'const cv.CALIB_FIX_K6', u'CV_CALIB_FIX_K6', [], []]
+parseName: const cv.CALIB_FIX_K6 with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_FIX_K6 namespace:cv classpath: classname: name:CALIB_FIX_K6
+
+--- Incoming ---
+[u'const cv.CALIB_RATIONAL_MODEL', u'CV_CALIB_RATIONAL_MODEL', [], []]
+parseName: const cv.CALIB_RATIONAL_MODEL with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_RATIONAL_MODEL namespace:cv classpath: classname: name:CALIB_RATIONAL_MODEL
+
+--- Incoming ---
+[u'const cv.CALIB_FIX_INTRINSIC', u'CV_CALIB_FIX_INTRINSIC', [], []]
+parseName: const cv.CALIB_FIX_INTRINSIC with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_FIX_INTRINSIC namespace:cv classpath: classname: name:CALIB_FIX_INTRINSIC
+
+--- Incoming ---
+[u'const cv.CALIB_SAME_FOCAL_LENGTH', u'CV_CALIB_SAME_FOCAL_LENGTH', [], []]
+parseName: const cv.CALIB_SAME_FOCAL_LENGTH with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_SAME_FOCAL_LENGTH namespace:cv classpath: classname: name:CALIB_SAME_FOCAL_LENGTH
+
+--- Incoming ---
+[u'const cv.CALIB_ZERO_DISPARITY', u'CV_CALIB_ZERO_DISPARITY', [], []]
+parseName: const cv.CALIB_ZERO_DISPARITY with ['', u'cv::fisheye', 'cv'] -> fullname:cv::CALIB_ZERO_DISPARITY namespace:cv classpath: classname: name:CALIB_ZERO_DISPARITY
+
+--- Incoming ---
+[   u'cv.calibrateCamera',
+    u'double',
+    ['/NW'],
+    [   [u'InputArrayOfArrays', u'objectPoints', '', []],
+        [u'InputArrayOfArrays', u'imagePoints', '', []],
+        [u'Size', u'imageSize', '', []],
+        [u'InputOutputArray', u'cameraMatrix', '', []],
+        [u'InputOutputArray', u'distCoeffs', '', []],
+        [u'OutputArrayOfArrays', u'rvecs', '', []],
+        [u'OutputArrayOfArrays', u'tvecs', '', []],
+        [u'int', u'flags', u'0', []],
+        [   u'TermCriteria',
+            u'criteria',
+            u'TermCriteria( TermCriteria::COUNT+TermCriteria::EPS, 30, DBL_EPSILON)',
+            []]],
+    u'finds intrinsic and extrinsic camera parameters from several fews of a known calibration pattern.\n']
+parseName: cv.calibrateCamera with ['', u'cv::fisheye', 'cv'] -> fullname:cv::calibrateCamera namespace:cv classpath: classname: name:calibrateCamera
+Registering an unknown type: OutputArrayOfArrays
+Registering an unknown type: TermCriteria
+register (function) calibrateCamera
+
+--- Incoming ---
+[   u'cv.calibrationMatrixValues',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'cameraMatrix', '', []],
+        [u'Size', u'imageSize', '', []],
+        [u'double', u'apertureWidth', '', []],
+        [u'double', u'apertureHeight', '', []],
+        [u'double&', u'fovx', '', []],
+        [u'double&', u'fovy', '', []],
+        [u'double&', u'focalLength', '', []],
+        [u'Point2d&', u'principalPoint', '', []],
+        [u'double&', u'aspectRatio', '', []]],
+    u'computes several useful camera characteristics from the camera matrix, camera frame resolution and the physical sensor size.\n']
+parseName: cv.calibrationMatrixValues with ['', u'cv::fisheye', 'cv'] -> fullname:cv::calibrationMatrixValues namespace:cv classpath: classname: name:calibrationMatrixValues
+register (function) calibrationMatrixValues
+
+--- Incoming ---
+[   u'cv.stereoCalibrate',
+    u'double',
+    ['/NW'],
+    [   [u'InputArrayOfArrays', u'objectPoints', '', []],
+        [u'InputArrayOfArrays', u'imagePoints1', '', []],
+        [u'InputArrayOfArrays', u'imagePoints2', '', []],
+        [u'InputOutputArray', u'cameraMatrix1', '', []],
+        [u'InputOutputArray', u'distCoeffs1', '', []],
+        [u'InputOutputArray', u'cameraMatrix2', '', []],
+        [u'InputOutputArray', u'distCoeffs2', '', []],
+        [u'Size', u'imageSize', '', []],
+        [u'OutputArray', u'R', '', []],
+        [u'OutputArray', u'T', '', []],
+        [u'OutputArray', u'E', '', []],
+        [u'OutputArray', u'F', '', []],
+        [   u'TermCriteria',
+            u'criteria',
+            u'TermCriteria(TermCriteria::COUNT+TermCriteria::EPS, 30, 1e-6)',
+            []],
+        [u'int', u'flags', u'CALIB_FIX_INTRINSIC', []]],
+    u'finds intrinsic and extrinsic parameters of a stereo camera\n']
+parseName: cv.stereoCalibrate with ['', u'cv::fisheye', 'cv'] -> fullname:cv::stereoCalibrate namespace:cv classpath: classname: name:stereoCalibrate
+register (function) stereoCalibrate
+
+--- Incoming ---
+[   u'cv.stereoRectify',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'cameraMatrix1', '', []],
+        [u'InputArray', u'distCoeffs1', '', []],
+        [u'InputArray', u'cameraMatrix2', '', []],
+        [u'InputArray', u'distCoeffs2', '', []],
+        [u'Size', u'imageSize', '', []],
+        [u'InputArray', u'R', '', []],
+        [u'InputArray', u'T', '', []],
+        [u'OutputArray', u'R1', '', []],
+        [u'OutputArray', u'R2', '', []],
+        [u'OutputArray', u'P1', '', []],
+        [u'OutputArray', u'P2', '', []],
+        [u'OutputArray', u'Q', '', []],
+        [u'int', u'flags', u'CALIB_ZERO_DISPARITY', []],
+        [u'double', u'alpha', u'-1', []],
+        [u'Size', u'newImageSize', u'Size()', []],
+        [u'Rect*', u'validPixROI1', u'0', []],
+        [u'Rect*', u'validPixROI2', u'0', []]],
+    u'computes the rectification transformation for a stereo camera from its intrinsic and extrinsic parameters\n']
+parseName: cv.stereoRectify with ['', u'cv::fisheye', 'cv'] -> fullname:cv::stereoRectify namespace:cv classpath: classname: name:stereoRectify
+register (function) stereoRectify
+
+--- Incoming ---
+[   u'cv.stereoRectifyUncalibrated',
+    u'bool',
+    ['/NW'],
+    [   [u'InputArray', u'points1', '', []],
+        [u'InputArray', u'points2', '', []],
+        [u'InputArray', u'F', '', []],
+        [u'Size', u'imgSize', '', []],
+        [u'OutputArray', u'H1', '', []],
+        [u'OutputArray', u'H2', '', []],
+        [u'double', u'threshold', u'5', []]],
+    u'computes the rectification transformation for an uncalibrated stereo camera (zero distortion is assumed)\n']
+parseName: cv.stereoRectifyUncalibrated with ['', u'cv::fisheye', 'cv'] -> fullname:cv::stereoRectifyUncalibrated namespace:cv classpath: classname: name:stereoRectifyUncalibrated
+register (function) stereoRectifyUncalibrated
+
+--- Incoming ---
+[   u'cv.rectify3Collinear',
+    u'float',
+    ['/NW'],
+    [   [u'InputArray', u'cameraMatrix1', '', []],
+        [u'InputArray', u'distCoeffs1', '', []],
+        [u'InputArray', u'cameraMatrix2', '', []],
+        [u'InputArray', u'distCoeffs2', '', []],
+        [u'InputArray', u'cameraMatrix3', '', []],
+        [u'InputArray', u'distCoeffs3', '', []],
+        [u'InputArrayOfArrays', u'imgpt1', '', []],
+        [u'InputArrayOfArrays', u'imgpt3', '', []],
+        [u'Size', u'imageSize', '', []],
+        [u'InputArray', u'R12', '', []],
+        [u'InputArray', u'T12', '', []],
+        [u'InputArray', u'R13', '', []],
+        [u'InputArray', u'T13', '', []],
+        [u'OutputArray', u'R1', '', []],
+        [u'OutputArray', u'R2', '', []],
+        [u'OutputArray', u'R3', '', []],
+        [u'OutputArray', u'P1', '', []],
+        [u'OutputArray', u'P2', '', []],
+        [u'OutputArray', u'P3', '', []],
+        [u'OutputArray', u'Q', '', []],
+        [u'double', u'alpha', '', []],
+        [u'Size', u'newImgSize', '', []],
+        [u'Rect*', u'roi1', '', []],
+        [u'Rect*', u'roi2', '', []],
+        [u'int', u'flags', '', []]],
+    u'computes the rectification transformations for 3-head camera, where all the heads are on the same line.\n']
+parseName: cv.rectify3Collinear with ['', u'cv::fisheye', 'cv'] -> fullname:cv::rectify3Collinear namespace:cv classpath: classname: name:rectify3Collinear
+register (function) rectify3Collinear
+
+--- Incoming ---
+[   u'cv.getOptimalNewCameraMatrix',
+    u'Mat',
+    ['/NW'],
+    [   [u'InputArray', u'cameraMatrix', '', []],
+        [u'InputArray', u'distCoeffs', '', []],
+        [u'Size', u'imageSize', '', []],
+        [u'double', u'alpha', '', []],
+        [u'Size', u'newImgSize', u'Size()', []],
+        [u'Rect*', u'validPixROI', u'0', []],
+        [u'bool', u'centerPrincipalPoint', u'false', []]],
+    u'returns the optimal new camera matrix\n']
+parseName: cv.getOptimalNewCameraMatrix with ['', u'cv::fisheye', 'cv'] -> fullname:cv::getOptimalNewCameraMatrix namespace:cv classpath: classname: name:getOptimalNewCameraMatrix
+register (function) getOptimalNewCameraMatrix
+
+--- Incoming ---
+[   u'cv.convertPointsToHomogeneous',
+    u'void',
+    ['/NW'],
+    [[u'InputArray', u'src', '', []], [u'OutputArray', u'dst', '', []]],
+    u'converts point coordinates from normal pixel coordinates to homogeneous coordinates ((x,y)->(x,y,1))\n']
+parseName: cv.convertPointsToHomogeneous with ['', u'cv::fisheye', 'cv'] -> fullname:cv::convertPointsToHomogeneous namespace:cv classpath: classname: name:convertPointsToHomogeneous
+register (function) convertPointsToHomogeneous
+
+--- Incoming ---
+[   u'cv.convertPointsFromHomogeneous',
+    u'void',
+    ['/NW'],
+    [[u'InputArray', u'src', '', []], [u'OutputArray', u'dst', '', []]],
+    u'converts point coordinates from homogeneous to normal pixel coordinates ((x,y,z)->(x/z, y/z))\n']
+parseName: cv.convertPointsFromHomogeneous with ['', u'cv::fisheye', 'cv'] -> fullname:cv::convertPointsFromHomogeneous namespace:cv classpath: classname: name:convertPointsFromHomogeneous
+register (function) convertPointsFromHomogeneous
+
+--- Incoming ---
+[   u'cv.convertPointsHomogeneous',
+    u'void',
+    ['/NW'],
+    [[u'InputArray', u'src', '', []], [u'OutputArray', u'dst', '', []]],
+    u'for backward compatibility\n']
+parseName: cv.convertPointsHomogeneous with ['', u'cv::fisheye', 'cv'] -> fullname:cv::convertPointsHomogeneous namespace:cv classpath: classname: name:convertPointsHomogeneous
+register (function) convertPointsHomogeneous
+
+--- Incoming ---
+[u'const cv.FM_7POINT', u'CV_FM_7POINT', [], []]
+parseName: const cv.FM_7POINT with ['', u'cv::fisheye', 'cv'] -> fullname:cv::FM_7POINT namespace:cv classpath: classname: name:FM_7POINT
+
+--- Incoming ---
+[u'const cv.FM_8POINT', u'CV_FM_8POINT', [], []]
+parseName: const cv.FM_8POINT with ['', u'cv::fisheye', 'cv'] -> fullname:cv::FM_8POINT namespace:cv classpath: classname: name:FM_8POINT
+
+--- Incoming ---
+[u'const cv.FM_LMEDS', u'CV_FM_LMEDS', [], []]
+parseName: const cv.FM_LMEDS with ['', u'cv::fisheye', 'cv'] -> fullname:cv::FM_LMEDS namespace:cv classpath: classname: name:FM_LMEDS
+
+--- Incoming ---
+[u'const cv.FM_RANSAC', u'CV_FM_RANSAC', [], []]
+parseName: const cv.FM_RANSAC with ['', u'cv::fisheye', 'cv'] -> fullname:cv::FM_RANSAC namespace:cv classpath: classname: name:FM_RANSAC
+
+--- Incoming ---
+[   u'cv.findFundamentalMat',
+    u'Mat',
+    ['/NW'],
+    [   [u'InputArray', u'points1', '', []],
+        [u'InputArray', u'points2', '', []],
+        [u'int', u'method', u'FM_RANSAC', []],
+        [u'double', u'param1', u'3.', []],
+        [u'double', u'param2', u'0.99', []],
+        [u'OutputArray', u'mask', u'noArray()', []]],
+    u'finds fundamental matrix from a set of corresponding 2D points\n']
+parseName: cv.findFundamentalMat with ['', u'cv::fisheye', 'cv'] -> fullname:cv::findFundamentalMat namespace:cv classpath: classname: name:findFundamentalMat
+register (function) findFundamentalMat
+
+--- Incoming ---
+[   u'cv.findFundamentalMat',
+    u'Mat',
+    ['/NW'],
+    [   [u'InputArray', u'points1', '', []],
+        [u'InputArray', u'points2', '', []],
+        [u'OutputArray', u'mask', '', []],
+        [u'int', u'method', u'FM_RANSAC', []],
+        [u'double', u'param1', u'3.', []],
+        [u'double', u'param2', u'0.99', []]],
+    u'variant of findFundamentalMat for backward compatibility\n']
+parseName: cv.findFundamentalMat with ['', u'cv::fisheye', 'cv'] -> fullname:cv::findFundamentalMat namespace:cv classpath: classname: name:findFundamentalMat
+register (function) findFundamentalMat
+
+--- Incoming ---
+[   u'cv.computeCorrespondEpilines',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'points', '', []],
+        [u'int', u'whichImage', '', []],
+        [u'InputArray', u'F', '', []],
+        [u'OutputArray', u'lines', '', []]],
+    u'finds coordinates of epipolar lines corresponding the specified points\n']
+parseName: cv.computeCorrespondEpilines with ['', u'cv::fisheye', 'cv'] -> fullname:cv::computeCorrespondEpilines namespace:cv classpath: classname: name:computeCorrespondEpilines
+register (function) computeCorrespondEpilines
+
+--- Incoming ---
+[   u'cv.triangulatePoints',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'projMatr1', '', []],
+        [u'InputArray', u'projMatr2', '', []],
+        [u'InputArray', u'projPoints1', '', []],
+        [u'InputArray', u'projPoints2', '', []],
+        [u'OutputArray', u'points4D', '', []]],
+    '']
+parseName: cv.triangulatePoints with ['', u'cv::fisheye', 'cv'] -> fullname:cv::triangulatePoints namespace:cv classpath: classname: name:triangulatePoints
+register (function) triangulatePoints
+
+--- Incoming ---
+[   u'cv.correctMatches',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'F', '', []],
+        [u'InputArray', u'points1', '', []],
+        [u'InputArray', u'points2', '', []],
+        [u'OutputArray', u'newPoints1', '', []],
+        [u'OutputArray', u'newPoints2', '', []]],
+    '']
+parseName: cv.correctMatches with ['', u'cv::fisheye', 'cv'] -> fullname:cv::correctMatches namespace:cv classpath: classname: name:correctMatches
+register (function) correctMatches
+
+--- Incoming ---
+[   u'class cv.StereoBM',
+    '',
+    [],
+    [],
+    u'Block Matching Stereo Correspondence Algorithm\n\nThe class implements BM stereo correspondence algorithm by K. Konolige.\n']
+parseName: class cv.StereoBM with ['', u'cv::fisheye', 'cv'] -> fullname:cv::StereoBM namespace:cv classpath: classname: name:StereoBM
+register class cv::StereoBM ([u'class cv.StereoBM', '', [], [], u'Block Matching Stereo Correspondence Algorithm\n\nThe class implements BM stereo correspondence algorithm by K. Konolige.\n'])
+
+--- Incoming ---
+[u'const cv.StereoBM.PREFILTER_NORMALIZED_RESPONSE', u'0', [], []]
+parseName: const cv.StereoBM.PREFILTER_NORMALIZED_RESPONSE with ['', u'cv::fisheye', 'cv'] -> fullname:cv::StereoBM::PREFILTER_NORMALIZED_RESPONSE namespace:cv classpath:StereoBM classname:StereoBM name:PREFILTER_NORMALIZED_RESPONSE
+
+--- Incoming ---
+[u'const cv.StereoBM.PREFILTER_XSOBEL', u'1', [], []]
+parseName: const cv.StereoBM.PREFILTER_XSOBEL with ['', u'cv::fisheye', 'cv'] -> fullname:cv::StereoBM::PREFILTER_XSOBEL namespace:cv classpath:StereoBM classname:StereoBM name:PREFILTER_XSOBEL
+
+--- Incoming ---
+[u'const cv.StereoBM.BASIC_PRESET', u'0', [], []]
+parseName: const cv.StereoBM.BASIC_PRESET with ['', u'cv::fisheye', 'cv'] -> fullname:cv::StereoBM::BASIC_PRESET namespace:cv classpath:StereoBM classname:StereoBM name:BASIC_PRESET
+
+--- Incoming ---
+[u'const cv.StereoBM.FISH_EYE_PRESET', u'1', [], []]
+parseName: const cv.StereoBM.FISH_EYE_PRESET with ['', u'cv::fisheye', 'cv'] -> fullname:cv::StereoBM::FISH_EYE_PRESET namespace:cv classpath:StereoBM classname:StereoBM name:FISH_EYE_PRESET
+
+--- Incoming ---
+[u'const cv.StereoBM.NARROW_PRESET', u'2', [], []]
+parseName: const cv.StereoBM.NARROW_PRESET with ['', u'cv::fisheye', 'cv'] -> fullname:cv::StereoBM::NARROW_PRESET namespace:cv classpath:StereoBM classname:StereoBM name:NARROW_PRESET
+
+--- Incoming ---
+[u'cv.StereoBM.StereoBM', u'', ['/NW'], [], u'the default constructor\n']
+parseName: cv.StereoBM.StereoBM with ['', u'cv::fisheye', 'cv'] -> fullname:cv::StereoBM::StereoBM namespace:cv classpath:StereoBM classname:StereoBM name:StereoBM
+register (constructor) new in cv::StereoBM
+
+--- Incoming ---
+[   u'cv.StereoBM.StereoBM',
+    u'',
+    ['/NW'],
+    [   [u'int', u'preset', '', []],
+        [u'int', u'ndisparities', u'0', []],
+        [u'int', u'SADWindowSize', u'21', []]],
+    u'the full constructor taking the camera-specific preset, number of disparities and the SAD window size\n']
+parseName: cv.StereoBM.StereoBM with ['', u'cv::fisheye', 'cv'] -> fullname:cv::StereoBM::StereoBM namespace:cv classpath:StereoBM classname:StereoBM name:StereoBM
+register (constructor) new in cv::StereoBM
+
+--- Incoming ---
+[   u'cv.StereoBM.init',
+    u'void',
+    ['/NW'],
+    [   [u'int', u'preset', '', []],
+        [u'int', u'ndisparities', u'0', []],
+        [u'int', u'SADWindowSize', u'21', []]],
+    u'the method that reinitializes the state. The previous content is destroyed\n']
+parseName: cv.StereoBM.init with ['', u'cv::fisheye', 'cv'] -> fullname:cv::StereoBM::init namespace:cv classpath:StereoBM classname:StereoBM name:init
+register (method) init in cv::StereoBM
+
+--- Incoming ---
+[   u'cv.StereoBM.operator ()',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'left', '', []],
+        [u'InputArray', u'right', '', []],
+        [u'OutputArray', u'disparity', '', []],
+        [u'int', u'disptype', u'CV_16S', []]],
+    u'the stereo correspondence operator. Finds the disparity for the specified rectified stereo pair\n']
+parseName: cv.StereoBM.operator () with ['', u'cv::fisheye', 'cv'] -> fullname:cv::StereoBM::operator () namespace:cv classpath:StereoBM classname:StereoBM name:operator ()
+ignore (method) operator () in cv::StereoBM
+
+--- Incoming ---
+[   u'class cv.StereoSGBM',
+    '',
+    [],
+    [   [u'int', u'minDisparity', '', ['/RW']],
+        [u'int', u'numberOfDisparities', '', ['/RW']],
+        [u'int', u'SADWindowSize', '', ['/RW']],
+        [u'int', u'preFilterCap', '', ['/RW']],
+        [u'int', u'uniquenessRatio', '', ['/RW']],
+        [u'int', u'P1', '', ['/RW']],
+        [u'int', u'P2', '', ['/RW']],
+        [u'int', u'speckleWindowSize', '', ['/RW']],
+        [u'int', u'speckleRange', '', ['/RW']],
+        [u'int', u'disp12MaxDiff', '', ['/RW']],
+        [u'bool', u'fullDP', '', ['/RW']]],
+    u'Semi-Global Block Matching Stereo Correspondence Algorithm\n\nThe class implements the original SGBM stereo correspondence algorithm by H. Hirschmuller and some its modification.\n']
+parseName: class cv.StereoSGBM with ['', u'cv::fisheye', 'cv'] -> fullname:cv::StereoSGBM namespace:cv classpath: classname: name:StereoSGBM
+register class cv::StereoSGBM ([u'class cv.StereoSGBM', '', [], [[u'int', u'minDisparity', '', ['/RW']], [u'int', u'numberOfDisparities', '', ['/RW']], [u'int', u'SADWindowSize', '', ['/RW']], [u'int', u'preFilterCap', '', ['/RW']], [u'int', u'uniquenessRatio', '', ['/RW']], [u'int', u'P1', '', ['/RW']], [u'int', u'P2', '', ['/RW']], [u'int', u'speckleWindowSize', '', ['/RW']], [u'int', u'speckleRange', '', ['/RW']], [u'int', u'disp12MaxDiff', '', ['/RW']], [u'bool', u'fullDP', '', ['/RW']]], u'Semi-Global Block Matching Stereo Correspondence Algorithm\n\nThe class implements the original SGBM stereo correspondence algorithm by H. Hirschmuller and some its modification.\n'])
+
+--- Incoming ---
+[u'const cv.StereoSGBM.DISP_SHIFT', u'4', [], []]
+parseName: const cv.StereoSGBM.DISP_SHIFT with ['', u'cv::fisheye', 'cv'] -> fullname:cv::StereoSGBM::DISP_SHIFT namespace:cv classpath:StereoSGBM classname:StereoSGBM name:DISP_SHIFT
+
+--- Incoming ---
+[u'const cv.StereoSGBM.DISP_SCALE', u'(1<<DISP_SHIFT)', [], []]
+parseName: const cv.StereoSGBM.DISP_SCALE with ['', u'cv::fisheye', 'cv'] -> fullname:cv::StereoSGBM::DISP_SCALE namespace:cv classpath:StereoSGBM classname:StereoSGBM name:DISP_SCALE
+
+--- Incoming ---
+[u'cv.StereoSGBM.StereoSGBM', u'', ['/NW'], [], u'the default constructor\n']
+parseName: cv.StereoSGBM.StereoSGBM with ['', u'cv::fisheye', 'cv'] -> fullname:cv::StereoSGBM::StereoSGBM namespace:cv classpath:StereoSGBM classname:StereoSGBM name:StereoSGBM
+register (constructor) new in cv::StereoSGBM
+
+--- Incoming ---
+[   u'cv.StereoSGBM.StereoSGBM',
+    u'',
+    ['/NW'],
+    [   [u'int', u'minDisparity', '', []],
+        [u'int', u'numDisparities', '', []],
+        [u'int', u'SADWindowSize', '', []],
+        [u'int', u'P1', u'0', []],
+        [u'int', u'P2', u'0', []],
+        [u'int', u'disp12MaxDiff', u'0', []],
+        [u'int', u'preFilterCap', u'0', []],
+        [u'int', u'uniquenessRatio', u'0', []],
+        [u'int', u'speckleWindowSize', u'0', []],
+        [u'int', u'speckleRange', u'0', []],
+        [u'bool', u'fullDP', u'false', []]],
+    u'the full constructor taking all the necessary algorithm parameters\n']
+parseName: cv.StereoSGBM.StereoSGBM with ['', u'cv::fisheye', 'cv'] -> fullname:cv::StereoSGBM::StereoSGBM namespace:cv classpath:StereoSGBM classname:StereoSGBM name:StereoSGBM
+register (constructor) new in cv::StereoSGBM
+
+--- Incoming ---
+[u'cv.StereoSGBM.~StereoSGBM', u'', ['/NW'], [], u'the destructor\n']
+parseName: cv.StereoSGBM.~StereoSGBM with ['', u'cv::fisheye', 'cv'] -> fullname:cv::StereoSGBM::~StereoSGBM namespace:cv classpath:StereoSGBM classname:StereoSGBM name:~StereoSGBM
+ignore destructor (method) ~StereoSGBM in cv::StereoSGBM
+
+--- Incoming ---
+[   u'cv.StereoSGBM.operator ()',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'left', '', []],
+        [u'InputArray', u'right', '', []],
+        [u'OutputArray', u'disp', '', []]],
+    u'the stereo correspondence operator that computes disparity map for the specified rectified stereo pair\n']
+parseName: cv.StereoSGBM.operator () with ['', u'cv::fisheye', 'cv'] -> fullname:cv::StereoSGBM::operator () namespace:cv classpath:StereoSGBM classname:StereoSGBM name:operator ()
+ignore (method) operator () in cv::StereoSGBM
+
+--- Incoming ---
+[   u'cv.filterSpeckles',
+    u'void',
+    ['/NW'],
+    [   [u'InputOutputArray', u'img', '', []],
+        [u'double', u'newVal', '', []],
+        [u'int', u'maxSpeckleSize', '', []],
+        [u'double', u'maxDiff', '', []],
+        [u'InputOutputArray', u'buf', u'noArray()', []]],
+    u'filters off speckles (small regions of incorrectly computed disparity)\n']
+parseName: cv.filterSpeckles with ['', u'cv::fisheye', 'cv'] -> fullname:cv::filterSpeckles namespace:cv classpath: classname: name:filterSpeckles
+register (function) filterSpeckles
+
+--- Incoming ---
+[   u'cv.getValidDisparityROI',
+    u'Rect',
+    ['/NW'],
+    [   [u'Rect', u'roi1', '', []],
+        [u'Rect', u'roi2', '', []],
+        [u'int', u'minDisparity', '', []],
+        [u'int', u'numberOfDisparities', '', []],
+        [u'int', u'SADWindowSize', '', []]],
+    u'computes valid disparity ROI from the valid ROIs of the rectified images (that are returned by cv::stereoRectify())\n']
+parseName: cv.getValidDisparityROI with ['', u'cv::fisheye', 'cv'] -> fullname:cv::getValidDisparityROI namespace:cv classpath: classname: name:getValidDisparityROI
+register (function) getValidDisparityROI
+
+--- Incoming ---
+[   u'cv.validateDisparity',
+    u'void',
+    ['/NW'],
+    [   [u'InputOutputArray', u'disparity', '', []],
+        [u'InputArray', u'cost', '', []],
+        [u'int', u'minDisparity', '', []],
+        [u'int', u'numberOfDisparities', '', []],
+        [u'int', u'disp12MaxDisp', u'1', []]],
+    u'validates disparity using the left-right check. The matrix "cost" should be computed by the stereo correspondence algorithm\n']
+parseName: cv.validateDisparity with ['', u'cv::fisheye', 'cv'] -> fullname:cv::validateDisparity namespace:cv classpath: classname: name:validateDisparity
+register (function) validateDisparity
+
+--- Incoming ---
+[   u'cv.reprojectImageTo3D',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'disparity', '', []],
+        [u'OutputArray', u'_3dImage', '', []],
+        [u'InputArray', u'Q', '', []],
+        [u'bool', u'handleMissingValues', u'false', []],
+        [u'int', u'ddepth', u'-1', []]],
+    u'reprojects disparity image to 3D: (x,y,d)->(X,Y,Z) using the matrix Q returned by cv::stereoRectify\n']
+parseName: cv.reprojectImageTo3D with ['', u'cv::fisheye', 'cv'] -> fullname:cv::reprojectImageTo3D namespace:cv classpath: classname: name:reprojectImageTo3D
+register (function) reprojectImageTo3D
+
+--- Incoming ---
+[   u'cv.estimateAffine3D',
+    u'int',
+    ['/NW'],
+    [   [u'InputArray', u'src', '', []],
+        [u'InputArray', u'dst', '', []],
+        [u'OutputArray', u'out', '', []],
+        [u'OutputArray', u'inliers', '', []],
+        [u'double', u'ransacThreshold', u'3', []],
+        [u'double', u'confidence', u'0.99', []]],
+    '']
+parseName: cv.estimateAffine3D with ['', u'cv::fisheye', 'cv'] -> fullname:cv::estimateAffine3D namespace:cv classpath: classname: name:estimateAffine3D
+register (function) estimateAffine3D
+
+--- Incoming ---
+[u'const cv.fisheye.CALIB_USE_INTRINSIC_GUESS', u'1', [], []]
+parseName: const cv.fisheye.CALIB_USE_INTRINSIC_GUESS with ['', u'cv::fisheye', 'cv'] -> fullname:cv::fisheye::CALIB_USE_INTRINSIC_GUESS namespace:cv::fisheye classpath: classname: name:CALIB_USE_INTRINSIC_GUESS
+
+--- Incoming ---
+[u'const cv.fisheye.CALIB_RECOMPUTE_EXTRINSIC', u'2', [], []]
+parseName: const cv.fisheye.CALIB_RECOMPUTE_EXTRINSIC with ['', u'cv::fisheye', 'cv'] -> fullname:cv::fisheye::CALIB_RECOMPUTE_EXTRINSIC namespace:cv::fisheye classpath: classname: name:CALIB_RECOMPUTE_EXTRINSIC
+
+--- Incoming ---
+[u'const cv.fisheye.CALIB_CHECK_COND', u'4', [], []]
+parseName: const cv.fisheye.CALIB_CHECK_COND with ['', u'cv::fisheye', 'cv'] -> fullname:cv::fisheye::CALIB_CHECK_COND namespace:cv::fisheye classpath: classname: name:CALIB_CHECK_COND
+
+--- Incoming ---
+[u'const cv.fisheye.CALIB_FIX_SKEW', u'8', [], []]
+parseName: const cv.fisheye.CALIB_FIX_SKEW with ['', u'cv::fisheye', 'cv'] -> fullname:cv::fisheye::CALIB_FIX_SKEW namespace:cv::fisheye classpath: classname: name:CALIB_FIX_SKEW
+
+--- Incoming ---
+[u'const cv.fisheye.CALIB_FIX_K1', u'16', [], []]
+parseName: const cv.fisheye.CALIB_FIX_K1 with ['', u'cv::fisheye', 'cv'] -> fullname:cv::fisheye::CALIB_FIX_K1 namespace:cv::fisheye classpath: classname: name:CALIB_FIX_K1
+
+--- Incoming ---
+[u'const cv.fisheye.CALIB_FIX_K2', u'32', [], []]
+parseName: const cv.fisheye.CALIB_FIX_K2 with ['', u'cv::fisheye', 'cv'] -> fullname:cv::fisheye::CALIB_FIX_K2 namespace:cv::fisheye classpath: classname: name:CALIB_FIX_K2
+
+--- Incoming ---
+[u'const cv.fisheye.CALIB_FIX_K3', u'64', [], []]
+parseName: const cv.fisheye.CALIB_FIX_K3 with ['', u'cv::fisheye', 'cv'] -> fullname:cv::fisheye::CALIB_FIX_K3 namespace:cv::fisheye classpath: classname: name:CALIB_FIX_K3
+
+--- Incoming ---
+[u'const cv.fisheye.CALIB_FIX_K4', u'128', [], []]
+parseName: const cv.fisheye.CALIB_FIX_K4 with ['', u'cv::fisheye', 'cv'] -> fullname:cv::fisheye::CALIB_FIX_K4 namespace:cv::fisheye classpath: classname: name:CALIB_FIX_K4
+
+--- Incoming ---
+[u'const cv.fisheye.CALIB_FIX_INTRINSIC', u'256', [], []]
+parseName: const cv.fisheye.CALIB_FIX_INTRINSIC with ['', u'cv::fisheye', 'cv'] -> fullname:cv::fisheye::CALIB_FIX_INTRINSIC namespace:cv::fisheye classpath: classname: name:CALIB_FIX_INTRINSIC
+
+--- Incoming ---
+[   u'cv.fisheye.projectPoints',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'objectPoints', '', []],
+        [u'OutputArray', u'imagePoints', '', []],
+        [u'const Affine3d&', u'affine', '', []],
+        [u'InputArray', u'K', '', []],
+        [u'InputArray', u'D', '', []],
+        [u'double', u'alpha', u'0', []],
+        [u'OutputArray', u'jacobian', u'noArray()', []]],
+    u'projects 3D points using fisheye model\n']
+parseName: cv.fisheye.projectPoints with ['', u'cv::fisheye', 'cv'] -> fullname:cv::fisheye::projectPoints namespace:cv::fisheye classpath: classname: name:projectPoints
+Registering an unknown type: Affine3d
+register (function) projectPoints
+
+--- Incoming ---
+[   u'cv.fisheye.projectPoints',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'objectPoints', '', []],
+        [u'OutputArray', u'imagePoints', '', []],
+        [u'InputArray', u'rvec', '', []],
+        [u'InputArray', u'tvec', '', []],
+        [u'InputArray', u'K', '', []],
+        [u'InputArray', u'D', '', []],
+        [u'double', u'alpha', u'0', []],
+        [u'OutputArray', u'jacobian', u'noArray()', []]],
+    u'projects points using fisheye model\n']
+parseName: cv.fisheye.projectPoints with ['', u'cv::fisheye', 'cv'] -> fullname:cv::fisheye::projectPoints namespace:cv::fisheye classpath: classname: name:projectPoints
+register (function) projectPoints
+
+--- Incoming ---
+[   u'cv.fisheye.distortPoints',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'undistorted', '', []],
+        [u'OutputArray', u'distorted', '', []],
+        [u'InputArray', u'K', '', []],
+        [u'InputArray', u'D', '', []],
+        [u'double', u'alpha', u'0', []]],
+    u'distorts 2D points using fisheye model\n']
+parseName: cv.fisheye.distortPoints with ['', u'cv::fisheye', 'cv'] -> fullname:cv::fisheye::distortPoints namespace:cv::fisheye classpath: classname: name:distortPoints
+register (function) distortPoints
+
+--- Incoming ---
+[   u'cv.fisheye.undistortPoints',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'distorted', '', []],
+        [u'OutputArray', u'undistorted', '', []],
+        [u'InputArray', u'K', '', []],
+        [u'InputArray', u'D', '', []],
+        [u'InputArray', u'R', u'noArray()', []],
+        [u'InputArray', u'P', u'noArray()', []]],
+    u'undistorts 2D points using fisheye model\n']
+parseName: cv.fisheye.undistortPoints with ['', u'cv::fisheye', 'cv'] -> fullname:cv::fisheye::undistortPoints namespace:cv::fisheye classpath: classname: name:undistortPoints
+register (function) undistortPoints
+
+--- Incoming ---
+[   u'cv.fisheye.initUndistortRectifyMap',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'K', '', []],
+        [u'InputArray', u'D', '', []],
+        [u'InputArray', u'R', '', []],
+        [u'InputArray', u'P', '', []],
+        [u'const cv::Size&', u'size', '', []],
+        [u'int', u'm1type', '', []],
+        [u'OutputArray', u'map1', '', []],
+        [u'OutputArray', u'map2', '', []]],
+    u'computing undistortion and rectification maps for image transform by cv::remap()\nIf D is empty zero distortion is used, if R or P is empty identity matrixes are used\n']
+parseName: cv.fisheye.initUndistortRectifyMap with ['', u'cv::fisheye', 'cv'] -> fullname:cv::fisheye::initUndistortRectifyMap namespace:cv::fisheye classpath: classname: name:initUndistortRectifyMap
+Registering an unknown type: cv::Size
+register (function) initUndistortRectifyMap
+
+--- Incoming ---
+[   u'cv.fisheye.undistortImage',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'distorted', '', []],
+        [u'OutputArray', u'undistorted', '', []],
+        [u'InputArray', u'K', '', []],
+        [u'InputArray', u'D', '', []],
+        [u'InputArray', u'Knew', u'cv::noArray()', []],
+        [u'const Size&', u'new_size', u'Size()', []]],
+    u'undistorts image, optionally changes resolution and camera matrix. If Knew zero identity matrix is used\n']
+parseName: cv.fisheye.undistortImage with ['', u'cv::fisheye', 'cv'] -> fullname:cv::fisheye::undistortImage namespace:cv::fisheye classpath: classname: name:undistortImage
+register (function) undistortImage
+
+--- Incoming ---
+[   u'cv.fisheye.estimateNewCameraMatrixForUndistortRectify',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'K', '', []],
+        [u'InputArray', u'D', '', []],
+        [u'const Size &', u'image_size', '', []],
+        [u'InputArray', u'R', '', []],
+        [u'OutputArray', u'P', '', []],
+        [u'double', u'balance', u'0.0', []],
+        [u'const Size&', u'new_size', u'Size()', []],
+        [u'double', u'fov_scale', u'1.0', []]],
+    u'estimates new camera matrix for undistortion or rectification\n']
+parseName: cv.fisheye.estimateNewCameraMatrixForUndistortRectify with ['', u'cv::fisheye', 'cv'] -> fullname:cv::fisheye::estimateNewCameraMatrixForUndistortRectify namespace:cv::fisheye classpath: classname: name:estimateNewCameraMatrixForUndistortRectify
+Registering an unknown type: Size 
+register (function) estimateNewCameraMatrixForUndistortRectify
+
+--- Incoming ---
+[   u'cv.fisheye.calibrate',
+    u'double',
+    ['/NW'],
+    [   [u'InputArrayOfArrays', u'objectPoints', '', []],
+        [u'InputArrayOfArrays', u'imagePoints', '', []],
+        [u'const Size&', u'image_size', '', []],
+        [u'InputOutputArray', u'K', '', []],
+        [u'InputOutputArray', u'D', '', []],
+        [u'OutputArrayOfArrays', u'rvecs', '', []],
+        [u'OutputArrayOfArrays', u'tvecs', '', []],
+        [u'int', u'flags', u'0', []],
+        [   u'TermCriteria',
+            u'criteria',
+            u'TermCriteria(TermCriteria::COUNT + TermCriteria::EPS, 100, DBL_EPSILON)',
+            []]],
+    u'performs camera calibaration\n']
+parseName: cv.fisheye.calibrate with ['', u'cv::fisheye', 'cv'] -> fullname:cv::fisheye::calibrate namespace:cv::fisheye classpath: classname: name:calibrate
+register (function) calibrate
+
+--- Incoming ---
+[   u'cv.fisheye.stereoRectify',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'K1', '', []],
+        [u'InputArray', u'D1', '', []],
+        [u'InputArray', u'K2', '', []],
+        [u'InputArray', u'D2', '', []],
+        [u'const Size &', u'imageSize', '', []],
+        [u'InputArray', u'R', '', []],
+        [u'InputArray', u'tvec', '', []],
+        [u'OutputArray', u'R1', '', []],
+        [u'OutputArray', u'R2', '', []],
+        [u'OutputArray', u'P1', '', []],
+        [u'OutputArray', u'P2', '', []],
+        [u'OutputArray', u'Q', '', []],
+        [u'int', u'flags', '', []],
+        [u'const Size &', u'newImageSize', u'Size()', []],
+        [u'double', u'balance', u'0.0', []],
+        [u'double', u'fov_scale', u'1.0', []]],
+    u'stereo rectification estimation\n']
+parseName: cv.fisheye.stereoRectify with ['', u'cv::fisheye', 'cv'] -> fullname:cv::fisheye::stereoRectify namespace:cv::fisheye classpath: classname: name:stereoRectify
+register (function) stereoRectify
+
+--- Incoming ---
+[   u'cv.fisheye.stereoCalibrate',
+    u'double',
+    ['/NW'],
+    [   [u'InputArrayOfArrays', u'objectPoints', '', []],
+        [u'InputArrayOfArrays', u'imagePoints1', '', []],
+        [u'InputArrayOfArrays', u'imagePoints2', '', []],
+        [u'InputOutputArray', u'K1', '', []],
+        [u'InputOutputArray', u'D1', '', []],
+        [u'InputOutputArray', u'K2', '', []],
+        [u'InputOutputArray', u'D2', '', []],
+        [u'Size', u'imageSize', '', []],
+        [u'OutputArray', u'R', '', []],
+        [u'OutputArray', u'T', '', []],
+        [u'int', u'flags', u'CALIB_FIX_INTRINSIC', []],
+        [   u'TermCriteria',
+            u'criteria',
+            u'TermCriteria(TermCriteria::COUNT + TermCriteria::EPS, 100, DBL_EPSILON)',
+            []]],
+    u'performs stereo calibaration\n']
+parseName: cv.fisheye.stereoCalibrate with ['', u'cv::fisheye', 'cv'] -> fullname:cv::fisheye::stereoCalibrate namespace:cv::fisheye classpath: classname: name:stereoCalibrate
+register (function) stereoCalibrate
+
+
+===== Generating... =====
+Generating func cvCalcMatMulDeriv (function)
+  ignored: can not map type Unknown[CvMat] yet
+Generating func cvCalibrateCamera2 (function)
+  ignored: can not map type Unknown[CvMat] yet
+Generating func cvCalibrationMatrixValues (function)
+  ignored: can not map type Unknown[CvMat] yet
+Generating func cvCheckChessboard (function)
+  ignored: can not map type Unknown[IplImage] yet
+Generating func cvComposeRT (function)
+  ignored: can not map type Unknown[CvMat] yet
+Generating func cvComputeCorrespondEpilines (function)
+  ignored: can not map type Unknown[CvMat] yet
+Generating func cvConvertPointsHomogeneous (function)
+  ignored: can not map type Unknown[CvMat] yet
+Generating func cvCorrectMatches (function)
+  ignored: can not map type Unknown[CvMat] yet
+Generating func cvCreatePOSITObject (function)
+  ignored: return type class RawPtr[Unknown[CvPOSITObject]] is ignored
+Generating func cvCreateStereoBMState (function)
+  ignored: return type class RawPtr[CvStereoBMState (boxed)] is ignored
+Generating func cvDecomposeProjectionMatrix (function)
+  ignored: can not map type Unknown[CvMat] yet
+Generating func cvDrawChessboardCorners (function)
+  ignored: can not map type Unknown[CvArr] yet
+Generating func cvFindChessboardCorners (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cvFindExtrinsicCameraParams2 (function)
+  ignored: can not map type Unknown[CvMat] yet
+Generating func cvFindFundamentalMat (function)
+  ignored: can not map type Unknown[CvMat] yet
+Generating func cvFindHomography (function)
+  ignored: can not map type Unknown[CvMat] yet
+Generating func cvFindStereoCorrespondenceBM (function)
+  ignored: can not map type Unknown[CvArr] yet
+Generating func cvGetOptimalNewCameraMatrix (function)
+  ignored: can not map type Unknown[CvMat] yet
+Generating func cvGetValidDisparityROI (function)
+  ignored: return type class Unknown[CvRect] is ignored
+Generating func cvInitIntrinsicParams2D (function)
+  ignored: can not map type Unknown[CvMat] yet
+Generating func cvPOSIT (function)
+  ignored: can not map type Unknown[CvPOSITObject] yet
+Generating func cvProjectPoints2 (function)
+  ignored: can not map type Unknown[CvMat] yet
+Generating func cvRANSACUpdateNumIters (function)
+Generating func cvRQDecomp3x3 (function)
+  ignored: can not map type Unknown[CvMat] yet
+Generating func cvReleasePOSITObject (function)
+  ignored: can not map type RawPtr[Unknown[CvPOSITObject]] yet
+Generating func cvReleaseStereoBMState (function)
+  ignored: can not map type RawPtr[CvStereoBMState (boxed)] yet
+Generating func cvReprojectImageTo3D (function)
+  ignored: can not map type Unknown[CvArr] yet
+Generating func cvRodrigues2 (function)
+  ignored: can not map type Unknown[CvMat] yet
+Generating func cvStereoCalibrate (function)
+  ignored: can not map type Unknown[CvMat] yet
+Generating func cvStereoRectifyUncalibrated (function)
+  ignored: can not map type Unknown[CvMat] yet
+Generating func cvStereoRectify (function)
+  ignored: can not map type Unknown[CvMat] yet
+Generating func cvTriangulatePoints (function)
+  ignored: can not map type Unknown[CvMat] yet
+Generating func cvValidateDisparity (function)
+  ignored: can not map type Unknown[CvArr] yet
+Generating func cv::RQDecomp3x3 (function)
+Generating func cv::Rodrigues (function)
+Generating func cv::calibrateCamera (function)
+  ignored: can not map type Unknown[InputArrayOfArrays] yet
+Generating func cv::calibrationMatrixValues (function)
+Generating func cv::composeRT (function)
+Generating func cv::computeCorrespondEpilines (function)
+Generating func cv::convertPointsFromHomogeneous (function)
+Generating func cv::convertPointsHomogeneous (function)
+Generating func cv::convertPointsToHomogeneous (function)
+Generating func cv::correctMatches (function)
+Generating func cv::decomposeProjectionMatrix (function)
+Generating func cv::drawChessboardCorners (function)
+  ignored: can not map type Unknown[InputOutputArray] yet
+Generating func cv::estimateAffine3D (function)
+Generating func cv::filterSpeckles (function)
+  ignored: can not map type Unknown[InputOutputArray] yet
+Generating func cv::find4QuadCornerSubpix (function)
+  ignored: can not map type Unknown[InputOutputArray] yet
+Generating func cv::findChessboardCorners (function)
+Generating func cv::findCirclesGridDefault (function)
+Generating func cv::findCirclesGrid (function)
+  ignored: can not map type SmartPtr[Unknown[FeatureDetector>]] yet
+Generating func cv::findFundamentalMat (function)
+Generating func cv::findFundamentalMat (function)
+  ignored: ignored by renamed table
+Generating func cv::findHomography (function)
+Generating func cv::findHomography (function)
+Generating func cv::fisheye::calibrate (function)
+  ignored: can not map type Unknown[InputArrayOfArrays] yet
+Generating func cv::fisheye::distortPoints (function)
+Generating func cv::fisheye::estimateNewCameraMatrixForUndistortRectify (function)
+  ignored: can not map type Unknown[Size ] yet
+Generating func cv::fisheye::initUndistortRectifyMap (function)
+  ignored: can not map type Unknown[cv::Size] yet
+Generating func cv::fisheye::projectPoints (function)
+Generating func cv::fisheye::projectPoints (function)
+  ignored: can not map type Unknown[Affine3d] yet
+Generating func cv::fisheye::stereoCalibrate (function)
+  ignored: can not map type Unknown[InputArrayOfArrays] yet
+Generating func cv::fisheye::stereoRectify (function)
+  ignored: can not map type Unknown[Size ] yet
+Generating func cv::fisheye::undistortImage (function)
+Generating func cv::fisheye::undistortPoints (function)
+Generating func cv::getOptimalNewCameraMatrix (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cv::getValidDisparityROI (function)
+Generating func cv::initCameraMatrix2D (function)
+  ignored: can not map type Unknown[InputArrayOfArrays] yet
+Generating func cv::matMulDeriv (function)
+Generating func cv::projectPoints (function)
+Generating func cv::rectify3Collinear (function)
+  ignored: can not map type Unknown[InputArrayOfArrays] yet
+Generating func cv::reprojectImageTo3D (function)
+Generating func cv::solvePnPRansac (function)
+Generating func cv::solvePnP (function)
+Generating func cv::stereoCalibrate (function)
+  ignored: can not map type Unknown[InputArrayOfArrays] yet
+Generating func cv::stereoRectifyUncalibrated (function)
+Generating func cv::stereoRectify (function)
+  ignored: returning primitive by pointer is not supported (FIXME ?)
+Generating func cv::triangulatePoints (function)
+Generating func cv::validateDisparity (function)
+  ignored: can not map type Unknown[InputOutputArray] yet
+Generating box for struct cv::StereoBM
+Generating box for cv::StereoBM
+Generating impl for struct cv::StereoBM
+Generating func cv::StereoBM::StereoBM (constructor) cv::StereoBM . new
+Generating func cv::StereoBM::StereoBM (constructor) cv::StereoBM . new
+Generating func cv::StereoBM::init (method) cv::StereoBM . init
+Generating box for struct cv::StereoSGBM
+Generating box for cv::StereoSGBM
+Generating impl for struct cv::StereoSGBM
+Generating func cv::StereoSGBM::StereoSGBM (constructor) cv::StereoSGBM . new
+Generating func cv::StereoSGBM::StereoSGBM (constructor) cv::StereoSGBM . new

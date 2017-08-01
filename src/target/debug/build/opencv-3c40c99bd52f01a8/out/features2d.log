@@ -1,0 +1,3255 @@
+parseName: class cv.Mat with set(['cv']) -> fullname:cv::Mat namespace:cv classpath: classname: name:Mat
+register class cv::Mat (['class cv.Mat', '', ['/Ghost'], []])
+parseName: class cv.Algorithm with set(['cv']) -> fullname:cv::Algorithm namespace:cv classpath: classname: name:Algorithm
+register class cv::Algorithm (['class cv.Algorithm', '', ['/Ghost'], []])
+
+
+===== Header: /usr/include/opencv2/features2d/features2d.hpp =====
+Namespaces: set(['cv'])
+
+--- Incoming ---
+[u'cv.initModule_features2d', u'bool', ['/NW'], [], '']
+parseName: cv.initModule_features2d with ['cv'] -> fullname:cv::initModule_features2d namespace:cv classpath: classname: name:initModule_features2d
+register (function) initModule_features2d
+
+--- Incoming ---
+[   u'class cv.KeyPoint',
+    '',
+    ['/Simple'],
+    [   [u'Point2f', u'pt', '', ['/RW']],
+        [u'float', u'size', '', ['/RW']],
+        [u'float', u'angle', '', ['/RW']],
+        [u'float', u'response', '', ['/RW']],
+        [u'int', u'octave', '', ['/RW']],
+        [u'int', u'class_id', '', ['/RW']]],
+    u'The Keypoint Class\n\nThe class instance stores a keypoint, i.e. a point feature found by one of many available keypoint detectors, such as\nHarris corner detector, cv::FAST, cv::StarDetector, cv::SURF, cv::SIFT, cv::LDetector etc.\n\nThe keypoint is characterized by the 2D position, scale\n(proportional to the diameter of the neighborhood that needs to be taken into account),\norientation and some other parameters. The keypoint neighborhood is then analyzed by another algorithm that builds a descriptor\n(usually represented as a feature vector). The keypoints representing the same object in different images can then be matched using\ncv::KDTree or another method.\n']
+parseName: class cv.KeyPoint with ['cv'] -> fullname:cv::KeyPoint namespace:cv classpath: classname: name:KeyPoint
+register class cv::KeyPoint ([u'class cv.KeyPoint', '', ['/Simple'], [[u'Point2f', u'pt', '', ['/RW']], [u'float', u'size', '', ['/RW']], [u'float', u'angle', '', ['/RW']], [u'float', u'response', '', ['/RW']], [u'int', u'octave', '', ['/RW']], [u'int', u'class_id', '', ['/RW']]], u'The Keypoint Class\n\nThe class instance stores a keypoint, i.e. a point feature found by one of many available keypoint detectors, such as\nHarris corner detector, cv::FAST, cv::StarDetector, cv::SURF, cv::SIFT, cv::LDetector etc.\n\nThe keypoint is characterized by the 2D position, scale\n(proportional to the diameter of the neighborhood that needs to be taken into account),\norientation and some other parameters. The keypoint neighborhood is then analyzed by another algorithm that builds a descriptor\n(usually represented as a feature vector). The keypoints representing the same object in different images can then be matched using\ncv::KDTree or another method.\n'])
+
+--- Incoming ---
+[u'cv.KeyPoint.KeyPoint', u'', ['/NW'], [], u'the default constructor\n']
+parseName: cv.KeyPoint.KeyPoint with ['cv'] -> fullname:cv::KeyPoint::KeyPoint namespace:cv classpath:KeyPoint classname:KeyPoint name:KeyPoint
+register (constructor) new in cv::KeyPoint (simple)
+
+--- Incoming ---
+[   u'cv.KeyPoint.KeyPoint',
+    u'',
+    ['/NW'],
+    [   [u'Point2f', u'_pt', '', []],
+        [u'float', u'_size', '', []],
+        [u'float', u'_angle', u'-1', []],
+        [u'float', u'_response', u'0', []],
+        [u'int', u'_octave', u'0', []],
+        [u'int', u'_class_id', u'-1', []]],
+    u'the full constructor\n']
+parseName: cv.KeyPoint.KeyPoint with ['cv'] -> fullname:cv::KeyPoint::KeyPoint namespace:cv classpath:KeyPoint classname:KeyPoint name:KeyPoint
+register (constructor) new in cv::KeyPoint (simple)
+
+--- Incoming ---
+[   u'cv.KeyPoint.KeyPoint',
+    u'',
+    ['/NW'],
+    [   [u'float', u'x', '', []],
+        [u'float', u'y', '', []],
+        [u'float', u'_size', '', []],
+        [u'float', u'_angle', u'-1', []],
+        [u'float', u'_response', u'0', []],
+        [u'int', u'_octave', u'0', []],
+        [u'int', u'_class_id', u'-1', []]],
+    u'another form of the full constructor\n']
+parseName: cv.KeyPoint.KeyPoint with ['cv'] -> fullname:cv::KeyPoint::KeyPoint namespace:cv classpath:KeyPoint classname:KeyPoint name:KeyPoint
+register (constructor) new in cv::KeyPoint (simple)
+
+--- Incoming ---
+[u'cv.KeyPoint.hash', u'size_t', ['/NW', '/C'], [], '']
+parseName: cv.KeyPoint.hash with ['cv'] -> fullname:cv::KeyPoint::hash namespace:cv classpath:KeyPoint classname:KeyPoint name:hash
+register (method) hash in cv::KeyPoint (simple)
+
+--- Incoming ---
+[   u'cv.KeyPoint.convert',
+    u'void',
+    ['/NW', '/S'],
+    [   [u'const vector<KeyPoint>&', u'keypoints', '', []],
+        [u'vector<Point2f>&', u'points2f', '', []],
+        [u'const vector<int>&', u'keypointIndexes', u'vector<int>()', []]],
+    u'converts vector of keypoints to vector of points\n']
+parseName: cv.KeyPoint.convert with ['cv'] -> fullname:cv::KeyPoint::convert namespace:cv classpath:KeyPoint classname:KeyPoint name:convert
+register (method) convert in cv::KeyPoint (simple)
+
+--- Incoming ---
+[   u'cv.KeyPoint.convert',
+    u'void',
+    ['/NW', '/S'],
+    [   [u'const vector<Point2f>&', u'points2f', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'float', u'size', u'1', []],
+        [u'float', u'response', u'1', []],
+        [u'int', u'octave', u'0', []],
+        [u'int', u'class_id', u'-1', []]],
+    u'converts vector of points to the vector of keypoints, where each keypoint is assigned the same size and the same orientation\n']
+parseName: cv.KeyPoint.convert with ['cv'] -> fullname:cv::KeyPoint::convert namespace:cv classpath:KeyPoint classname:KeyPoint name:convert
+register (method) convert in cv::KeyPoint (simple)
+
+--- Incoming ---
+[   u'cv.KeyPoint.overlap',
+    u'float',
+    ['/NW', '/S'],
+    [   [u'const KeyPoint&', u'kp1', '', []],
+        [u'const KeyPoint&', u'kp2', '', []]],
+    u'computes overlap for pair of keypoints;\noverlap is a ratio between area of keypoint regions intersection and\narea of keypoint regions union (now keypoint region is circle)\n']
+parseName: cv.KeyPoint.overlap with ['cv'] -> fullname:cv::KeyPoint::overlap namespace:cv classpath:KeyPoint classname:KeyPoint name:overlap
+register (method) overlap in cv::KeyPoint (simple)
+
+--- Incoming ---
+[   u'cv.write',
+    u'void',
+    ['/NW'],
+    [   [u'FileStorage&', u'fs', '', []],
+        [u'const string&', u'name', '', []],
+        [u'const vector<KeyPoint>&', u'keypoints', '', []]],
+    u'writes vector of keypoints to the file storage\n']
+parseName: cv.write with ['cv'] -> fullname:cv::write namespace:cv classpath: classname: name:write
+Registering an unknown type: FileStorage
+register (function) write
+
+--- Incoming ---
+[   u'cv.read',
+    u'void',
+    ['/NW'],
+    [   [u'const FileNode&', u'node', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []]],
+    u'reads vector of keypoints from the specified file storage node\n']
+parseName: cv.read with ['cv'] -> fullname:cv::read namespace:cv classpath: classname: name:read
+Registering an unknown type: FileNode
+register (function) read
+
+--- Incoming ---
+[u'class cv.KeyPointsFilter', '', [], [], '']
+parseName: class cv.KeyPointsFilter with ['cv'] -> fullname:cv::KeyPointsFilter namespace:cv classpath: classname: name:KeyPointsFilter
+register class cv::KeyPointsFilter ([u'class cv.KeyPointsFilter', '', [], [], ''])
+
+--- Incoming ---
+[u'cv.KeyPointsFilter.KeyPointsFilter', u'', ['/NW'], [], '']
+parseName: cv.KeyPointsFilter.KeyPointsFilter with ['cv'] -> fullname:cv::KeyPointsFilter::KeyPointsFilter namespace:cv classpath:KeyPointsFilter classname:KeyPointsFilter name:KeyPointsFilter
+register (constructor) new in cv::KeyPointsFilter
+
+--- Incoming ---
+[   u'cv.KeyPointsFilter.runByImageBorder',
+    u'void',
+    ['/NW', '/S'],
+    [   [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'Size', u'imageSize', '', []],
+        [u'int', u'borderSize', '', []]],
+    '']
+parseName: cv.KeyPointsFilter.runByImageBorder with ['cv'] -> fullname:cv::KeyPointsFilter::runByImageBorder namespace:cv classpath:KeyPointsFilter classname:KeyPointsFilter name:runByImageBorder
+register (method) runByImageBorder in cv::KeyPointsFilter
+
+--- Incoming ---
+[   u'cv.KeyPointsFilter.runByKeypointSize',
+    u'void',
+    ['/NW', '/S'],
+    [   [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'float', u'minSize', '', []],
+        [u'float', u'maxSize', u'FLT_MAX', []]],
+    '']
+parseName: cv.KeyPointsFilter.runByKeypointSize with ['cv'] -> fullname:cv::KeyPointsFilter::runByKeypointSize namespace:cv classpath:KeyPointsFilter classname:KeyPointsFilter name:runByKeypointSize
+register (method) runByKeypointSize in cv::KeyPointsFilter
+
+--- Incoming ---
+[   u'cv.KeyPointsFilter.runByPixelsMask',
+    u'void',
+    ['/NW', '/S'],
+    [   [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'const Mat&', u'mask', '', []]],
+    '']
+parseName: cv.KeyPointsFilter.runByPixelsMask with ['cv'] -> fullname:cv::KeyPointsFilter::runByPixelsMask namespace:cv classpath:KeyPointsFilter classname:KeyPointsFilter name:runByPixelsMask
+register (method) runByPixelsMask in cv::KeyPointsFilter
+
+--- Incoming ---
+[   u'cv.KeyPointsFilter.removeDuplicated',
+    u'void',
+    ['/NW', '/S'],
+    [[u'vector<KeyPoint>&', u'keypoints', '', []]],
+    '']
+parseName: cv.KeyPointsFilter.removeDuplicated with ['cv'] -> fullname:cv::KeyPointsFilter::removeDuplicated namespace:cv classpath:KeyPointsFilter classname:KeyPointsFilter name:removeDuplicated
+register (method) removeDuplicated in cv::KeyPointsFilter
+
+--- Incoming ---
+[   u'cv.KeyPointsFilter.retainBest',
+    u'void',
+    ['/NW', '/S'],
+    [   [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'int', u'npoints', '', []]],
+    '']
+parseName: cv.KeyPointsFilter.retainBest with ['cv'] -> fullname:cv::KeyPointsFilter::retainBest namespace:cv classpath:KeyPointsFilter classname:KeyPointsFilter name:retainBest
+register (method) retainBest in cv::KeyPointsFilter
+
+--- Incoming ---
+[u'class cv.FeatureDetector', ': cv::Algorithm', [], [], '']
+parseName: class cv.FeatureDetector with ['cv'] -> fullname:cv::FeatureDetector namespace:cv classpath: classname: name:FeatureDetector
+register class cv::FeatureDetector ([u'class cv.FeatureDetector', ': cv::Algorithm', [], [], '']) impl:cv::Algorithm
+
+--- Incoming ---
+[u'cv.FeatureDetector.~FeatureDetector', u'', ['/NW'], [], '']
+parseName: cv.FeatureDetector.~FeatureDetector with ['cv'] -> fullname:cv::FeatureDetector::~FeatureDetector namespace:cv classpath:FeatureDetector classname:FeatureDetector name:~FeatureDetector
+ignore destructor (method) ~FeatureDetector in cv::FeatureDetector
+
+--- Incoming ---
+[   u'cv.FeatureDetector.detect',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []]],
+    '']
+parseName: cv.FeatureDetector.detect with ['cv'] -> fullname:cv::FeatureDetector::detect namespace:cv classpath:FeatureDetector classname:FeatureDetector name:detect
+register (method) detect in cv::FeatureDetector
+
+--- Incoming ---
+[   u'cv.FeatureDetector.detect',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const vector<Mat>&', u'images', '', []],
+        [u'vector<vector<KeyPoint> >&', u'keypoints', '', []],
+        [u'const vector<Mat>&', u'masks', u'vector<Mat>()', []]],
+    '']
+parseName: cv.FeatureDetector.detect with ['cv'] -> fullname:cv::FeatureDetector::detect namespace:cv classpath:FeatureDetector classname:FeatureDetector name:detect
+register (method) detect in cv::FeatureDetector
+
+--- Incoming ---
+[u'cv.FeatureDetector.empty', u'bool', ['/NW', '/C'], [], '']
+parseName: cv.FeatureDetector.empty with ['cv'] -> fullname:cv::FeatureDetector::empty namespace:cv classpath:FeatureDetector classname:FeatureDetector name:empty
+register (method) empty in cv::FeatureDetector
+
+--- Incoming ---
+[   u'cv.FeatureDetector.create',
+    u'Ptr<FeatureDetector>',
+    ['/NW', '/S'],
+    [[u'const string&', u'detectorType', '', []]],
+    '']
+parseName: cv.FeatureDetector.create with ['cv'] -> fullname:cv::FeatureDetector::create namespace:cv classpath:FeatureDetector classname:FeatureDetector name:create
+register (method) create in cv::FeatureDetector
+
+--- Incoming ---
+[   u'cv.FeatureDetector.detectImpl',
+    u'void',
+    ['/NW', '/A', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []]],
+    '']
+parseName: cv.FeatureDetector.detectImpl with ['cv'] -> fullname:cv::FeatureDetector::detectImpl namespace:cv classpath:FeatureDetector classname:FeatureDetector name:detectImpl
+
+--- Incoming ---
+[   u'cv.FeatureDetector.removeInvalidPoints',
+    u'void',
+    ['/NW', '/S', '/H'],
+    [   [u'const Mat&', u'mask', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []]],
+    '']
+parseName: cv.FeatureDetector.removeInvalidPoints with ['cv'] -> fullname:cv::FeatureDetector::removeInvalidPoints namespace:cv classpath:FeatureDetector classname:FeatureDetector name:removeInvalidPoints
+
+--- Incoming ---
+[u'class cv.DescriptorExtractor', ': cv::Algorithm', [], [], '']
+parseName: class cv.DescriptorExtractor with ['cv'] -> fullname:cv::DescriptorExtractor namespace:cv classpath: classname: name:DescriptorExtractor
+register class cv::DescriptorExtractor ([u'class cv.DescriptorExtractor', ': cv::Algorithm', [], [], '']) impl:cv::Algorithm
+
+--- Incoming ---
+[u'cv.DescriptorExtractor.~DescriptorExtractor', u'', ['/NW'], [], '']
+parseName: cv.DescriptorExtractor.~DescriptorExtractor with ['cv'] -> fullname:cv::DescriptorExtractor::~DescriptorExtractor namespace:cv classpath:DescriptorExtractor classname:DescriptorExtractor name:~DescriptorExtractor
+ignore destructor (method) ~DescriptorExtractor in cv::DescriptorExtractor
+
+--- Incoming ---
+[   u'cv.DescriptorExtractor.compute',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'Mat&', u'descriptors', '', []]],
+    '']
+parseName: cv.DescriptorExtractor.compute with ['cv'] -> fullname:cv::DescriptorExtractor::compute namespace:cv classpath:DescriptorExtractor classname:DescriptorExtractor name:compute
+register (method) compute in cv::DescriptorExtractor
+
+--- Incoming ---
+[   u'cv.DescriptorExtractor.compute',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const vector<Mat>&', u'images', '', []],
+        [u'vector<vector<KeyPoint> >&', u'keypoints', '', []],
+        [u'vector<Mat>&', u'descriptors', '', []]],
+    '']
+parseName: cv.DescriptorExtractor.compute with ['cv'] -> fullname:cv::DescriptorExtractor::compute namespace:cv classpath:DescriptorExtractor classname:DescriptorExtractor name:compute
+register (method) compute in cv::DescriptorExtractor
+
+--- Incoming ---
+[u'cv.DescriptorExtractor.descriptorSize', u'int', ['/NW', '/A', '/C'], [], '']
+parseName: cv.DescriptorExtractor.descriptorSize with ['cv'] -> fullname:cv::DescriptorExtractor::descriptorSize namespace:cv classpath:DescriptorExtractor classname:DescriptorExtractor name:descriptorSize
+
+--- Incoming ---
+[u'cv.DescriptorExtractor.descriptorType', u'int', ['/NW', '/A', '/C'], [], '']
+parseName: cv.DescriptorExtractor.descriptorType with ['cv'] -> fullname:cv::DescriptorExtractor::descriptorType namespace:cv classpath:DescriptorExtractor classname:DescriptorExtractor name:descriptorType
+
+--- Incoming ---
+[u'cv.DescriptorExtractor.empty', u'bool', ['/NW', '/C'], [], '']
+parseName: cv.DescriptorExtractor.empty with ['cv'] -> fullname:cv::DescriptorExtractor::empty namespace:cv classpath:DescriptorExtractor classname:DescriptorExtractor name:empty
+register (method) empty in cv::DescriptorExtractor
+
+--- Incoming ---
+[   u'cv.DescriptorExtractor.create',
+    u'Ptr<DescriptorExtractor>',
+    ['/NW', '/S'],
+    [[u'const string&', u'descriptorExtractorType', '', []]],
+    '']
+parseName: cv.DescriptorExtractor.create with ['cv'] -> fullname:cv::DescriptorExtractor::create namespace:cv classpath:DescriptorExtractor classname:DescriptorExtractor name:create
+register (method) create in cv::DescriptorExtractor
+
+--- Incoming ---
+[   u'cv.DescriptorExtractor.computeImpl',
+    u'void',
+    ['/NW', '/A', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'Mat&', u'descriptors', '', []]],
+    '']
+parseName: cv.DescriptorExtractor.computeImpl with ['cv'] -> fullname:cv::DescriptorExtractor::computeImpl namespace:cv classpath:DescriptorExtractor classname:DescriptorExtractor name:computeImpl
+
+--- Incoming ---
+[   u'cv.DescriptorExtractor.removeBorderKeypoints',
+    u'void',
+    ['/NW', '/S', '/H'],
+    [   [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'Size', u'imageSize', '', []],
+        [u'int', u'borderSize', '', []]],
+    '']
+parseName: cv.DescriptorExtractor.removeBorderKeypoints with ['cv'] -> fullname:cv::DescriptorExtractor::removeBorderKeypoints namespace:cv classpath:DescriptorExtractor classname:DescriptorExtractor name:removeBorderKeypoints
+
+--- Incoming ---
+[   u'class cv.Feature2D',
+    u': cv::FeatureDetector, cv::DescriptorExtractor',
+    [],
+    [],
+    '']
+parseName: class cv.Feature2D with ['cv'] -> fullname:cv::Feature2D namespace:cv classpath: classname: name:Feature2D
+register class cv::Feature2D ([u'class cv.Feature2D', u': cv::FeatureDetector, cv::DescriptorExtractor', [], [], '']) impl:cv::FeatureDetector,cv::DescriptorExtractor
+
+--- Incoming ---
+[   u'cv.Feature2D.operator ()',
+    u'void',
+    ['/NW', '/A', '/C'],
+    [   [u'InputArray', u'image', '', []],
+        [u'InputArray', u'mask', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'OutputArray', u'descriptors', '', []],
+        [u'bool', u'useProvidedKeypoints', u'false', []]],
+    '']
+parseName: cv.Feature2D.operator () with ['cv'] -> fullname:cv::Feature2D::operator () namespace:cv classpath:Feature2D classname:Feature2D name:operator ()
+ignore (method) operator () in cv::Feature2D
+
+--- Incoming ---
+[   u'cv.Feature2D.compute',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'std::vector<KeyPoint>&', u'keypoints', '', []],
+        [u'Mat&', u'descriptors', '', []]],
+    '']
+parseName: cv.Feature2D.compute with ['cv'] -> fullname:cv::Feature2D::compute namespace:cv classpath:Feature2D classname:Feature2D name:compute
+Registering an unknown type: std::vector<KeyPoint>
+register (method) compute in cv::Feature2D
+
+--- Incoming ---
+[   u'cv.Feature2D.create',
+    u'Ptr<Feature2D>',
+    ['/NW', '/S'],
+    [[u'const string&', u'name', '', []]],
+    '']
+parseName: cv.Feature2D.create with ['cv'] -> fullname:cv::Feature2D::create namespace:cv classpath:Feature2D classname:Feature2D name:create
+register (method) create in cv::Feature2D
+
+--- Incoming ---
+[   u'class cv.BRISK',
+    u': cv::Feature2D',
+    [],
+    [[u'int', u'threshold', '', ['/RW']], [u'int', u'octaves', '', ['/RW']]],
+    u'BRISK implementation\n']
+parseName: class cv.BRISK with ['cv'] -> fullname:cv::BRISK namespace:cv classpath: classname: name:BRISK
+register class cv::BRISK ([u'class cv.BRISK', u': cv::Feature2D', [], [[u'int', u'threshold', '', ['/RW']], [u'int', u'octaves', '', ['/RW']]], u'BRISK implementation\n']) impl:cv::Feature2D
+
+--- Incoming ---
+[   u'cv.BRISK.BRISK',
+    u'',
+    ['/NW', '/E'],
+    [   [u'int', u'thresh', u'30', []],
+        [u'int', u'octaves', u'3', []],
+        [u'float', u'patternScale', u'1.0f', []]],
+    '']
+parseName: cv.BRISK.BRISK with ['cv'] -> fullname:cv::BRISK::BRISK namespace:cv classpath:BRISK classname:BRISK name:BRISK
+register (constructor) new in cv::BRISK
+
+--- Incoming ---
+[u'cv.BRISK.~BRISK', u'', ['/NW'], [], '']
+parseName: cv.BRISK.~BRISK with ['cv'] -> fullname:cv::BRISK::~BRISK namespace:cv classpath:BRISK classname:BRISK name:~BRISK
+ignore destructor (method) ~BRISK in cv::BRISK
+
+--- Incoming ---
+[u'cv.BRISK.descriptorSize', u'int', ['/NW', '/C'], [], '']
+parseName: cv.BRISK.descriptorSize with ['cv'] -> fullname:cv::BRISK::descriptorSize namespace:cv classpath:BRISK classname:BRISK name:descriptorSize
+register (method) descriptorSize in cv::BRISK
+
+--- Incoming ---
+[u'cv.BRISK.descriptorType', u'int', ['/NW', '/C'], [], '']
+parseName: cv.BRISK.descriptorType with ['cv'] -> fullname:cv::BRISK::descriptorType namespace:cv classpath:BRISK classname:BRISK name:descriptorType
+register (method) descriptorType in cv::BRISK
+
+--- Incoming ---
+[   u'cv.BRISK.operator ()',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'InputArray', u'image', '', []],
+        [u'InputArray', u'mask', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []]],
+    '']
+parseName: cv.BRISK.operator () with ['cv'] -> fullname:cv::BRISK::operator () namespace:cv classpath:BRISK classname:BRISK name:operator ()
+ignore (method) operator () in cv::BRISK
+
+--- Incoming ---
+[   u'cv.BRISK.operator ()',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'InputArray', u'image', '', []],
+        [u'InputArray', u'mask', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'OutputArray', u'descriptors', '', []],
+        [u'bool', u'useProvidedKeypoints', u'false', []]],
+    '']
+parseName: cv.BRISK.operator () with ['cv'] -> fullname:cv::BRISK::operator () namespace:cv classpath:BRISK classname:BRISK name:operator ()
+ignore (method) operator () in cv::BRISK
+
+--- Incoming ---
+[u'cv.BRISK.info', u'AlgorithmInfo*', ['/NW', '/C'], [], '']
+parseName: cv.BRISK.info with ['cv'] -> fullname:cv::BRISK::info namespace:cv classpath:BRISK classname:BRISK name:info
+Registering an unknown type: AlgorithmInfo
+register (method) info in cv::BRISK
+
+--- Incoming ---
+[   u'cv.BRISK.BRISK',
+    u'',
+    ['/NW', '/E'],
+    [   [u'std::vector<float> &', u'radiusList', '', []],
+        [u'std::vector<int> &', u'numberList', '', []],
+        [u'float', u'dMax', u'5.85f', []],
+        [u'float', u'dMin', u'8.2f', []],
+        [u'std::vector<int>', u'indexChange', u'std::vector<int>()', []]],
+    '']
+parseName: cv.BRISK.BRISK with ['cv'] -> fullname:cv::BRISK::BRISK namespace:cv classpath:BRISK classname:BRISK name:BRISK
+Registering an unknown type: std::vector<float> 
+Registering an unknown type: std::vector<int> 
+Registering an unknown type: std::vector<int>
+register (constructor) new in cv::BRISK
+
+--- Incoming ---
+[   u'cv.BRISK.generateKernel',
+    u'void',
+    ['/NW'],
+    [   [u'std::vector<float> &', u'radiusList', '', []],
+        [u'std::vector<int> &', u'numberList', '', []],
+        [u'float', u'dMax', u'5.85f', []],
+        [u'float', u'dMin', u'8.2f', []],
+        [u'std::vector<int>', u'indexChange', u'std::vector<int>()', []]],
+    '']
+parseName: cv.BRISK.generateKernel with ['cv'] -> fullname:cv::BRISK::generateKernel namespace:cv classpath:BRISK classname:BRISK name:generateKernel
+register (method) generateKernel in cv::BRISK
+
+--- Incoming ---
+[   u'cv.BRISK.computeImpl',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'Mat&', u'descriptors', '', []]],
+    '']
+parseName: cv.BRISK.computeImpl with ['cv'] -> fullname:cv::BRISK::computeImpl namespace:cv classpath:BRISK classname:BRISK name:computeImpl
+
+--- Incoming ---
+[   u'cv.BRISK.detectImpl',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []]],
+    '']
+parseName: cv.BRISK.detectImpl with ['cv'] -> fullname:cv::BRISK::detectImpl namespace:cv classpath:BRISK classname:BRISK name:detectImpl
+
+--- Incoming ---
+[   u'cv.BRISK.computeKeypointsNoOrientation',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'InputArray', u'image', '', []],
+        [u'InputArray', u'mask', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []]],
+    '']
+parseName: cv.BRISK.computeKeypointsNoOrientation with ['cv'] -> fullname:cv::BRISK::computeKeypointsNoOrientation namespace:cv classpath:BRISK classname:BRISK name:computeKeypointsNoOrientation
+
+--- Incoming ---
+[   u'cv.BRISK.computeDescriptorsAndOrOrientation',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'InputArray', u'image', '', []],
+        [u'InputArray', u'mask', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'OutputArray', u'descriptors', '', []],
+        [u'bool', u'doDescriptors', '', []],
+        [u'bool', u'doOrientation', '', []],
+        [u'bool', u'useProvidedKeypoints', '', []]],
+    '']
+parseName: cv.BRISK.computeDescriptorsAndOrOrientation with ['cv'] -> fullname:cv::BRISK::computeDescriptorsAndOrOrientation namespace:cv classpath:BRISK classname:BRISK name:computeDescriptorsAndOrOrientation
+
+--- Incoming ---
+[u'struct cv.BRISK.BriskPatternPoint', '', ['/Hidden'], [], '']
+parseName: struct cv.BRISK.BriskPatternPoint with ['cv'] -> fullname:cv::BRISK::BriskPatternPoint namespace:cv classpath:BRISK classname:BRISK name:BriskPatternPoint
+register class cv::BRISK::BriskPatternPoint ([u'struct cv.BRISK.BriskPatternPoint', '', ['/Hidden'], [], '']) [ignored]
+
+--- Incoming ---
+[u'struct cv.BRISK.BriskShortPair', '', ['/Hidden'], [], '']
+parseName: struct cv.BRISK.BriskShortPair with ['cv'] -> fullname:cv::BRISK::BriskShortPair namespace:cv classpath:BRISK classname:BRISK name:BriskShortPair
+register class cv::BRISK::BriskShortPair ([u'struct cv.BRISK.BriskShortPair', '', ['/Hidden'], [], '']) [ignored]
+
+--- Incoming ---
+[u'struct cv.BRISK.BriskLongPair', '', ['/Hidden'], [], '']
+parseName: struct cv.BRISK.BriskLongPair with ['cv'] -> fullname:cv::BRISK::BriskLongPair namespace:cv classpath:BRISK classname:BRISK name:BriskLongPair
+register class cv::BRISK::BriskLongPair ([u'struct cv.BRISK.BriskLongPair', '', ['/Hidden'], [], '']) [ignored]
+
+--- Incoming ---
+[   u'cv.BRISK.smoothedIntensity',
+    u'int',
+    ['/NW', '/C', '/H'],
+    [   [u'const cv::Mat&', u'image', '', []],
+        [u'const cv::Mat&', u'integral', '', []],
+        [u'const float', u'key_x', '', []],
+        [u'const float', u'key_y', '', []],
+        [u'const unsigned int', u'scale', '', []],
+        [u'const unsigned int', u'rot', '', []],
+        [u'const unsigned int', u'point', '', []]],
+    '']
+parseName: cv.BRISK.smoothedIntensity with ['cv'] -> fullname:cv::BRISK::smoothedIntensity namespace:cv classpath:BRISK classname:BRISK name:smoothedIntensity
+Registering an unknown type: unsigned int
+
+--- Incoming ---
+[   u'class cv.ORB',
+    u': cv::Feature2D',
+    [],
+    [   [u'int', u'nfeatures', '', ['/RW']],
+        [u'double', u'scaleFactor', '', ['/RW']],
+        [u'int', u'nlevels', '', ['/RW']],
+        [u'int', u'edgeThreshold', '', ['/RW']],
+        [u'int', u'firstLevel', '', ['/RW']],
+        [u'int', u'WTA_K', '', ['/RW']],
+        [u'int', u'scoreType', '', ['/RW']],
+        [u'int', u'patchSize', '', ['/RW']]],
+    u'ORB implementation.\n']
+parseName: class cv.ORB with ['cv'] -> fullname:cv::ORB namespace:cv classpath: classname: name:ORB
+register class cv::ORB ([u'class cv.ORB', u': cv::Feature2D', [], [[u'int', u'nfeatures', '', ['/RW']], [u'double', u'scaleFactor', '', ['/RW']], [u'int', u'nlevels', '', ['/RW']], [u'int', u'edgeThreshold', '', ['/RW']], [u'int', u'firstLevel', '', ['/RW']], [u'int', u'WTA_K', '', ['/RW']], [u'int', u'scoreType', '', ['/RW']], [u'int', u'patchSize', '', ['/RW']]], u'ORB implementation.\n']) impl:cv::Feature2D
+
+--- Incoming ---
+[u'const cv.ORB.kBytes', u'32', [], []]
+parseName: const cv.ORB.kBytes with ['cv'] -> fullname:cv::ORB::kBytes namespace:cv classpath:ORB classname:ORB name:kBytes
+
+--- Incoming ---
+[u'const cv.ORB.HARRIS_SCORE', u'0', [], []]
+parseName: const cv.ORB.HARRIS_SCORE with ['cv'] -> fullname:cv::ORB::HARRIS_SCORE namespace:cv classpath:ORB classname:ORB name:HARRIS_SCORE
+
+--- Incoming ---
+[u'const cv.ORB.FAST_SCORE', u'1', [], []]
+parseName: const cv.ORB.FAST_SCORE with ['cv'] -> fullname:cv::ORB::FAST_SCORE namespace:cv classpath:ORB classname:ORB name:FAST_SCORE
+
+--- Incoming ---
+[   u'cv.ORB.ORB',
+    u'',
+    ['/NW', '/E'],
+    [   [u'int', u'nfeatures', u'500', []],
+        [u'float', u'scaleFactor', u'1.2f', []],
+        [u'int', u'nlevels', u'8', []],
+        [u'int', u'edgeThreshold', u'31', []],
+        [u'int', u'firstLevel', u'0', []],
+        [u'int', u'WTA_K', u'2', []],
+        [u'int', u'scoreType', u'ORB::HARRIS_SCORE', []],
+        [u'int', u'patchSize', u'31', []]],
+    '']
+parseName: cv.ORB.ORB with ['cv'] -> fullname:cv::ORB::ORB namespace:cv classpath:ORB classname:ORB name:ORB
+register (constructor) new in cv::ORB
+
+--- Incoming ---
+[u'cv.ORB.descriptorSize', u'int', ['/NW', '/C'], [], '']
+parseName: cv.ORB.descriptorSize with ['cv'] -> fullname:cv::ORB::descriptorSize namespace:cv classpath:ORB classname:ORB name:descriptorSize
+register (method) descriptorSize in cv::ORB
+
+--- Incoming ---
+[u'cv.ORB.descriptorType', u'int', ['/NW', '/C'], [], '']
+parseName: cv.ORB.descriptorType with ['cv'] -> fullname:cv::ORB::descriptorType namespace:cv classpath:ORB classname:ORB name:descriptorType
+register (method) descriptorType in cv::ORB
+
+--- Incoming ---
+[   u'cv.ORB.operator ()',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'InputArray', u'image', '', []],
+        [u'InputArray', u'mask', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []]],
+    '']
+parseName: cv.ORB.operator () with ['cv'] -> fullname:cv::ORB::operator () namespace:cv classpath:ORB classname:ORB name:operator ()
+ignore (method) operator () in cv::ORB
+
+--- Incoming ---
+[   u'cv.ORB.operator ()',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'InputArray', u'image', '', []],
+        [u'InputArray', u'mask', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'OutputArray', u'descriptors', '', []],
+        [u'bool', u'useProvidedKeypoints', u'false', []]],
+    '']
+parseName: cv.ORB.operator () with ['cv'] -> fullname:cv::ORB::operator () namespace:cv classpath:ORB classname:ORB name:operator ()
+ignore (method) operator () in cv::ORB
+
+--- Incoming ---
+[u'cv.ORB.info', u'AlgorithmInfo*', ['/NW', '/C'], [], '']
+parseName: cv.ORB.info with ['cv'] -> fullname:cv::ORB::info namespace:cv classpath:ORB classname:ORB name:info
+register (method) info in cv::ORB
+
+--- Incoming ---
+[   u'cv.ORB.computeImpl',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'Mat&', u'descriptors', '', []]],
+    '']
+parseName: cv.ORB.computeImpl with ['cv'] -> fullname:cv::ORB::computeImpl namespace:cv classpath:ORB classname:ORB name:computeImpl
+
+--- Incoming ---
+[   u'cv.ORB.detectImpl',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []]],
+    '']
+parseName: cv.ORB.detectImpl with ['cv'] -> fullname:cv::ORB::detectImpl namespace:cv classpath:ORB classname:ORB name:detectImpl
+
+--- Incoming ---
+[   u'class cv.FREAK',
+    u': cv::DescriptorExtractor',
+    [],
+    [],
+    u'FREAK implementation\n']
+parseName: class cv.FREAK with ['cv'] -> fullname:cv::FREAK namespace:cv classpath: classname: name:FREAK
+register class cv::FREAK ([u'class cv.FREAK', u': cv::DescriptorExtractor', [], [], u'FREAK implementation\n']) impl:cv::DescriptorExtractor
+
+--- Incoming ---
+[   u'cv.FREAK.FREAK',
+    u'',
+    ['/NW', '/E'],
+    [   [u'bool', u'orientationNormalized', u'true', []],
+        [u'bool', u'scaleNormalized', u'true', []],
+        [u'float', u'patternScale', u'22.0f', []],
+        [u'int', u'nOctaves', u'4', []],
+        [u'const vector<int>&', u'selectedPairs', u'vector<int>()', []]],
+    u'Constructor\n* @param orientationNormalized enable orientation normalization\n* @param scaleNormalized enable scale normalization\n* @param patternScale scaling of the description pattern\n* @param nOctaves number of octaves covered by the detected keypoints\n* @param selectedPairs (optional) user defined selected pairs\n']
+parseName: cv.FREAK.FREAK with ['cv'] -> fullname:cv::FREAK::FREAK namespace:cv classpath:FREAK classname:FREAK name:FREAK
+register (constructor) new in cv::FREAK
+
+--- Incoming ---
+[u'cv.FREAK.FREAK', u'', ['/NW'], [[u'const FREAK&', u'rhs', '', []]], '']
+parseName: cv.FREAK.FREAK with ['cv'] -> fullname:cv::FREAK::FREAK namespace:cv classpath:FREAK classname:FREAK name:FREAK
+register (constructor) new in cv::FREAK
+
+--- Incoming ---
+[   u'cv.FREAK.operator=',
+    u'FREAK&',
+    ['/NW'],
+    [[u'const FREAK&', u'', '', []]],
+    '']
+parseName: cv.FREAK.operator= with ['cv'] -> fullname:cv::FREAK::operator= namespace:cv classpath:FREAK classname:FREAK name:operator=
+ignore (method) operator= in cv::FREAK
+
+--- Incoming ---
+[u'cv.FREAK.~FREAK', u'', ['/NW'], [], '']
+parseName: cv.FREAK.~FREAK with ['cv'] -> fullname:cv::FREAK::~FREAK namespace:cv classpath:FREAK classname:FREAK name:~FREAK
+ignore destructor (method) ~FREAK in cv::FREAK
+
+--- Incoming ---
+[u'cv.FREAK.descriptorSize', u'int', ['/NW', '/C'], [], '']
+parseName: cv.FREAK.descriptorSize with ['cv'] -> fullname:cv::FREAK::descriptorSize namespace:cv classpath:FREAK classname:FREAK name:descriptorSize
+register (method) descriptorSize in cv::FREAK
+
+--- Incoming ---
+[u'cv.FREAK.descriptorType', u'int', ['/NW', '/C'], [], '']
+parseName: cv.FREAK.descriptorType with ['cv'] -> fullname:cv::FREAK::descriptorType namespace:cv classpath:FREAK classname:FREAK name:descriptorType
+register (method) descriptorType in cv::FREAK
+
+--- Incoming ---
+[   u'cv.FREAK.selectPairs',
+    u'vector<int>',
+    ['/NW'],
+    [   [u'const vector<Mat>&', u'images', '', []],
+        [u'vector<vector<KeyPoint> >&', u'keypoints', '', []],
+        [u'const double', u'corrThresh', u'0.7', []],
+        [u'bool', u'verbose', u'true', []]],
+    u'select the 512 "best description pairs"\n* @param images grayscale images set\n* @param keypoints set of detected keypoints\n* @param corrThresh correlation threshold\n* @param verbose print construction information\n* @return list of best pair indexes\n']
+parseName: cv.FREAK.selectPairs with ['cv'] -> fullname:cv::FREAK::selectPairs namespace:cv classpath:FREAK classname:FREAK name:selectPairs
+register (method) selectPairs in cv::FREAK
+
+--- Incoming ---
+[u'cv.FREAK.info', u'AlgorithmInfo*', ['/NW', '/C'], [], '']
+parseName: cv.FREAK.info with ['cv'] -> fullname:cv::FREAK::info namespace:cv classpath:FREAK classname:FREAK name:info
+register (method) info in cv::FREAK
+
+--- Incoming ---
+[u'const cv.FREAK.NB_SCALES', u'64', [], []]
+parseName: const cv.FREAK.NB_SCALES with ['cv'] -> fullname:cv::FREAK::NB_SCALES namespace:cv classpath:FREAK classname:FREAK name:NB_SCALES
+
+--- Incoming ---
+[u'const cv.FREAK.NB_PAIRS', u'512', [], []]
+parseName: const cv.FREAK.NB_PAIRS with ['cv'] -> fullname:cv::FREAK::NB_PAIRS namespace:cv classpath:FREAK classname:FREAK name:NB_PAIRS
+
+--- Incoming ---
+[u'const cv.FREAK.NB_ORIENPAIRS', u'45', [], []]
+parseName: const cv.FREAK.NB_ORIENPAIRS with ['cv'] -> fullname:cv::FREAK::NB_ORIENPAIRS namespace:cv classpath:FREAK classname:FREAK name:NB_ORIENPAIRS
+
+--- Incoming ---
+[   u'cv.FREAK.computeImpl',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'Mat&', u'descriptors', '', []]],
+    '']
+parseName: cv.FREAK.computeImpl with ['cv'] -> fullname:cv::FREAK::computeImpl namespace:cv classpath:FREAK classname:FREAK name:computeImpl
+
+--- Incoming ---
+[u'cv.FREAK.buildPattern', u'void', ['/NW', '/H'], [], '']
+parseName: cv.FREAK.buildPattern with ['cv'] -> fullname:cv::FREAK::buildPattern namespace:cv classpath:FREAK classname:FREAK name:buildPattern
+
+--- Incoming ---
+[   u'cv.FREAK.meanIntensity',
+    u'uchar',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'const Mat&', u'integral', '', []],
+        [u'const float', u'kp_x', '', []],
+        [u'const float', u'kp_y', '', []],
+        [u'const unsigned int', u'scale', '', []],
+        [u'const unsigned int', u'rot', '', []],
+        [u'const unsigned int', u'point', '', []]],
+    '']
+parseName: cv.FREAK.meanIntensity with ['cv'] -> fullname:cv::FREAK::meanIntensity namespace:cv classpath:FREAK classname:FREAK name:meanIntensity
+
+--- Incoming ---
+[u'struct cv.FREAK.PatternPoint', '', ['/Hidden'], [], '']
+parseName: struct cv.FREAK.PatternPoint with ['cv'] -> fullname:cv::FREAK::PatternPoint namespace:cv classpath:FREAK classname:FREAK name:PatternPoint
+register class cv::FREAK::PatternPoint ([u'struct cv.FREAK.PatternPoint', '', ['/Hidden'], [], '']) [ignored]
+
+--- Incoming ---
+[u'struct cv.FREAK.DescriptionPair', '', ['/Hidden'], [], '']
+parseName: struct cv.FREAK.DescriptionPair with ['cv'] -> fullname:cv::FREAK::DescriptionPair namespace:cv classpath:FREAK classname:FREAK name:DescriptionPair
+register class cv::FREAK::DescriptionPair ([u'struct cv.FREAK.DescriptionPair', '', ['/Hidden'], [], '']) [ignored]
+
+--- Incoming ---
+[u'struct cv.FREAK.OrientationPair', '', ['/Hidden'], [], '']
+parseName: struct cv.FREAK.OrientationPair with ['cv'] -> fullname:cv::FREAK::OrientationPair namespace:cv classpath:FREAK classname:FREAK name:OrientationPair
+register class cv::FREAK::OrientationPair ([u'struct cv.FREAK.OrientationPair', '', ['/Hidden'], [], '']) [ignored]
+
+--- Incoming ---
+[   u'class cv.MSER',
+    u': cv::FeatureDetector',
+    [],
+    [],
+    u'Maximal Stable Extremal Regions class.\n\nThe class implements MSER algorithm introduced by J. Matas.\nUnlike SIFT, SURF and many other detectors in OpenCV, this is salient region detector,\nnot the salient point detector.\n\nIt returns the regions, each of those is encoded as a contour.\n']
+parseName: class cv.MSER with ['cv'] -> fullname:cv::MSER namespace:cv classpath: classname: name:MSER
+register class cv::MSER ([u'class cv.MSER', u': cv::FeatureDetector', [], [], u'Maximal Stable Extremal Regions class.\n\nThe class implements MSER algorithm introduced by J. Matas.\nUnlike SIFT, SURF and many other detectors in OpenCV, this is salient region detector,\nnot the salient point detector.\n\nIt returns the regions, each of those is encoded as a contour.\n']) impl:cv::FeatureDetector
+
+--- Incoming ---
+[   u'cv.MSER.MSER',
+    u'',
+    ['/NW', '/E'],
+    [   [u'int', u'_delta', u'5', []],
+        [u'int', u'_min_area', u'60', []],
+        [u'int', u'_max_area', u'14400', []],
+        [u'double', u'_max_variation', u'0.25', []],
+        [u'double', u'_min_diversity', u'.2', []],
+        [u'int', u'_max_evolution', u'200', []],
+        [u'double', u'_area_threshold', u'1.01', []],
+        [u'double', u'_min_margin', u'0.003', []],
+        [u'int', u'_edge_blur_size', u'5', []]],
+    u'the full constructor\n']
+parseName: cv.MSER.MSER with ['cv'] -> fullname:cv::MSER::MSER namespace:cv classpath:MSER classname:MSER name:MSER
+register (constructor) new in cv::MSER
+
+--- Incoming ---
+[   u'cv.MSER.operator ()',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<vector<Point> >&', u'msers', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []]],
+    u'the operator that extracts the MSERs from the image or the specific part of it\n']
+parseName: cv.MSER.operator () with ['cv'] -> fullname:cv::MSER::operator () namespace:cv classpath:MSER classname:MSER name:operator ()
+ignore (method) operator () in cv::MSER
+
+--- Incoming ---
+[u'cv.MSER.info', u'AlgorithmInfo*', ['/NW', '/C'], [], '']
+parseName: cv.MSER.info with ['cv'] -> fullname:cv::MSER::info namespace:cv classpath:MSER classname:MSER name:info
+register (method) info in cv::MSER
+
+--- Incoming ---
+[   u'cv.MSER.detectImpl',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []]],
+    '']
+parseName: cv.MSER.detectImpl with ['cv'] -> fullname:cv::MSER::detectImpl namespace:cv classpath:MSER classname:MSER name:detectImpl
+
+--- Incoming ---
+[   u'class cv.StarDetector',
+    u': cv::FeatureDetector',
+    [],
+    [],
+    u'The "Star" Detector.\n\nThe class implements the keypoint detector introduced by K. Konolige.\n']
+parseName: class cv.StarDetector with ['cv'] -> fullname:cv::StarDetector namespace:cv classpath: classname: name:StarDetector
+register class cv::StarDetector ([u'class cv.StarDetector', u': cv::FeatureDetector', [], [], u'The "Star" Detector.\n\nThe class implements the keypoint detector introduced by K. Konolige.\n']) impl:cv::FeatureDetector
+
+--- Incoming ---
+[   u'cv.StarDetector.StarDetector',
+    u'',
+    ['/NW'],
+    [   [u'int', u'_maxSize', u'45', []],
+        [u'int', u'_responseThreshold', u'30', []],
+        [u'int', u'_lineThresholdProjected', u'10', []],
+        [u'int', u'_lineThresholdBinarized', u'8', []],
+        [u'int', u'_suppressNonmaxSize', u'5', []]],
+    u'the full constructor\n']
+parseName: cv.StarDetector.StarDetector with ['cv'] -> fullname:cv::StarDetector::StarDetector namespace:cv classpath:StarDetector classname:StarDetector name:StarDetector
+register (constructor) new in cv::StarDetector
+
+--- Incoming ---
+[   u'cv.StarDetector.operator ()',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []]],
+    u'finds the keypoints in the image\n']
+parseName: cv.StarDetector.operator () with ['cv'] -> fullname:cv::StarDetector::operator () namespace:cv classpath:StarDetector classname:StarDetector name:operator ()
+ignore (method) operator () in cv::StarDetector
+
+--- Incoming ---
+[u'cv.StarDetector.info', u'AlgorithmInfo*', ['/NW', '/C'], [], '']
+parseName: cv.StarDetector.info with ['cv'] -> fullname:cv::StarDetector::info namespace:cv classpath:StarDetector classname:StarDetector name:info
+register (method) info in cv::StarDetector
+
+--- Incoming ---
+[   u'cv.StarDetector.detectImpl',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []]],
+    '']
+parseName: cv.StarDetector.detectImpl with ['cv'] -> fullname:cv::StarDetector::detectImpl namespace:cv classpath:StarDetector classname:StarDetector name:detectImpl
+
+--- Incoming ---
+[   u'cv.FAST',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'int', u'threshold', '', []],
+        [u'bool', u'nonmaxSuppression', u'true', []]],
+    u'detects corners using FAST algorithm by E. Rosten\n']
+parseName: cv.FAST with ['cv'] -> fullname:cv::FAST namespace:cv classpath: classname: name:FAST
+register (function) FAST
+
+--- Incoming ---
+[   u'cv.FASTX',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'int', u'threshold', '', []],
+        [u'bool', u'nonmaxSuppression', '', []],
+        [u'int', u'type', '', []]],
+    '']
+parseName: cv.FASTX with ['cv'] -> fullname:cv::FASTX namespace:cv classpath: classname: name:FASTX
+register (function) FASTX
+
+--- Incoming ---
+[u'class cv.FastFeatureDetector', u': cv::FeatureDetector', [], [], '']
+parseName: class cv.FastFeatureDetector with ['cv'] -> fullname:cv::FastFeatureDetector namespace:cv classpath: classname: name:FastFeatureDetector
+register class cv::FastFeatureDetector ([u'class cv.FastFeatureDetector', u': cv::FeatureDetector', [], [], '']) impl:cv::FeatureDetector
+
+--- Incoming ---
+[u'const cv.FastFeatureDetector.TYPE_5_8', u'0', [], []]
+parseName: const cv.FastFeatureDetector.TYPE_5_8 with ['cv'] -> fullname:cv::FastFeatureDetector::TYPE_5_8 namespace:cv classpath:FastFeatureDetector classname:FastFeatureDetector name:TYPE_5_8
+
+--- Incoming ---
+[u'const cv.FastFeatureDetector.TYPE_7_12', u'1', [], []]
+parseName: const cv.FastFeatureDetector.TYPE_7_12 with ['cv'] -> fullname:cv::FastFeatureDetector::TYPE_7_12 namespace:cv classpath:FastFeatureDetector classname:FastFeatureDetector name:TYPE_7_12
+
+--- Incoming ---
+[u'const cv.FastFeatureDetector.TYPE_9_16', u'2', [], []]
+parseName: const cv.FastFeatureDetector.TYPE_9_16 with ['cv'] -> fullname:cv::FastFeatureDetector::TYPE_9_16 namespace:cv classpath:FastFeatureDetector classname:FastFeatureDetector name:TYPE_9_16
+
+--- Incoming ---
+[   u'cv.FastFeatureDetector.FastFeatureDetector',
+    u'',
+    ['/NW'],
+    [   [u'int', u'threshold', u'10', []],
+        [u'bool', u'nonmaxSuppression', u'true', []]],
+    '']
+parseName: cv.FastFeatureDetector.FastFeatureDetector with ['cv'] -> fullname:cv::FastFeatureDetector::FastFeatureDetector namespace:cv classpath:FastFeatureDetector classname:FastFeatureDetector name:FastFeatureDetector
+register (constructor) new in cv::FastFeatureDetector
+
+--- Incoming ---
+[u'cv.FastFeatureDetector.info', u'AlgorithmInfo*', ['/NW', '/C'], [], '']
+parseName: cv.FastFeatureDetector.info with ['cv'] -> fullname:cv::FastFeatureDetector::info namespace:cv classpath:FastFeatureDetector classname:FastFeatureDetector name:info
+register (method) info in cv::FastFeatureDetector
+
+--- Incoming ---
+[   u'cv.FastFeatureDetector.detectImpl',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []]],
+    '']
+parseName: cv.FastFeatureDetector.detectImpl with ['cv'] -> fullname:cv::FastFeatureDetector::detectImpl namespace:cv classpath:FastFeatureDetector classname:FastFeatureDetector name:detectImpl
+
+--- Incoming ---
+[u'class cv.GFTTDetector', u': cv::FeatureDetector', [], [], '']
+parseName: class cv.GFTTDetector with ['cv'] -> fullname:cv::GFTTDetector namespace:cv classpath: classname: name:GFTTDetector
+register class cv::GFTTDetector ([u'class cv.GFTTDetector', u': cv::FeatureDetector', [], [], '']) impl:cv::FeatureDetector
+
+--- Incoming ---
+[   u'cv.GFTTDetector.GFTTDetector',
+    u'',
+    ['/NW'],
+    [   [u'int', u'maxCorners', u'1000', []],
+        [u'double', u'qualityLevel', u'0.01', []],
+        [u'double', u'minDistance', u'1', []],
+        [u'int', u'blockSize', u'3', []],
+        [u'bool', u'useHarrisDetector', u'false', []],
+        [u'double', u'k', u'0.04', []]],
+    '']
+parseName: cv.GFTTDetector.GFTTDetector with ['cv'] -> fullname:cv::GFTTDetector::GFTTDetector namespace:cv classpath:GFTTDetector classname:GFTTDetector name:GFTTDetector
+register (constructor) new in cv::GFTTDetector
+
+--- Incoming ---
+[u'cv.GFTTDetector.info', u'AlgorithmInfo*', ['/NW', '/C'], [], '']
+parseName: cv.GFTTDetector.info with ['cv'] -> fullname:cv::GFTTDetector::info namespace:cv classpath:GFTTDetector classname:GFTTDetector name:info
+register (method) info in cv::GFTTDetector
+
+--- Incoming ---
+[   u'cv.GFTTDetector.detectImpl',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []]],
+    '']
+parseName: cv.GFTTDetector.detectImpl with ['cv'] -> fullname:cv::GFTTDetector::detectImpl namespace:cv classpath:GFTTDetector classname:GFTTDetector name:detectImpl
+
+--- Incoming ---
+[u'class cv.SimpleBlobDetector', u': cv::FeatureDetector', [], [], '']
+parseName: class cv.SimpleBlobDetector with ['cv'] -> fullname:cv::SimpleBlobDetector namespace:cv classpath: classname: name:SimpleBlobDetector
+register class cv::SimpleBlobDetector ([u'class cv.SimpleBlobDetector', u': cv::FeatureDetector', [], [], '']) impl:cv::FeatureDetector
+
+--- Incoming ---
+[   u'struct cv.SimpleBlobDetector.Params',
+    '',
+    ['/Simple'],
+    [   [u'float', u'thresholdStep', '', ['/RW']],
+        [u'float', u'minThreshold', '', ['/RW']],
+        [u'float', u'maxThreshold', '', ['/RW']],
+        [u'size_t', u'minRepeatability', '', ['/RW']],
+        [u'float', u'minDistBetweenBlobs', '', ['/RW']],
+        [u'bool', u'filterByColor', '', ['/RW']],
+        [u'uchar', u'blobColor', '', ['/RW']],
+        [u'bool', u'filterByArea', '', ['/RW']],
+        [u'float', u'minArea', '', ['/RW']],
+        [u'float', u'maxArea', '', ['/RW']],
+        [u'bool', u'filterByCircularity', '', ['/RW']],
+        [u'float', u'minCircularity', '', ['/RW']],
+        [u'float', u'maxCircularity', '', ['/RW']],
+        [u'bool', u'filterByInertia', '', ['/RW']],
+        [u'float', u'minInertiaRatio', '', ['/RW']],
+        [u'float', u'maxInertiaRatio', '', ['/RW']],
+        [u'bool', u'filterByConvexity', '', ['/RW']],
+        [u'float', u'minConvexity', '', ['/RW']],
+        [u'float', u'maxConvexity', '', ['/RW']]],
+    '']
+parseName: struct cv.SimpleBlobDetector.Params with ['cv'] -> fullname:cv::SimpleBlobDetector::Params namespace:cv classpath:SimpleBlobDetector classname:SimpleBlobDetector name:Params
+register class cv::SimpleBlobDetector::Params ([u'struct cv.SimpleBlobDetector.Params', '', ['/Simple'], [[u'float', u'thresholdStep', '', ['/RW']], [u'float', u'minThreshold', '', ['/RW']], [u'float', u'maxThreshold', '', ['/RW']], [u'size_t', u'minRepeatability', '', ['/RW']], [u'float', u'minDistBetweenBlobs', '', ['/RW']], [u'bool', u'filterByColor', '', ['/RW']], [u'uchar', u'blobColor', '', ['/RW']], [u'bool', u'filterByArea', '', ['/RW']], [u'float', u'minArea', '', ['/RW']], [u'float', u'maxArea', '', ['/RW']], [u'bool', u'filterByCircularity', '', ['/RW']], [u'float', u'minCircularity', '', ['/RW']], [u'float', u'maxCircularity', '', ['/RW']], [u'bool', u'filterByInertia', '', ['/RW']], [u'float', u'minInertiaRatio', '', ['/RW']], [u'float', u'maxInertiaRatio', '', ['/RW']], [u'bool', u'filterByConvexity', '', ['/RW']], [u'float', u'minConvexity', '', ['/RW']], [u'float', u'maxConvexity', '', ['/RW']]], ''])
+
+--- Incoming ---
+[u'cv.SimpleBlobDetector.Params.Params', u'', ['/NW'], [], '']
+parseName: cv.SimpleBlobDetector.Params.Params with ['cv'] -> fullname:cv::SimpleBlobDetector::Params::Params namespace:cv classpath:SimpleBlobDetector::Params classname:Params name:Params
+register (constructor) new in cv::SimpleBlobDetector::Params (simple)
+
+--- Incoming ---
+[   u'cv.SimpleBlobDetector.Params.read',
+    u'void',
+    ['/NW'],
+    [[u'const FileNode&', u'fn', '', []]],
+    '']
+parseName: cv.SimpleBlobDetector.Params.read with ['cv'] -> fullname:cv::SimpleBlobDetector::Params::read namespace:cv classpath:SimpleBlobDetector::Params classname:Params name:read
+register (method) read in cv::SimpleBlobDetector::Params (simple)
+
+--- Incoming ---
+[   u'cv.SimpleBlobDetector.Params.write',
+    u'void',
+    ['/NW', '/C'],
+    [[u'FileStorage&', u'fs', '', []]],
+    '']
+parseName: cv.SimpleBlobDetector.Params.write with ['cv'] -> fullname:cv::SimpleBlobDetector::Params::write namespace:cv classpath:SimpleBlobDetector::Params classname:Params name:write
+register (method) write in cv::SimpleBlobDetector::Params (simple)
+
+--- Incoming ---
+[   u'cv.SimpleBlobDetector.SimpleBlobDetector',
+    u'',
+    ['/NW'],
+    [   [   u'const SimpleBlobDetector::Params &',
+            u'parameters',
+            u'SimpleBlobDetector::Params()',
+            []]],
+    '']
+parseName: cv.SimpleBlobDetector.SimpleBlobDetector with ['cv'] -> fullname:cv::SimpleBlobDetector::SimpleBlobDetector namespace:cv classpath:SimpleBlobDetector classname:SimpleBlobDetector name:SimpleBlobDetector
+Registering an unknown type: SimpleBlobDetector::Params 
+register (constructor) new in cv::SimpleBlobDetector
+
+--- Incoming ---
+[   u'cv.SimpleBlobDetector.read',
+    u'void',
+    ['/NW'],
+    [[u'const FileNode&', u'fn', '', []]],
+    '']
+parseName: cv.SimpleBlobDetector.read with ['cv'] -> fullname:cv::SimpleBlobDetector::read namespace:cv classpath:SimpleBlobDetector classname:SimpleBlobDetector name:read
+register (method) read in cv::SimpleBlobDetector
+
+--- Incoming ---
+[   u'cv.SimpleBlobDetector.write',
+    u'void',
+    ['/NW', '/C'],
+    [[u'FileStorage&', u'fs', '', []]],
+    '']
+parseName: cv.SimpleBlobDetector.write with ['cv'] -> fullname:cv::SimpleBlobDetector::write namespace:cv classpath:SimpleBlobDetector classname:SimpleBlobDetector name:write
+register (method) write in cv::SimpleBlobDetector
+
+--- Incoming ---
+[u'struct cv.SimpleBlobDetector.Center', '', ['/Hidden'], [], '']
+parseName: struct cv.SimpleBlobDetector.Center with ['cv'] -> fullname:cv::SimpleBlobDetector::Center namespace:cv classpath:SimpleBlobDetector classname:SimpleBlobDetector name:Center
+register class cv::SimpleBlobDetector::Center ([u'struct cv.SimpleBlobDetector.Center', '', ['/Hidden'], [], '']) [ignored]
+
+--- Incoming ---
+[   u'cv.SimpleBlobDetector.detectImpl',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []]],
+    '']
+parseName: cv.SimpleBlobDetector.detectImpl with ['cv'] -> fullname:cv::SimpleBlobDetector::detectImpl namespace:cv classpath:SimpleBlobDetector classname:SimpleBlobDetector name:detectImpl
+
+--- Incoming ---
+[   u'cv.SimpleBlobDetector.findBlobs',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat &', u'image', '', []],
+        [u'const Mat &', u'binaryImage', '', []],
+        [u'vector<Center> &', u'centers', '', []]],
+    '']
+parseName: cv.SimpleBlobDetector.findBlobs with ['cv'] -> fullname:cv::SimpleBlobDetector::findBlobs namespace:cv classpath:SimpleBlobDetector classname:SimpleBlobDetector name:findBlobs
+Registering an unknown type: Mat 
+Registering an unknown type: Center>
+
+--- Incoming ---
+[u'cv.SimpleBlobDetector.info', u'AlgorithmInfo*', ['/NW', '/C', '/H'], [], '']
+parseName: cv.SimpleBlobDetector.info with ['cv'] -> fullname:cv::SimpleBlobDetector::info namespace:cv classpath:SimpleBlobDetector classname:SimpleBlobDetector name:info
+
+--- Incoming ---
+[u'class cv.DenseFeatureDetector', u': cv::FeatureDetector', [], [], '']
+parseName: class cv.DenseFeatureDetector with ['cv'] -> fullname:cv::DenseFeatureDetector namespace:cv classpath: classname: name:DenseFeatureDetector
+register class cv::DenseFeatureDetector ([u'class cv.DenseFeatureDetector', u': cv::FeatureDetector', [], [], '']) impl:cv::FeatureDetector
+
+--- Incoming ---
+[   u'cv.DenseFeatureDetector.DenseFeatureDetector',
+    u'',
+    ['/NW', '/E'],
+    [   [u'float', u'initFeatureScale', u'1.f', []],
+        [u'int', u'featureScaleLevels', u'1', []],
+        [u'float', u'featureScaleMul', u'0.1f', []],
+        [u'int', u'initXyStep', u'6', []],
+        [u'int', u'initImgBound', u'0', []],
+        [u'bool', u'varyXyStepWithScale', u'true', []],
+        [u'bool', u'varyImgBoundWithScale', u'false', []]],
+    '']
+parseName: cv.DenseFeatureDetector.DenseFeatureDetector with ['cv'] -> fullname:cv::DenseFeatureDetector::DenseFeatureDetector namespace:cv classpath:DenseFeatureDetector classname:DenseFeatureDetector name:DenseFeatureDetector
+register (constructor) new in cv::DenseFeatureDetector
+
+--- Incoming ---
+[u'cv.DenseFeatureDetector.info', u'AlgorithmInfo*', ['/NW', '/C'], [], '']
+parseName: cv.DenseFeatureDetector.info with ['cv'] -> fullname:cv::DenseFeatureDetector::info namespace:cv classpath:DenseFeatureDetector classname:DenseFeatureDetector name:info
+register (method) info in cv::DenseFeatureDetector
+
+--- Incoming ---
+[   u'cv.DenseFeatureDetector.detectImpl',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []]],
+    '']
+parseName: cv.DenseFeatureDetector.detectImpl with ['cv'] -> fullname:cv::DenseFeatureDetector::detectImpl namespace:cv classpath:DenseFeatureDetector classname:DenseFeatureDetector name:detectImpl
+
+--- Incoming ---
+[u'class cv.GridAdaptedFeatureDetector', u': cv::FeatureDetector', [], [], '']
+parseName: class cv.GridAdaptedFeatureDetector with ['cv'] -> fullname:cv::GridAdaptedFeatureDetector namespace:cv classpath: classname: name:GridAdaptedFeatureDetector
+register class cv::GridAdaptedFeatureDetector ([u'class cv.GridAdaptedFeatureDetector', u': cv::FeatureDetector', [], [], '']) impl:cv::FeatureDetector
+
+--- Incoming ---
+[   u'cv.GridAdaptedFeatureDetector.GridAdaptedFeatureDetector',
+    u'',
+    ['/NW'],
+    [   [u'const Ptr<FeatureDetector>&', u'detector', u'0', []],
+        [u'int', u'maxTotalKeypoints', u'1000', []],
+        [u'int', u'gridRows', u'4', []],
+        [u'int', u'gridCols', u'4', []]],
+    '']
+parseName: cv.GridAdaptedFeatureDetector.GridAdaptedFeatureDetector with ['cv'] -> fullname:cv::GridAdaptedFeatureDetector::GridAdaptedFeatureDetector namespace:cv classpath:GridAdaptedFeatureDetector classname:GridAdaptedFeatureDetector name:GridAdaptedFeatureDetector
+register (constructor) new in cv::GridAdaptedFeatureDetector
+
+--- Incoming ---
+[u'cv.GridAdaptedFeatureDetector.empty', u'bool', ['/NW', '/C'], [], '']
+parseName: cv.GridAdaptedFeatureDetector.empty with ['cv'] -> fullname:cv::GridAdaptedFeatureDetector::empty namespace:cv classpath:GridAdaptedFeatureDetector classname:GridAdaptedFeatureDetector name:empty
+register (method) empty in cv::GridAdaptedFeatureDetector
+
+--- Incoming ---
+[   u'cv.GridAdaptedFeatureDetector.info',
+    u'AlgorithmInfo*',
+    ['/NW', '/C'],
+    [],
+    '']
+parseName: cv.GridAdaptedFeatureDetector.info with ['cv'] -> fullname:cv::GridAdaptedFeatureDetector::info namespace:cv classpath:GridAdaptedFeatureDetector classname:GridAdaptedFeatureDetector name:info
+register (method) info in cv::GridAdaptedFeatureDetector
+
+--- Incoming ---
+[   u'cv.GridAdaptedFeatureDetector.detectImpl',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []]],
+    '']
+parseName: cv.GridAdaptedFeatureDetector.detectImpl with ['cv'] -> fullname:cv::GridAdaptedFeatureDetector::detectImpl namespace:cv classpath:GridAdaptedFeatureDetector classname:GridAdaptedFeatureDetector name:detectImpl
+
+--- Incoming ---
+[   u'class cv.PyramidAdaptedFeatureDetector',
+    u': cv::FeatureDetector',
+    [],
+    [],
+    '']
+parseName: class cv.PyramidAdaptedFeatureDetector with ['cv'] -> fullname:cv::PyramidAdaptedFeatureDetector namespace:cv classpath: classname: name:PyramidAdaptedFeatureDetector
+register class cv::PyramidAdaptedFeatureDetector ([u'class cv.PyramidAdaptedFeatureDetector', u': cv::FeatureDetector', [], [], '']) impl:cv::FeatureDetector
+
+--- Incoming ---
+[   u'cv.PyramidAdaptedFeatureDetector.PyramidAdaptedFeatureDetector',
+    u'',
+    ['/NW'],
+    [   [u'const Ptr<FeatureDetector>&', u'detector', '', []],
+        [u'int', u'maxLevel', u'2', []]],
+    '']
+parseName: cv.PyramidAdaptedFeatureDetector.PyramidAdaptedFeatureDetector with ['cv'] -> fullname:cv::PyramidAdaptedFeatureDetector::PyramidAdaptedFeatureDetector namespace:cv classpath:PyramidAdaptedFeatureDetector classname:PyramidAdaptedFeatureDetector name:PyramidAdaptedFeatureDetector
+register (constructor) new in cv::PyramidAdaptedFeatureDetector
+
+--- Incoming ---
+[u'cv.PyramidAdaptedFeatureDetector.empty', u'bool', ['/NW', '/C'], [], '']
+parseName: cv.PyramidAdaptedFeatureDetector.empty with ['cv'] -> fullname:cv::PyramidAdaptedFeatureDetector::empty namespace:cv classpath:PyramidAdaptedFeatureDetector classname:PyramidAdaptedFeatureDetector name:empty
+register (method) empty in cv::PyramidAdaptedFeatureDetector
+
+--- Incoming ---
+[   u'cv.PyramidAdaptedFeatureDetector.detectImpl',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []]],
+    '']
+parseName: cv.PyramidAdaptedFeatureDetector.detectImpl with ['cv'] -> fullname:cv::PyramidAdaptedFeatureDetector::detectImpl namespace:cv classpath:PyramidAdaptedFeatureDetector classname:PyramidAdaptedFeatureDetector name:detectImpl
+
+--- Incoming ---
+[   u'class cv.AdjusterAdapter',
+    u': cv::FeatureDetector',
+    [],
+    [],
+    u'\\brief A feature detector parameter adjuster, this is used by the DynamicAdaptedFeatureDetector\n*  and is a wrapper for FeatureDetector that allow them to be adjusted after a detection\n']
+parseName: class cv.AdjusterAdapter with ['cv'] -> fullname:cv::AdjusterAdapter namespace:cv classpath: classname: name:AdjusterAdapter
+register class cv::AdjusterAdapter ([u'class cv.AdjusterAdapter', u': cv::FeatureDetector', [], [], u'\\brief A feature detector parameter adjuster, this is used by the DynamicAdaptedFeatureDetector\n*  and is a wrapper for FeatureDetector that allow them to be adjusted after a detection\n']) impl:cv::FeatureDetector
+
+--- Incoming ---
+[   u'cv.AdjusterAdapter.~AdjusterAdapter',
+    u'',
+    ['/NW'],
+    [],
+    u'pure virtual interface\n']
+parseName: cv.AdjusterAdapter.~AdjusterAdapter with ['cv'] -> fullname:cv::AdjusterAdapter::~AdjusterAdapter namespace:cv classpath:AdjusterAdapter classname:AdjusterAdapter name:~AdjusterAdapter
+ignore destructor (method) ~AdjusterAdapter in cv::AdjusterAdapter
+
+--- Incoming ---
+[   u'cv.AdjusterAdapter.tooFew',
+    u'void',
+    ['/NW', '/A'],
+    [[u'int', u'min', '', []], [u'int', u'n_detected', '', []]],
+    u'too few features were detected so, adjust the detector params accordingly\n* \\param min the minimum number of desired features\n* \\param n_detected the number previously detected\n']
+parseName: cv.AdjusterAdapter.tooFew with ['cv'] -> fullname:cv::AdjusterAdapter::tooFew namespace:cv classpath:AdjusterAdapter classname:AdjusterAdapter name:tooFew
+
+--- Incoming ---
+[   u'cv.AdjusterAdapter.tooMany',
+    u'void',
+    ['/NW', '/A'],
+    [[u'int', u'max', '', []], [u'int', u'n_detected', '', []]],
+    u'too many features were detected so, adjust the detector params accordingly\n* \\param max the maximum number of desired features\n* \\param n_detected the number previously detected\n']
+parseName: cv.AdjusterAdapter.tooMany with ['cv'] -> fullname:cv::AdjusterAdapter::tooMany namespace:cv classpath:AdjusterAdapter classname:AdjusterAdapter name:tooMany
+
+--- Incoming ---
+[   u'cv.AdjusterAdapter.good',
+    u'bool',
+    ['/NW', '/A', '/C'],
+    [],
+    u"are params maxed out or still valid?\n* \\return false if the parameters can't be adjusted any more\n"]
+parseName: cv.AdjusterAdapter.good with ['cv'] -> fullname:cv::AdjusterAdapter::good namespace:cv classpath:AdjusterAdapter classname:AdjusterAdapter name:good
+
+--- Incoming ---
+[   u'cv.AdjusterAdapter.clone',
+    u'Ptr<AdjusterAdapter>',
+    ['/NW', '/A', '/C'],
+    [],
+    '']
+parseName: cv.AdjusterAdapter.clone with ['cv'] -> fullname:cv::AdjusterAdapter::clone namespace:cv classpath:AdjusterAdapter classname:AdjusterAdapter name:clone
+
+--- Incoming ---
+[   u'cv.AdjusterAdapter.create',
+    u'Ptr<AdjusterAdapter>',
+    ['/NW', '/S'],
+    [[u'const string&', u'detectorType', '', []]],
+    '']
+parseName: cv.AdjusterAdapter.create with ['cv'] -> fullname:cv::AdjusterAdapter::create namespace:cv classpath:AdjusterAdapter classname:AdjusterAdapter name:create
+register (method) create in cv::AdjusterAdapter
+
+--- Incoming ---
+[   u'class cv.DynamicAdaptedFeatureDetector',
+    u': cv::FeatureDetector',
+    [],
+    [],
+    u'\\brief an adaptively adjusting detector that iteratively detects until the desired number\n* of features are detected.\n*  Beware that this is not thread safe - as the adjustment of parameters breaks the const\n*  of the detection routine...\n*  /TODO Make this const correct and thread safe\n*\n*  sample usage:\n//will create a detector that attempts to find 100 - 110 FAST Keypoints, and will at most run\n//FAST feature detection 10 times until that number of keypoints are found\nPtr<FeatureDetector> detector(new DynamicAdaptedFeatureDetector(new FastAdjuster(20,true),100, 110, 10));\n\n']
+parseName: class cv.DynamicAdaptedFeatureDetector with ['cv'] -> fullname:cv::DynamicAdaptedFeatureDetector namespace:cv classpath: classname: name:DynamicAdaptedFeatureDetector
+register class cv::DynamicAdaptedFeatureDetector ([u'class cv.DynamicAdaptedFeatureDetector', u': cv::FeatureDetector', [], [], u'\\brief an adaptively adjusting detector that iteratively detects until the desired number\n* of features are detected.\n*  Beware that this is not thread safe - as the adjustment of parameters breaks the const\n*  of the detection routine...\n*  /TODO Make this const correct and thread safe\n*\n*  sample usage:\n//will create a detector that attempts to find 100 - 110 FAST Keypoints, and will at most run\n//FAST feature detection 10 times until that number of keypoints are found\nPtr<FeatureDetector> detector(new DynamicAdaptedFeatureDetector(new FastAdjuster(20,true),100, 110, 10));\n\n']) impl:cv::FeatureDetector
+
+--- Incoming ---
+[   u'cv.DynamicAdaptedFeatureDetector.DynamicAdaptedFeatureDetector',
+    u'',
+    ['/NW'],
+    [   [u'const Ptr<AdjusterAdapter>&', u'adjuster', '', []],
+        [u'int', u'min_features', u'400', []],
+        [u'int', u'max_features', u'500', []],
+        [u'int', u'max_iters', u'5', []]],
+    u'\\param adjuster an AdjusterAdapter that will do the detection and parameter adjustment\n*  \\param max_features the maximum desired number of features\n*  \\param max_iters the maximum number of times to try to adjust the feature detector params\n*          for the FastAdjuster this can be high, but with Star or Surf this can get time consuming\n*  \\param min_features the minimum desired features\n']
+parseName: cv.DynamicAdaptedFeatureDetector.DynamicAdaptedFeatureDetector with ['cv'] -> fullname:cv::DynamicAdaptedFeatureDetector::DynamicAdaptedFeatureDetector namespace:cv classpath:DynamicAdaptedFeatureDetector classname:DynamicAdaptedFeatureDetector name:DynamicAdaptedFeatureDetector
+register (constructor) new in cv::DynamicAdaptedFeatureDetector
+
+--- Incoming ---
+[u'cv.DynamicAdaptedFeatureDetector.empty', u'bool', ['/NW', '/C'], [], '']
+parseName: cv.DynamicAdaptedFeatureDetector.empty with ['cv'] -> fullname:cv::DynamicAdaptedFeatureDetector::empty namespace:cv classpath:DynamicAdaptedFeatureDetector classname:DynamicAdaptedFeatureDetector name:empty
+register (method) empty in cv::DynamicAdaptedFeatureDetector
+
+--- Incoming ---
+[   u'cv.DynamicAdaptedFeatureDetector.detectImpl',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []]],
+    '']
+parseName: cv.DynamicAdaptedFeatureDetector.detectImpl with ['cv'] -> fullname:cv::DynamicAdaptedFeatureDetector::detectImpl namespace:cv classpath:DynamicAdaptedFeatureDetector classname:DynamicAdaptedFeatureDetector name:detectImpl
+
+--- Incoming ---
+[u'class cv.FastAdjuster', u': cv::AdjusterAdapter', [], [], '']
+parseName: class cv.FastAdjuster with ['cv'] -> fullname:cv::FastAdjuster namespace:cv classpath: classname: name:FastAdjuster
+register class cv::FastAdjuster ([u'class cv.FastAdjuster', u': cv::AdjusterAdapter', [], [], '']) impl:cv::AdjusterAdapter
+
+--- Incoming ---
+[   u'cv.FastAdjuster.FastAdjuster',
+    u'',
+    ['/NW'],
+    [   [u'int', u'init_thresh', u'20', []],
+        [u'bool', u'nonmax', u'true', []],
+        [u'int', u'min_thresh', u'1', []],
+        [u'int', u'max_thresh', u'200', []]],
+    '']
+parseName: cv.FastAdjuster.FastAdjuster with ['cv'] -> fullname:cv::FastAdjuster::FastAdjuster namespace:cv classpath:FastAdjuster classname:FastAdjuster name:FastAdjuster
+register (constructor) new in cv::FastAdjuster
+
+--- Incoming ---
+[   u'cv.FastAdjuster.tooFew',
+    u'void',
+    ['/NW'],
+    [[u'int', u'minv', '', []], [u'int', u'n_detected', '', []]],
+    '']
+parseName: cv.FastAdjuster.tooFew with ['cv'] -> fullname:cv::FastAdjuster::tooFew namespace:cv classpath:FastAdjuster classname:FastAdjuster name:tooFew
+register (method) tooFew in cv::FastAdjuster
+
+--- Incoming ---
+[   u'cv.FastAdjuster.tooMany',
+    u'void',
+    ['/NW'],
+    [[u'int', u'maxv', '', []], [u'int', u'n_detected', '', []]],
+    '']
+parseName: cv.FastAdjuster.tooMany with ['cv'] -> fullname:cv::FastAdjuster::tooMany namespace:cv classpath:FastAdjuster classname:FastAdjuster name:tooMany
+register (method) tooMany in cv::FastAdjuster
+
+--- Incoming ---
+[u'cv.FastAdjuster.good', u'bool', ['/NW', '/C'], [], '']
+parseName: cv.FastAdjuster.good with ['cv'] -> fullname:cv::FastAdjuster::good namespace:cv classpath:FastAdjuster classname:FastAdjuster name:good
+register (method) good in cv::FastAdjuster
+
+--- Incoming ---
+[u'cv.FastAdjuster.clone', u'Ptr<AdjusterAdapter>', ['/NW', '/C'], [], '']
+parseName: cv.FastAdjuster.clone with ['cv'] -> fullname:cv::FastAdjuster::clone namespace:cv classpath:FastAdjuster classname:FastAdjuster name:clone
+register (method) clone in cv::FastAdjuster
+
+--- Incoming ---
+[   u'cv.FastAdjuster.detectImpl',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []]],
+    '']
+parseName: cv.FastAdjuster.detectImpl with ['cv'] -> fullname:cv::FastAdjuster::detectImpl namespace:cv classpath:FastAdjuster classname:FastAdjuster name:detectImpl
+
+--- Incoming ---
+[   u'class cv.StarAdjuster',
+    u': cv::AdjusterAdapter',
+    [],
+    [],
+    u'An adjuster for StarFeatureDetector, this one adjusts the responseThreshold for now\n* TODO find a faster way to converge the parameters for Star - use CvStarDetectorParams\n']
+parseName: class cv.StarAdjuster with ['cv'] -> fullname:cv::StarAdjuster namespace:cv classpath: classname: name:StarAdjuster
+register class cv::StarAdjuster ([u'class cv.StarAdjuster', u': cv::AdjusterAdapter', [], [], u'An adjuster for StarFeatureDetector, this one adjusts the responseThreshold for now\n* TODO find a faster way to converge the parameters for Star - use CvStarDetectorParams\n']) impl:cv::AdjusterAdapter
+
+--- Incoming ---
+[   u'cv.StarAdjuster.StarAdjuster',
+    u'',
+    ['/NW'],
+    [   [u'double', u'initial_thresh', u'30.0', []],
+        [u'double', u'min_thresh', u'2.', []],
+        [u'double', u'max_thresh', u'200.', []]],
+    '']
+parseName: cv.StarAdjuster.StarAdjuster with ['cv'] -> fullname:cv::StarAdjuster::StarAdjuster namespace:cv classpath:StarAdjuster classname:StarAdjuster name:StarAdjuster
+register (constructor) new in cv::StarAdjuster
+
+--- Incoming ---
+[   u'cv.StarAdjuster.tooFew',
+    u'void',
+    ['/NW'],
+    [[u'int', u'minv', '', []], [u'int', u'n_detected', '', []]],
+    '']
+parseName: cv.StarAdjuster.tooFew with ['cv'] -> fullname:cv::StarAdjuster::tooFew namespace:cv classpath:StarAdjuster classname:StarAdjuster name:tooFew
+register (method) tooFew in cv::StarAdjuster
+
+--- Incoming ---
+[   u'cv.StarAdjuster.tooMany',
+    u'void',
+    ['/NW'],
+    [[u'int', u'maxv', '', []], [u'int', u'n_detected', '', []]],
+    '']
+parseName: cv.StarAdjuster.tooMany with ['cv'] -> fullname:cv::StarAdjuster::tooMany namespace:cv classpath:StarAdjuster classname:StarAdjuster name:tooMany
+register (method) tooMany in cv::StarAdjuster
+
+--- Incoming ---
+[u'cv.StarAdjuster.good', u'bool', ['/NW', '/C'], [], '']
+parseName: cv.StarAdjuster.good with ['cv'] -> fullname:cv::StarAdjuster::good namespace:cv classpath:StarAdjuster classname:StarAdjuster name:good
+register (method) good in cv::StarAdjuster
+
+--- Incoming ---
+[u'cv.StarAdjuster.clone', u'Ptr<AdjusterAdapter>', ['/NW', '/C'], [], '']
+parseName: cv.StarAdjuster.clone with ['cv'] -> fullname:cv::StarAdjuster::clone namespace:cv classpath:StarAdjuster classname:StarAdjuster name:clone
+register (method) clone in cv::StarAdjuster
+
+--- Incoming ---
+[   u'cv.StarAdjuster.detectImpl',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []]],
+    '']
+parseName: cv.StarAdjuster.detectImpl with ['cv'] -> fullname:cv::StarAdjuster::detectImpl namespace:cv classpath:StarAdjuster classname:StarAdjuster name:detectImpl
+
+--- Incoming ---
+[u'class cv.SurfAdjuster', u': cv::AdjusterAdapter', [], [], '']
+parseName: class cv.SurfAdjuster with ['cv'] -> fullname:cv::SurfAdjuster namespace:cv classpath: classname: name:SurfAdjuster
+register class cv::SurfAdjuster ([u'class cv.SurfAdjuster', u': cv::AdjusterAdapter', [], [], '']) impl:cv::AdjusterAdapter
+
+--- Incoming ---
+[   u'cv.SurfAdjuster.SurfAdjuster',
+    u'',
+    ['/NW'],
+    [   [u'double', u'initial_thresh', u'400.f', []],
+        [u'double', u'min_thresh', u'2', []],
+        [u'double', u'max_thresh', u'1000', []]],
+    '']
+parseName: cv.SurfAdjuster.SurfAdjuster with ['cv'] -> fullname:cv::SurfAdjuster::SurfAdjuster namespace:cv classpath:SurfAdjuster classname:SurfAdjuster name:SurfAdjuster
+register (constructor) new in cv::SurfAdjuster
+
+--- Incoming ---
+[   u'cv.SurfAdjuster.tooFew',
+    u'void',
+    ['/NW'],
+    [[u'int', u'minv', '', []], [u'int', u'n_detected', '', []]],
+    '']
+parseName: cv.SurfAdjuster.tooFew with ['cv'] -> fullname:cv::SurfAdjuster::tooFew namespace:cv classpath:SurfAdjuster classname:SurfAdjuster name:tooFew
+register (method) tooFew in cv::SurfAdjuster
+
+--- Incoming ---
+[   u'cv.SurfAdjuster.tooMany',
+    u'void',
+    ['/NW'],
+    [[u'int', u'maxv', '', []], [u'int', u'n_detected', '', []]],
+    '']
+parseName: cv.SurfAdjuster.tooMany with ['cv'] -> fullname:cv::SurfAdjuster::tooMany namespace:cv classpath:SurfAdjuster classname:SurfAdjuster name:tooMany
+register (method) tooMany in cv::SurfAdjuster
+
+--- Incoming ---
+[u'cv.SurfAdjuster.good', u'bool', ['/NW', '/C'], [], '']
+parseName: cv.SurfAdjuster.good with ['cv'] -> fullname:cv::SurfAdjuster::good namespace:cv classpath:SurfAdjuster classname:SurfAdjuster name:good
+register (method) good in cv::SurfAdjuster
+
+--- Incoming ---
+[u'cv.SurfAdjuster.clone', u'Ptr<AdjusterAdapter>', ['/NW', '/C'], [], '']
+parseName: cv.SurfAdjuster.clone with ['cv'] -> fullname:cv::SurfAdjuster::clone namespace:cv classpath:SurfAdjuster classname:SurfAdjuster name:clone
+register (method) clone in cv::SurfAdjuster
+
+--- Incoming ---
+[   u'cv.SurfAdjuster.detectImpl',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []]],
+    '']
+parseName: cv.SurfAdjuster.detectImpl with ['cv'] -> fullname:cv::SurfAdjuster::detectImpl namespace:cv classpath:SurfAdjuster classname:SurfAdjuster name:detectImpl
+
+--- Incoming ---
+[   u'cv.windowedMatchingMask',
+    u'Mat',
+    ['/NW'],
+    [   [u'const vector<KeyPoint>&', u'keypoints1', '', []],
+        [u'const vector<KeyPoint>&', u'keypoints2', '', []],
+        [u'float', u'maxDeltaX', '', []],
+        [u'float', u'maxDeltaY', '', []]],
+    '']
+parseName: cv.windowedMatchingMask with ['cv'] -> fullname:cv::windowedMatchingMask namespace:cv classpath: classname: name:windowedMatchingMask
+register (function) windowedMatchingMask
+
+--- Incoming ---
+[   u'class cv.OpponentColorDescriptorExtractor',
+    u': cv::DescriptorExtractor',
+    [],
+    [],
+    '']
+parseName: class cv.OpponentColorDescriptorExtractor with ['cv'] -> fullname:cv::OpponentColorDescriptorExtractor namespace:cv classpath: classname: name:OpponentColorDescriptorExtractor
+register class cv::OpponentColorDescriptorExtractor ([u'class cv.OpponentColorDescriptorExtractor', u': cv::DescriptorExtractor', [], [], '']) impl:cv::DescriptorExtractor
+
+--- Incoming ---
+[   u'cv.OpponentColorDescriptorExtractor.OpponentColorDescriptorExtractor',
+    u'',
+    ['/NW'],
+    [[u'const Ptr<DescriptorExtractor>&', u'descriptorExtractor', '', []]],
+    '']
+parseName: cv.OpponentColorDescriptorExtractor.OpponentColorDescriptorExtractor with ['cv'] -> fullname:cv::OpponentColorDescriptorExtractor::OpponentColorDescriptorExtractor namespace:cv classpath:OpponentColorDescriptorExtractor classname:OpponentColorDescriptorExtractor name:OpponentColorDescriptorExtractor
+register (constructor) new in cv::OpponentColorDescriptorExtractor
+
+--- Incoming ---
+[   u'cv.OpponentColorDescriptorExtractor.read',
+    u'void',
+    ['/NW'],
+    [[u'const FileNode&', u'', '', []]],
+    '']
+parseName: cv.OpponentColorDescriptorExtractor.read with ['cv'] -> fullname:cv::OpponentColorDescriptorExtractor::read namespace:cv classpath:OpponentColorDescriptorExtractor classname:OpponentColorDescriptorExtractor name:read
+register (method) read in cv::OpponentColorDescriptorExtractor
+
+--- Incoming ---
+[   u'cv.OpponentColorDescriptorExtractor.write',
+    u'void',
+    ['/NW', '/C'],
+    [[u'FileStorage&', u'', '', []]],
+    '']
+parseName: cv.OpponentColorDescriptorExtractor.write with ['cv'] -> fullname:cv::OpponentColorDescriptorExtractor::write namespace:cv classpath:OpponentColorDescriptorExtractor classname:OpponentColorDescriptorExtractor name:write
+register (method) write in cv::OpponentColorDescriptorExtractor
+
+--- Incoming ---
+[   u'cv.OpponentColorDescriptorExtractor.descriptorSize',
+    u'int',
+    ['/NW', '/C'],
+    [],
+    '']
+parseName: cv.OpponentColorDescriptorExtractor.descriptorSize with ['cv'] -> fullname:cv::OpponentColorDescriptorExtractor::descriptorSize namespace:cv classpath:OpponentColorDescriptorExtractor classname:OpponentColorDescriptorExtractor name:descriptorSize
+register (method) descriptorSize in cv::OpponentColorDescriptorExtractor
+
+--- Incoming ---
+[   u'cv.OpponentColorDescriptorExtractor.descriptorType',
+    u'int',
+    ['/NW', '/C'],
+    [],
+    '']
+parseName: cv.OpponentColorDescriptorExtractor.descriptorType with ['cv'] -> fullname:cv::OpponentColorDescriptorExtractor::descriptorType namespace:cv classpath:OpponentColorDescriptorExtractor classname:OpponentColorDescriptorExtractor name:descriptorType
+register (method) descriptorType in cv::OpponentColorDescriptorExtractor
+
+--- Incoming ---
+[u'cv.OpponentColorDescriptorExtractor.empty', u'bool', ['/NW', '/C'], [], '']
+parseName: cv.OpponentColorDescriptorExtractor.empty with ['cv'] -> fullname:cv::OpponentColorDescriptorExtractor::empty namespace:cv classpath:OpponentColorDescriptorExtractor classname:OpponentColorDescriptorExtractor name:empty
+register (method) empty in cv::OpponentColorDescriptorExtractor
+
+--- Incoming ---
+[   u'cv.OpponentColorDescriptorExtractor.computeImpl',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'Mat&', u'descriptors', '', []]],
+    '']
+parseName: cv.OpponentColorDescriptorExtractor.computeImpl with ['cv'] -> fullname:cv::OpponentColorDescriptorExtractor::computeImpl namespace:cv classpath:OpponentColorDescriptorExtractor classname:OpponentColorDescriptorExtractor name:computeImpl
+
+--- Incoming ---
+[   u'class cv.BriefDescriptorExtractor',
+    u': cv::DescriptorExtractor',
+    [],
+    [],
+    '']
+parseName: class cv.BriefDescriptorExtractor with ['cv'] -> fullname:cv::BriefDescriptorExtractor namespace:cv classpath: classname: name:BriefDescriptorExtractor
+register class cv::BriefDescriptorExtractor ([u'class cv.BriefDescriptorExtractor', u': cv::DescriptorExtractor', [], [], '']) impl:cv::DescriptorExtractor
+
+--- Incoming ---
+[   u'cv.BriefDescriptorExtractor.BriefDescriptorExtractor',
+    u'',
+    ['/NW'],
+    [[u'int', u'bytes', u'32', []]],
+    '']
+parseName: cv.BriefDescriptorExtractor.BriefDescriptorExtractor with ['cv'] -> fullname:cv::BriefDescriptorExtractor::BriefDescriptorExtractor namespace:cv classpath:BriefDescriptorExtractor classname:BriefDescriptorExtractor name:BriefDescriptorExtractor
+register (constructor) new in cv::BriefDescriptorExtractor
+
+--- Incoming ---
+[   u'cv.BriefDescriptorExtractor.read',
+    u'void',
+    ['/NW'],
+    [[u'const FileNode&', u'', '', []]],
+    '']
+parseName: cv.BriefDescriptorExtractor.read with ['cv'] -> fullname:cv::BriefDescriptorExtractor::read namespace:cv classpath:BriefDescriptorExtractor classname:BriefDescriptorExtractor name:read
+register (method) read in cv::BriefDescriptorExtractor
+
+--- Incoming ---
+[   u'cv.BriefDescriptorExtractor.write',
+    u'void',
+    ['/NW', '/C'],
+    [[u'FileStorage&', u'', '', []]],
+    '']
+parseName: cv.BriefDescriptorExtractor.write with ['cv'] -> fullname:cv::BriefDescriptorExtractor::write namespace:cv classpath:BriefDescriptorExtractor classname:BriefDescriptorExtractor name:write
+register (method) write in cv::BriefDescriptorExtractor
+
+--- Incoming ---
+[u'cv.BriefDescriptorExtractor.descriptorSize', u'int', ['/NW', '/C'], [], '']
+parseName: cv.BriefDescriptorExtractor.descriptorSize with ['cv'] -> fullname:cv::BriefDescriptorExtractor::descriptorSize namespace:cv classpath:BriefDescriptorExtractor classname:BriefDescriptorExtractor name:descriptorSize
+register (method) descriptorSize in cv::BriefDescriptorExtractor
+
+--- Incoming ---
+[u'cv.BriefDescriptorExtractor.descriptorType', u'int', ['/NW', '/C'], [], '']
+parseName: cv.BriefDescriptorExtractor.descriptorType with ['cv'] -> fullname:cv::BriefDescriptorExtractor::descriptorType namespace:cv classpath:BriefDescriptorExtractor classname:BriefDescriptorExtractor name:descriptorType
+register (method) descriptorType in cv::BriefDescriptorExtractor
+
+--- Incoming ---
+[u'cv.BriefDescriptorExtractor.info', u'AlgorithmInfo*', ['/NW', '/C'], [], '']
+parseName: cv.BriefDescriptorExtractor.info with ['cv'] -> fullname:cv::BriefDescriptorExtractor::info namespace:cv classpath:BriefDescriptorExtractor classname:BriefDescriptorExtractor name:info
+register (method) info in cv::BriefDescriptorExtractor
+
+--- Incoming ---
+[   u'cv.BriefDescriptorExtractor.computeImpl',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'Mat&', u'descriptors', '', []]],
+    '']
+parseName: cv.BriefDescriptorExtractor.computeImpl with ['cv'] -> fullname:cv::BriefDescriptorExtractor::computeImpl namespace:cv classpath:BriefDescriptorExtractor classname:BriefDescriptorExtractor name:computeImpl
+
+--- Incoming ---
+[u'struct cv.Hamming', '', [], [], '']
+parseName: struct cv.Hamming with ['cv'] -> fullname:cv::Hamming namespace:cv classpath: classname: name:Hamming
+register class cv::Hamming ([u'struct cv.Hamming', '', [], [], ''])
+
+--- Incoming ---
+[u'const cv.Hamming.normType', u'NORM_HAMMING', [], []]
+parseName: const cv.Hamming.normType with ['cv'] -> fullname:cv::Hamming::normType namespace:cv classpath:Hamming classname:Hamming name:normType
+
+--- Incoming ---
+[   u'cv.Hamming.operator ()',
+    u'ResultType',
+    ['/NW', '/C'],
+    [   [u'const unsigned char*', u'a', '', []],
+        [u'const unsigned char*', u'b', '', []],
+        [u'int', u'size', '', []]],
+    u'this will count the bits in a ^ b\n']
+parseName: cv.Hamming.operator () with ['cv'] -> fullname:cv::Hamming::operator () namespace:cv classpath:Hamming classname:Hamming name:operator ()
+Registering an unknown type: ResultType
+Registering an unknown type: unsigned char
+ignore (method) operator () in cv::Hamming
+
+--- Incoming ---
+[   u'struct cv.DMatch',
+    '',
+    ['/Simple'],
+    [   [u'int', u'queryIdx', '', ['/RW']],
+        [u'int', u'trainIdx', '', ['/RW']],
+        [u'int', u'imgIdx', '', ['/RW']],
+        [u'float', u'distance', '', ['/RW']]],
+    '']
+parseName: struct cv.DMatch with ['cv'] -> fullname:cv::DMatch namespace:cv classpath: classname: name:DMatch
+register class cv::DMatch ([u'struct cv.DMatch', '', ['/Simple'], [[u'int', u'queryIdx', '', ['/RW']], [u'int', u'trainIdx', '', ['/RW']], [u'int', u'imgIdx', '', ['/RW']], [u'float', u'distance', '', ['/RW']]], ''])
+
+--- Incoming ---
+[u'cv.DMatch.DMatch', u'', ['/NW'], [], '']
+parseName: cv.DMatch.DMatch with ['cv'] -> fullname:cv::DMatch::DMatch namespace:cv classpath:DMatch classname:DMatch name:DMatch
+register (constructor) new in cv::DMatch (simple)
+
+--- Incoming ---
+[   u'cv.DMatch.DMatch',
+    u'',
+    ['/NW'],
+    [   [u'int', u'_queryIdx', '', []],
+        [u'int', u'_trainIdx', '', []],
+        [u'float', u'_distance', '', []]],
+    '']
+parseName: cv.DMatch.DMatch with ['cv'] -> fullname:cv::DMatch::DMatch namespace:cv classpath:DMatch classname:DMatch name:DMatch
+register (constructor) new in cv::DMatch (simple)
+
+--- Incoming ---
+[   u'cv.DMatch.DMatch',
+    u'',
+    ['/NW'],
+    [   [u'int', u'_queryIdx', '', []],
+        [u'int', u'_trainIdx', '', []],
+        [u'int', u'_imgIdx', '', []],
+        [u'float', u'_distance', '', []]],
+    '']
+parseName: cv.DMatch.DMatch with ['cv'] -> fullname:cv::DMatch::DMatch namespace:cv classpath:DMatch classname:DMatch name:DMatch
+register (constructor) new in cv::DMatch (simple)
+
+--- Incoming ---
+[   u'cv.DMatch.operator <',
+    u'bool',
+    ['/NW', '/C'],
+    [[u'const DMatch &', u'm', '', []]],
+    '']
+parseName: cv.DMatch.operator < with ['cv'] -> fullname:cv::DMatch::operator < namespace:cv classpath:DMatch classname:DMatch name:operator <
+Registering an unknown type: DMatch 
+ignore (method) operator < in cv::DMatch (simple)
+
+--- Incoming ---
+[u'class cv.DescriptorMatcher', ': cv::Algorithm', [], [], '']
+parseName: class cv.DescriptorMatcher with ['cv'] -> fullname:cv::DescriptorMatcher namespace:cv classpath: classname: name:DescriptorMatcher
+register class cv::DescriptorMatcher ([u'class cv.DescriptorMatcher', ': cv::Algorithm', [], [], '']) impl:cv::Algorithm
+
+--- Incoming ---
+[u'cv.DescriptorMatcher.~DescriptorMatcher', u'', ['/NW'], [], '']
+parseName: cv.DescriptorMatcher.~DescriptorMatcher with ['cv'] -> fullname:cv::DescriptorMatcher::~DescriptorMatcher namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:~DescriptorMatcher
+ignore destructor (method) ~DescriptorMatcher in cv::DescriptorMatcher
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.add',
+    u'void',
+    ['/NW'],
+    [[u'const vector<Mat>&', u'descriptors', '', []]],
+    '']
+parseName: cv.DescriptorMatcher.add with ['cv'] -> fullname:cv::DescriptorMatcher::add namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:add
+register (method) add in cv::DescriptorMatcher
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.getTrainDescriptors',
+    u'const vector<Mat>&',
+    ['/NW', '/C'],
+    [],
+    '']
+parseName: cv.DescriptorMatcher.getTrainDescriptors with ['cv'] -> fullname:cv::DescriptorMatcher::getTrainDescriptors namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:getTrainDescriptors
+register (method) getTrainDescriptors in cv::DescriptorMatcher
+
+--- Incoming ---
+[u'cv.DescriptorMatcher.clear', u'void', ['/NW'], [], '']
+parseName: cv.DescriptorMatcher.clear with ['cv'] -> fullname:cv::DescriptorMatcher::clear namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:clear
+register (method) clear in cv::DescriptorMatcher
+
+--- Incoming ---
+[u'cv.DescriptorMatcher.empty', u'bool', ['/NW', '/C'], [], '']
+parseName: cv.DescriptorMatcher.empty with ['cv'] -> fullname:cv::DescriptorMatcher::empty namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:empty
+register (method) empty in cv::DescriptorMatcher
+
+--- Incoming ---
+[u'cv.DescriptorMatcher.isMaskSupported', u'bool', ['/NW', '/A', '/C'], [], '']
+parseName: cv.DescriptorMatcher.isMaskSupported with ['cv'] -> fullname:cv::DescriptorMatcher::isMaskSupported namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:isMaskSupported
+
+--- Incoming ---
+[u'cv.DescriptorMatcher.train', u'void', ['/NW'], [], '']
+parseName: cv.DescriptorMatcher.train with ['cv'] -> fullname:cv::DescriptorMatcher::train namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:train
+register (method) train in cv::DescriptorMatcher
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.match',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const Mat&', u'queryDescriptors', '', []],
+        [u'const Mat&', u'trainDescriptors', '', []],
+        [u'vector<DMatch>&', u'matches', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []]],
+    '']
+parseName: cv.DescriptorMatcher.match with ['cv'] -> fullname:cv::DescriptorMatcher::match namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:match
+register (method) match in cv::DescriptorMatcher
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.knnMatch',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const Mat&', u'queryDescriptors', '', []],
+        [u'const Mat&', u'trainDescriptors', '', []],
+        [u'vector<vector<DMatch> >&', u'matches', '', []],
+        [u'int', u'k', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []],
+        [u'bool', u'compactResult', u'false', []]],
+    '']
+parseName: cv.DescriptorMatcher.knnMatch with ['cv'] -> fullname:cv::DescriptorMatcher::knnMatch namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:knnMatch
+register (method) knnMatch in cv::DescriptorMatcher
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.radiusMatch',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const Mat&', u'queryDescriptors', '', []],
+        [u'const Mat&', u'trainDescriptors', '', []],
+        [u'vector<vector<DMatch> >&', u'matches', '', []],
+        [u'float', u'maxDistance', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []],
+        [u'bool', u'compactResult', u'false', []]],
+    '']
+parseName: cv.DescriptorMatcher.radiusMatch with ['cv'] -> fullname:cv::DescriptorMatcher::radiusMatch namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:radiusMatch
+register (method) radiusMatch in cv::DescriptorMatcher
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.match',
+    u'void',
+    ['/NW'],
+    [   [u'const Mat&', u'queryDescriptors', '', []],
+        [u'vector<DMatch>&', u'matches', '', []],
+        [u'const vector<Mat>&', u'masks', u'vector<Mat>()', []]],
+    '']
+parseName: cv.DescriptorMatcher.match with ['cv'] -> fullname:cv::DescriptorMatcher::match namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:match
+register (method) match in cv::DescriptorMatcher
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.knnMatch',
+    u'void',
+    ['/NW'],
+    [   [u'const Mat&', u'queryDescriptors', '', []],
+        [u'vector<vector<DMatch> >&', u'matches', '', []],
+        [u'int', u'k', '', []],
+        [u'const vector<Mat>&', u'masks', u'vector<Mat>()', []],
+        [u'bool', u'compactResult', u'false', []]],
+    '']
+parseName: cv.DescriptorMatcher.knnMatch with ['cv'] -> fullname:cv::DescriptorMatcher::knnMatch namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:knnMatch
+register (method) knnMatch in cv::DescriptorMatcher
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.radiusMatch',
+    u'void',
+    ['/NW'],
+    [   [u'const Mat&', u'queryDescriptors', '', []],
+        [u'vector<vector<DMatch> >&', u'matches', '', []],
+        [u'float', u'maxDistance', '', []],
+        [u'const vector<Mat>&', u'masks', u'vector<Mat>()', []],
+        [u'bool', u'compactResult', u'false', []]],
+    '']
+parseName: cv.DescriptorMatcher.radiusMatch with ['cv'] -> fullname:cv::DescriptorMatcher::radiusMatch namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:radiusMatch
+register (method) radiusMatch in cv::DescriptorMatcher
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.read',
+    u'void',
+    ['/NW'],
+    [[u'const FileNode&', u'', '', []]],
+    '']
+parseName: cv.DescriptorMatcher.read with ['cv'] -> fullname:cv::DescriptorMatcher::read namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:read
+register (method) read in cv::DescriptorMatcher
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.write',
+    u'void',
+    ['/NW', '/C'],
+    [[u'FileStorage&', u'', '', []]],
+    '']
+parseName: cv.DescriptorMatcher.write with ['cv'] -> fullname:cv::DescriptorMatcher::write namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:write
+register (method) write in cv::DescriptorMatcher
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.clone',
+    u'Ptr<DescriptorMatcher>',
+    ['/NW', '/A', '/C'],
+    [[u'bool', u'emptyTrainData', u'false', []]],
+    '']
+parseName: cv.DescriptorMatcher.clone with ['cv'] -> fullname:cv::DescriptorMatcher::clone namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:clone
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.create',
+    u'Ptr<DescriptorMatcher>',
+    ['/NW', '/S'],
+    [[u'const string&', u'descriptorMatcherType', '', []]],
+    '']
+parseName: cv.DescriptorMatcher.create with ['cv'] -> fullname:cv::DescriptorMatcher::create namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:create
+register (method) create in cv::DescriptorMatcher
+
+--- Incoming ---
+[u'class cv.DescriptorMatcher.DescriptorCollection', '', ['/Hidden'], [], '']
+parseName: class cv.DescriptorMatcher.DescriptorCollection with ['cv'] -> fullname:cv::DescriptorMatcher::DescriptorCollection namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:DescriptorCollection
+register class cv::DescriptorMatcher::DescriptorCollection ([u'class cv.DescriptorMatcher.DescriptorCollection', '', ['/Hidden'], [], '']) [ignored]
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.DescriptorCollection.DescriptorCollection',
+    u'',
+    ['/NW'],
+    [],
+    '']
+parseName: cv.DescriptorMatcher.DescriptorCollection.DescriptorCollection with ['cv'] -> fullname:cv::DescriptorMatcher::DescriptorCollection::DescriptorCollection namespace:cv classpath:DescriptorMatcher::DescriptorCollection classname:DescriptorCollection name:DescriptorCollection
+register (constructor) new in cv::DescriptorMatcher::DescriptorCollection
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.DescriptorCollection.DescriptorCollection',
+    u'',
+    ['/NW'],
+    [[u'const DescriptorCollection&', u'collection', '', []]],
+    '']
+parseName: cv.DescriptorMatcher.DescriptorCollection.DescriptorCollection with ['cv'] -> fullname:cv::DescriptorMatcher::DescriptorCollection::DescriptorCollection namespace:cv classpath:DescriptorMatcher::DescriptorCollection classname:DescriptorCollection name:DescriptorCollection
+register (constructor) new in cv::DescriptorMatcher::DescriptorCollection
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.DescriptorCollection.~DescriptorCollection',
+    u'',
+    ['/NW'],
+    [],
+    '']
+parseName: cv.DescriptorMatcher.DescriptorCollection.~DescriptorCollection with ['cv'] -> fullname:cv::DescriptorMatcher::DescriptorCollection::~DescriptorCollection namespace:cv classpath:DescriptorMatcher::DescriptorCollection classname:DescriptorCollection name:~DescriptorCollection
+ignore destructor (method) ~DescriptorCollection in cv::DescriptorMatcher::DescriptorCollection
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.DescriptorCollection.set',
+    u'void',
+    ['/NW'],
+    [[u'const vector<Mat>&', u'descriptors', '', []]],
+    '']
+parseName: cv.DescriptorMatcher.DescriptorCollection.set with ['cv'] -> fullname:cv::DescriptorMatcher::DescriptorCollection::set namespace:cv classpath:DescriptorMatcher::DescriptorCollection classname:DescriptorCollection name:set
+register (method) set in cv::DescriptorMatcher::DescriptorCollection
+
+--- Incoming ---
+[u'cv.DescriptorMatcher.DescriptorCollection.clear', u'void', ['/NW'], [], '']
+parseName: cv.DescriptorMatcher.DescriptorCollection.clear with ['cv'] -> fullname:cv::DescriptorMatcher::DescriptorCollection::clear namespace:cv classpath:DescriptorMatcher::DescriptorCollection classname:DescriptorCollection name:clear
+register (method) clear in cv::DescriptorMatcher::DescriptorCollection
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.DescriptorCollection.getDescriptors',
+    u'const Mat&',
+    ['/NW', '/C'],
+    [],
+    '']
+parseName: cv.DescriptorMatcher.DescriptorCollection.getDescriptors with ['cv'] -> fullname:cv::DescriptorMatcher::DescriptorCollection::getDescriptors namespace:cv classpath:DescriptorMatcher::DescriptorCollection classname:DescriptorCollection name:getDescriptors
+register (method) getDescriptors in cv::DescriptorMatcher::DescriptorCollection
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.DescriptorCollection.getDescriptor',
+    u'const Mat',
+    ['/NW', '/C'],
+    [[u'int', u'imgIdx', '', []], [u'int', u'localDescIdx', '', []]],
+    '']
+parseName: cv.DescriptorMatcher.DescriptorCollection.getDescriptor with ['cv'] -> fullname:cv::DescriptorMatcher::DescriptorCollection::getDescriptor namespace:cv classpath:DescriptorMatcher::DescriptorCollection classname:DescriptorCollection name:getDescriptor
+register (method) getDescriptor in cv::DescriptorMatcher::DescriptorCollection
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.DescriptorCollection.getDescriptor',
+    u'const Mat',
+    ['/NW', '/C'],
+    [[u'int', u'globalDescIdx', '', []]],
+    '']
+parseName: cv.DescriptorMatcher.DescriptorCollection.getDescriptor with ['cv'] -> fullname:cv::DescriptorMatcher::DescriptorCollection::getDescriptor namespace:cv classpath:DescriptorMatcher::DescriptorCollection classname:DescriptorCollection name:getDescriptor
+register (method) getDescriptor in cv::DescriptorMatcher::DescriptorCollection
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.DescriptorCollection.getLocalIdx',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'int', u'globalDescIdx', '', []],
+        [u'int&', u'imgIdx', '', []],
+        [u'int&', u'localDescIdx', '', []]],
+    '']
+parseName: cv.DescriptorMatcher.DescriptorCollection.getLocalIdx with ['cv'] -> fullname:cv::DescriptorMatcher::DescriptorCollection::getLocalIdx namespace:cv classpath:DescriptorMatcher::DescriptorCollection classname:DescriptorCollection name:getLocalIdx
+register (method) getLocalIdx in cv::DescriptorMatcher::DescriptorCollection
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.DescriptorCollection.size',
+    u'int',
+    ['/NW', '/C'],
+    [],
+    '']
+parseName: cv.DescriptorMatcher.DescriptorCollection.size with ['cv'] -> fullname:cv::DescriptorMatcher::DescriptorCollection::size namespace:cv classpath:DescriptorMatcher::DescriptorCollection classname:DescriptorCollection name:size
+register (method) size in cv::DescriptorMatcher::DescriptorCollection
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.knnMatchImpl',
+    u'void',
+    ['/NW', '/A', '/H'],
+    [   [u'const Mat&', u'queryDescriptors', '', []],
+        [u'vector<vector<DMatch> >&', u'matches', '', []],
+        [u'int', u'k', '', []],
+        [u'const vector<Mat>&', u'masks', u'vector<Mat>()', []],
+        [u'bool', u'compactResult', u'false', []]],
+    '']
+parseName: cv.DescriptorMatcher.knnMatchImpl with ['cv'] -> fullname:cv::DescriptorMatcher::knnMatchImpl namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:knnMatchImpl
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.radiusMatchImpl',
+    u'void',
+    ['/NW', '/A', '/H'],
+    [   [u'const Mat&', u'queryDescriptors', '', []],
+        [u'vector<vector<DMatch> >&', u'matches', '', []],
+        [u'float', u'maxDistance', '', []],
+        [u'const vector<Mat>&', u'masks', u'vector<Mat>()', []],
+        [u'bool', u'compactResult', u'false', []]],
+    '']
+parseName: cv.DescriptorMatcher.radiusMatchImpl with ['cv'] -> fullname:cv::DescriptorMatcher::radiusMatchImpl namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:radiusMatchImpl
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.isPossibleMatch',
+    u'bool',
+    ['/NW', '/S', '/H'],
+    [   [u'const Mat&', u'mask', '', []],
+        [u'int', u'queryIdx', '', []],
+        [u'int', u'trainIdx', '', []]],
+    '']
+parseName: cv.DescriptorMatcher.isPossibleMatch with ['cv'] -> fullname:cv::DescriptorMatcher::isPossibleMatch namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:isPossibleMatch
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.isMaskedOut',
+    u'bool',
+    ['/NW', '/S', '/H'],
+    [[u'const vector<Mat>&', u'masks', '', []], [u'int', u'queryIdx', '', []]],
+    '']
+parseName: cv.DescriptorMatcher.isMaskedOut with ['cv'] -> fullname:cv::DescriptorMatcher::isMaskedOut namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:isMaskedOut
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.clone_op',
+    u'Mat',
+    ['/NW', '/S', '/H'],
+    [[u'Mat', u'm', '', []]],
+    '']
+parseName: cv.DescriptorMatcher.clone_op with ['cv'] -> fullname:cv::DescriptorMatcher::clone_op namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:clone_op
+
+--- Incoming ---
+[   u'cv.DescriptorMatcher.checkMasks',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const vector<Mat>&', u'masks', '', []],
+        [u'int', u'queryDescriptorsCount', '', []]],
+    '']
+parseName: cv.DescriptorMatcher.checkMasks with ['cv'] -> fullname:cv::DescriptorMatcher::checkMasks namespace:cv classpath:DescriptorMatcher classname:DescriptorMatcher name:checkMasks
+
+--- Incoming ---
+[u'class cv.BFMatcher', u': cv::DescriptorMatcher', [], [], '']
+parseName: class cv.BFMatcher with ['cv'] -> fullname:cv::BFMatcher namespace:cv classpath: classname: name:BFMatcher
+register class cv::BFMatcher ([u'class cv.BFMatcher', u': cv::DescriptorMatcher', [], [], '']) impl:cv::DescriptorMatcher
+
+--- Incoming ---
+[   u'cv.BFMatcher.BFMatcher',
+    u'',
+    ['/NW'],
+    [   [u'int', u'normType', u'NORM_L2', []],
+        [u'bool', u'crossCheck', u'false', []]],
+    '']
+parseName: cv.BFMatcher.BFMatcher with ['cv'] -> fullname:cv::BFMatcher::BFMatcher namespace:cv classpath:BFMatcher classname:BFMatcher name:BFMatcher
+register (constructor) new in cv::BFMatcher
+
+--- Incoming ---
+[u'cv.BFMatcher.~BFMatcher', u'', ['/NW'], [], '']
+parseName: cv.BFMatcher.~BFMatcher with ['cv'] -> fullname:cv::BFMatcher::~BFMatcher namespace:cv classpath:BFMatcher classname:BFMatcher name:~BFMatcher
+ignore destructor (method) ~BFMatcher in cv::BFMatcher
+
+--- Incoming ---
+[u'cv.BFMatcher.isMaskSupported', u'bool', ['/NW', '/C'], [], '']
+parseName: cv.BFMatcher.isMaskSupported with ['cv'] -> fullname:cv::BFMatcher::isMaskSupported namespace:cv classpath:BFMatcher classname:BFMatcher name:isMaskSupported
+register (method) isMaskSupported in cv::BFMatcher
+
+--- Incoming ---
+[   u'cv.BFMatcher.clone',
+    u'Ptr<DescriptorMatcher>',
+    ['/NW', '/C'],
+    [[u'bool', u'emptyTrainData', u'false', []]],
+    '']
+parseName: cv.BFMatcher.clone with ['cv'] -> fullname:cv::BFMatcher::clone namespace:cv classpath:BFMatcher classname:BFMatcher name:clone
+register (method) clone in cv::BFMatcher
+
+--- Incoming ---
+[u'cv.BFMatcher.info', u'AlgorithmInfo*', ['/NW', '/C'], [], '']
+parseName: cv.BFMatcher.info with ['cv'] -> fullname:cv::BFMatcher::info namespace:cv classpath:BFMatcher classname:BFMatcher name:info
+register (method) info in cv::BFMatcher
+
+--- Incoming ---
+[   u'cv.BFMatcher.knnMatchImpl',
+    u'void',
+    ['/NW', '/H'],
+    [   [u'const Mat&', u'queryDescriptors', '', []],
+        [u'vector<vector<DMatch> >&', u'matches', '', []],
+        [u'int', u'k', '', []],
+        [u'const vector<Mat>&', u'masks', u'vector<Mat>()', []],
+        [u'bool', u'compactResult', u'false', []]],
+    '']
+parseName: cv.BFMatcher.knnMatchImpl with ['cv'] -> fullname:cv::BFMatcher::knnMatchImpl namespace:cv classpath:BFMatcher classname:BFMatcher name:knnMatchImpl
+
+--- Incoming ---
+[   u'cv.BFMatcher.radiusMatchImpl',
+    u'void',
+    ['/NW', '/H'],
+    [   [u'const Mat&', u'queryDescriptors', '', []],
+        [u'vector<vector<DMatch> >&', u'matches', '', []],
+        [u'float', u'maxDistance', '', []],
+        [u'const vector<Mat>&', u'masks', u'vector<Mat>()', []],
+        [u'bool', u'compactResult', u'false', []]],
+    '']
+parseName: cv.BFMatcher.radiusMatchImpl with ['cv'] -> fullname:cv::BFMatcher::radiusMatchImpl namespace:cv classpath:BFMatcher classname:BFMatcher name:radiusMatchImpl
+
+--- Incoming ---
+[u'class cv.FlannBasedMatcher', u': cv::DescriptorMatcher', [], [], '']
+parseName: class cv.FlannBasedMatcher with ['cv'] -> fullname:cv::FlannBasedMatcher namespace:cv classpath: classname: name:FlannBasedMatcher
+register class cv::FlannBasedMatcher ([u'class cv.FlannBasedMatcher', u': cv::DescriptorMatcher', [], [], '']) impl:cv::DescriptorMatcher
+
+--- Incoming ---
+[   u'cv.FlannBasedMatcher.FlannBasedMatcher',
+    u'',
+    ['/NW'],
+    [   [   u'const Ptr<flann::IndexParams>&',
+            u'indexParams',
+            u'new flann::KDTreeIndexParams()',
+            []],
+        [   u'const Ptr<flann::SearchParams>&',
+            u'searchParams',
+            u'new flann::SearchParams()',
+            []]],
+    '']
+parseName: cv.FlannBasedMatcher.FlannBasedMatcher with ['cv'] -> fullname:cv::FlannBasedMatcher::FlannBasedMatcher namespace:cv classpath:FlannBasedMatcher classname:FlannBasedMatcher name:FlannBasedMatcher
+Registering an unknown type: flann::IndexParams
+Registering an unknown type: flann::SearchParams
+register (constructor) new in cv::FlannBasedMatcher
+
+--- Incoming ---
+[   u'cv.FlannBasedMatcher.add',
+    u'void',
+    ['/NW'],
+    [[u'const vector<Mat>&', u'descriptors', '', []]],
+    '']
+parseName: cv.FlannBasedMatcher.add with ['cv'] -> fullname:cv::FlannBasedMatcher::add namespace:cv classpath:FlannBasedMatcher classname:FlannBasedMatcher name:add
+register (method) add in cv::FlannBasedMatcher
+
+--- Incoming ---
+[u'cv.FlannBasedMatcher.clear', u'void', ['/NW'], [], '']
+parseName: cv.FlannBasedMatcher.clear with ['cv'] -> fullname:cv::FlannBasedMatcher::clear namespace:cv classpath:FlannBasedMatcher classname:FlannBasedMatcher name:clear
+register (method) clear in cv::FlannBasedMatcher
+
+--- Incoming ---
+[   u'cv.FlannBasedMatcher.read',
+    u'void',
+    ['/NW'],
+    [[u'const FileNode&', u'', '', []]],
+    '']
+parseName: cv.FlannBasedMatcher.read with ['cv'] -> fullname:cv::FlannBasedMatcher::read namespace:cv classpath:FlannBasedMatcher classname:FlannBasedMatcher name:read
+register (method) read in cv::FlannBasedMatcher
+
+--- Incoming ---
+[   u'cv.FlannBasedMatcher.write',
+    u'void',
+    ['/NW', '/C'],
+    [[u'FileStorage&', u'', '', []]],
+    '']
+parseName: cv.FlannBasedMatcher.write with ['cv'] -> fullname:cv::FlannBasedMatcher::write namespace:cv classpath:FlannBasedMatcher classname:FlannBasedMatcher name:write
+register (method) write in cv::FlannBasedMatcher
+
+--- Incoming ---
+[u'cv.FlannBasedMatcher.train', u'void', ['/NW'], [], '']
+parseName: cv.FlannBasedMatcher.train with ['cv'] -> fullname:cv::FlannBasedMatcher::train namespace:cv classpath:FlannBasedMatcher classname:FlannBasedMatcher name:train
+register (method) train in cv::FlannBasedMatcher
+
+--- Incoming ---
+[u'cv.FlannBasedMatcher.isMaskSupported', u'bool', ['/NW', '/C'], [], '']
+parseName: cv.FlannBasedMatcher.isMaskSupported with ['cv'] -> fullname:cv::FlannBasedMatcher::isMaskSupported namespace:cv classpath:FlannBasedMatcher classname:FlannBasedMatcher name:isMaskSupported
+register (method) isMaskSupported in cv::FlannBasedMatcher
+
+--- Incoming ---
+[   u'cv.FlannBasedMatcher.clone',
+    u'Ptr<DescriptorMatcher>',
+    ['/NW', '/C'],
+    [[u'bool', u'emptyTrainData', u'false', []]],
+    '']
+parseName: cv.FlannBasedMatcher.clone with ['cv'] -> fullname:cv::FlannBasedMatcher::clone namespace:cv classpath:FlannBasedMatcher classname:FlannBasedMatcher name:clone
+register (method) clone in cv::FlannBasedMatcher
+
+--- Incoming ---
+[u'cv.FlannBasedMatcher.info', u'AlgorithmInfo*', ['/NW', '/C'], [], '']
+parseName: cv.FlannBasedMatcher.info with ['cv'] -> fullname:cv::FlannBasedMatcher::info namespace:cv classpath:FlannBasedMatcher classname:FlannBasedMatcher name:info
+register (method) info in cv::FlannBasedMatcher
+
+--- Incoming ---
+[   u'cv.FlannBasedMatcher.convertToDMatches',
+    u'void',
+    ['/NW', '/S', '/H'],
+    [   [u'const DescriptorCollection&', u'descriptors', '', []],
+        [u'const Mat&', u'indices', '', []],
+        [u'const Mat&', u'distances', '', []],
+        [u'vector<vector<DMatch> >&', u'matches', '', []]],
+    '']
+parseName: cv.FlannBasedMatcher.convertToDMatches with ['cv'] -> fullname:cv::FlannBasedMatcher::convertToDMatches namespace:cv classpath:FlannBasedMatcher classname:FlannBasedMatcher name:convertToDMatches
+
+--- Incoming ---
+[   u'cv.FlannBasedMatcher.knnMatchImpl',
+    u'void',
+    ['/NW', '/H'],
+    [   [u'const Mat&', u'queryDescriptors', '', []],
+        [u'vector<vector<DMatch> >&', u'matches', '', []],
+        [u'int', u'k', '', []],
+        [u'const vector<Mat>&', u'masks', u'vector<Mat>()', []],
+        [u'bool', u'compactResult', u'false', []]],
+    '']
+parseName: cv.FlannBasedMatcher.knnMatchImpl with ['cv'] -> fullname:cv::FlannBasedMatcher::knnMatchImpl namespace:cv classpath:FlannBasedMatcher classname:FlannBasedMatcher name:knnMatchImpl
+
+--- Incoming ---
+[   u'cv.FlannBasedMatcher.radiusMatchImpl',
+    u'void',
+    ['/NW', '/H'],
+    [   [u'const Mat&', u'queryDescriptors', '', []],
+        [u'vector<vector<DMatch> >&', u'matches', '', []],
+        [u'float', u'maxDistance', '', []],
+        [u'const vector<Mat>&', u'masks', u'vector<Mat>()', []],
+        [u'bool', u'compactResult', u'false', []]],
+    '']
+parseName: cv.FlannBasedMatcher.radiusMatchImpl with ['cv'] -> fullname:cv::FlannBasedMatcher::radiusMatchImpl namespace:cv classpath:FlannBasedMatcher classname:FlannBasedMatcher name:radiusMatchImpl
+
+--- Incoming ---
+[u'class cv.GenericDescriptorMatcher', '', [], [], '']
+parseName: class cv.GenericDescriptorMatcher with ['cv'] -> fullname:cv::GenericDescriptorMatcher namespace:cv classpath: classname: name:GenericDescriptorMatcher
+register class cv::GenericDescriptorMatcher ([u'class cv.GenericDescriptorMatcher', '', [], [], ''])
+
+--- Incoming ---
+[u'cv.GenericDescriptorMatcher.GenericDescriptorMatcher', u'', ['/NW'], [], '']
+parseName: cv.GenericDescriptorMatcher.GenericDescriptorMatcher with ['cv'] -> fullname:cv::GenericDescriptorMatcher::GenericDescriptorMatcher namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:GenericDescriptorMatcher
+register (constructor) new in cv::GenericDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.~GenericDescriptorMatcher',
+    u'',
+    ['/NW'],
+    [],
+    '']
+parseName: cv.GenericDescriptorMatcher.~GenericDescriptorMatcher with ['cv'] -> fullname:cv::GenericDescriptorMatcher::~GenericDescriptorMatcher namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:~GenericDescriptorMatcher
+ignore destructor (method) ~GenericDescriptorMatcher in cv::GenericDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.add',
+    u'void',
+    ['/NW'],
+    [   [u'const vector<Mat>&', u'images', '', []],
+        [u'vector<vector<KeyPoint> >&', u'keypoints', '', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.add with ['cv'] -> fullname:cv::GenericDescriptorMatcher::add namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:add
+register (method) add in cv::GenericDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.getTrainImages',
+    u'const vector<Mat>&',
+    ['/NW', '/C'],
+    [],
+    '']
+parseName: cv.GenericDescriptorMatcher.getTrainImages with ['cv'] -> fullname:cv::GenericDescriptorMatcher::getTrainImages namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:getTrainImages
+register (method) getTrainImages in cv::GenericDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.getTrainKeypoints',
+    u'const vector<vector<KeyPoint> >&',
+    ['/NW', '/C'],
+    [],
+    '']
+parseName: cv.GenericDescriptorMatcher.getTrainKeypoints with ['cv'] -> fullname:cv::GenericDescriptorMatcher::getTrainKeypoints namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:getTrainKeypoints
+register (method) getTrainKeypoints in cv::GenericDescriptorMatcher
+
+--- Incoming ---
+[u'cv.GenericDescriptorMatcher.clear', u'void', ['/NW'], [], '']
+parseName: cv.GenericDescriptorMatcher.clear with ['cv'] -> fullname:cv::GenericDescriptorMatcher::clear namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:clear
+register (method) clear in cv::GenericDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.isMaskSupported',
+    u'bool',
+    ['/NW', '/A'],
+    [],
+    '']
+parseName: cv.GenericDescriptorMatcher.isMaskSupported with ['cv'] -> fullname:cv::GenericDescriptorMatcher::isMaskSupported namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:isMaskSupported
+
+--- Incoming ---
+[u'cv.GenericDescriptorMatcher.train', u'void', ['/NW'], [], '']
+parseName: cv.GenericDescriptorMatcher.train with ['cv'] -> fullname:cv::GenericDescriptorMatcher::train namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:train
+register (method) train in cv::GenericDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.classify',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const Mat&', u'queryImage', '', []],
+        [u'vector<KeyPoint>&', u'queryKeypoints', '', []],
+        [u'const Mat&', u'trainImage', '', []],
+        [u'vector<KeyPoint>&', u'trainKeypoints', '', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.classify with ['cv'] -> fullname:cv::GenericDescriptorMatcher::classify namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:classify
+register (method) classify in cv::GenericDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.classify',
+    u'void',
+    ['/NW'],
+    [   [u'const Mat&', u'queryImage', '', []],
+        [u'vector<KeyPoint>&', u'queryKeypoints', '', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.classify with ['cv'] -> fullname:cv::GenericDescriptorMatcher::classify namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:classify
+register (method) classify in cv::GenericDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.match',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const Mat&', u'queryImage', '', []],
+        [u'vector<KeyPoint>&', u'queryKeypoints', '', []],
+        [u'const Mat&', u'trainImage', '', []],
+        [u'vector<KeyPoint>&', u'trainKeypoints', '', []],
+        [u'vector<DMatch>&', u'matches', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.match with ['cv'] -> fullname:cv::GenericDescriptorMatcher::match namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:match
+register (method) match in cv::GenericDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.knnMatch',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const Mat&', u'queryImage', '', []],
+        [u'vector<KeyPoint>&', u'queryKeypoints', '', []],
+        [u'const Mat&', u'trainImage', '', []],
+        [u'vector<KeyPoint>&', u'trainKeypoints', '', []],
+        [u'vector<vector<DMatch> >&', u'matches', '', []],
+        [u'int', u'k', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []],
+        [u'bool', u'compactResult', u'false', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.knnMatch with ['cv'] -> fullname:cv::GenericDescriptorMatcher::knnMatch namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:knnMatch
+register (method) knnMatch in cv::GenericDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.radiusMatch',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const Mat&', u'queryImage', '', []],
+        [u'vector<KeyPoint>&', u'queryKeypoints', '', []],
+        [u'const Mat&', u'trainImage', '', []],
+        [u'vector<KeyPoint>&', u'trainKeypoints', '', []],
+        [u'vector<vector<DMatch> >&', u'matches', '', []],
+        [u'float', u'maxDistance', '', []],
+        [u'const Mat&', u'mask', u'Mat()', []],
+        [u'bool', u'compactResult', u'false', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.radiusMatch with ['cv'] -> fullname:cv::GenericDescriptorMatcher::radiusMatch namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:radiusMatch
+register (method) radiusMatch in cv::GenericDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.match',
+    u'void',
+    ['/NW'],
+    [   [u'const Mat&', u'queryImage', '', []],
+        [u'vector<KeyPoint>&', u'queryKeypoints', '', []],
+        [u'vector<DMatch>&', u'matches', '', []],
+        [u'const vector<Mat>&', u'masks', u'vector<Mat>()', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.match with ['cv'] -> fullname:cv::GenericDescriptorMatcher::match namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:match
+register (method) match in cv::GenericDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.knnMatch',
+    u'void',
+    ['/NW'],
+    [   [u'const Mat&', u'queryImage', '', []],
+        [u'vector<KeyPoint>&', u'queryKeypoints', '', []],
+        [u'vector<vector<DMatch> >&', u'matches', '', []],
+        [u'int', u'k', '', []],
+        [u'const vector<Mat>&', u'masks', u'vector<Mat>()', []],
+        [u'bool', u'compactResult', u'false', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.knnMatch with ['cv'] -> fullname:cv::GenericDescriptorMatcher::knnMatch namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:knnMatch
+register (method) knnMatch in cv::GenericDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.radiusMatch',
+    u'void',
+    ['/NW'],
+    [   [u'const Mat&', u'queryImage', '', []],
+        [u'vector<KeyPoint>&', u'queryKeypoints', '', []],
+        [u'vector<vector<DMatch> >&', u'matches', '', []],
+        [u'float', u'maxDistance', '', []],
+        [u'const vector<Mat>&', u'masks', u'vector<Mat>()', []],
+        [u'bool', u'compactResult', u'false', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.radiusMatch with ['cv'] -> fullname:cv::GenericDescriptorMatcher::radiusMatch namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:radiusMatch
+register (method) radiusMatch in cv::GenericDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.read',
+    u'void',
+    ['/NW'],
+    [[u'const FileNode&', u'fn', '', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.read with ['cv'] -> fullname:cv::GenericDescriptorMatcher::read namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:read
+register (method) read in cv::GenericDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.write',
+    u'void',
+    ['/NW', '/C'],
+    [[u'FileStorage&', u'fs', '', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.write with ['cv'] -> fullname:cv::GenericDescriptorMatcher::write namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:write
+register (method) write in cv::GenericDescriptorMatcher
+
+--- Incoming ---
+[u'cv.GenericDescriptorMatcher.empty', u'bool', ['/NW', '/C'], [], '']
+parseName: cv.GenericDescriptorMatcher.empty with ['cv'] -> fullname:cv::GenericDescriptorMatcher::empty namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:empty
+register (method) empty in cv::GenericDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.clone',
+    u'Ptr<GenericDescriptorMatcher>',
+    ['/NW', '/A', '/C'],
+    [[u'bool', u'emptyTrainData', u'false', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.clone with ['cv'] -> fullname:cv::GenericDescriptorMatcher::clone namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:clone
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.create',
+    u'Ptr<GenericDescriptorMatcher>',
+    ['/NW', '/S'],
+    [   [u'const string&', u'genericDescritptorMatcherType', '', []],
+        [u'const string &', u'paramsFilename', u'string()', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.create with ['cv'] -> fullname:cv::GenericDescriptorMatcher::create namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:create
+Registering an unknown type: string 
+register (method) create in cv::GenericDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.knnMatchImpl',
+    u'void',
+    ['/NW', '/A', '/H'],
+    [   [u'const Mat&', u'queryImage', '', []],
+        [u'vector<KeyPoint>&', u'queryKeypoints', '', []],
+        [u'vector<vector<DMatch> >&', u'matches', '', []],
+        [u'int', u'k', '', []],
+        [u'const vector<Mat>&', u'masks', '', []],
+        [u'bool', u'compactResult', '', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.knnMatchImpl with ['cv'] -> fullname:cv::GenericDescriptorMatcher::knnMatchImpl namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:knnMatchImpl
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.radiusMatchImpl',
+    u'void',
+    ['/NW', '/A', '/H'],
+    [   [u'const Mat&', u'queryImage', '', []],
+        [u'vector<KeyPoint>&', u'queryKeypoints', '', []],
+        [u'vector<vector<DMatch> >&', u'matches', '', []],
+        [u'float', u'maxDistance', '', []],
+        [u'const vector<Mat>&', u'masks', '', []],
+        [u'bool', u'compactResult', '', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.radiusMatchImpl with ['cv'] -> fullname:cv::GenericDescriptorMatcher::radiusMatchImpl namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:radiusMatchImpl
+
+--- Incoming ---
+[   u'class cv.GenericDescriptorMatcher.KeyPointCollection',
+    '',
+    ['/Hidden'],
+    [],
+    '']
+parseName: class cv.GenericDescriptorMatcher.KeyPointCollection with ['cv'] -> fullname:cv::GenericDescriptorMatcher::KeyPointCollection namespace:cv classpath:GenericDescriptorMatcher classname:GenericDescriptorMatcher name:KeyPointCollection
+register class cv::GenericDescriptorMatcher::KeyPointCollection ([u'class cv.GenericDescriptorMatcher.KeyPointCollection', '', ['/Hidden'], [], '']) [ignored]
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.KeyPointCollection.KeyPointCollection',
+    u'',
+    ['/NW'],
+    [],
+    '']
+parseName: cv.GenericDescriptorMatcher.KeyPointCollection.KeyPointCollection with ['cv'] -> fullname:cv::GenericDescriptorMatcher::KeyPointCollection::KeyPointCollection namespace:cv classpath:GenericDescriptorMatcher::KeyPointCollection classname:KeyPointCollection name:KeyPointCollection
+register (constructor) new in cv::GenericDescriptorMatcher::KeyPointCollection
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.KeyPointCollection.KeyPointCollection',
+    u'',
+    ['/NW'],
+    [[u'const KeyPointCollection&', u'collection', '', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.KeyPointCollection.KeyPointCollection with ['cv'] -> fullname:cv::GenericDescriptorMatcher::KeyPointCollection::KeyPointCollection namespace:cv classpath:GenericDescriptorMatcher::KeyPointCollection classname:KeyPointCollection name:KeyPointCollection
+register (constructor) new in cv::GenericDescriptorMatcher::KeyPointCollection
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.KeyPointCollection.add',
+    u'void',
+    ['/NW'],
+    [   [u'const vector<Mat>&', u'images', '', []],
+        [u'const vector<vector<KeyPoint> >&', u'keypoints', '', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.KeyPointCollection.add with ['cv'] -> fullname:cv::GenericDescriptorMatcher::KeyPointCollection::add namespace:cv classpath:GenericDescriptorMatcher::KeyPointCollection classname:KeyPointCollection name:add
+register (method) add in cv::GenericDescriptorMatcher::KeyPointCollection
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.KeyPointCollection.clear',
+    u'void',
+    ['/NW'],
+    [],
+    '']
+parseName: cv.GenericDescriptorMatcher.KeyPointCollection.clear with ['cv'] -> fullname:cv::GenericDescriptorMatcher::KeyPointCollection::clear namespace:cv classpath:GenericDescriptorMatcher::KeyPointCollection classname:KeyPointCollection name:clear
+register (method) clear in cv::GenericDescriptorMatcher::KeyPointCollection
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.KeyPointCollection.keypointCount',
+    u'size_t',
+    ['/NW', '/C'],
+    [],
+    '']
+parseName: cv.GenericDescriptorMatcher.KeyPointCollection.keypointCount with ['cv'] -> fullname:cv::GenericDescriptorMatcher::KeyPointCollection::keypointCount namespace:cv classpath:GenericDescriptorMatcher::KeyPointCollection classname:KeyPointCollection name:keypointCount
+register (method) keypointCount in cv::GenericDescriptorMatcher::KeyPointCollection
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.KeyPointCollection.imageCount',
+    u'size_t',
+    ['/NW', '/C'],
+    [],
+    '']
+parseName: cv.GenericDescriptorMatcher.KeyPointCollection.imageCount with ['cv'] -> fullname:cv::GenericDescriptorMatcher::KeyPointCollection::imageCount namespace:cv classpath:GenericDescriptorMatcher::KeyPointCollection classname:KeyPointCollection name:imageCount
+register (method) imageCount in cv::GenericDescriptorMatcher::KeyPointCollection
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.KeyPointCollection.getKeypoints',
+    u'const vector<vector<KeyPoint> >&',
+    ['/NW', '/C'],
+    [],
+    '']
+parseName: cv.GenericDescriptorMatcher.KeyPointCollection.getKeypoints with ['cv'] -> fullname:cv::GenericDescriptorMatcher::KeyPointCollection::getKeypoints namespace:cv classpath:GenericDescriptorMatcher::KeyPointCollection classname:KeyPointCollection name:getKeypoints
+register (method) getKeypoints in cv::GenericDescriptorMatcher::KeyPointCollection
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.KeyPointCollection.getKeypoints',
+    u'const vector<KeyPoint>&',
+    ['/NW', '/C'],
+    [[u'int', u'imgIdx', '', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.KeyPointCollection.getKeypoints with ['cv'] -> fullname:cv::GenericDescriptorMatcher::KeyPointCollection::getKeypoints namespace:cv classpath:GenericDescriptorMatcher::KeyPointCollection classname:KeyPointCollection name:getKeypoints
+register (method) getKeypoints in cv::GenericDescriptorMatcher::KeyPointCollection
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.KeyPointCollection.getKeyPoint',
+    u'const KeyPoint&',
+    ['/NW', '/C'],
+    [[u'int', u'imgIdx', '', []], [u'int', u'localPointIdx', '', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.KeyPointCollection.getKeyPoint with ['cv'] -> fullname:cv::GenericDescriptorMatcher::KeyPointCollection::getKeyPoint namespace:cv classpath:GenericDescriptorMatcher::KeyPointCollection classname:KeyPointCollection name:getKeyPoint
+register (method) getKeyPoint in cv::GenericDescriptorMatcher::KeyPointCollection
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.KeyPointCollection.getKeyPoint',
+    u'const KeyPoint&',
+    ['/NW', '/C'],
+    [[u'int', u'globalPointIdx', '', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.KeyPointCollection.getKeyPoint with ['cv'] -> fullname:cv::GenericDescriptorMatcher::KeyPointCollection::getKeyPoint namespace:cv classpath:GenericDescriptorMatcher::KeyPointCollection classname:KeyPointCollection name:getKeyPoint
+register (method) getKeyPoint in cv::GenericDescriptorMatcher::KeyPointCollection
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.KeyPointCollection.getLocalIdx',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'int', u'globalPointIdx', '', []],
+        [u'int&', u'imgIdx', '', []],
+        [u'int&', u'localPointIdx', '', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.KeyPointCollection.getLocalIdx with ['cv'] -> fullname:cv::GenericDescriptorMatcher::KeyPointCollection::getLocalIdx namespace:cv classpath:GenericDescriptorMatcher::KeyPointCollection classname:KeyPointCollection name:getLocalIdx
+register (method) getLocalIdx in cv::GenericDescriptorMatcher::KeyPointCollection
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.KeyPointCollection.getImages',
+    u'const vector<Mat>&',
+    ['/NW', '/C'],
+    [],
+    '']
+parseName: cv.GenericDescriptorMatcher.KeyPointCollection.getImages with ['cv'] -> fullname:cv::GenericDescriptorMatcher::KeyPointCollection::getImages namespace:cv classpath:GenericDescriptorMatcher::KeyPointCollection classname:KeyPointCollection name:getImages
+register (method) getImages in cv::GenericDescriptorMatcher::KeyPointCollection
+
+--- Incoming ---
+[   u'cv.GenericDescriptorMatcher.KeyPointCollection.getImage',
+    u'const Mat&',
+    ['/NW', '/C'],
+    [[u'int', u'imgIdx', '', []]],
+    '']
+parseName: cv.GenericDescriptorMatcher.KeyPointCollection.getImage with ['cv'] -> fullname:cv::GenericDescriptorMatcher::KeyPointCollection::getImage namespace:cv classpath:GenericDescriptorMatcher::KeyPointCollection classname:KeyPointCollection name:getImage
+register (method) getImage in cv::GenericDescriptorMatcher::KeyPointCollection
+
+--- Incoming ---
+[   u'class cv.VectorDescriptorMatcher',
+    u': cv::GenericDescriptorMatcher',
+    [],
+    [],
+    '']
+parseName: class cv.VectorDescriptorMatcher with ['cv'] -> fullname:cv::VectorDescriptorMatcher namespace:cv classpath: classname: name:VectorDescriptorMatcher
+register class cv::VectorDescriptorMatcher ([u'class cv.VectorDescriptorMatcher', u': cv::GenericDescriptorMatcher', [], [], '']) impl:cv::GenericDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.VectorDescriptorMatcher.VectorDescriptorMatcher',
+    u'',
+    ['/NW'],
+    [   [u'const Ptr<DescriptorExtractor>&', u'extractor', '', []],
+        [u'const Ptr<DescriptorMatcher>&', u'matcher', '', []]],
+    '']
+parseName: cv.VectorDescriptorMatcher.VectorDescriptorMatcher with ['cv'] -> fullname:cv::VectorDescriptorMatcher::VectorDescriptorMatcher namespace:cv classpath:VectorDescriptorMatcher classname:VectorDescriptorMatcher name:VectorDescriptorMatcher
+register (constructor) new in cv::VectorDescriptorMatcher
+
+--- Incoming ---
+[u'cv.VectorDescriptorMatcher.~VectorDescriptorMatcher', u'', ['/NW'], [], '']
+parseName: cv.VectorDescriptorMatcher.~VectorDescriptorMatcher with ['cv'] -> fullname:cv::VectorDescriptorMatcher::~VectorDescriptorMatcher namespace:cv classpath:VectorDescriptorMatcher classname:VectorDescriptorMatcher name:~VectorDescriptorMatcher
+ignore destructor (method) ~VectorDescriptorMatcher in cv::VectorDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.VectorDescriptorMatcher.add',
+    u'void',
+    ['/NW'],
+    [   [u'const vector<Mat>&', u'imgCollection', '', []],
+        [u'vector<vector<KeyPoint> >&', u'pointCollection', '', []]],
+    '']
+parseName: cv.VectorDescriptorMatcher.add with ['cv'] -> fullname:cv::VectorDescriptorMatcher::add namespace:cv classpath:VectorDescriptorMatcher classname:VectorDescriptorMatcher name:add
+register (method) add in cv::VectorDescriptorMatcher
+
+--- Incoming ---
+[u'cv.VectorDescriptorMatcher.clear', u'void', ['/NW'], [], '']
+parseName: cv.VectorDescriptorMatcher.clear with ['cv'] -> fullname:cv::VectorDescriptorMatcher::clear namespace:cv classpath:VectorDescriptorMatcher classname:VectorDescriptorMatcher name:clear
+register (method) clear in cv::VectorDescriptorMatcher
+
+--- Incoming ---
+[u'cv.VectorDescriptorMatcher.train', u'void', ['/NW'], [], '']
+parseName: cv.VectorDescriptorMatcher.train with ['cv'] -> fullname:cv::VectorDescriptorMatcher::train namespace:cv classpath:VectorDescriptorMatcher classname:VectorDescriptorMatcher name:train
+register (method) train in cv::VectorDescriptorMatcher
+
+--- Incoming ---
+[u'cv.VectorDescriptorMatcher.isMaskSupported', u'bool', ['/NW'], [], '']
+parseName: cv.VectorDescriptorMatcher.isMaskSupported with ['cv'] -> fullname:cv::VectorDescriptorMatcher::isMaskSupported namespace:cv classpath:VectorDescriptorMatcher classname:VectorDescriptorMatcher name:isMaskSupported
+register (method) isMaskSupported in cv::VectorDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.VectorDescriptorMatcher.read',
+    u'void',
+    ['/NW'],
+    [[u'const FileNode&', u'fn', '', []]],
+    '']
+parseName: cv.VectorDescriptorMatcher.read with ['cv'] -> fullname:cv::VectorDescriptorMatcher::read namespace:cv classpath:VectorDescriptorMatcher classname:VectorDescriptorMatcher name:read
+register (method) read in cv::VectorDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.VectorDescriptorMatcher.write',
+    u'void',
+    ['/NW', '/C'],
+    [[u'FileStorage&', u'fs', '', []]],
+    '']
+parseName: cv.VectorDescriptorMatcher.write with ['cv'] -> fullname:cv::VectorDescriptorMatcher::write namespace:cv classpath:VectorDescriptorMatcher classname:VectorDescriptorMatcher name:write
+register (method) write in cv::VectorDescriptorMatcher
+
+--- Incoming ---
+[u'cv.VectorDescriptorMatcher.empty', u'bool', ['/NW', '/C'], [], '']
+parseName: cv.VectorDescriptorMatcher.empty with ['cv'] -> fullname:cv::VectorDescriptorMatcher::empty namespace:cv classpath:VectorDescriptorMatcher classname:VectorDescriptorMatcher name:empty
+register (method) empty in cv::VectorDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.VectorDescriptorMatcher.clone',
+    u'Ptr<GenericDescriptorMatcher>',
+    ['/NW', '/C'],
+    [[u'bool', u'emptyTrainData', u'false', []]],
+    '']
+parseName: cv.VectorDescriptorMatcher.clone with ['cv'] -> fullname:cv::VectorDescriptorMatcher::clone namespace:cv classpath:VectorDescriptorMatcher classname:VectorDescriptorMatcher name:clone
+register (method) clone in cv::VectorDescriptorMatcher
+
+--- Incoming ---
+[   u'cv.VectorDescriptorMatcher.knnMatchImpl',
+    u'void',
+    ['/NW', '/H'],
+    [   [u'const Mat&', u'queryImage', '', []],
+        [u'vector<KeyPoint>&', u'queryKeypoints', '', []],
+        [u'vector<vector<DMatch> >&', u'matches', '', []],
+        [u'int', u'k', '', []],
+        [u'const vector<Mat>&', u'masks', '', []],
+        [u'bool', u'compactResult', '', []]],
+    '']
+parseName: cv.VectorDescriptorMatcher.knnMatchImpl with ['cv'] -> fullname:cv::VectorDescriptorMatcher::knnMatchImpl namespace:cv classpath:VectorDescriptorMatcher classname:VectorDescriptorMatcher name:knnMatchImpl
+
+--- Incoming ---
+[   u'cv.VectorDescriptorMatcher.radiusMatchImpl',
+    u'void',
+    ['/NW', '/H'],
+    [   [u'const Mat&', u'queryImage', '', []],
+        [u'vector<KeyPoint>&', u'queryKeypoints', '', []],
+        [u'vector<vector<DMatch> >&', u'matches', '', []],
+        [u'float', u'maxDistance', '', []],
+        [u'const vector<Mat>&', u'masks', '', []],
+        [u'bool', u'compactResult', '', []]],
+    '']
+parseName: cv.VectorDescriptorMatcher.radiusMatchImpl with ['cv'] -> fullname:cv::VectorDescriptorMatcher::radiusMatchImpl namespace:cv classpath:VectorDescriptorMatcher classname:VectorDescriptorMatcher name:radiusMatchImpl
+
+--- Incoming ---
+[u'struct cv.DrawMatchesFlags', '', [], [], '']
+parseName: struct cv.DrawMatchesFlags with ['cv'] -> fullname:cv::DrawMatchesFlags namespace:cv classpath: classname: name:DrawMatchesFlags
+register class cv::DrawMatchesFlags ([u'struct cv.DrawMatchesFlags', '', [], [], ''])
+
+--- Incoming ---
+[u'const cv.DrawMatchesFlags.DEFAULT', u'0', [], []]
+parseName: const cv.DrawMatchesFlags.DEFAULT with ['cv'] -> fullname:cv::DrawMatchesFlags::DEFAULT namespace:cv classpath:DrawMatchesFlags classname:DrawMatchesFlags name:DEFAULT
+
+--- Incoming ---
+[u'const cv.DrawMatchesFlags.DRAW_OVER_OUTIMG', u'1', [], []]
+parseName: const cv.DrawMatchesFlags.DRAW_OVER_OUTIMG with ['cv'] -> fullname:cv::DrawMatchesFlags::DRAW_OVER_OUTIMG namespace:cv classpath:DrawMatchesFlags classname:DrawMatchesFlags name:DRAW_OVER_OUTIMG
+
+--- Incoming ---
+[u'const cv.DrawMatchesFlags.NOT_DRAW_SINGLE_POINTS', u'2', [], []]
+parseName: const cv.DrawMatchesFlags.NOT_DRAW_SINGLE_POINTS with ['cv'] -> fullname:cv::DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS namespace:cv classpath:DrawMatchesFlags classname:DrawMatchesFlags name:NOT_DRAW_SINGLE_POINTS
+
+--- Incoming ---
+[u'const cv.DrawMatchesFlags.DRAW_RICH_KEYPOINTS', u'4', [], []]
+parseName: const cv.DrawMatchesFlags.DRAW_RICH_KEYPOINTS with ['cv'] -> fullname:cv::DrawMatchesFlags::DRAW_RICH_KEYPOINTS namespace:cv classpath:DrawMatchesFlags classname:DrawMatchesFlags name:DRAW_RICH_KEYPOINTS
+
+--- Incoming ---
+[   u'cv.drawKeypoints',
+    u'void',
+    ['/NW'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'const vector<KeyPoint>&', u'keypoints', '', []],
+        [u'Mat&', u'outImage', '', []],
+        [u'const Scalar&', u'color', u'Scalar::all(-1)', []],
+        [u'int', u'flags', u'DrawMatchesFlags::DEFAULT', []]],
+    '']
+parseName: cv.drawKeypoints with ['cv'] -> fullname:cv::drawKeypoints namespace:cv classpath: classname: name:drawKeypoints
+register (function) drawKeypoints
+
+--- Incoming ---
+[   u'cv.drawMatches',
+    u'void',
+    ['/NW'],
+    [   [u'const Mat&', u'img1', '', []],
+        [u'const vector<KeyPoint>&', u'keypoints1', '', []],
+        [u'const Mat&', u'img2', '', []],
+        [u'const vector<KeyPoint>&', u'keypoints2', '', []],
+        [u'const vector<DMatch>&', u'matches1to2', '', []],
+        [u'Mat&', u'outImg', '', []],
+        [u'const Scalar&', u'matchColor', u'Scalar::all(-1)', []],
+        [u'const Scalar&', u'singlePointColor', u'Scalar::all(-1)', []],
+        [u'const vector<char>&', u'matchesMask', u'vector<char>()', []],
+        [u'int', u'flags', u'DrawMatchesFlags::DEFAULT', []]],
+    '']
+parseName: cv.drawMatches with ['cv'] -> fullname:cv::drawMatches namespace:cv classpath: classname: name:drawMatches
+register (function) drawMatches
+
+--- Incoming ---
+[   u'cv.drawMatches',
+    u'void',
+    ['/NW'],
+    [   [u'const Mat&', u'img1', '', []],
+        [u'const vector<KeyPoint>&', u'keypoints1', '', []],
+        [u'const Mat&', u'img2', '', []],
+        [u'const vector<KeyPoint>&', u'keypoints2', '', []],
+        [u'const vector<vector<DMatch> >&', u'matches1to2', '', []],
+        [u'Mat&', u'outImg', '', []],
+        [u'const Scalar&', u'matchColor', u'Scalar::all(-1)', []],
+        [u'const Scalar&', u'singlePointColor', u'Scalar::all(-1)', []],
+        [   u'const vector<vector<char> >&',
+            u'matchesMask',
+            u'vector<vector<char> >()',
+            []],
+        [u'int', u'flags', u'DrawMatchesFlags::DEFAULT', []]],
+    '']
+parseName: cv.drawMatches with ['cv'] -> fullname:cv::drawMatches namespace:cv classpath: classname: name:drawMatches
+register (function) drawMatches
+
+--- Incoming ---
+[   u'cv.evaluateFeatureDetector',
+    u'void',
+    ['/NW'],
+    [   [u'const Mat&', u'img1', '', []],
+        [u'const Mat&', u'img2', '', []],
+        [u'const Mat&', u'H1to2', '', []],
+        [u'vector<KeyPoint>*', u'keypoints1', '', []],
+        [u'vector<KeyPoint>*', u'keypoints2', '', []],
+        [u'float&', u'repeatability', '', []],
+        [u'int&', u'correspCount', '', []],
+        [   u'const Ptr<FeatureDetector>&',
+            u'fdetector',
+            u'Ptr<FeatureDetector>()',
+            []]],
+    '']
+parseName: cv.evaluateFeatureDetector with ['cv'] -> fullname:cv::evaluateFeatureDetector namespace:cv classpath: classname: name:evaluateFeatureDetector
+register (function) evaluateFeatureDetector
+
+--- Incoming ---
+[   u'cv.computeRecallPrecisionCurve',
+    u'void',
+    ['/NW'],
+    [   [u'const vector<vector<DMatch> >&', u'matches1to2', '', []],
+        [u'const vector<vector<uchar> >&', u'correctMatches1to2Mask', '', []],
+        [u'vector<Point2f>&', u'recallPrecisionCurve', '', []]],
+    '']
+parseName: cv.computeRecallPrecisionCurve with ['cv'] -> fullname:cv::computeRecallPrecisionCurve namespace:cv classpath: classname: name:computeRecallPrecisionCurve
+register (function) computeRecallPrecisionCurve
+
+--- Incoming ---
+[   u'cv.getRecall',
+    u'float',
+    ['/NW'],
+    [   [u'const vector<Point2f>&', u'recallPrecisionCurve', '', []],
+        [u'float', u'l_precision', '', []]],
+    '']
+parseName: cv.getRecall with ['cv'] -> fullname:cv::getRecall namespace:cv classpath: classname: name:getRecall
+register (function) getRecall
+
+--- Incoming ---
+[   u'cv.getNearestPoint',
+    u'int',
+    ['/NW'],
+    [   [u'const vector<Point2f>&', u'recallPrecisionCurve', '', []],
+        [u'float', u'l_precision', '', []]],
+    '']
+parseName: cv.getNearestPoint with ['cv'] -> fullname:cv::getNearestPoint namespace:cv classpath: classname: name:getNearestPoint
+register (function) getNearestPoint
+
+--- Incoming ---
+[   u'cv.evaluateGenericDescriptorMatcher',
+    u'void',
+    ['/NW'],
+    [   [u'const Mat&', u'img1', '', []],
+        [u'const Mat&', u'img2', '', []],
+        [u'const Mat&', u'H1to2', '', []],
+        [u'vector<KeyPoint>&', u'keypoints1', '', []],
+        [u'vector<KeyPoint>&', u'keypoints2', '', []],
+        [u'vector<vector<DMatch> >*', u'matches1to2', '', []],
+        [u'vector<vector<uchar> >*', u'correctMatches1to2Mask', '', []],
+        [u'vector<Point2f>&', u'recallPrecisionCurve', '', []],
+        [   u'const Ptr<GenericDescriptorMatcher>&',
+            u'dmatch',
+            u'Ptr<GenericDescriptorMatcher>()',
+            []]],
+    '']
+parseName: cv.evaluateGenericDescriptorMatcher with ['cv'] -> fullname:cv::evaluateGenericDescriptorMatcher namespace:cv classpath: classname: name:evaluateGenericDescriptorMatcher
+register (function) evaluateGenericDescriptorMatcher
+
+--- Incoming ---
+[u'class cv.BOWTrainer', '', [], [], '']
+parseName: class cv.BOWTrainer with ['cv'] -> fullname:cv::BOWTrainer namespace:cv classpath: classname: name:BOWTrainer
+register class cv::BOWTrainer ([u'class cv.BOWTrainer', '', [], [], ''])
+
+--- Incoming ---
+[u'cv.BOWTrainer.BOWTrainer', u'', ['/NW'], [], '']
+parseName: cv.BOWTrainer.BOWTrainer with ['cv'] -> fullname:cv::BOWTrainer::BOWTrainer namespace:cv classpath:BOWTrainer classname:BOWTrainer name:BOWTrainer
+register (constructor) new in cv::BOWTrainer
+
+--- Incoming ---
+[u'cv.BOWTrainer.~BOWTrainer', u'', ['/NW'], [], '']
+parseName: cv.BOWTrainer.~BOWTrainer with ['cv'] -> fullname:cv::BOWTrainer::~BOWTrainer namespace:cv classpath:BOWTrainer classname:BOWTrainer name:~BOWTrainer
+ignore destructor (method) ~BOWTrainer in cv::BOWTrainer
+
+--- Incoming ---
+[   u'cv.BOWTrainer.add',
+    u'void',
+    ['/NW'],
+    [[u'const Mat&', u'descriptors', '', []]],
+    '']
+parseName: cv.BOWTrainer.add with ['cv'] -> fullname:cv::BOWTrainer::add namespace:cv classpath:BOWTrainer classname:BOWTrainer name:add
+register (method) add in cv::BOWTrainer
+
+--- Incoming ---
+[u'cv.BOWTrainer.getDescriptors', u'const vector<Mat>&', ['/NW', '/C'], [], '']
+parseName: cv.BOWTrainer.getDescriptors with ['cv'] -> fullname:cv::BOWTrainer::getDescriptors namespace:cv classpath:BOWTrainer classname:BOWTrainer name:getDescriptors
+register (method) getDescriptors in cv::BOWTrainer
+
+--- Incoming ---
+[u'cv.BOWTrainer.descripotorsCount', u'int', ['/NW', '/C'], [], '']
+parseName: cv.BOWTrainer.descripotorsCount with ['cv'] -> fullname:cv::BOWTrainer::descripotorsCount namespace:cv classpath:BOWTrainer classname:BOWTrainer name:descripotorsCount
+register (method) descripotorsCount in cv::BOWTrainer
+
+--- Incoming ---
+[u'cv.BOWTrainer.clear', u'void', ['/NW'], [], '']
+parseName: cv.BOWTrainer.clear with ['cv'] -> fullname:cv::BOWTrainer::clear namespace:cv classpath:BOWTrainer classname:BOWTrainer name:clear
+register (method) clear in cv::BOWTrainer
+
+--- Incoming ---
+[u'cv.BOWTrainer.cluster', u'Mat', ['/NW', '/A', '/C'], [], '']
+parseName: cv.BOWTrainer.cluster with ['cv'] -> fullname:cv::BOWTrainer::cluster namespace:cv classpath:BOWTrainer classname:BOWTrainer name:cluster
+
+--- Incoming ---
+[   u'cv.BOWTrainer.cluster',
+    u'Mat',
+    ['/NW', '/A', '/C'],
+    [[u'const Mat&', u'descriptors', '', []]],
+    '']
+parseName: cv.BOWTrainer.cluster with ['cv'] -> fullname:cv::BOWTrainer::cluster namespace:cv classpath:BOWTrainer classname:BOWTrainer name:cluster
+
+--- Incoming ---
+[u'class cv.BOWKMeansTrainer', u': cv::BOWTrainer', [], [], '']
+parseName: class cv.BOWKMeansTrainer with ['cv'] -> fullname:cv::BOWKMeansTrainer namespace:cv classpath: classname: name:BOWKMeansTrainer
+register class cv::BOWKMeansTrainer ([u'class cv.BOWKMeansTrainer', u': cv::BOWTrainer', [], [], '']) impl:cv::BOWTrainer
+
+--- Incoming ---
+[   u'cv.BOWKMeansTrainer.BOWKMeansTrainer',
+    u'',
+    ['/NW'],
+    [   [u'int', u'clusterCount', '', []],
+        [u'const TermCriteria&', u'termcrit', u'TermCriteria()', []],
+        [u'int', u'attempts', u'3', []],
+        [u'int', u'flags', u'KMEANS_PP_CENTERS', []]],
+    '']
+parseName: cv.BOWKMeansTrainer.BOWKMeansTrainer with ['cv'] -> fullname:cv::BOWKMeansTrainer::BOWKMeansTrainer namespace:cv classpath:BOWKMeansTrainer classname:BOWKMeansTrainer name:BOWKMeansTrainer
+Registering an unknown type: TermCriteria
+register (constructor) new in cv::BOWKMeansTrainer
+
+--- Incoming ---
+[u'cv.BOWKMeansTrainer.~BOWKMeansTrainer', u'', ['/NW'], [], '']
+parseName: cv.BOWKMeansTrainer.~BOWKMeansTrainer with ['cv'] -> fullname:cv::BOWKMeansTrainer::~BOWKMeansTrainer namespace:cv classpath:BOWKMeansTrainer classname:BOWKMeansTrainer name:~BOWKMeansTrainer
+ignore destructor (method) ~BOWKMeansTrainer in cv::BOWKMeansTrainer
+
+--- Incoming ---
+[u'cv.BOWKMeansTrainer.cluster', u'Mat', ['/NW', '/C'], [], '']
+parseName: cv.BOWKMeansTrainer.cluster with ['cv'] -> fullname:cv::BOWKMeansTrainer::cluster namespace:cv classpath:BOWKMeansTrainer classname:BOWKMeansTrainer name:cluster
+register (method) cluster in cv::BOWKMeansTrainer
+
+--- Incoming ---
+[   u'cv.BOWKMeansTrainer.cluster',
+    u'Mat',
+    ['/NW', '/C'],
+    [[u'const Mat&', u'descriptors', '', []]],
+    '']
+parseName: cv.BOWKMeansTrainer.cluster with ['cv'] -> fullname:cv::BOWKMeansTrainer::cluster namespace:cv classpath:BOWKMeansTrainer classname:BOWKMeansTrainer name:cluster
+register (method) cluster in cv::BOWKMeansTrainer
+
+--- Incoming ---
+[u'class cv.BOWImgDescriptorExtractor', '', [], [], '']
+parseName: class cv.BOWImgDescriptorExtractor with ['cv'] -> fullname:cv::BOWImgDescriptorExtractor namespace:cv classpath: classname: name:BOWImgDescriptorExtractor
+register class cv::BOWImgDescriptorExtractor ([u'class cv.BOWImgDescriptorExtractor', '', [], [], ''])
+
+--- Incoming ---
+[   u'cv.BOWImgDescriptorExtractor.BOWImgDescriptorExtractor',
+    u'',
+    ['/NW'],
+    [   [u'const Ptr<DescriptorExtractor>&', u'dextractor', '', []],
+        [u'const Ptr<DescriptorMatcher>&', u'dmatcher', '', []]],
+    '']
+parseName: cv.BOWImgDescriptorExtractor.BOWImgDescriptorExtractor with ['cv'] -> fullname:cv::BOWImgDescriptorExtractor::BOWImgDescriptorExtractor namespace:cv classpath:BOWImgDescriptorExtractor classname:BOWImgDescriptorExtractor name:BOWImgDescriptorExtractor
+register (constructor) new in cv::BOWImgDescriptorExtractor
+
+--- Incoming ---
+[   u'cv.BOWImgDescriptorExtractor.~BOWImgDescriptorExtractor',
+    u'',
+    ['/NW'],
+    [],
+    '']
+parseName: cv.BOWImgDescriptorExtractor.~BOWImgDescriptorExtractor with ['cv'] -> fullname:cv::BOWImgDescriptorExtractor::~BOWImgDescriptorExtractor namespace:cv classpath:BOWImgDescriptorExtractor classname:BOWImgDescriptorExtractor name:~BOWImgDescriptorExtractor
+ignore destructor (method) ~BOWImgDescriptorExtractor in cv::BOWImgDescriptorExtractor
+
+--- Incoming ---
+[   u'cv.BOWImgDescriptorExtractor.setVocabulary',
+    u'void',
+    ['/NW'],
+    [[u'const Mat&', u'vocabulary', '', []]],
+    '']
+parseName: cv.BOWImgDescriptorExtractor.setVocabulary with ['cv'] -> fullname:cv::BOWImgDescriptorExtractor::setVocabulary namespace:cv classpath:BOWImgDescriptorExtractor classname:BOWImgDescriptorExtractor name:setVocabulary
+register (method) setVocabulary in cv::BOWImgDescriptorExtractor
+
+--- Incoming ---
+[   u'cv.BOWImgDescriptorExtractor.getVocabulary',
+    u'const Mat&',
+    ['/NW', '/C'],
+    [],
+    '']
+parseName: cv.BOWImgDescriptorExtractor.getVocabulary with ['cv'] -> fullname:cv::BOWImgDescriptorExtractor::getVocabulary namespace:cv classpath:BOWImgDescriptorExtractor classname:BOWImgDescriptorExtractor name:getVocabulary
+register (method) getVocabulary in cv::BOWImgDescriptorExtractor
+
+--- Incoming ---
+[   u'cv.BOWImgDescriptorExtractor.compute',
+    u'void',
+    ['/NW'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'Mat&', u'imgDescriptor', '', []],
+        [u'vector<vector<int> >*', u'pointIdxsOfClusters', u'0', []],
+        [u'Mat*', u'descriptors', u'0', []]],
+    '']
+parseName: cv.BOWImgDescriptorExtractor.compute with ['cv'] -> fullname:cv::BOWImgDescriptorExtractor::compute namespace:cv classpath:BOWImgDescriptorExtractor classname:BOWImgDescriptorExtractor name:compute
+register (method) compute in cv::BOWImgDescriptorExtractor
+
+--- Incoming ---
+[   u'cv.BOWImgDescriptorExtractor.compute2',
+    u'void',
+    ['/NW'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<KeyPoint>&', u'keypoints', '', []],
+        [u'Mat&', u'imgDescriptor', '', []]],
+    '']
+parseName: cv.BOWImgDescriptorExtractor.compute2 with ['cv'] -> fullname:cv::BOWImgDescriptorExtractor::compute2 namespace:cv classpath:BOWImgDescriptorExtractor classname:BOWImgDescriptorExtractor name:compute2
+register (method) compute2 in cv::BOWImgDescriptorExtractor
+
+--- Incoming ---
+[u'cv.BOWImgDescriptorExtractor.descriptorSize', u'int', ['/NW', '/C'], [], '']
+parseName: cv.BOWImgDescriptorExtractor.descriptorSize with ['cv'] -> fullname:cv::BOWImgDescriptorExtractor::descriptorSize namespace:cv classpath:BOWImgDescriptorExtractor classname:BOWImgDescriptorExtractor name:descriptorSize
+register (method) descriptorSize in cv::BOWImgDescriptorExtractor
+
+--- Incoming ---
+[u'cv.BOWImgDescriptorExtractor.descriptorType', u'int', ['/NW', '/C'], [], '']
+parseName: cv.BOWImgDescriptorExtractor.descriptorType with ['cv'] -> fullname:cv::BOWImgDescriptorExtractor::descriptorType namespace:cv classpath:BOWImgDescriptorExtractor classname:BOWImgDescriptorExtractor name:descriptorType
+register (method) descriptorType in cv::BOWImgDescriptorExtractor
+
+
+===== Generating... =====
+Generating func cv::FASTX (function)
+Generating func cv::FAST (function)
+Generating func cv::computeRecallPrecisionCurve (function)
+Generating func cv::drawKeypoints (function)
+Generating func cv::drawMatches (function)
+Generating func cv::drawMatches (function)
+Generating func cv::evaluateFeatureDetector (function)
+Generating func cv::evaluateGenericDescriptorMatcher (function)
+Generating func cv::getNearestPoint (function)
+Generating func cv::getRecall (function)
+Generating func cv::initModule_features2d (function)
+Generating func cv::read (function)
+  ignored: can not map type Unknown[FileNode] yet
+Generating func cv::windowedMatchingMask (function)
+Generating func cv::write (function)
+  ignored: can not map type Unknown[FileStorage] yet
+Generating impl for trait cv::AdjusterAdapter
+Generating func cv::AdjusterAdapter::create (method) cv::AdjusterAdapter . create
+  ignored: return type class SmartPtr[cv::AdjusterAdapter (boxed)] is ignored
+Generating box for struct cv::BFMatcher
+Generating box for cv::BFMatcher
+Generating impl for struct cv::BFMatcher
+Generating func cv::BFMatcher::BFMatcher (constructor) cv::BFMatcher . new
+Generating func cv::BFMatcher::isMaskSupported (method) cv::BFMatcher . isMaskSupported
+Generating func cv::BFMatcher::clone (method) cv::BFMatcher . clone
+  ignored: return type class SmartPtr[cv::DescriptorMatcher (boxed)] is ignored
+Generating func cv::BFMatcher::info (method) cv::BFMatcher . info
+  ignored: return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+Generating box for struct cv::BOWImgDescriptorExtractor
+Generating box for cv::BOWImgDescriptorExtractor
+Generating impl for struct cv::BOWImgDescriptorExtractor
+Generating func cv::BOWImgDescriptorExtractor::BOWImgDescriptorExtractor (constructor) cv::BOWImgDescriptorExtractor . new
+  ignored: can not map type SmartPtr[cv::DescriptorExtractor (boxed)] yet
+Generating func cv::BOWImgDescriptorExtractor::setVocabulary (method) cv::BOWImgDescriptorExtractor . setVocabulary
+Generating func cv::BOWImgDescriptorExtractor::getVocabulary (method) cv::BOWImgDescriptorExtractor . getVocabulary
+Generating func cv::BOWImgDescriptorExtractor::compute (method) cv::BOWImgDescriptorExtractor . compute
+Generating func cv::BOWImgDescriptorExtractor::compute2 (method) cv::BOWImgDescriptorExtractor . compute2
+Generating func cv::BOWImgDescriptorExtractor::descriptorSize (method) cv::BOWImgDescriptorExtractor . descriptorSize
+Generating func cv::BOWImgDescriptorExtractor::descriptorType (method) cv::BOWImgDescriptorExtractor . descriptorType
+Generating box for struct cv::BOWKMeansTrainer
+Generating box for cv::BOWKMeansTrainer
+Generating impl for struct cv::BOWKMeansTrainer
+Generating func cv::BOWKMeansTrainer::BOWKMeansTrainer (constructor) cv::BOWKMeansTrainer . new
+  ignored: can not map type Unknown[TermCriteria] yet
+Generating func cv::BOWKMeansTrainer::cluster (method) cv::BOWKMeansTrainer . cluster
+Generating func cv::BOWKMeansTrainer::cluster (method) cv::BOWKMeansTrainer . cluster
+Generating impl for trait cv::BOWTrainer
+Generating func cv::BOWTrainer::BOWTrainer (constructor) cv::BOWTrainer . new
+  ignored: skip constructor of abstract class
+Generating func cv::BOWTrainer::add (method) cv::BOWTrainer . add
+Generating func cv::BOWTrainer::getDescriptors (method) cv::BOWTrainer . getDescriptors
+Generating func cv::BOWTrainer::descripotorsCount (method) cv::BOWTrainer . descripotorsCount
+Generating func cv::BOWTrainer::clear (method) cv::BOWTrainer . clear
+Generating box for struct cv::BRISK
+Generating box for cv::BRISK
+Generating impl for struct cv::BRISK
+Generating func cv::BRISK::BRISK (constructor) cv::BRISK . new
+Generating func cv::BRISK::descriptorSize (method) cv::BRISK . descriptorSize
+Generating func cv::BRISK::descriptorType (method) cv::BRISK . descriptorType
+Generating func cv::BRISK::info (method) cv::BRISK . info
+  ignored: return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+Generating func cv::BRISK::BRISK (constructor) cv::BRISK . new
+  ignored: can not map type Unknown[std::vector<float> ] yet
+Generating func cv::BRISK::generateKernel (method) cv::BRISK . generateKernel
+  ignored: can not map type Unknown[std::vector<float> ] yet
+Generating box for struct cv::BriefDescriptorExtractor
+Generating box for cv::BriefDescriptorExtractor
+Generating impl for struct cv::BriefDescriptorExtractor
+Generating func cv::BriefDescriptorExtractor::BriefDescriptorExtractor (constructor) cv::BriefDescriptorExtractor . new
+Generating func cv::BriefDescriptorExtractor::read (method) cv::BriefDescriptorExtractor . read
+  ignored: can not map type Unknown[FileNode] yet
+Generating func cv::BriefDescriptorExtractor::write (method) cv::BriefDescriptorExtractor . write
+  ignored: can not map type Unknown[FileStorage] yet
+Generating func cv::BriefDescriptorExtractor::descriptorSize (method) cv::BriefDescriptorExtractor . descriptorSize
+Generating func cv::BriefDescriptorExtractor::descriptorType (method) cv::BriefDescriptorExtractor . descriptorType
+Generating func cv::BriefDescriptorExtractor::info (method) cv::BriefDescriptorExtractor . info
+  ignored: return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+Generating box for struct cv::DMatch (simple)
+Generating impl for struct cv::DMatch (simple)
+Generating func cv::DMatch::DMatch (constructor) cv::DMatch (simple) . new
+Generating func cv::DMatch::DMatch (constructor) cv::DMatch (simple) . new
+Generating func cv::DMatch::DMatch (constructor) cv::DMatch (simple) . new
+Generating box for struct cv::DenseFeatureDetector
+Generating box for cv::DenseFeatureDetector
+Generating impl for struct cv::DenseFeatureDetector
+Generating func cv::DenseFeatureDetector::DenseFeatureDetector (constructor) cv::DenseFeatureDetector . new
+Generating func cv::DenseFeatureDetector::info (method) cv::DenseFeatureDetector . info
+  ignored: return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+Generating impl for trait cv::DescriptorExtractor
+Generating func cv::DescriptorExtractor::compute (method) cv::DescriptorExtractor . compute
+Generating func cv::DescriptorExtractor::compute (method) cv::DescriptorExtractor . compute
+Generating func cv::DescriptorExtractor::empty (method) cv::DescriptorExtractor . empty
+Generating func cv::DescriptorExtractor::create (method) cv::DescriptorExtractor . create
+  ignored: return type class SmartPtr[cv::DescriptorExtractor (boxed)] is ignored
+Generating impl for trait cv::DescriptorMatcher
+Generating func cv::DescriptorMatcher::add (method) cv::DescriptorMatcher . add
+Generating func cv::DescriptorMatcher::getTrainDescriptors (method) cv::DescriptorMatcher . getTrainDescriptors
+Generating func cv::DescriptorMatcher::clear (method) cv::DescriptorMatcher . clear
+Generating func cv::DescriptorMatcher::empty (method) cv::DescriptorMatcher . empty
+Generating func cv::DescriptorMatcher::train (method) cv::DescriptorMatcher . train
+Generating func cv::DescriptorMatcher::match (method) cv::DescriptorMatcher . match
+Generating func cv::DescriptorMatcher::knnMatch (method) cv::DescriptorMatcher . knnMatch
+Generating func cv::DescriptorMatcher::radiusMatch (method) cv::DescriptorMatcher . radiusMatch
+Generating func cv::DescriptorMatcher::match (method) cv::DescriptorMatcher . match
+Generating func cv::DescriptorMatcher::knnMatch (method) cv::DescriptorMatcher . knnMatch
+Generating func cv::DescriptorMatcher::radiusMatch (method) cv::DescriptorMatcher . radiusMatch
+Generating func cv::DescriptorMatcher::read (method) cv::DescriptorMatcher . read
+  ignored: can not map type Unknown[FileNode] yet
+Generating func cv::DescriptorMatcher::write (method) cv::DescriptorMatcher . write
+  ignored: can not map type Unknown[FileStorage] yet
+Generating func cv::DescriptorMatcher::create (method) cv::DescriptorMatcher . create
+  ignored: return type class SmartPtr[cv::DescriptorMatcher (boxed)] is ignored
+Generating box for struct cv::DrawMatchesFlags
+Generating box for cv::DrawMatchesFlags
+Generating impl for struct cv::DrawMatchesFlags
+Generating box for struct cv::DynamicAdaptedFeatureDetector
+Generating box for cv::DynamicAdaptedFeatureDetector
+Generating impl for struct cv::DynamicAdaptedFeatureDetector
+Generating func cv::DynamicAdaptedFeatureDetector::DynamicAdaptedFeatureDetector (constructor) cv::DynamicAdaptedFeatureDetector . new
+  ignored: can not map type SmartPtr[cv::AdjusterAdapter (boxed)] yet
+Generating func cv::DynamicAdaptedFeatureDetector::empty (method) cv::DynamicAdaptedFeatureDetector . empty
+Generating box for struct cv::FREAK
+Generating box for cv::FREAK
+Generating impl for struct cv::FREAK
+Generating func cv::FREAK::FREAK (constructor) cv::FREAK . new
+Generating func cv::FREAK::FREAK (constructor) cv::FREAK . new
+Generating func cv::FREAK::descriptorSize (method) cv::FREAK . descriptorSize
+Generating func cv::FREAK::descriptorType (method) cv::FREAK . descriptorType
+Generating func cv::FREAK::selectPairs (method) cv::FREAK . selectPairs
+Generating func cv::FREAK::info (method) cv::FREAK . info
+  ignored: return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+Generating box for struct cv::FastAdjuster
+Generating box for cv::FastAdjuster
+Generating impl for struct cv::FastAdjuster
+Generating func cv::FastAdjuster::FastAdjuster (constructor) cv::FastAdjuster . new
+Generating func cv::FastAdjuster::tooFew (method) cv::FastAdjuster . tooFew
+Generating func cv::FastAdjuster::tooMany (method) cv::FastAdjuster . tooMany
+Generating func cv::FastAdjuster::good (method) cv::FastAdjuster . good
+Generating func cv::FastAdjuster::clone (method) cv::FastAdjuster . clone
+  ignored: return type class SmartPtr[cv::AdjusterAdapter (boxed)] is ignored
+Generating box for struct cv::FastFeatureDetector
+Generating box for cv::FastFeatureDetector
+Generating impl for struct cv::FastFeatureDetector
+Generating func cv::FastFeatureDetector::FastFeatureDetector (constructor) cv::FastFeatureDetector . new
+Generating func cv::FastFeatureDetector::info (method) cv::FastFeatureDetector . info
+  ignored: return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+Generating impl for trait cv::Feature2D
+Generating func cv::Feature2D::compute (method) cv::Feature2D . compute
+  ignored: can not map type Unknown[std::vector<KeyPoint>] yet
+Generating func cv::Feature2D::create (method) cv::Feature2D . create
+  ignored: return type class SmartPtr[cv::Feature2D (boxed)] is ignored
+Generating impl for trait cv::FeatureDetector
+Generating func cv::FeatureDetector::detect (method) cv::FeatureDetector . detect
+Generating func cv::FeatureDetector::detect (method) cv::FeatureDetector . detect
+Generating func cv::FeatureDetector::empty (method) cv::FeatureDetector . empty
+Generating func cv::FeatureDetector::create (method) cv::FeatureDetector . create
+Generating box for struct cv::FlannBasedMatcher
+Generating box for cv::FlannBasedMatcher
+Generating impl for struct cv::FlannBasedMatcher
+Generating func cv::FlannBasedMatcher::FlannBasedMatcher (constructor) cv::FlannBasedMatcher . new
+  ignored: can not map type SmartPtr[Unknown[flann::IndexParams]] yet
+Generating func cv::FlannBasedMatcher::add (method) cv::FlannBasedMatcher . add
+Generating func cv::FlannBasedMatcher::clear (method) cv::FlannBasedMatcher . clear
+Generating func cv::FlannBasedMatcher::read (method) cv::FlannBasedMatcher . read
+  ignored: can not map type Unknown[FileNode] yet
+Generating func cv::FlannBasedMatcher::write (method) cv::FlannBasedMatcher . write
+  ignored: can not map type Unknown[FileStorage] yet
+Generating func cv::FlannBasedMatcher::train (method) cv::FlannBasedMatcher . train
+Generating func cv::FlannBasedMatcher::isMaskSupported (method) cv::FlannBasedMatcher . isMaskSupported
+Generating func cv::FlannBasedMatcher::clone (method) cv::FlannBasedMatcher . clone
+  ignored: return type class SmartPtr[cv::DescriptorMatcher (boxed)] is ignored
+Generating func cv::FlannBasedMatcher::info (method) cv::FlannBasedMatcher . info
+  ignored: return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+Generating box for struct cv::GFTTDetector
+Generating box for cv::GFTTDetector
+Generating impl for struct cv::GFTTDetector
+Generating func cv::GFTTDetector::GFTTDetector (constructor) cv::GFTTDetector . new
+Generating func cv::GFTTDetector::info (method) cv::GFTTDetector . info
+  ignored: return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+Generating impl for trait cv::GenericDescriptorMatcher
+Generating func cv::GenericDescriptorMatcher::GenericDescriptorMatcher (constructor) cv::GenericDescriptorMatcher . new
+  ignored: skip constructor of abstract class
+Generating func cv::GenericDescriptorMatcher::add (method) cv::GenericDescriptorMatcher . add
+Generating func cv::GenericDescriptorMatcher::getTrainImages (method) cv::GenericDescriptorMatcher . getTrainImages
+Generating func cv::GenericDescriptorMatcher::getTrainKeypoints (method) cv::GenericDescriptorMatcher . getTrainKeypoints
+Generating func cv::GenericDescriptorMatcher::clear (method) cv::GenericDescriptorMatcher . clear
+Generating func cv::GenericDescriptorMatcher::train (method) cv::GenericDescriptorMatcher . train
+Generating func cv::GenericDescriptorMatcher::classify (method) cv::GenericDescriptorMatcher . classify
+Generating func cv::GenericDescriptorMatcher::classify (method) cv::GenericDescriptorMatcher . classify
+Generating func cv::GenericDescriptorMatcher::match (method) cv::GenericDescriptorMatcher . match
+Generating func cv::GenericDescriptorMatcher::knnMatch (method) cv::GenericDescriptorMatcher . knnMatch
+Generating func cv::GenericDescriptorMatcher::radiusMatch (method) cv::GenericDescriptorMatcher . radiusMatch
+Generating func cv::GenericDescriptorMatcher::match (method) cv::GenericDescriptorMatcher . match
+Generating func cv::GenericDescriptorMatcher::knnMatch (method) cv::GenericDescriptorMatcher . knnMatch
+Generating func cv::GenericDescriptorMatcher::radiusMatch (method) cv::GenericDescriptorMatcher . radiusMatch
+Generating func cv::GenericDescriptorMatcher::read (method) cv::GenericDescriptorMatcher . read
+  ignored: can not map type Unknown[FileNode] yet
+Generating func cv::GenericDescriptorMatcher::write (method) cv::GenericDescriptorMatcher . write
+  ignored: can not map type Unknown[FileStorage] yet
+Generating func cv::GenericDescriptorMatcher::empty (method) cv::GenericDescriptorMatcher . empty
+Generating func cv::GenericDescriptorMatcher::create (method) cv::GenericDescriptorMatcher . create
+  ignored: can not map type Unknown[string ] yet
+Generating box for struct cv::GridAdaptedFeatureDetector
+Generating box for cv::GridAdaptedFeatureDetector
+Generating impl for struct cv::GridAdaptedFeatureDetector
+Generating func cv::GridAdaptedFeatureDetector::GridAdaptedFeatureDetector (constructor) cv::GridAdaptedFeatureDetector . new
+Generating func cv::GridAdaptedFeatureDetector::empty (method) cv::GridAdaptedFeatureDetector . empty
+Generating func cv::GridAdaptedFeatureDetector::info (method) cv::GridAdaptedFeatureDetector . info
+  ignored: return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+Generating box for struct cv::Hamming
+Generating box for cv::Hamming
+Generating impl for struct cv::Hamming
+Generating box for struct cv::KeyPoint (simple)
+Generating impl for struct cv::KeyPoint (simple)
+Generating func cv::KeyPoint::KeyPoint (constructor) cv::KeyPoint (simple) . new
+Generating func cv::KeyPoint::KeyPoint (constructor) cv::KeyPoint (simple) . new
+Generating func cv::KeyPoint::KeyPoint (constructor) cv::KeyPoint (simple) . new
+Generating func cv::KeyPoint::hash (method) cv::KeyPoint (simple) . hash
+Generating func cv::KeyPoint::convert (method) cv::KeyPoint (simple) . convert
+Generating func cv::KeyPoint::convert (method) cv::KeyPoint (simple) . convert
+Generating func cv::KeyPoint::overlap (method) cv::KeyPoint (simple) . overlap
+Generating box for struct cv::KeyPointsFilter
+Generating box for cv::KeyPointsFilter
+Generating impl for struct cv::KeyPointsFilter
+Generating func cv::KeyPointsFilter::KeyPointsFilter (constructor) cv::KeyPointsFilter . new
+Generating func cv::KeyPointsFilter::runByImageBorder (method) cv::KeyPointsFilter . runByImageBorder
+Generating func cv::KeyPointsFilter::runByKeypointSize (method) cv::KeyPointsFilter . runByKeypointSize
+Generating func cv::KeyPointsFilter::runByPixelsMask (method) cv::KeyPointsFilter . runByPixelsMask
+Generating func cv::KeyPointsFilter::removeDuplicated (method) cv::KeyPointsFilter . removeDuplicated
+Generating func cv::KeyPointsFilter::retainBest (method) cv::KeyPointsFilter . retainBest
+Generating box for struct cv::MSER
+Generating box for cv::MSER
+Generating impl for struct cv::MSER
+Generating func cv::MSER::MSER (constructor) cv::MSER . new
+Generating func cv::MSER::info (method) cv::MSER . info
+  ignored: return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+Generating box for struct cv::ORB
+Generating box for cv::ORB
+Generating impl for struct cv::ORB
+Generating func cv::ORB::ORB (constructor) cv::ORB . new
+Generating func cv::ORB::descriptorSize (method) cv::ORB . descriptorSize
+Generating func cv::ORB::descriptorType (method) cv::ORB . descriptorType
+Generating func cv::ORB::info (method) cv::ORB . info
+  ignored: return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+Generating box for struct cv::OpponentColorDescriptorExtractor
+Generating box for cv::OpponentColorDescriptorExtractor
+Generating impl for struct cv::OpponentColorDescriptorExtractor
+Generating func cv::OpponentColorDescriptorExtractor::OpponentColorDescriptorExtractor (constructor) cv::OpponentColorDescriptorExtractor . new
+  ignored: can not map type SmartPtr[cv::DescriptorExtractor (boxed)] yet
+Generating func cv::OpponentColorDescriptorExtractor::read (method) cv::OpponentColorDescriptorExtractor . read
+  ignored: can not map type Unknown[FileNode] yet
+Generating func cv::OpponentColorDescriptorExtractor::write (method) cv::OpponentColorDescriptorExtractor . write
+  ignored: can not map type Unknown[FileStorage] yet
+Generating func cv::OpponentColorDescriptorExtractor::descriptorSize (method) cv::OpponentColorDescriptorExtractor . descriptorSize
+Generating func cv::OpponentColorDescriptorExtractor::descriptorType (method) cv::OpponentColorDescriptorExtractor . descriptorType
+Generating func cv::OpponentColorDescriptorExtractor::empty (method) cv::OpponentColorDescriptorExtractor . empty
+Generating box for struct cv::PyramidAdaptedFeatureDetector
+Generating box for cv::PyramidAdaptedFeatureDetector
+Generating impl for struct cv::PyramidAdaptedFeatureDetector
+Generating func cv::PyramidAdaptedFeatureDetector::PyramidAdaptedFeatureDetector (constructor) cv::PyramidAdaptedFeatureDetector . new
+Generating func cv::PyramidAdaptedFeatureDetector::empty (method) cv::PyramidAdaptedFeatureDetector . empty
+Generating box for struct cv::SimpleBlobDetector
+Generating box for cv::SimpleBlobDetector
+Generating impl for struct cv::SimpleBlobDetector
+Generating func cv::SimpleBlobDetector::SimpleBlobDetector (constructor) cv::SimpleBlobDetector . new
+  ignored: can not map type Unknown[SimpleBlobDetector::Params ] yet
+Generating func cv::SimpleBlobDetector::read (method) cv::SimpleBlobDetector . read
+  ignored: can not map type Unknown[FileNode] yet
+Generating func cv::SimpleBlobDetector::write (method) cv::SimpleBlobDetector . write
+  ignored: can not map type Unknown[FileStorage] yet
+Generating box for struct cv::SimpleBlobDetector::Params (simple)
+Generating impl for struct cv::SimpleBlobDetector::Params (simple)
+Generating func cv::SimpleBlobDetector::Params::Params (constructor) cv::SimpleBlobDetector::Params (simple) . new
+Generating func cv::SimpleBlobDetector::Params::read (method) cv::SimpleBlobDetector::Params (simple) . read
+  ignored: can not map type Unknown[FileNode] yet
+Generating func cv::SimpleBlobDetector::Params::write (method) cv::SimpleBlobDetector::Params (simple) . write
+  ignored: can not map type Unknown[FileStorage] yet
+Generating box for struct cv::StarAdjuster
+Generating box for cv::StarAdjuster
+Generating impl for struct cv::StarAdjuster
+Generating func cv::StarAdjuster::StarAdjuster (constructor) cv::StarAdjuster . new
+Generating func cv::StarAdjuster::tooFew (method) cv::StarAdjuster . tooFew
+Generating func cv::StarAdjuster::tooMany (method) cv::StarAdjuster . tooMany
+Generating func cv::StarAdjuster::good (method) cv::StarAdjuster . good
+Generating func cv::StarAdjuster::clone (method) cv::StarAdjuster . clone
+  ignored: return type class SmartPtr[cv::AdjusterAdapter (boxed)] is ignored
+Generating box for struct cv::StarDetector
+Generating box for cv::StarDetector
+Generating impl for struct cv::StarDetector
+Generating func cv::StarDetector::StarDetector (constructor) cv::StarDetector . new
+Generating func cv::StarDetector::info (method) cv::StarDetector . info
+  ignored: return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+Generating box for struct cv::SurfAdjuster
+Generating box for cv::SurfAdjuster
+Generating impl for struct cv::SurfAdjuster
+Generating func cv::SurfAdjuster::SurfAdjuster (constructor) cv::SurfAdjuster . new
+Generating func cv::SurfAdjuster::tooFew (method) cv::SurfAdjuster . tooFew
+Generating func cv::SurfAdjuster::tooMany (method) cv::SurfAdjuster . tooMany
+Generating func cv::SurfAdjuster::good (method) cv::SurfAdjuster . good
+Generating func cv::SurfAdjuster::clone (method) cv::SurfAdjuster . clone
+  ignored: return type class SmartPtr[cv::AdjusterAdapter (boxed)] is ignored
+Generating box for struct cv::VectorDescriptorMatcher
+Generating box for cv::VectorDescriptorMatcher
+Generating impl for struct cv::VectorDescriptorMatcher
+Generating func cv::VectorDescriptorMatcher::VectorDescriptorMatcher (constructor) cv::VectorDescriptorMatcher . new
+  ignored: can not map type SmartPtr[cv::DescriptorExtractor (boxed)] yet
+Generating func cv::VectorDescriptorMatcher::add (method) cv::VectorDescriptorMatcher . add
+Generating func cv::VectorDescriptorMatcher::clear (method) cv::VectorDescriptorMatcher . clear
+Generating func cv::VectorDescriptorMatcher::train (method) cv::VectorDescriptorMatcher . train
+Generating func cv::VectorDescriptorMatcher::isMaskSupported (method) cv::VectorDescriptorMatcher . isMaskSupported
+Generating func cv::VectorDescriptorMatcher::read (method) cv::VectorDescriptorMatcher . read
+  ignored: can not map type Unknown[FileNode] yet
+Generating func cv::VectorDescriptorMatcher::write (method) cv::VectorDescriptorMatcher . write
+  ignored: can not map type Unknown[FileStorage] yet
+Generating func cv::VectorDescriptorMatcher::empty (method) cv::VectorDescriptorMatcher . empty
+Generating func cv::VectorDescriptorMatcher::clone (method) cv::VectorDescriptorMatcher . clone

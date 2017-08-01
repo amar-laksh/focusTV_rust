@@ -1,0 +1,288 @@
+FOUND FUNCs: 176
+
+PORTED FUNCs: 124
+
+PORTED: cv::FASTX (function)
+PORTED: cv::FAST (function)
+PORTED: cv::computeRecallPrecisionCurve (function)
+PORTED: cv::drawKeypoints (function)
+PORTED: cv::drawMatches (function)
+PORTED: cv::drawMatches (function)
+PORTED: cv::evaluateFeatureDetector (function)
+PORTED: cv::evaluateGenericDescriptorMatcher (function)
+PORTED: cv::getNearestPoint (function)
+PORTED: cv::getRecall (function)
+PORTED: cv::initModule_features2d (function)
+PORTED: cv::windowedMatchingMask (function)
+PORTED: cv::BFMatcher::BFMatcher (constructor) cv::BFMatcher . new
+PORTED: cv::BFMatcher::isMaskSupported (method) cv::BFMatcher . isMaskSupported
+PORTED: cv::BOWImgDescriptorExtractor::setVocabulary (method) cv::BOWImgDescriptorExtractor . setVocabulary
+PORTED: cv::BOWImgDescriptorExtractor::getVocabulary (method) cv::BOWImgDescriptorExtractor . getVocabulary
+PORTED: cv::BOWImgDescriptorExtractor::compute (method) cv::BOWImgDescriptorExtractor . compute
+PORTED: cv::BOWImgDescriptorExtractor::compute2 (method) cv::BOWImgDescriptorExtractor . compute2
+PORTED: cv::BOWImgDescriptorExtractor::descriptorSize (method) cv::BOWImgDescriptorExtractor . descriptorSize
+PORTED: cv::BOWImgDescriptorExtractor::descriptorType (method) cv::BOWImgDescriptorExtractor . descriptorType
+PORTED: cv::BOWKMeansTrainer::cluster (method) cv::BOWKMeansTrainer . cluster
+PORTED: cv::BOWKMeansTrainer::cluster (method) cv::BOWKMeansTrainer . cluster
+PORTED: cv::BOWTrainer::add (method) cv::BOWTrainer . add
+PORTED: cv::BOWTrainer::getDescriptors (method) cv::BOWTrainer . getDescriptors
+PORTED: cv::BOWTrainer::descripotorsCount (method) cv::BOWTrainer . descripotorsCount
+PORTED: cv::BOWTrainer::clear (method) cv::BOWTrainer . clear
+PORTED: cv::BRISK::BRISK (constructor) cv::BRISK . new
+PORTED: cv::BRISK::descriptorSize (method) cv::BRISK . descriptorSize
+PORTED: cv::BRISK::descriptorType (method) cv::BRISK . descriptorType
+PORTED: cv::BriefDescriptorExtractor::BriefDescriptorExtractor (constructor) cv::BriefDescriptorExtractor . new
+PORTED: cv::BriefDescriptorExtractor::descriptorSize (method) cv::BriefDescriptorExtractor . descriptorSize
+PORTED: cv::BriefDescriptorExtractor::descriptorType (method) cv::BriefDescriptorExtractor . descriptorType
+PORTED: cv::DMatch::DMatch (constructor) cv::DMatch (simple) . new
+PORTED: cv::DMatch::DMatch (constructor) cv::DMatch (simple) . new
+PORTED: cv::DMatch::DMatch (constructor) cv::DMatch (simple) . new
+PORTED: cv::DenseFeatureDetector::DenseFeatureDetector (constructor) cv::DenseFeatureDetector . new
+PORTED: cv::DescriptorExtractor::compute (method) cv::DescriptorExtractor . compute
+PORTED: cv::DescriptorExtractor::compute (method) cv::DescriptorExtractor . compute
+PORTED: cv::DescriptorExtractor::empty (method) cv::DescriptorExtractor . empty
+PORTED: cv::DescriptorMatcher::add (method) cv::DescriptorMatcher . add
+PORTED: cv::DescriptorMatcher::getTrainDescriptors (method) cv::DescriptorMatcher . getTrainDescriptors
+PORTED: cv::DescriptorMatcher::clear (method) cv::DescriptorMatcher . clear
+PORTED: cv::DescriptorMatcher::empty (method) cv::DescriptorMatcher . empty
+PORTED: cv::DescriptorMatcher::train (method) cv::DescriptorMatcher . train
+PORTED: cv::DescriptorMatcher::match (method) cv::DescriptorMatcher . match
+PORTED: cv::DescriptorMatcher::knnMatch (method) cv::DescriptorMatcher . knnMatch
+PORTED: cv::DescriptorMatcher::radiusMatch (method) cv::DescriptorMatcher . radiusMatch
+PORTED: cv::DescriptorMatcher::match (method) cv::DescriptorMatcher . match
+PORTED: cv::DescriptorMatcher::knnMatch (method) cv::DescriptorMatcher . knnMatch
+PORTED: cv::DescriptorMatcher::radiusMatch (method) cv::DescriptorMatcher . radiusMatch
+PORTED: cv::DynamicAdaptedFeatureDetector::empty (method) cv::DynamicAdaptedFeatureDetector . empty
+PORTED: cv::FREAK::FREAK (constructor) cv::FREAK . new
+PORTED: cv::FREAK::FREAK (constructor) cv::FREAK . new
+PORTED: cv::FREAK::descriptorSize (method) cv::FREAK . descriptorSize
+PORTED: cv::FREAK::descriptorType (method) cv::FREAK . descriptorType
+PORTED: cv::FREAK::selectPairs (method) cv::FREAK . selectPairs
+PORTED: cv::FastAdjuster::FastAdjuster (constructor) cv::FastAdjuster . new
+PORTED: cv::FastAdjuster::tooFew (method) cv::FastAdjuster . tooFew
+PORTED: cv::FastAdjuster::tooMany (method) cv::FastAdjuster . tooMany
+PORTED: cv::FastAdjuster::good (method) cv::FastAdjuster . good
+PORTED: cv::FastFeatureDetector::FastFeatureDetector (constructor) cv::FastFeatureDetector . new
+PORTED: cv::FeatureDetector::detect (method) cv::FeatureDetector . detect
+PORTED: cv::FeatureDetector::detect (method) cv::FeatureDetector . detect
+PORTED: cv::FeatureDetector::empty (method) cv::FeatureDetector . empty
+PORTED: cv::FeatureDetector::create (method) cv::FeatureDetector . create
+PORTED: cv::FlannBasedMatcher::add (method) cv::FlannBasedMatcher . add
+PORTED: cv::FlannBasedMatcher::clear (method) cv::FlannBasedMatcher . clear
+PORTED: cv::FlannBasedMatcher::train (method) cv::FlannBasedMatcher . train
+PORTED: cv::FlannBasedMatcher::isMaskSupported (method) cv::FlannBasedMatcher . isMaskSupported
+PORTED: cv::GFTTDetector::GFTTDetector (constructor) cv::GFTTDetector . new
+PORTED: cv::GenericDescriptorMatcher::add (method) cv::GenericDescriptorMatcher . add
+PORTED: cv::GenericDescriptorMatcher::getTrainImages (method) cv::GenericDescriptorMatcher . getTrainImages
+PORTED: cv::GenericDescriptorMatcher::getTrainKeypoints (method) cv::GenericDescriptorMatcher . getTrainKeypoints
+PORTED: cv::GenericDescriptorMatcher::clear (method) cv::GenericDescriptorMatcher . clear
+PORTED: cv::GenericDescriptorMatcher::train (method) cv::GenericDescriptorMatcher . train
+PORTED: cv::GenericDescriptorMatcher::classify (method) cv::GenericDescriptorMatcher . classify
+PORTED: cv::GenericDescriptorMatcher::classify (method) cv::GenericDescriptorMatcher . classify
+PORTED: cv::GenericDescriptorMatcher::match (method) cv::GenericDescriptorMatcher . match
+PORTED: cv::GenericDescriptorMatcher::knnMatch (method) cv::GenericDescriptorMatcher . knnMatch
+PORTED: cv::GenericDescriptorMatcher::radiusMatch (method) cv::GenericDescriptorMatcher . radiusMatch
+PORTED: cv::GenericDescriptorMatcher::match (method) cv::GenericDescriptorMatcher . match
+PORTED: cv::GenericDescriptorMatcher::knnMatch (method) cv::GenericDescriptorMatcher . knnMatch
+PORTED: cv::GenericDescriptorMatcher::radiusMatch (method) cv::GenericDescriptorMatcher . radiusMatch
+PORTED: cv::GenericDescriptorMatcher::empty (method) cv::GenericDescriptorMatcher . empty
+PORTED: cv::GridAdaptedFeatureDetector::GridAdaptedFeatureDetector (constructor) cv::GridAdaptedFeatureDetector . new
+PORTED: cv::GridAdaptedFeatureDetector::empty (method) cv::GridAdaptedFeatureDetector . empty
+PORTED: cv::KeyPoint::KeyPoint (constructor) cv::KeyPoint (simple) . new
+PORTED: cv::KeyPoint::KeyPoint (constructor) cv::KeyPoint (simple) . new
+PORTED: cv::KeyPoint::KeyPoint (constructor) cv::KeyPoint (simple) . new
+PORTED: cv::KeyPoint::hash (method) cv::KeyPoint (simple) . hash
+PORTED: cv::KeyPoint::convert (method) cv::KeyPoint (simple) . convert
+PORTED: cv::KeyPoint::convert (method) cv::KeyPoint (simple) . convert
+PORTED: cv::KeyPoint::overlap (method) cv::KeyPoint (simple) . overlap
+PORTED: cv::KeyPointsFilter::KeyPointsFilter (constructor) cv::KeyPointsFilter . new
+PORTED: cv::KeyPointsFilter::runByImageBorder (method) cv::KeyPointsFilter . runByImageBorder
+PORTED: cv::KeyPointsFilter::runByKeypointSize (method) cv::KeyPointsFilter . runByKeypointSize
+PORTED: cv::KeyPointsFilter::runByPixelsMask (method) cv::KeyPointsFilter . runByPixelsMask
+PORTED: cv::KeyPointsFilter::removeDuplicated (method) cv::KeyPointsFilter . removeDuplicated
+PORTED: cv::KeyPointsFilter::retainBest (method) cv::KeyPointsFilter . retainBest
+PORTED: cv::MSER::MSER (constructor) cv::MSER . new
+PORTED: cv::ORB::ORB (constructor) cv::ORB . new
+PORTED: cv::ORB::descriptorSize (method) cv::ORB . descriptorSize
+PORTED: cv::ORB::descriptorType (method) cv::ORB . descriptorType
+PORTED: cv::OpponentColorDescriptorExtractor::descriptorSize (method) cv::OpponentColorDescriptorExtractor . descriptorSize
+PORTED: cv::OpponentColorDescriptorExtractor::descriptorType (method) cv::OpponentColorDescriptorExtractor . descriptorType
+PORTED: cv::OpponentColorDescriptorExtractor::empty (method) cv::OpponentColorDescriptorExtractor . empty
+PORTED: cv::PyramidAdaptedFeatureDetector::PyramidAdaptedFeatureDetector (constructor) cv::PyramidAdaptedFeatureDetector . new
+PORTED: cv::PyramidAdaptedFeatureDetector::empty (method) cv::PyramidAdaptedFeatureDetector . empty
+PORTED: cv::SimpleBlobDetector::Params::Params (constructor) cv::SimpleBlobDetector::Params (simple) . new
+PORTED: cv::StarAdjuster::StarAdjuster (constructor) cv::StarAdjuster . new
+PORTED: cv::StarAdjuster::tooFew (method) cv::StarAdjuster . tooFew
+PORTED: cv::StarAdjuster::tooMany (method) cv::StarAdjuster . tooMany
+PORTED: cv::StarAdjuster::good (method) cv::StarAdjuster . good
+PORTED: cv::StarDetector::StarDetector (constructor) cv::StarDetector . new
+PORTED: cv::SurfAdjuster::SurfAdjuster (constructor) cv::SurfAdjuster . new
+PORTED: cv::SurfAdjuster::tooFew (method) cv::SurfAdjuster . tooFew
+PORTED: cv::SurfAdjuster::tooMany (method) cv::SurfAdjuster . tooMany
+PORTED: cv::SurfAdjuster::good (method) cv::SurfAdjuster . good
+PORTED: cv::VectorDescriptorMatcher::add (method) cv::VectorDescriptorMatcher . add
+PORTED: cv::VectorDescriptorMatcher::clear (method) cv::VectorDescriptorMatcher . clear
+PORTED: cv::VectorDescriptorMatcher::train (method) cv::VectorDescriptorMatcher . train
+PORTED: cv::VectorDescriptorMatcher::isMaskSupported (method) cv::VectorDescriptorMatcher . isMaskSupported
+PORTED: cv::VectorDescriptorMatcher::empty (method) cv::VectorDescriptorMatcher . empty
+PORTED: cv::VectorDescriptorMatcher::clone (method) cv::VectorDescriptorMatcher . clone
+
+
+SKIPPED FUNCs: 52
+
+SKIPPED: cv::read (function)
+   can not map type Unknown[FileNode] yet
+
+SKIPPED: cv::write (function)
+   can not map type Unknown[FileStorage] yet
+
+SKIPPED: cv::AdjusterAdapter::create (method) cv::AdjusterAdapter . create
+   return type class SmartPtr[cv::AdjusterAdapter (boxed)] is ignored
+
+SKIPPED: cv::BFMatcher::clone (method) cv::BFMatcher . clone
+   return type class SmartPtr[cv::DescriptorMatcher (boxed)] is ignored
+
+SKIPPED: cv::BFMatcher::info (method) cv::BFMatcher . info
+   return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+
+SKIPPED: cv::BOWImgDescriptorExtractor::BOWImgDescriptorExtractor (constructor) cv::BOWImgDescriptorExtractor . new
+   can not map type SmartPtr[cv::DescriptorExtractor (boxed)] yet
+
+SKIPPED: cv::BOWKMeansTrainer::BOWKMeansTrainer (constructor) cv::BOWKMeansTrainer . new
+   can not map type Unknown[TermCriteria] yet
+
+SKIPPED: cv::BOWTrainer::BOWTrainer (constructor) cv::BOWTrainer . new
+   skip constructor of abstract class
+
+SKIPPED: cv::BRISK::info (method) cv::BRISK . info
+   return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+
+SKIPPED: cv::BRISK::BRISK (constructor) cv::BRISK . new
+   can not map type Unknown[std::vector<float> ] yet
+
+SKIPPED: cv::BRISK::generateKernel (method) cv::BRISK . generateKernel
+   can not map type Unknown[std::vector<float> ] yet
+
+SKIPPED: cv::BriefDescriptorExtractor::read (method) cv::BriefDescriptorExtractor . read
+   can not map type Unknown[FileNode] yet
+
+SKIPPED: cv::BriefDescriptorExtractor::write (method) cv::BriefDescriptorExtractor . write
+   can not map type Unknown[FileStorage] yet
+
+SKIPPED: cv::BriefDescriptorExtractor::info (method) cv::BriefDescriptorExtractor . info
+   return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+
+SKIPPED: cv::DenseFeatureDetector::info (method) cv::DenseFeatureDetector . info
+   return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+
+SKIPPED: cv::DescriptorExtractor::create (method) cv::DescriptorExtractor . create
+   return type class SmartPtr[cv::DescriptorExtractor (boxed)] is ignored
+
+SKIPPED: cv::DescriptorMatcher::read (method) cv::DescriptorMatcher . read
+   can not map type Unknown[FileNode] yet
+
+SKIPPED: cv::DescriptorMatcher::write (method) cv::DescriptorMatcher . write
+   can not map type Unknown[FileStorage] yet
+
+SKIPPED: cv::DescriptorMatcher::create (method) cv::DescriptorMatcher . create
+   return type class SmartPtr[cv::DescriptorMatcher (boxed)] is ignored
+
+SKIPPED: cv::DynamicAdaptedFeatureDetector::DynamicAdaptedFeatureDetector (constructor) cv::DynamicAdaptedFeatureDetector . new
+   can not map type SmartPtr[cv::AdjusterAdapter (boxed)] yet
+
+SKIPPED: cv::FREAK::info (method) cv::FREAK . info
+   return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+
+SKIPPED: cv::FastAdjuster::clone (method) cv::FastAdjuster . clone
+   return type class SmartPtr[cv::AdjusterAdapter (boxed)] is ignored
+
+SKIPPED: cv::FastFeatureDetector::info (method) cv::FastFeatureDetector . info
+   return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+
+SKIPPED: cv::Feature2D::compute (method) cv::Feature2D . compute
+   can not map type Unknown[std::vector<KeyPoint>] yet
+
+SKIPPED: cv::Feature2D::create (method) cv::Feature2D . create
+   return type class SmartPtr[cv::Feature2D (boxed)] is ignored
+
+SKIPPED: cv::FlannBasedMatcher::FlannBasedMatcher (constructor) cv::FlannBasedMatcher . new
+   can not map type SmartPtr[Unknown[flann::IndexParams]] yet
+
+SKIPPED: cv::FlannBasedMatcher::read (method) cv::FlannBasedMatcher . read
+   can not map type Unknown[FileNode] yet
+
+SKIPPED: cv::FlannBasedMatcher::write (method) cv::FlannBasedMatcher . write
+   can not map type Unknown[FileStorage] yet
+
+SKIPPED: cv::FlannBasedMatcher::clone (method) cv::FlannBasedMatcher . clone
+   return type class SmartPtr[cv::DescriptorMatcher (boxed)] is ignored
+
+SKIPPED: cv::FlannBasedMatcher::info (method) cv::FlannBasedMatcher . info
+   return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+
+SKIPPED: cv::GFTTDetector::info (method) cv::GFTTDetector . info
+   return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+
+SKIPPED: cv::GenericDescriptorMatcher::GenericDescriptorMatcher (constructor) cv::GenericDescriptorMatcher . new
+   skip constructor of abstract class
+
+SKIPPED: cv::GenericDescriptorMatcher::read (method) cv::GenericDescriptorMatcher . read
+   can not map type Unknown[FileNode] yet
+
+SKIPPED: cv::GenericDescriptorMatcher::write (method) cv::GenericDescriptorMatcher . write
+   can not map type Unknown[FileStorage] yet
+
+SKIPPED: cv::GenericDescriptorMatcher::create (method) cv::GenericDescriptorMatcher . create
+   can not map type Unknown[string ] yet
+
+SKIPPED: cv::GridAdaptedFeatureDetector::info (method) cv::GridAdaptedFeatureDetector . info
+   return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+
+SKIPPED: cv::MSER::info (method) cv::MSER . info
+   return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+
+SKIPPED: cv::ORB::info (method) cv::ORB . info
+   return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+
+SKIPPED: cv::OpponentColorDescriptorExtractor::OpponentColorDescriptorExtractor (constructor) cv::OpponentColorDescriptorExtractor . new
+   can not map type SmartPtr[cv::DescriptorExtractor (boxed)] yet
+
+SKIPPED: cv::OpponentColorDescriptorExtractor::read (method) cv::OpponentColorDescriptorExtractor . read
+   can not map type Unknown[FileNode] yet
+
+SKIPPED: cv::OpponentColorDescriptorExtractor::write (method) cv::OpponentColorDescriptorExtractor . write
+   can not map type Unknown[FileStorage] yet
+
+SKIPPED: cv::SimpleBlobDetector::SimpleBlobDetector (constructor) cv::SimpleBlobDetector . new
+   can not map type Unknown[SimpleBlobDetector::Params ] yet
+
+SKIPPED: cv::SimpleBlobDetector::read (method) cv::SimpleBlobDetector . read
+   can not map type Unknown[FileNode] yet
+
+SKIPPED: cv::SimpleBlobDetector::write (method) cv::SimpleBlobDetector . write
+   can not map type Unknown[FileStorage] yet
+
+SKIPPED: cv::SimpleBlobDetector::Params::read (method) cv::SimpleBlobDetector::Params (simple) . read
+   can not map type Unknown[FileNode] yet
+
+SKIPPED: cv::SimpleBlobDetector::Params::write (method) cv::SimpleBlobDetector::Params (simple) . write
+   can not map type Unknown[FileStorage] yet
+
+SKIPPED: cv::StarAdjuster::clone (method) cv::StarAdjuster . clone
+   return type class SmartPtr[cv::AdjusterAdapter (boxed)] is ignored
+
+SKIPPED: cv::StarDetector::info (method) cv::StarDetector . info
+   return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+
+SKIPPED: cv::SurfAdjuster::clone (method) cv::SurfAdjuster . clone
+   return type class SmartPtr[cv::AdjusterAdapter (boxed)] is ignored
+
+SKIPPED: cv::VectorDescriptorMatcher::VectorDescriptorMatcher (constructor) cv::VectorDescriptorMatcher . new
+   can not map type SmartPtr[cv::DescriptorExtractor (boxed)] yet
+
+SKIPPED: cv::VectorDescriptorMatcher::read (method) cv::VectorDescriptorMatcher . read
+   can not map type Unknown[FileNode] yet
+
+SKIPPED: cv::VectorDescriptorMatcher::write (method) cv::VectorDescriptorMatcher . write
+   can not map type Unknown[FileStorage] yet
+

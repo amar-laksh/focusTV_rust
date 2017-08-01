@@ -1,0 +1,239 @@
+FOUND FUNCs: 121
+
+PORTED FUNCs: 66
+
+PORTED: cv::groupRectangles (function)
+PORTED: cv::groupRectangles (function)
+PORTED: cv::groupRectangles (function)
+PORTED: cv::groupRectangles (function)
+PORTED: cv::groupRectangles_meanshift (function)
+PORTED: cv::linemod::colormap (function)
+PORTED: cv::linemod::getDefaultLINE (function)
+PORTED: cv::linemod::getDefaultLINEMOD (function)
+PORTED: cv::CascadeClassifier::CascadeClassifier (constructor) cv::CascadeClassifier . new
+PORTED: cv::CascadeClassifier::CascadeClassifier (constructor) cv::CascadeClassifier . new
+PORTED: cv::CascadeClassifier::empty (method) cv::CascadeClassifier . empty
+PORTED: cv::CascadeClassifier::load (method) cv::CascadeClassifier . load
+PORTED: cv::CascadeClassifier::detectMultiScale (method) cv::CascadeClassifier . detectMultiScale
+PORTED: cv::CascadeClassifier::detectMultiScale (method) cv::CascadeClassifier . detectMultiScale
+PORTED: cv::CascadeClassifier::isOldFormatCascade (method) cv::CascadeClassifier . isOldFormatCascade
+PORTED: cv::CascadeClassifier::getOriginalWindowSize (method) cv::CascadeClassifier . getOriginalWindowSize
+PORTED: cv::CascadeClassifier::getFeatureType (method) cv::CascadeClassifier . getFeatureType
+PORTED: cv::CascadeClassifier::setImage (method) cv::CascadeClassifier . setImage
+PORTED: cv::CascadeClassifier::setFaceDetectionMaskGenerator (method) cv::CascadeClassifier . setFaceDetectionMaskGenerator
+PORTED: cv::CascadeClassifier::MaskGenerator::initializeMask (method) cv::CascadeClassifier::MaskGenerator . initializeMask
+PORTED: cv::FeatureEvaluator::clone (method) cv::FeatureEvaluator . clone
+PORTED: cv::FeatureEvaluator::getFeatureType (method) cv::FeatureEvaluator . getFeatureType
+PORTED: cv::FeatureEvaluator::setImage (method) cv::FeatureEvaluator . setImage
+PORTED: cv::FeatureEvaluator::setWindow (method) cv::FeatureEvaluator . setWindow
+PORTED: cv::FeatureEvaluator::calcOrd (method) cv::FeatureEvaluator . calcOrd
+PORTED: cv::FeatureEvaluator::calcCat (method) cv::FeatureEvaluator . calcCat
+PORTED: cv::FeatureEvaluator::create (method) cv::FeatureEvaluator . create
+PORTED: cv::HOGDescriptor::HOGDescriptor (constructor) cv::HOGDescriptor . new
+PORTED: cv::HOGDescriptor::HOGDescriptor (constructor) cv::HOGDescriptor . new
+PORTED: cv::HOGDescriptor::HOGDescriptor (constructor) cv::HOGDescriptor . new
+PORTED: cv::HOGDescriptor::getDescriptorSize (method) cv::HOGDescriptor . getDescriptorSize
+PORTED: cv::HOGDescriptor::checkDetectorSize (method) cv::HOGDescriptor . checkDetectorSize
+PORTED: cv::HOGDescriptor::getWinSigma (method) cv::HOGDescriptor . getWinSigma
+PORTED: cv::HOGDescriptor::setSVMDetector (method) cv::HOGDescriptor . setSVMDetector
+PORTED: cv::HOGDescriptor::copyTo (method) cv::HOGDescriptor . copyTo
+PORTED: cv::HOGDescriptor::compute (method) cv::HOGDescriptor . compute
+PORTED: cv::HOGDescriptor::detect (method) cv::HOGDescriptor . detect
+PORTED: cv::HOGDescriptor::detect (method) cv::HOGDescriptor . detect
+PORTED: cv::HOGDescriptor::detectMultiScale (method) cv::HOGDescriptor . detectMultiScale
+PORTED: cv::HOGDescriptor::detectMultiScale (method) cv::HOGDescriptor . detectMultiScale
+PORTED: cv::HOGDescriptor::computeGradient (method) cv::HOGDescriptor . computeGradient
+PORTED: cv::HOGDescriptor::getDefaultPeopleDetector (method) cv::HOGDescriptor . getDefaultPeopleDetector
+PORTED: cv::HOGDescriptor::getDaimlerPeopleDetector (method) cv::HOGDescriptor . getDaimlerPeopleDetector
+PORTED: cv::LatentSvmDetector::LatentSvmDetector (constructor) cv::LatentSvmDetector . new
+PORTED: cv::LatentSvmDetector::LatentSvmDetector (constructor) cv::LatentSvmDetector . new
+PORTED: cv::LatentSvmDetector::clear (method) cv::LatentSvmDetector . clear
+PORTED: cv::LatentSvmDetector::empty (method) cv::LatentSvmDetector . empty
+PORTED: cv::LatentSvmDetector::load (method) cv::LatentSvmDetector . load
+PORTED: cv::LatentSvmDetector::detect (method) cv::LatentSvmDetector . detect
+PORTED: cv::LatentSvmDetector::getClassNames (method) cv::LatentSvmDetector . getClassNames
+PORTED: cv::LatentSvmDetector::getClassCount (method) cv::LatentSvmDetector . getClassCount
+PORTED: cv::LatentSvmDetector::ObjectDetection::ObjectDetection (constructor) cv::LatentSvmDetector::ObjectDetection . new
+PORTED: cv::LatentSvmDetector::ObjectDetection::ObjectDetection (constructor) cv::LatentSvmDetector::ObjectDetection . new
+PORTED: cv::SimilarRects::SimilarRects (constructor) cv::SimilarRects . new
+PORTED: cv::linemod::ColorGradient::ColorGradient (constructor) cv::linemod::ColorGradient . new
+PORTED: cv::linemod::ColorGradient::ColorGradient (constructor) cv::linemod::ColorGradient . new
+PORTED: cv::linemod::DepthNormal::DepthNormal (constructor) cv::linemod::DepthNormal . new
+PORTED: cv::linemod::DepthNormal::DepthNormal (constructor) cv::linemod::DepthNormal . new
+PORTED: cv::linemod::Detector::Detector (constructor) cv::linemod::Detector . new
+PORTED: cv::linemod::Detector::getT (method) cv::linemod::Detector . getT
+PORTED: cv::linemod::Detector::pyramidLevels (method) cv::linemod::Detector . pyramidLevels
+PORTED: cv::linemod::Detector::numTemplates (method) cv::linemod::Detector . numTemplates
+PORTED: cv::linemod::Detector::numClasses (method) cv::linemod::Detector . numClasses
+PORTED: cv::linemod::Feature::Feature (constructor) cv::linemod::Feature . new
+PORTED: cv::linemod::Feature::Feature (constructor) cv::linemod::Feature . new
+PORTED: cv::linemod::Match::Match (constructor) cv::linemod::Match . new
+
+
+SKIPPED FUNCs: 55
+
+SKIPPED: cvFindDataMatrix (function)
+   return type class Unknown[std::deque<CvDataMatrixCode>] is ignored
+
+SKIPPED: cvHaarDetectObjectsForROC (function)
+   return type class RawPtr[Unknown[CvSeq]] is ignored
+
+SKIPPED: cvHaarDetectObjects (function)
+   return type class RawPtr[Unknown[CvSeq]] is ignored
+
+SKIPPED: cvLatentSvmDetectObjects (function)
+   return type class RawPtr[Unknown[CvSeq]] is ignored
+
+SKIPPED: cvLoadHaarClassifierCascade (function)
+   return type class RawPtr[CvHaarClassifierCascade (boxed)] is ignored
+
+SKIPPED: cvLoadLatentSvmDetector (function)
+   return type class RawPtr[CvLatentSvmDetector (boxed)] is ignored
+
+SKIPPED: cvReleaseHaarClassifierCascade (function)
+   can not map type RawPtr[CvHaarClassifierCascade (boxed)] yet
+
+SKIPPED: cvReleaseLatentSvmDetector (function)
+   can not map type RawPtr[CvLatentSvmDetector (boxed)] yet
+
+SKIPPED: cvRunHaarClassifierCascade (function)
+   can not map type CvHaarClassifierCascade (boxed) yet
+
+SKIPPED: cvSetImagesForHaarClassifierCascade (function)
+   can not map type CvHaarClassifierCascade (boxed) yet
+
+SKIPPED: cv::drawDataMatrixCodes (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::findDataMatrix (function)
+   can not map type Unknown[OutputArrayOfArrays] yet
+
+SKIPPED: cv::CascadeClassifier::read (method) cv::CascadeClassifier . read
+   can not map type Unknown[FileNode] yet
+
+SKIPPED: cv::CascadeClassifier::setMaskGenerator (method) cv::CascadeClassifier . setMaskGenerator
+   can not map type SmartPtr[cv::CascadeClassifier::MaskGenerator (boxed)] yet
+
+SKIPPED: cv::CascadeClassifier::getMaskGenerator (method) cv::CascadeClassifier . getMaskGenerator
+   return type class SmartPtr[cv::CascadeClassifier::MaskGenerator (boxed)] is ignored
+
+SKIPPED: cv::FeatureEvaluator::read (method) cv::FeatureEvaluator . read
+   can not map type Unknown[FileNode] yet
+
+SKIPPED: cv::HOGDescriptor::HOGDescriptor (constructor) cv::HOGDescriptor . new
+   can not map type Unknown[String] yet
+
+SKIPPED: cv::HOGDescriptor::read (method) cv::HOGDescriptor . read
+   can not map type Unknown[FileNode] yet
+
+SKIPPED: cv::HOGDescriptor::write (method) cv::HOGDescriptor . write
+   can not map type Unknown[FileStorage] yet
+
+SKIPPED: cv::HOGDescriptor::load (method) cv::HOGDescriptor . load
+   can not map type Unknown[String] yet
+
+SKIPPED: cv::HOGDescriptor::save (method) cv::HOGDescriptor . save
+   can not map type Unknown[String] yet
+
+SKIPPED: cv::HOGDescriptor::detectROI (method) cv::HOGDescriptor . detectROI
+   can not map type Vector[Unknown[cv::Point>]] yet
+
+SKIPPED: cv::HOGDescriptor::detectMultiScaleROI (method) cv::HOGDescriptor . detectMultiScaleROI
+   can not map type Unknown[std::vector<cv::Rect>] yet
+
+SKIPPED: cv::HOGDescriptor::readALTModel (method) cv::HOGDescriptor . readALTModel
+   can not map type Unknown[std::string] yet
+
+SKIPPED: cv::HOGDescriptor::groupRectangles (method) cv::HOGDescriptor . groupRectangles
+   can not map type Vector[Unknown[cv::Rect]] yet
+
+SKIPPED: cv::linemod::ColorGradient::name (method) cv::linemod::ColorGradient . name
+   return type class Unknown[std::string] is ignored
+
+SKIPPED: cv::linemod::ColorGradient::read (method) cv::linemod::ColorGradient . read
+   can not map type Unknown[FileNode] yet
+
+SKIPPED: cv::linemod::ColorGradient::write (method) cv::linemod::ColorGradient . write
+   can not map type Unknown[FileStorage] yet
+
+SKIPPED: cv::linemod::DepthNormal::name (method) cv::linemod::DepthNormal . name
+   return type class Unknown[std::string] is ignored
+
+SKIPPED: cv::linemod::DepthNormal::read (method) cv::linemod::DepthNormal . read
+   can not map type Unknown[FileNode] yet
+
+SKIPPED: cv::linemod::DepthNormal::write (method) cv::linemod::DepthNormal . write
+   can not map type Unknown[FileStorage] yet
+
+SKIPPED: cv::linemod::Detector::Detector (constructor) cv::linemod::Detector . new
+   can not map type Unknown[std::vector< Ptr<Modality> >] yet
+
+SKIPPED: cv::linemod::Detector::match (method) cv::linemod::Detector . match
+   can not map type Unknown[std::vector<Mat>] yet
+
+SKIPPED: cv::linemod::Detector::addTemplate (method) cv::linemod::Detector . addTemplate
+   can not map type Unknown[std::vector<Mat>] yet
+
+SKIPPED: cv::linemod::Detector::addSyntheticTemplate (method) cv::linemod::Detector . addSyntheticTemplate
+   can not map type Unknown[std::vector<Template>] yet
+
+SKIPPED: cv::linemod::Detector::getModalities (method) cv::linemod::Detector . getModalities
+   return type class Unknown[std::vector< Ptr<Modality> >] is ignored
+
+SKIPPED: cv::linemod::Detector::getTemplates (method) cv::linemod::Detector . getTemplates
+   return type class Unknown[std::vector<Template>] is ignored
+
+SKIPPED: cv::linemod::Detector::numTemplates (method) cv::linemod::Detector . numTemplates
+   can not map type Unknown[std::string] yet
+
+SKIPPED: cv::linemod::Detector::classIds (method) cv::linemod::Detector . classIds
+   return type class Unknown[std::vector<std::string>] is ignored
+
+SKIPPED: cv::linemod::Detector::read (method) cv::linemod::Detector . read
+   can not map type Unknown[FileNode] yet
+
+SKIPPED: cv::linemod::Detector::write (method) cv::linemod::Detector . write
+   can not map type Unknown[FileStorage] yet
+
+SKIPPED: cv::linemod::Detector::readClass (method) cv::linemod::Detector . readClass
+   return type class Unknown[std::string] is ignored
+
+SKIPPED: cv::linemod::Detector::writeClass (method) cv::linemod::Detector . writeClass
+   can not map type Unknown[std::string] yet
+
+SKIPPED: cv::linemod::Detector::readClasses (method) cv::linemod::Detector . readClasses
+   can not map type Unknown[std::vector<std::string>] yet
+
+SKIPPED: cv::linemod::Detector::writeClasses (method) cv::linemod::Detector . writeClasses
+   can not map type Unknown[std::string] yet
+
+SKIPPED: cv::linemod::Feature::read (method) cv::linemod::Feature . read
+   can not map type Unknown[FileNode] yet
+
+SKIPPED: cv::linemod::Feature::write (method) cv::linemod::Feature . write
+   can not map type Unknown[FileStorage] yet
+
+SKIPPED: cv::linemod::Feature::Feature (constructor) cv::linemod::Feature . new
+   ignored by renamed table
+
+SKIPPED: cv::linemod::Match::Match (constructor) cv::linemod::Match . new
+   can not map type Unknown[std::string] yet
+
+SKIPPED: cv::linemod::Match::Match (constructor) cv::linemod::Match . new
+   can not map type Unknown[std::string] yet
+
+SKIPPED: cv::linemod::Modality::process (method) cv::linemod::Modality . process
+   return type class SmartPtr[cv::linemod::QuantizedPyramid (boxed)] is ignored
+
+SKIPPED: cv::linemod::Modality::create (method) cv::linemod::Modality . create
+   return type class SmartPtr[cv::linemod::Modality (boxed)] is ignored
+
+SKIPPED: cv::linemod::Modality::create (method) cv::linemod::Modality . create
+   return type class SmartPtr[cv::linemod::Modality (boxed)] is ignored
+
+SKIPPED: cv::linemod::Template::read (method) cv::linemod::Template . read
+   can not map type Unknown[FileNode] yet
+
+SKIPPED: cv::linemod::Template::write (method) cv::linemod::Template . write
+   can not map type Unknown[FileStorage] yet
+

@@ -1,0 +1,661 @@
+FOUND FUNCs: 355
+
+PORTED FUNCs: 206
+
+PORTED: cvCeil (function)
+PORTED: cvFloor (function)
+PORTED: cvIplDepth (function)
+PORTED: cvIsInf (function)
+PORTED: cvIsNaN (function)
+PORTED: cvRNG (function)
+PORTED: cvRound (function)
+PORTED: cv::LUT (function)
+PORTED: cv::Mahalanobis (function)
+PORTED: cv::Mahalonobis (function)
+PORTED: cv::PCABackProject (function)
+PORTED: cv::PCAProject (function)
+PORTED: cv::SVBackSubst (function)
+PORTED: cv::SVDecomp (function)
+PORTED: cv::absdiff (function)
+PORTED: cv::addWeighted (function)
+PORTED: cv::add (function)
+PORTED: cv::alignSize (function)
+PORTED: cv::arrowedLine (function)
+PORTED: cv::batchDistance (function)
+PORTED: cv::bitwise_and (function)
+PORTED: cv::bitwise_not (function)
+PORTED: cv::bitwise_or (function)
+PORTED: cv::bitwise_xor (function)
+PORTED: cv::calcCovarMatrix (function)
+PORTED: cv::cartToPolar (function)
+PORTED: cv::checkHardwareSupport (function)
+PORTED: cv::circle (function)
+PORTED: cv::clipLine (function)
+PORTED: cv::clipLine (function)
+PORTED: cv::compare (function)
+PORTED: cv::convertScaleAbs (function)
+PORTED: cv::countNonZero (function)
+PORTED: cv::cubeRoot (function)
+PORTED: cv::dct (function)
+PORTED: cv::determinant (function)
+PORTED: cv::dft (function)
+PORTED: cv::divide (function)
+PORTED: cv::divide (function)
+PORTED: cv::drawMarker (function)
+PORTED: cv::eigen (function)
+PORTED: cv::eigen (function)
+PORTED: cv::eigen (function)
+PORTED: cv::ellipse2Poly (function)
+PORTED: cv::ellipse (function)
+PORTED: cv::ellipse (function)
+PORTED: cv::exp (function)
+PORTED: cv::extractChannel (function)
+PORTED: cv::fastAtan2 (function)
+PORTED: cv::findNonZero (function)
+PORTED: cv::flip (function)
+PORTED: cv::gemm (function)
+PORTED: cv::getBuildInformation (function)
+PORTED: cv::getCPUTickCount (function)
+PORTED: cv::getElemSize (function)
+PORTED: cv::getNumThreads (function)
+PORTED: cv::getNumberOfCPUs (function)
+PORTED: cv::getOptimalDFTSize (function)
+PORTED: cv::getThreadNum (function)
+PORTED: cv::getTickCount (function)
+PORTED: cv::getTickFrequency (function)
+PORTED: cv::hconcat (function)
+PORTED: cv::idct (function)
+PORTED: cv::idft (function)
+PORTED: cv::inRange (function)
+PORTED: cv::invert (function)
+PORTED: cv::line (function)
+PORTED: cv::log (function)
+PORTED: cv::magnitude (function)
+PORTED: cv::max (function)
+PORTED: cv::max (function)
+PORTED: cv::max (function)
+PORTED: cv::meanStdDev (function)
+PORTED: cv::mean (function)
+PORTED: cv::merge (function)
+PORTED: cv::min (function)
+PORTED: cv::min (function)
+PORTED: cv::min (function)
+PORTED: cv::mulSpectrums (function)
+PORTED: cv::mulTransposed (function)
+PORTED: cv::multiply (function)
+PORTED: cv::norm (function)
+PORTED: cv::norm (function)
+PORTED: cv::normalize (function)
+PORTED: cv::parallel_for_ (function)
+PORTED: cv::perspectiveTransform (function)
+PORTED: cv::phase (function)
+PORTED: cv::polarToCart (function)
+PORTED: cv::pow (function)
+PORTED: cv::putText (function)
+PORTED: cv::rectangle (function)
+PORTED: cv::rectangle (function)
+PORTED: cv::reduce (function)
+PORTED: cv::repeat (function)
+PORTED: cv::repeat (function)
+PORTED: cv::scaleAdd (function)
+PORTED: cv::setBreakOnError (function)
+PORTED: cv::setNumThreads (function)
+PORTED: cv::setRNGSeed (function)
+PORTED: cv::setUseOptimized (function)
+PORTED: cv::solveCubic (function)
+PORTED: cv::solvePoly (function)
+PORTED: cv::solve (function)
+PORTED: cv::sortIdx (function)
+PORTED: cv::sort (function)
+PORTED: cv::split (function)
+PORTED: cv::split (function)
+PORTED: cv::sqrt (function)
+PORTED: cv::subtract (function)
+PORTED: cv::sum (function)
+PORTED: cv::swap (function)
+PORTED: cv::trace (function)
+PORTED: cv::transform (function)
+PORTED: cv::transpose (function)
+PORTED: cv::useOptimized (function)
+PORTED: cv::vconcat (function)
+PORTED: cv::Algorithm::name (method) cv::Algorithm . name
+PORTED: cv::Algorithm::getInt (method) cv::Algorithm . getInt
+PORTED: cv::Algorithm::getDouble (method) cv::Algorithm . getDouble
+PORTED: cv::Algorithm::getBool (method) cv::Algorithm . getBool
+PORTED: cv::Algorithm::getString (method) cv::Algorithm . getString
+PORTED: cv::Algorithm::getMat (method) cv::Algorithm . getMat
+PORTED: cv::Algorithm::getMatVector (method) cv::Algorithm . getMatVector
+PORTED: cv::Algorithm::set (method) cv::Algorithm . set
+PORTED: cv::Algorithm::set (method) cv::Algorithm . set
+PORTED: cv::Algorithm::set (method) cv::Algorithm . set
+PORTED: cv::Algorithm::set (method) cv::Algorithm . set
+PORTED: cv::Algorithm::set (method) cv::Algorithm . set
+PORTED: cv::Algorithm::set (method) cv::Algorithm . set
+PORTED: cv::Algorithm::paramHelp (method) cv::Algorithm . paramHelp
+PORTED: cv::Algorithm::paramType (method) cv::Algorithm . paramType
+PORTED: cv::Algorithm::getParams (method) cv::Algorithm . getParams
+PORTED: cv::Algorithm::getList (method) cv::Algorithm . getList
+PORTED: cv::LineIterator::LineIterator (constructor) cv::LineIterator . new
+PORTED: cv::LineIterator::pos (method) cv::LineIterator . pos
+PORTED: cv::Mat::Mat (constructor) cv::Mat . new
+PORTED: cv::Mat::Mat (constructor) cv::Mat . new
+PORTED: cv::Mat::Mat (constructor) cv::Mat . new
+PORTED: cv::Mat::Mat (constructor) cv::Mat . new
+PORTED: cv::Mat::Mat (constructor) cv::Mat . new
+PORTED: cv::Mat::Mat (constructor) cv::Mat . new
+PORTED: cv::Mat::Mat (constructor) cv::Mat . new
+PORTED: cv::Mat::Mat (constructor) cv::Mat . new
+PORTED: cv::Mat::Mat (constructor) cv::Mat . new
+PORTED: cv::Mat::row (method) cv::Mat . row
+PORTED: cv::Mat::col (method) cv::Mat . col
+PORTED: cv::Mat::rowRange (method) cv::Mat . rowRange
+PORTED: cv::Mat::rowRange (method) cv::Mat . rowRange
+PORTED: cv::Mat::colRange (method) cv::Mat . colRange
+PORTED: cv::Mat::colRange (method) cv::Mat . colRange
+PORTED: cv::Mat::diag (method) cv::Mat . diag
+PORTED: cv::Mat::diag (method) cv::Mat . diag
+PORTED: cv::Mat::clone (method) cv::Mat . clone
+PORTED: cv::Mat::copyTo (method) cv::Mat . copyTo
+PORTED: cv::Mat::copyTo (method) cv::Mat . copyTo
+PORTED: cv::Mat::convertTo (method) cv::Mat . convertTo
+PORTED: cv::Mat::assignTo (method) cv::Mat . assignTo
+PORTED: cv::Mat::setTo (method) cv::Mat . setTo
+PORTED: cv::Mat::reshape (method) cv::Mat . reshape
+PORTED: cv::Mat::cross (method) cv::Mat . cross
+PORTED: cv::Mat::dot (method) cv::Mat . dot
+PORTED: cv::Mat::addref (method) cv::Mat . addref
+PORTED: cv::Mat::release (method) cv::Mat . release
+PORTED: cv::Mat::deallocate (method) cv::Mat . deallocate
+PORTED: cv::Mat::copySize (method) cv::Mat . copySize
+PORTED: cv::Mat::reserve (method) cv::Mat . reserve
+PORTED: cv::Mat::resize (method) cv::Mat . resize
+PORTED: cv::Mat::resize (method) cv::Mat . resize
+PORTED: cv::Mat::push_back (method) cv::Mat . push_back
+PORTED: cv::Mat::pop_back (method) cv::Mat . pop_back
+PORTED: cv::Mat::locateROI (method) cv::Mat . locateROI
+PORTED: cv::Mat::adjustROI (method) cv::Mat . adjustROI
+PORTED: cv::Mat::isContinuous (method) cv::Mat . isContinuous
+PORTED: cv::Mat::isSubmatrix (method) cv::Mat . isSubmatrix
+PORTED: cv::Mat::elemSize (method) cv::Mat . elemSize
+PORTED: cv::Mat::elemSize1 (method) cv::Mat . elemSize1
+PORTED: cv::Mat::type (method) cv::Mat . type
+PORTED: cv::Mat::depth (method) cv::Mat . depth
+PORTED: cv::Mat::channels (method) cv::Mat . channels
+PORTED: cv::Mat::step1 (method) cv::Mat . step1
+PORTED: cv::Mat::empty (method) cv::Mat . empty
+PORTED: cv::Mat::total (method) cv::Mat . total
+PORTED: cv::Mat::checkVector (method) cv::Mat . checkVector
+PORTED: cv::Mat::ptr (method) cv::Mat . ptr
+PORTED: cv::Mat::ptr (method) cv::Mat . ptr
+PORTED: cv::Mat::ptr (method) cv::Mat . ptr
+PORTED: cv::Mat::size (method) cv::Mat . size
+PORTED: cv::NAryMatIterator::NAryMatIterator (constructor) cv::NAryMatIterator . new
+PORTED: cv::PCA::PCA (constructor) cv::PCA . new
+PORTED: cv::PCA::PCA (constructor) cv::PCA . new
+PORTED: cv::PCA::PCA (constructor) cv::PCA . new
+PORTED: cv::PCA::computeVar (method) cv::PCA . computeVar
+PORTED: cv::PCA::project (method) cv::PCA . project
+PORTED: cv::PCA::project (method) cv::PCA . project
+PORTED: cv::PCA::backProject (method) cv::PCA . backProject
+PORTED: cv::PCA::backProject (method) cv::PCA . backProject
+PORTED: cv::Range::Range (constructor) cv::Range . new
+PORTED: cv::Range::Range (constructor) cv::Range . new
+PORTED: cv::Range::size (method) cv::Range . size
+PORTED: cv::Range::empty (method) cv::Range . empty
+PORTED: cv::Range::all (method) cv::Range . all
+PORTED: cv::RotatedRect::RotatedRect (constructor) cv::RotatedRect . new
+PORTED: cv::RotatedRect::RotatedRect (constructor) cv::RotatedRect . new
+PORTED: cv::RotatedRect::boundingRect (method) cv::RotatedRect . boundingRect
+PORTED: cv::TermCriteria::TermCriteria (constructor) cv::TermCriteria . new
+PORTED: cv::TermCriteria::TermCriteria (constructor) cv::TermCriteria . new
+
+
+SKIPPED FUNCs: 149
+
+SKIPPED: cvAttrList (function)
+   return type class CvAttrList (boxed) is ignored
+
+SKIPPED: cvMat (function)
+   return type class CvMat (boxed) is ignored
+
+SKIPPED: cvPoint2D32f (function)
+   return type class CvPoint2D32f (boxed) is ignored
+
+SKIPPED: cvPoint2D64f (function)
+   return type class CvPoint2D64f (boxed) is ignored
+
+SKIPPED: cvPoint3D32f (function)
+   return type class CvPoint3D32f (boxed) is ignored
+
+SKIPPED: cvPoint3D64f (function)
+   return type class CvPoint3D64f (boxed) is ignored
+
+SKIPPED: cvPointFrom32f (function)
+   return type class CvPoint (boxed) is ignored
+
+SKIPPED: cvPointTo32f (function)
+   return type class CvPoint2D32f (boxed) is ignored
+
+SKIPPED: cvPoint (function)
+   return type class CvPoint (boxed) is ignored
+
+SKIPPED: cvROIToRect (function)
+   return type class CvRect (boxed) is ignored
+
+SKIPPED: cvRandInt (function)
+   return type class Unknown[unsigned] is ignored
+
+SKIPPED: cvRandReal (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvRealScalar (function)
+   return type class CvScalar (boxed) is ignored
+
+SKIPPED: cvRectToROI (function)
+   return type class IplROI (boxed) is ignored
+
+SKIPPED: cvRect (function)
+   return type class CvRect (boxed) is ignored
+
+SKIPPED: cvScalarAll (function)
+   return type class CvScalar (boxed) is ignored
+
+SKIPPED: cvScalar (function)
+   return type class CvScalar (boxed) is ignored
+
+SKIPPED: cvSize2D32f (function)
+   return type class CvSize2D32f (boxed) is ignored
+
+SKIPPED: cvSize (function)
+   return type class CvSize (boxed) is ignored
+
+SKIPPED: cvSlice (function)
+   return type class CvSlice (boxed) is ignored
+
+SKIPPED: cvTermCriteria (function)
+   return type class CvTermCriteria (boxed) is ignored
+
+SKIPPED: cv::PCAComputeVar (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::PCACompute (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::calcCovarMatrix (function)
+   ignored by renamed table
+
+SKIPPED: cv::checkRange (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::completeSymm (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::cvarrToMat (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cv::error (function)
+   can not map type cv::Exception (boxed) yet
+
+SKIPPED: cv::exp (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::extractImageCOI (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cv::fastAtan2 (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::fastFree (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::fastMalloc (function)
+   return type class RawPtr[Primitive(void)] is ignored
+
+SKIPPED: cv::fillConvexPoly (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::fillConvexPoly (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::fillPoly (function)
+   can not map type RawPtr[Point (struct)] yet
+
+SKIPPED: cv::fillPoly (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::format (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::fromUtf16 (function)
+   can not map type Unknown[WString] yet
+
+SKIPPED: cv::getConvertElem (function)
+   return type class Unknown[ConvertData] is ignored
+
+SKIPPED: cv::getConvertFunc (function)
+   return type class Unknown[BinaryFunc] is ignored
+
+SKIPPED: cv::getConvertScaleElem (function)
+   return type class Unknown[ConvertScaleData] is ignored
+
+SKIPPED: cv::getConvertScaleFunc (function)
+   return type class Unknown[BinaryFunc] is ignored
+
+SKIPPED: cv::getCopyMaskFunc (function)
+   return type class Unknown[BinaryFunc] is ignored
+
+SKIPPED: cv::getTextSize (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::glob (function)
+   can not map type Unknown[String] yet
+
+SKIPPED: cv::hconcat (function)
+   ignored by renamed table
+
+SKIPPED: cv::hconcat (function)
+   can not map type Unknown[InputArrayOfArrays] yet
+
+SKIPPED: cv::insertChannel (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::insertImageCOI (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cv::kmeans (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::log (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::magnitude (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::merge (function)
+   ignored by renamed table
+
+SKIPPED: cv::merge (function)
+   can not map type Unknown[InputArrayOfArrays] yet
+
+SKIPPED: cv::minMaxIdx (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::minMaxLoc (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::minMaxLoc (function)
+   can not map type cv::SparseMat (boxed) yet
+
+SKIPPED: cv::mixChannels (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::mixChannels (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::mixChannels (function)
+   can not map type Unknown[InputArrayOfArrays] yet
+
+SKIPPED: cv::noArray (function)
+   manual ignore from list
+
+SKIPPED: cv::norm (function)
+   can not map type cv::SparseMat (boxed) yet
+
+SKIPPED: cv::normalize (function)
+   can not map type cv::SparseMat (boxed) yet
+
+SKIPPED: cv::patchNaNs (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::polylines (function)
+   can not map type RawPtr[Point (struct)] yet
+
+SKIPPED: cv::polylines (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::randShuffle (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::randShuffle_ (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::randn (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::randu (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::redirectError (function)
+   return type class Unknown[ErrorCallback] is ignored
+
+SKIPPED: cv::scalarToRawData (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::setIdentity (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::split (function)
+   can not map type Unknown[OutputArrayOfArrays] yet
+
+SKIPPED: cv::tempfile (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::theRNG (function)
+   return type class cv::RNG (boxed) is ignored
+
+SKIPPED: cv::toUtf16 (function)
+   return type class Unknown[WString] is ignored
+
+SKIPPED: cv::vconcat (function)
+   ignored by renamed table
+
+SKIPPED: cv::vconcat (function)
+   can not map type Unknown[InputArrayOfArrays] yet
+
+SKIPPED: cvmGet (function)
+   can not map type CvMat (boxed) yet
+
+SKIPPED: cvmSet (function)
+   can not map type CvMat (boxed) yet
+
+SKIPPED: cv::Algorithm::Algorithm (constructor) cv::Algorithm . new
+   skip constructor of abstract class
+
+SKIPPED: cv::Algorithm::getAlgorithm (method) cv::Algorithm . getAlgorithm
+   return type class SmartPtr[cv::Algorithm (boxed)] is ignored
+
+SKIPPED: cv::Algorithm::set (method) cv::Algorithm . set
+   can not map type SmartPtr[cv::Algorithm (boxed)] yet
+
+SKIPPED: cv::Algorithm::setInt (method) cv::Algorithm . setInt
+   ignored by renamed table
+
+SKIPPED: cv::Algorithm::setDouble (method) cv::Algorithm . setDouble
+   ignored by renamed table
+
+SKIPPED: cv::Algorithm::setBool (method) cv::Algorithm . setBool
+   ignored by renamed table
+
+SKIPPED: cv::Algorithm::setString (method) cv::Algorithm . setString
+   ignored by renamed table
+
+SKIPPED: cv::Algorithm::setMat (method) cv::Algorithm . setMat
+   ignored by renamed table
+
+SKIPPED: cv::Algorithm::setMatVector (method) cv::Algorithm . setMatVector
+   ignored by renamed table
+
+SKIPPED: cv::Algorithm::setAlgorithm (method) cv::Algorithm . setAlgorithm
+   can not map type SmartPtr[cv::Algorithm (boxed)] yet
+
+SKIPPED: cv::Algorithm::set (method) cv::Algorithm . set
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Algorithm::set (method) cv::Algorithm . set
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Algorithm::set (method) cv::Algorithm . set
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Algorithm::set (method) cv::Algorithm . set
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Algorithm::set (method) cv::Algorithm . set
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Algorithm::set (method) cv::Algorithm . set
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Algorithm::set (method) cv::Algorithm . set
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Algorithm::setInt (method) cv::Algorithm . setInt
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Algorithm::setDouble (method) cv::Algorithm . setDouble
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Algorithm::setBool (method) cv::Algorithm . setBool
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Algorithm::setString (method) cv::Algorithm . setString
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Algorithm::setMat (method) cv::Algorithm . setMat
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Algorithm::setMatVector (method) cv::Algorithm . setMatVector
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Algorithm::setAlgorithm (method) cv::Algorithm . setAlgorithm
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Algorithm::paramType (method) cv::Algorithm . paramType
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Algorithm::write (method) cv::Algorithm . write
+   can not map type cv::FileStorage (boxed) yet
+
+SKIPPED: cv::Algorithm::read (method) cv::Algorithm . read
+   can not map type cv::FileNode (simple) yet
+
+SKIPPED: cv::Algorithm::_create (method) cv::Algorithm . _create
+   return type class SmartPtr[cv::Algorithm (boxed)] is ignored
+
+SKIPPED: cv::Algorithm::info (method) cv::Algorithm . info
+   return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+
+SKIPPED: cv::AutoLock::AutoLock (constructor) cv::AutoLock . new
+   can not map type cv::Mutex (boxed) yet
+
+SKIPPED: cv::Mat::Mat (constructor) cv::Mat . new
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Mat::Mat (constructor) cv::Mat . new
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Mat::Mat (constructor) cv::Mat . new
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Mat::Mat (constructor) cv::Mat . new
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Mat::Mat (constructor) cv::Mat . new
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Mat::Mat (constructor) cv::Mat . new
+   can not map type CvMat (boxed) yet
+
+SKIPPED: cv::Mat::Mat (constructor) cv::Mat . new
+   can not map type CvMatND (boxed) yet
+
+SKIPPED: cv::Mat::Mat (constructor) cv::Mat . new
+   can not map type IplImage (boxed) yet
+
+SKIPPED: cv::Mat::Mat (constructor) cv::Mat . new
+   can not map type Unknown[gpu::GpuMat] yet
+
+SKIPPED: cv::Mat::reshape (method) cv::Mat . reshape
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Mat::t (method) cv::Mat . t
+   return type class Unknown[MatExpr] is ignored
+
+SKIPPED: cv::Mat::inv (method) cv::Mat . inv
+   return type class Unknown[MatExpr] is ignored
+
+SKIPPED: cv::Mat::mul (method) cv::Mat . mul
+   return type class Unknown[MatExpr] is ignored
+
+SKIPPED: cv::Mat::zeros (method) cv::Mat . zeros
+   return type class Unknown[MatExpr] is ignored
+
+SKIPPED: cv::Mat::zeros (method) cv::Mat . zeros
+   return type class Unknown[MatExpr] is ignored
+
+SKIPPED: cv::Mat::zeros (method) cv::Mat . zeros
+   return type class Unknown[MatExpr] is ignored
+
+SKIPPED: cv::Mat::ones (method) cv::Mat . ones
+   return type class Unknown[MatExpr] is ignored
+
+SKIPPED: cv::Mat::ones (method) cv::Mat . ones
+   return type class Unknown[MatExpr] is ignored
+
+SKIPPED: cv::Mat::ones (method) cv::Mat . ones
+   return type class Unknown[MatExpr] is ignored
+
+SKIPPED: cv::Mat::eye (method) cv::Mat . eye
+   return type class Unknown[MatExpr] is ignored
+
+SKIPPED: cv::Mat::eye (method) cv::Mat . eye
+   return type class Unknown[MatExpr] is ignored
+
+SKIPPED: cv::Mat::create (method) cv::Mat . create
+   ignored by renamed table
+
+SKIPPED: cv::Mat::create (method) cv::Mat . create
+   ignored by renamed table
+
+SKIPPED: cv::Mat::create (method) cv::Mat . create
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Mat::push_back_ (method) cv::Mat . push_back_
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Mat::ptr (method) cv::Mat . ptr
+   manual ignore from filter
+
+SKIPPED: cv::Mat::ptr (method) cv::Mat . ptr
+   manual ignore from filter
+
+SKIPPED: cv::Mat::ptr (method) cv::Mat . ptr
+   manual ignore from filter
+
+SKIPPED: cv::Mat::ptr (method) cv::Mat . ptr
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Mat::ptr (method) cv::Mat . ptr
+   manual ignore from filter
+
+SKIPPED: cv::NAryMatIterator::NAryMatIterator (constructor) cv::NAryMatIterator . new
+   can not map type RawPtr[cv::Mat (boxed)] yet
+
+SKIPPED: cv::NAryMatIterator::NAryMatIterator (constructor) cv::NAryMatIterator . new
+   can not map type RawPtr[cv::Mat (boxed)] yet
+
+SKIPPED: cv::NAryMatIterator::init (method) cv::NAryMatIterator . init
+   can not map type RawPtr[cv::Mat (boxed)] yet
+
+SKIPPED: cv::Range::Range (constructor) cv::Range . new
+   can not map type CvSlice (boxed) yet
+
+SKIPPED: cv::RotatedRect::RotatedRect (constructor) cv::RotatedRect . new
+   can not map type CvBox2D (boxed) yet
+
+SKIPPED: cv::RotatedRect::points (method) cv::RotatedRect . points
+   can not map type Unknown[Point2f[]] yet
+
+SKIPPED: cv::TermCriteria::TermCriteria (constructor) cv::TermCriteria . new
+   can not map type CvTermCriteria (boxed) yet
+

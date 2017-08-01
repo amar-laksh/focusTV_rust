@@ -1,0 +1,230 @@
+FOUND FUNCs: 104
+
+PORTED FUNCs: 45
+
+PORTED: CV_FOURCC (function)
+PORTED: cvDestroyAllWindows (function)
+PORTED: cvStartWindowThread (function)
+PORTED: cvStopLoop (function)
+PORTED: cvWaitKey (function)
+PORTED: cv::destroyAllWindows (function)
+PORTED: cv::destroyWindow (function)
+PORTED: cv::displayOverlay (function)
+PORTED: cv::displayStatusBar (function)
+PORTED: cv::getTrackbarPos (function)
+PORTED: cv::getWindowProperty (function)
+PORTED: cv::imencode (function)
+PORTED: cv::imread (function)
+PORTED: cv::imshow (function)
+PORTED: cv::imwrite (function)
+PORTED: cv::loadWindowParameters (function)
+PORTED: cv::moveWindow (function)
+PORTED: cv::namedWindow (function)
+PORTED: cv::resizeWindow (function)
+PORTED: cv::saveWindowParameters (function)
+PORTED: cv::setOpenGlContext (function)
+PORTED: cv::setTrackbarPos (function)
+PORTED: cv::setWindowProperty (function)
+PORTED: cv::startWindowThread (function)
+PORTED: cv::stopLoop (function)
+PORTED: cv::updateWindow (function)
+PORTED: cv::waitKey (function)
+PORTED: cv::VideoCapture::VideoCapture (constructor) cv::VideoCapture . new
+PORTED: cv::VideoCapture::VideoCapture (constructor) cv::VideoCapture . new
+PORTED: cv::VideoCapture::VideoCapture (constructor) cv::VideoCapture . new
+PORTED: cv::VideoCapture::open (method) cv::VideoCapture . open
+PORTED: cv::VideoCapture::open (method) cv::VideoCapture . open
+PORTED: cv::VideoCapture::isOpened (method) cv::VideoCapture . isOpened
+PORTED: cv::VideoCapture::release (method) cv::VideoCapture . release
+PORTED: cv::VideoCapture::grab (method) cv::VideoCapture . grab
+PORTED: cv::VideoCapture::retrieve (method) cv::VideoCapture . retrieve
+PORTED: cv::VideoCapture::read (method) cv::VideoCapture . read
+PORTED: cv::VideoCapture::set (method) cv::VideoCapture . set
+PORTED: cv::VideoCapture::get (method) cv::VideoCapture . get
+PORTED: cv::VideoWriter::VideoWriter (constructor) cv::VideoWriter . new
+PORTED: cv::VideoWriter::VideoWriter (constructor) cv::VideoWriter . new
+PORTED: cv::VideoWriter::open (method) cv::VideoWriter . open
+PORTED: cv::VideoWriter::isOpened (method) cv::VideoWriter . isOpened
+PORTED: cv::VideoWriter::release (method) cv::VideoWriter . release
+PORTED: cv::VideoWriter::write (method) cv::VideoWriter . write
+
+
+SKIPPED FUNCs: 59
+
+SKIPPED: cvAddText (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvConvertImage (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvCreateButton (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvCreateCameraCapture (function)
+   return type class RawPtr[Unknown[CvCapture]] is ignored
+
+SKIPPED: cvCreateFileCapture (function)
+   return type class RawPtr[Unknown[CvCapture]] is ignored
+
+SKIPPED: cvCreateTrackbar2 (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvCreateTrackbar (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvCreateVideoWriter (function)
+   return type class RawPtr[Unknown[CvVideoWriter]] is ignored
+
+SKIPPED: cvDecodeImageM (function)
+   return type class RawPtr[Unknown[CvMat]] is ignored
+
+SKIPPED: cvDecodeImage (function)
+   return type class RawPtr[Unknown[IplImage]] is ignored
+
+SKIPPED: cvDestroyWindow (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvDisplayOverlay (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvDisplayStatusBar (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvEncodeImage (function)
+   return type class RawPtr[Unknown[CvMat]] is ignored
+
+SKIPPED: cvFontQt (function)
+   return type class Unknown[CvFont] is ignored
+
+SKIPPED: cvGetCaptureDomain (function)
+   can not map type Unknown[CvCapture] yet
+
+SKIPPED: cvGetCaptureProperty (function)
+   can not map type Unknown[CvCapture] yet
+
+SKIPPED: cvGetTrackbarPos (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvGetWindowHandle (function)
+   return type class RawPtr[Primitive(void)] is ignored
+
+SKIPPED: cvGetWindowName (function)
+   return type class RawPtr[Primitive(char)] is ignored
+
+SKIPPED: cvGetWindowProperty (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvGrabFrame (function)
+   can not map type Unknown[CvCapture] yet
+
+SKIPPED: cvInitSystem (function)
+   can not map type RawPtr[Primitive(char)] yet
+
+SKIPPED: cvLoadImageM (function)
+   return type class RawPtr[Unknown[CvMat]] is ignored
+
+SKIPPED: cvLoadImage (function)
+   return type class RawPtr[Unknown[IplImage]] is ignored
+
+SKIPPED: cvLoadWindowParameters (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvMoveWindow (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvNamedWindow (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvQueryFrame (function)
+   return type class RawPtr[Unknown[IplImage]] is ignored
+
+SKIPPED: cvReleaseCapture (function)
+   can not map type RawPtr[Unknown[CvCapture]] yet
+
+SKIPPED: cvReleaseVideoWriter (function)
+   can not map type RawPtr[Unknown[CvVideoWriter]] yet
+
+SKIPPED: cvResizeWindow (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvRetrieveFrame (function)
+   return type class RawPtr[Unknown[IplImage]] is ignored
+
+SKIPPED: cvSaveImage (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvSaveWindowParameters (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvSetCaptureProperty (function)
+   can not map type Unknown[CvCapture] yet
+
+SKIPPED: cvSetMouseCallback (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvSetOpenGlContext (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvSetOpenGlDrawCallback (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvSetPostprocessFuncWin32_ (function)
+   manual ignore from list
+
+SKIPPED: cvSetPreprocessFuncWin32_ (function)
+   manual ignore from list
+
+SKIPPED: cvSetTrackbarMax (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvSetTrackbarPos (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvSetWindowProperty (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvShowImage (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvStartLoop (function)
+   can not map type Unknown[int (*pt2Func)(int argc@comma@ char *argv[])] yet
+
+SKIPPED: cvUpdateWindow (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvWriteFrame (function)
+   can not map type Unknown[CvVideoWriter] yet
+
+SKIPPED: cv::addText (function)
+   can not map type Unknown[CvFont] yet
+
+SKIPPED: cv::createButton (function)
+   can not map type Unknown[ButtonCallback] yet
+
+SKIPPED: cv::createTrackbar (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::fontQt (function)
+   return type class Unknown[CvFont] is ignored
+
+SKIPPED: cv::imdecode (function)
+   ignored by renamed table
+
+SKIPPED: cv::imdecode (function)
+   ignored by renamed table
+
+SKIPPED: cv::pointCloudShow (function)
+   can not map type Unknown[GlCamera] yet
+
+SKIPPED: cv::pointCloudShow (function)
+   can not map type Unknown[GlCamera] yet
+
+SKIPPED: cv::setMouseCallback (function)
+   can not map type Unknown[MouseCallback] yet
+
+SKIPPED: cv::setOpenGlDrawCallback (function)
+   can not map type Unknown[OpenGlDrawCallback] yet
+
+SKIPPED: cv::startLoop (function)
+   can not map type Unknown[int (*pt2Func)(int argc@comma@ char *argv[])] yet
+

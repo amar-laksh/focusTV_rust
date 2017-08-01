@@ -1,0 +1,192 @@
+FOUND FUNCs: 84
+
+PORTED FUNCs: 34
+
+PORTED: cvRANSACUpdateNumIters (function)
+PORTED: cv::RQDecomp3x3 (function)
+PORTED: cv::Rodrigues (function)
+PORTED: cv::calibrationMatrixValues (function)
+PORTED: cv::composeRT (function)
+PORTED: cv::computeCorrespondEpilines (function)
+PORTED: cv::convertPointsFromHomogeneous (function)
+PORTED: cv::convertPointsHomogeneous (function)
+PORTED: cv::convertPointsToHomogeneous (function)
+PORTED: cv::correctMatches (function)
+PORTED: cv::decomposeProjectionMatrix (function)
+PORTED: cv::estimateAffine3D (function)
+PORTED: cv::findChessboardCorners (function)
+PORTED: cv::findCirclesGridDefault (function)
+PORTED: cv::findFundamentalMat (function)
+PORTED: cv::findHomography (function)
+PORTED: cv::findHomography (function)
+PORTED: cv::fisheye::distortPoints (function)
+PORTED: cv::fisheye::projectPoints (function)
+PORTED: cv::fisheye::undistortImage (function)
+PORTED: cv::fisheye::undistortPoints (function)
+PORTED: cv::getValidDisparityROI (function)
+PORTED: cv::matMulDeriv (function)
+PORTED: cv::projectPoints (function)
+PORTED: cv::reprojectImageTo3D (function)
+PORTED: cv::solvePnPRansac (function)
+PORTED: cv::solvePnP (function)
+PORTED: cv::stereoRectifyUncalibrated (function)
+PORTED: cv::triangulatePoints (function)
+PORTED: cv::StereoBM::StereoBM (constructor) cv::StereoBM . new
+PORTED: cv::StereoBM::StereoBM (constructor) cv::StereoBM . new
+PORTED: cv::StereoBM::init (method) cv::StereoBM . init
+PORTED: cv::StereoSGBM::StereoSGBM (constructor) cv::StereoSGBM . new
+PORTED: cv::StereoSGBM::StereoSGBM (constructor) cv::StereoSGBM . new
+
+
+SKIPPED FUNCs: 50
+
+SKIPPED: cvCalcMatMulDeriv (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvCalibrateCamera2 (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvCalibrationMatrixValues (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvCheckChessboard (function)
+   can not map type Unknown[IplImage] yet
+
+SKIPPED: cvComposeRT (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvComputeCorrespondEpilines (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvConvertPointsHomogeneous (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvCorrectMatches (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvCreatePOSITObject (function)
+   return type class RawPtr[Unknown[CvPOSITObject]] is ignored
+
+SKIPPED: cvCreateStereoBMState (function)
+   return type class RawPtr[CvStereoBMState (boxed)] is ignored
+
+SKIPPED: cvDecomposeProjectionMatrix (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvDrawChessboardCorners (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvFindChessboardCorners (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvFindExtrinsicCameraParams2 (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvFindFundamentalMat (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvFindHomography (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvFindStereoCorrespondenceBM (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvGetOptimalNewCameraMatrix (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvGetValidDisparityROI (function)
+   return type class Unknown[CvRect] is ignored
+
+SKIPPED: cvInitIntrinsicParams2D (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvPOSIT (function)
+   can not map type Unknown[CvPOSITObject] yet
+
+SKIPPED: cvProjectPoints2 (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvRQDecomp3x3 (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvReleasePOSITObject (function)
+   can not map type RawPtr[Unknown[CvPOSITObject]] yet
+
+SKIPPED: cvReleaseStereoBMState (function)
+   can not map type RawPtr[CvStereoBMState (boxed)] yet
+
+SKIPPED: cvReprojectImageTo3D (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvRodrigues2 (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvStereoCalibrate (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvStereoRectifyUncalibrated (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvStereoRectify (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvTriangulatePoints (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvValidateDisparity (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cv::calibrateCamera (function)
+   can not map type Unknown[InputArrayOfArrays] yet
+
+SKIPPED: cv::drawChessboardCorners (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::filterSpeckles (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::find4QuadCornerSubpix (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::findCirclesGrid (function)
+   can not map type SmartPtr[Unknown[FeatureDetector>]] yet
+
+SKIPPED: cv::findFundamentalMat (function)
+   ignored by renamed table
+
+SKIPPED: cv::fisheye::calibrate (function)
+   can not map type Unknown[InputArrayOfArrays] yet
+
+SKIPPED: cv::fisheye::estimateNewCameraMatrixForUndistortRectify (function)
+   can not map type Unknown[Size ] yet
+
+SKIPPED: cv::fisheye::initUndistortRectifyMap (function)
+   can not map type Unknown[cv::Size] yet
+
+SKIPPED: cv::fisheye::projectPoints (function)
+   can not map type Unknown[Affine3d] yet
+
+SKIPPED: cv::fisheye::stereoCalibrate (function)
+   can not map type Unknown[InputArrayOfArrays] yet
+
+SKIPPED: cv::fisheye::stereoRectify (function)
+   can not map type Unknown[Size ] yet
+
+SKIPPED: cv::getOptimalNewCameraMatrix (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::initCameraMatrix2D (function)
+   can not map type Unknown[InputArrayOfArrays] yet
+
+SKIPPED: cv::rectify3Collinear (function)
+   can not map type Unknown[InputArrayOfArrays] yet
+
+SKIPPED: cv::stereoCalibrate (function)
+   can not map type Unknown[InputArrayOfArrays] yet
+
+SKIPPED: cv::stereoRectify (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::validateDisparity (function)
+   can not map type Unknown[InputOutputArray] yet
+

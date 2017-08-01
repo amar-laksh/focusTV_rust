@@ -1,0 +1,561 @@
+FOUND FUNCs: 257
+
+PORTED FUNCs: 109
+
+PORTED: cv::Canny (function)
+PORTED: cv::GaussianBlur (function)
+PORTED: cv::HoughCircles (function)
+PORTED: cv::HoughLinesP (function)
+PORTED: cv::HoughLines (function)
+PORTED: cv::HuMoments (function)
+PORTED: cv::Laplacian (function)
+PORTED: cv::PSNR (function)
+PORTED: cv::Scharr (function)
+PORTED: cv::Sobel (function)
+PORTED: cv::adaptiveBilateralFilter (function)
+PORTED: cv::adaptiveThreshold (function)
+PORTED: cv::approxPolyDP (function)
+PORTED: cv::arcLength (function)
+PORTED: cv::bilateralFilter (function)
+PORTED: cv::blur (function)
+PORTED: cv::borderInterpolate (function)
+PORTED: cv::boundingRect (function)
+PORTED: cv::boxFilter (function)
+PORTED: cv::compareHist (function)
+PORTED: cv::contourArea (function)
+PORTED: cv::convertMaps (function)
+PORTED: cv::convexHull (function)
+PORTED: cv::convexityDefects (function)
+PORTED: cv::copyMakeBorder (function)
+PORTED: cv::cornerEigenValsAndVecs (function)
+PORTED: cv::cornerHarris (function)
+PORTED: cv::cornerMinEigenVal (function)
+PORTED: cv::createBoxFilter (function)
+PORTED: cv::createDerivFilter (function)
+PORTED: cv::createGaussianFilter (function)
+PORTED: cv::createHanningWindow (function)
+PORTED: cv::createLinearFilter (function)
+PORTED: cv::createMorphologyFilter (function)
+PORTED: cv::createSeparableLinearFilter (function)
+PORTED: cv::cvtColor (function)
+PORTED: cv::dilate (function)
+PORTED: cv::distanceTransform (function)
+PORTED: cv::distanceTransform (function)
+PORTED: cv::equalizeHist (function)
+PORTED: cv::erode (function)
+PORTED: cv::filter2D (function)
+PORTED: cv::fitLine (function)
+PORTED: cv::getAffineTransform (function)
+PORTED: cv::getDefaultNewCameraMatrix (function)
+PORTED: cv::getDerivKernels (function)
+PORTED: cv::getGaborKernel (function)
+PORTED: cv::getGaussianKernel (function)
+PORTED: cv::getKernelType (function)
+PORTED: cv::getPerspectiveTransform (function)
+PORTED: cv::getRectSubPix (function)
+PORTED: cv::getRotationMatrix2D (function)
+PORTED: cv::getStructuringElement (function)
+PORTED: cv::goodFeaturesToTrack (function)
+PORTED: cv::initUndistortRectifyMap (function)
+PORTED: cv::initWideAngleProjMap (function)
+PORTED: cv::integral (function)
+PORTED: cv::integral (function)
+PORTED: cv::integral (function)
+PORTED: cv::intersectConvexConvex (function)
+PORTED: cv::invertAffineTransform (function)
+PORTED: cv::isContourConvex (function)
+PORTED: cv::matchShapes (function)
+PORTED: cv::matchTemplate (function)
+PORTED: cv::medianBlur (function)
+PORTED: cv::minEnclosingCircle (function)
+PORTED: cv::moments (function)
+PORTED: cv::morphologyDefaultBorderValue (function)
+PORTED: cv::morphologyEx (function)
+PORTED: cv::phaseCorrelate (function)
+PORTED: cv::pointPolygonTest (function)
+PORTED: cv::preCornerDetect (function)
+PORTED: cv::pyrDown (function)
+PORTED: cv::pyrUp (function)
+PORTED: cv::remap (function)
+PORTED: cv::resize (function)
+PORTED: cv::sepFilter2D (function)
+PORTED: cv::threshold (function)
+PORTED: cv::undistortPoints (function)
+PORTED: cv::undistort (function)
+PORTED: cv::warpAffine (function)
+PORTED: cv::warpPerspective (function)
+PORTED: cv::FilterEngine::FilterEngine (constructor) cv::FilterEngine . new
+PORTED: cv::FilterEngine::start (method) cv::FilterEngine . start
+PORTED: cv::FilterEngine::start (method) cv::FilterEngine . start
+PORTED: cv::FilterEngine::apply (method) cv::FilterEngine . apply
+PORTED: cv::FilterEngine::isSeparable (method) cv::FilterEngine . isSeparable
+PORTED: cv::FilterEngine::remainingInputRows (method) cv::FilterEngine . remainingInputRows
+PORTED: cv::FilterEngine::remainingOutputRows (method) cv::FilterEngine . remainingOutputRows
+PORTED: cv::GeneralizedHough::create (method) cv::GeneralizedHough . create
+PORTED: cv::GeneralizedHough::setTemplate (method) cv::GeneralizedHough . setTemplate
+PORTED: cv::GeneralizedHough::detect (method) cv::GeneralizedHough . detect
+PORTED: cv::GeneralizedHough::detect (method) cv::GeneralizedHough . detect
+PORTED: cv::GeneralizedHough::release (method) cv::GeneralizedHough . release
+PORTED: cv::Moments::Moments (constructor) cv::Moments (simple) . new
+PORTED: cv::Moments::Moments (constructor) cv::Moments (simple) . new
+PORTED: cv::Subdiv2D::Subdiv2D (constructor) cv::Subdiv2D . new
+PORTED: cv::Subdiv2D::Subdiv2D (constructor) cv::Subdiv2D . new
+PORTED: cv::Subdiv2D::initDelaunay (method) cv::Subdiv2D . initDelaunay
+PORTED: cv::Subdiv2D::insert (method) cv::Subdiv2D . insert
+PORTED: cv::Subdiv2D::insert (method) cv::Subdiv2D . insert
+PORTED: cv::Subdiv2D::locate (method) cv::Subdiv2D . locate
+PORTED: cv::Subdiv2D::getEdgeList (method) cv::Subdiv2D . getEdgeList
+PORTED: cv::Subdiv2D::getTriangleList (method) cv::Subdiv2D . getTriangleList
+PORTED: cv::Subdiv2D::getVoronoiFacetList (method) cv::Subdiv2D . getVoronoiFacetList
+PORTED: cv::Subdiv2D::getEdge (method) cv::Subdiv2D . getEdge
+PORTED: cv::Subdiv2D::nextEdge (method) cv::Subdiv2D . nextEdge
+PORTED: cv::Subdiv2D::rotateEdge (method) cv::Subdiv2D . rotateEdge
+PORTED: cv::Subdiv2D::symEdge (method) cv::Subdiv2D . symEdge
+
+
+SKIPPED FUNCs: 148
+
+SKIPPED: cv2DRotationMatrix (function)
+   return type class RawPtr[Unknown[CvMat]] is ignored
+
+SKIPPED: cvAcc (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvAdaptiveThreshold (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvApproxChains (function)
+   return type class RawPtr[Unknown[CvSeq]] is ignored
+
+SKIPPED: cvApproxPoly (function)
+   return type class RawPtr[Unknown[CvSeq]] is ignored
+
+SKIPPED: cvArcLength (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvBoundingRect (function)
+   return type class Unknown[CvRect] is ignored
+
+SKIPPED: cvBoxPoints (function)
+   can not map type Unknown[CvBox2D] yet
+
+SKIPPED: cvCalcArrBackProjectPatch (function)
+   can not map type RawPtr[Unknown[CvArr]] yet
+
+SKIPPED: cvCalcArrBackProject (function)
+   can not map type RawPtr[Unknown[CvArr]] yet
+
+SKIPPED: cvCalcArrHist (function)
+   can not map type RawPtr[Unknown[CvArr]] yet
+
+SKIPPED: cvCalcBayesianProb (function)
+   can not map type RawPtr[Unknown[CvHistogram]] yet
+
+SKIPPED: cvCalcEMD2 (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvCalcHist (function)
+   can not map type RawPtr[Unknown[IplImage]] yet
+
+SKIPPED: cvCalcProbDensity (function)
+   can not map type Unknown[CvHistogram] yet
+
+SKIPPED: cvCanny (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvCheckContourConvexity (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvClearHist (function)
+   can not map type Unknown[CvHistogram] yet
+
+SKIPPED: cvCompareHist (function)
+   can not map type Unknown[CvHistogram] yet
+
+SKIPPED: cvContourArea (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvContourPerimeter (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvConvertMaps (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvConvexHull2 (function)
+   return type class RawPtr[Unknown[CvSeq]] is ignored
+
+SKIPPED: cvConvexityDefects (function)
+   return type class RawPtr[Unknown[CvSeq]] is ignored
+
+SKIPPED: cvCopyHist (function)
+   can not map type Unknown[CvHistogram] yet
+
+SKIPPED: cvCopyMakeBorder (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvCornerEigenValsAndVecs (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvCornerHarris (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvCornerMinEigenVal (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvCreateHist (function)
+   return type class RawPtr[Unknown[CvHistogram]] is ignored
+
+SKIPPED: cvCreatePyramid (function)
+   return type class RawPtr[RawPtr[Unknown[CvMat]]] is ignored
+
+SKIPPED: cvCreateStructuringElementEx (function)
+   return type class RawPtr[Unknown[IplConvKernel]] is ignored
+
+SKIPPED: cvCvtColor (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvDilate (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvDistTransform (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvEndFindContours (function)
+   return type class RawPtr[Unknown[CvSeq]] is ignored
+
+SKIPPED: cvEqualizeHist (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvErode (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvFilter2D (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvFindContours (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvFindCornerSubPix (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvFindNextContour (function)
+   return type class RawPtr[Unknown[CvSeq]] is ignored
+
+SKIPPED: cvFitEllipse2 (function)
+   return type class Unknown[CvBox2D] is ignored
+
+SKIPPED: cvFitLine (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvFloodFill (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvGetAffineTransform (function)
+   return type class RawPtr[Unknown[CvMat]] is ignored
+
+SKIPPED: cvGetCentralMoment (function)
+   can not map type CvMoments (boxed) yet
+
+SKIPPED: cvGetHuMoments (function)
+   can not map type CvMoments (boxed) yet
+
+SKIPPED: cvGetMinMaxHistValue (function)
+   can not map type Unknown[CvHistogram] yet
+
+SKIPPED: cvGetNormalizedCentralMoment (function)
+   can not map type CvMoments (boxed) yet
+
+SKIPPED: cvGetPerspectiveTransform (function)
+   return type class RawPtr[Unknown[CvMat]] is ignored
+
+SKIPPED: cvGetQuadrangleSubPix (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvGetRectSubPix (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvGetSpatialMoment (function)
+   can not map type CvMoments (boxed) yet
+
+SKIPPED: cvGoodFeaturesToTrack (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvHoughCircles (function)
+   return type class RawPtr[Unknown[CvSeq]] is ignored
+
+SKIPPED: cvHoughLines2 (function)
+   return type class RawPtr[Unknown[CvSeq]] is ignored
+
+SKIPPED: cvInitUndistortMap (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvInitUndistortRectifyMap (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvIntegral (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvLaplace (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvLinearPolar (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvLogPolar (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvMakeHistHeaderForArray (function)
+   return type class RawPtr[Unknown[CvHistogram]] is ignored
+
+SKIPPED: cvMatchShapes (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cvMatchTemplate (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvMaxRect (function)
+   return type class Unknown[CvRect] is ignored
+
+SKIPPED: cvMinAreaRect2 (function)
+   return type class Unknown[CvBox2D] is ignored
+
+SKIPPED: cvMinEnclosingCircle (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvMoments (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvMorphologyEx (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvMultiplyAcc (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvNormalizeHist (function)
+   can not map type Unknown[CvHistogram] yet
+
+SKIPPED: cvPointPolygonTest (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvPointSeqFromMat (function)
+   return type class RawPtr[Unknown[CvSeq]] is ignored
+
+SKIPPED: cvPreCornerDetect (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvPyrDown (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvPyrMeanShiftFiltering (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvPyrUp (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvReadChainPoint (function)
+   return type class Unknown[CvPoint] is ignored
+
+SKIPPED: cvReleaseHist (function)
+   can not map type RawPtr[Unknown[CvHistogram]] yet
+
+SKIPPED: cvReleasePyramid (function)
+   can not map type RawPtr[RawPtr[Unknown[CvMat]]] yet
+
+SKIPPED: cvReleaseStructuringElement (function)
+   can not map type RawPtr[Unknown[IplConvKernel]] yet
+
+SKIPPED: cvRemap (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvResize (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvRunningAvg (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvSampleLine (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvSetHistBinRanges (function)
+   can not map type Unknown[CvHistogram] yet
+
+SKIPPED: cvSmooth (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvSobel (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvSquareAcc (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvStartFindContours (function)
+   return type class Unknown[CvContourScanner] is ignored
+
+SKIPPED: cvStartReadChainPoints (function)
+   can not map type Unknown[CvChain] yet
+
+SKIPPED: cvSubstituteContour (function)
+   can not map type Unknown[CvContourScanner] yet
+
+SKIPPED: cvThreshHist (function)
+   can not map type Unknown[CvHistogram] yet
+
+SKIPPED: cvThreshold (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvUndistort2 (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvUndistortPoints (function)
+   can not map type Unknown[CvMat] yet
+
+SKIPPED: cvWarpAffine (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvWarpPerspective (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvWatershed (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cv::EMD (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::HuMoments (function)
+   can not map type Unknown[double[7]] yet
+
+SKIPPED: cv::accumulateProduct (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::accumulateSquare (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::accumulateWeighted (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::accumulate (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::buildPyramid (function)
+   can not map type Unknown[OutputArrayOfArrays] yet
+
+SKIPPED: cv::calcBackProject (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::calcBackProject (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::calcBackProject (function)
+   can not map type Unknown[InputArrayOfArrays] yet
+
+SKIPPED: cv::calcHist (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::calcHist (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::calcHist (function)
+   can not map type Unknown[InputArrayOfArrays] yet
+
+SKIPPED: cv::compareHist (function)
+   can not map type Unknown[SparseMat] yet
+
+SKIPPED: cv::cornerSubPix (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::createCLAHE (function)
+   return type class SmartPtr[cv::CLAHE (boxed)] is ignored
+
+SKIPPED: cv::drawContours (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::eigen2x2 (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::findContours (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::findContours (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::fitEllipse (function)
+   return type class Unknown[RotatedRect] is ignored
+
+SKIPPED: cv::floodFill (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::floodFill (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::getAffineTransform (function)
+   can not map type Unknown[Point2f[]] yet
+
+SKIPPED: cv::getColumnSumFilter (function)
+   return type class SmartPtr[cv::BaseColumnFilter (boxed)] is ignored
+
+SKIPPED: cv::getLinearColumnFilter (function)
+   return type class SmartPtr[cv::BaseColumnFilter (boxed)] is ignored
+
+SKIPPED: cv::getLinearFilter (function)
+   return type class SmartPtr[cv::BaseFilter (boxed)] is ignored
+
+SKIPPED: cv::getLinearRowFilter (function)
+   return type class SmartPtr[cv::BaseRowFilter (boxed)] is ignored
+
+SKIPPED: cv::getMorphologyColumnFilter (function)
+   return type class SmartPtr[cv::BaseColumnFilter (boxed)] is ignored
+
+SKIPPED: cv::getMorphologyFilter (function)
+   return type class SmartPtr[cv::BaseFilter (boxed)] is ignored
+
+SKIPPED: cv::getMorphologyRowFilter (function)
+   return type class SmartPtr[cv::BaseRowFilter (boxed)] is ignored
+
+SKIPPED: cv::getPerspectiveTransform (function)
+   can not map type Unknown[Point2f[]] yet
+
+SKIPPED: cv::getRowSumFilter (function)
+   return type class SmartPtr[cv::BaseRowFilter (boxed)] is ignored
+
+SKIPPED: cv::grabCut (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::minAreaRect (function)
+   return type class Unknown[RotatedRect] is ignored
+
+SKIPPED: cv::phaseCorrelateRes (function)
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::pyrMeanShiftFiltering (function)
+   can not map type Unknown[TermCriteria] yet
+
+SKIPPED: cv::watershed (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::FilterEngine::FilterEngine (constructor) cv::FilterEngine . new
+   can not map type SmartPtr[cv::BaseFilter (boxed)] yet
+
+SKIPPED: cv::FilterEngine::init (method) cv::FilterEngine . init
+   can not map type SmartPtr[cv::BaseFilter (boxed)] yet
+
+SKIPPED: cv::FilterEngine::proceed (method) cv::FilterEngine . proceed
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::GeneralizedHough::setTemplate (method) cv::GeneralizedHough . setTemplate
+   ignored by renamed table
+
+SKIPPED: cv::Moments::Moments (constructor) cv::Moments (simple) . new
+   can not map type CvMoments (boxed) yet
+
+SKIPPED: cv::Subdiv2D::findNearest (method) cv::Subdiv2D . findNearest
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Subdiv2D::getVertex (method) cv::Subdiv2D . getVertex
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Subdiv2D::edgeOrg (method) cv::Subdiv2D . edgeOrg
+   returning primitive by pointer is not supported (FIXME ?)
+
+SKIPPED: cv::Subdiv2D::edgeDst (method) cv::Subdiv2D . edgeDst
+   returning primitive by pointer is not supported (FIXME ?)
+

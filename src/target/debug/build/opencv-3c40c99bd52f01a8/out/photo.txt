@@ -1,0 +1,20 @@
+FOUND FUNCs: 6
+
+PORTED FUNCs: 3
+
+PORTED: cv::fastNlMeansDenoisingColored (function)
+PORTED: cv::fastNlMeansDenoising (function)
+PORTED: cv::inpaint (function)
+
+
+SKIPPED FUNCs: 3
+
+SKIPPED: cvInpaint (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cv::fastNlMeansDenoisingColoredMulti (function)
+   can not map type Unknown[InputArrayOfArrays] yet
+
+SKIPPED: cv::fastNlMeansDenoisingMulti (function)
+   can not map type Unknown[InputArrayOfArrays] yet
+

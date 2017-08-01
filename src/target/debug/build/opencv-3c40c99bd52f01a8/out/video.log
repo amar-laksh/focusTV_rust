@@ -1,0 +1,843 @@
+parseName: class cv.Mat with set(['cv']) -> fullname:cv::Mat namespace:cv classpath: classname: name:Mat
+register class cv::Mat (['class cv.Mat', '', ['/Ghost'], []])
+parseName: class cv.Algorithm with set(['cv']) -> fullname:cv::Algorithm namespace:cv classpath: classname: name:Algorithm
+register class cv::Algorithm (['class cv.Algorithm', '', ['/Ghost'], []])
+
+
+===== Header: /usr/include/opencv2/video/tracking.hpp =====
+Namespaces: set(['', 'cv'])
+
+--- Incoming ---
+[u'const CV_LKFLOW_PYR_A_READY', u'1', [], [], '']
+parseName: const CV_LKFLOW_PYR_A_READY with ['', 'cv'] -> fullname:CV_LKFLOW_PYR_A_READY namespace: classpath: classname: name:CV_LKFLOW_PYR_A_READY
+
+--- Incoming ---
+[u'const CV_LKFLOW_PYR_B_READY', u'2', [], [], '']
+parseName: const CV_LKFLOW_PYR_B_READY with ['', 'cv'] -> fullname:CV_LKFLOW_PYR_B_READY namespace: classpath: classname: name:CV_LKFLOW_PYR_B_READY
+
+--- Incoming ---
+[u'const CV_LKFLOW_INITIAL_GUESSES', u'4', [], [], '']
+parseName: const CV_LKFLOW_INITIAL_GUESSES with ['', 'cv'] -> fullname:CV_LKFLOW_INITIAL_GUESSES namespace: classpath: classname: name:CV_LKFLOW_INITIAL_GUESSES
+
+--- Incoming ---
+[u'const CV_LKFLOW_GET_MIN_EIGENVALS', u'8', [], [], '']
+parseName: const CV_LKFLOW_GET_MIN_EIGENVALS with ['', 'cv'] -> fullname:CV_LKFLOW_GET_MIN_EIGENVALS namespace: classpath: classname: name:CV_LKFLOW_GET_MIN_EIGENVALS
+
+--- Incoming ---
+[   u'cvCalcOpticalFlowPyrLK',
+    u'void',
+    ['/NW'],
+    [   [u'const CvArr*', u'prev', '', []],
+        [u'const CvArr*', u'curr', '', []],
+        [u'CvArr*', u'prev_pyr', '', []],
+        [u'CvArr*', u'curr_pyr', '', []],
+        [u'const CvPoint2D32f*', u'prev_features', '', []],
+        [u'CvPoint2D32f*', u'curr_features', '', []],
+        [u'int', u'count', '', []],
+        [u'CvSize', u'win_size', '', []],
+        [u'int', u'level', '', []],
+        [u'char*', u'status', '', []],
+        [u'float*', u'track_error', '', []],
+        [u'CvTermCriteria', u'criteria', '', []],
+        [u'int', u'flags', '', []]],
+    '']
+parseName: cvCalcOpticalFlowPyrLK with ['', 'cv'] -> fullname:cvCalcOpticalFlowPyrLK namespace: classpath: classname: name:cvCalcOpticalFlowPyrLK
+Registering an unknown type: CvArr
+Registering an unknown type: CvArr
+Registering an unknown type: CvPoint2D32f
+Registering an unknown type: CvPoint2D32f
+Registering an unknown type: CvSize
+Registering an unknown type: CvTermCriteria
+register (function) cvCalcOpticalFlowPyrLK
+
+--- Incoming ---
+[   u'cvCalcAffineFlowPyrLK',
+    u'void',
+    ['/NW'],
+    [   [u'const CvArr*', u'prev', '', []],
+        [u'const CvArr*', u'curr', '', []],
+        [u'CvArr*', u'prev_pyr', '', []],
+        [u'CvArr*', u'curr_pyr', '', []],
+        [u'const CvPoint2D32f*', u'prev_features', '', []],
+        [u'CvPoint2D32f*', u'curr_features', '', []],
+        [u'float*', u'matrices', '', []],
+        [u'int', u'count', '', []],
+        [u'CvSize', u'win_size', '', []],
+        [u'int', u'level', '', []],
+        [u'char*', u'status', '', []],
+        [u'float*', u'track_error', '', []],
+        [u'CvTermCriteria', u'criteria', '', []],
+        [u'int', u'flags', '', []]],
+    '']
+parseName: cvCalcAffineFlowPyrLK with ['', 'cv'] -> fullname:cvCalcAffineFlowPyrLK namespace: classpath: classname: name:cvCalcAffineFlowPyrLK
+register (function) cvCalcAffineFlowPyrLK
+
+--- Incoming ---
+[   u'cvEstimateRigidTransform',
+    u'int',
+    ['/NW'],
+    [   [u'const CvArr*', u'A', '', []],
+        [u'const CvArr*', u'B', '', []],
+        [u'CvMat*', u'M', '', []],
+        [u'int', u'full_affine', '', []]],
+    '']
+parseName: cvEstimateRigidTransform with ['', 'cv'] -> fullname:cvEstimateRigidTransform namespace: classpath: classname: name:cvEstimateRigidTransform
+Registering an unknown type: CvMat
+register (function) cvEstimateRigidTransform
+
+--- Incoming ---
+[   u'cvCalcOpticalFlowFarneback',
+    u'void',
+    ['/NW'],
+    [   [u'const CvArr*', u'prev', '', []],
+        [u'const CvArr*', u'next', '', []],
+        [u'CvArr*', u'flow', '', []],
+        [u'double', u'pyr_scale', '', []],
+        [u'int', u'levels', '', []],
+        [u'int', u'winsize', '', []],
+        [u'int', u'iterations', '', []],
+        [u'int', u'poly_n', '', []],
+        [u'double', u'poly_sigma', '', []],
+        [u'int', u'flags', '', []]],
+    '']
+parseName: cvCalcOpticalFlowFarneback with ['', 'cv'] -> fullname:cvCalcOpticalFlowFarneback namespace: classpath: classname: name:cvCalcOpticalFlowFarneback
+register (function) cvCalcOpticalFlowFarneback
+
+--- Incoming ---
+[   u'cvUpdateMotionHistory',
+    u'void',
+    ['/NW'],
+    [   [u'const CvArr*', u'silhouette', '', []],
+        [u'CvArr*', u'mhi', '', []],
+        [u'double', u'timestamp', '', []],
+        [u'double', u'duration', '', []]],
+    '']
+parseName: cvUpdateMotionHistory with ['', 'cv'] -> fullname:cvUpdateMotionHistory namespace: classpath: classname: name:cvUpdateMotionHistory
+register (function) cvUpdateMotionHistory
+
+--- Incoming ---
+[   u'cvCalcMotionGradient',
+    u'void',
+    ['/NW'],
+    [   [u'const CvArr*', u'mhi', '', []],
+        [u'CvArr*', u'mask', '', []],
+        [u'CvArr*', u'orientation', '', []],
+        [u'double', u'delta1', '', []],
+        [u'double', u'delta2', '', []],
+        [u'int', u'aperture_size', u'3', []]],
+    '']
+parseName: cvCalcMotionGradient with ['', 'cv'] -> fullname:cvCalcMotionGradient namespace: classpath: classname: name:cvCalcMotionGradient
+register (function) cvCalcMotionGradient
+
+--- Incoming ---
+[   u'cvCalcGlobalOrientation',
+    u'double',
+    ['/NW'],
+    [   [u'const CvArr*', u'orientation', '', []],
+        [u'const CvArr*', u'mask', '', []],
+        [u'const CvArr*', u'mhi', '', []],
+        [u'double', u'timestamp', '', []],
+        [u'double', u'duration', '', []]],
+    '']
+parseName: cvCalcGlobalOrientation with ['', 'cv'] -> fullname:cvCalcGlobalOrientation namespace: classpath: classname: name:cvCalcGlobalOrientation
+register (function) cvCalcGlobalOrientation
+
+--- Incoming ---
+[   u'cvSegmentMotion',
+    u'CvSeq*',
+    ['/NW'],
+    [   [u'const CvArr*', u'mhi', '', []],
+        [u'CvArr*', u'seg_mask', '', []],
+        [u'CvMemStorage*', u'storage', '', []],
+        [u'double', u'timestamp', '', []],
+        [u'double', u'seg_thresh', '', []]],
+    '']
+parseName: cvSegmentMotion with ['', 'cv'] -> fullname:cvSegmentMotion namespace: classpath: classname: name:cvSegmentMotion
+Registering an unknown type: CvSeq
+Registering an unknown type: CvMemStorage
+register (function) cvSegmentMotion
+
+--- Incoming ---
+[   u'cvCamShift',
+    u'int',
+    ['/NW'],
+    [   [u'const CvArr*', u'prob_image', '', []],
+        [u'CvRect', u'window', '', []],
+        [u'CvTermCriteria', u'criteria', '', []],
+        [u'CvConnectedComp*', u'comp', '', []],
+        [u'CvBox2D*', u'box', u'NULL', []]],
+    '']
+parseName: cvCamShift with ['', 'cv'] -> fullname:cvCamShift namespace: classpath: classname: name:cvCamShift
+Registering an unknown type: CvRect
+Registering an unknown type: CvConnectedComp
+Registering an unknown type: CvBox2D
+register (function) cvCamShift
+
+--- Incoming ---
+[   u'cvMeanShift',
+    u'int',
+    ['/NW'],
+    [   [u'const CvArr*', u'prob_image', '', []],
+        [u'CvRect', u'window', '', []],
+        [u'CvTermCriteria', u'criteria', '', []],
+        [u'CvConnectedComp*', u'comp', '', []]],
+    '']
+parseName: cvMeanShift with ['', 'cv'] -> fullname:cvMeanShift namespace: classpath: classname: name:cvMeanShift
+register (function) cvMeanShift
+
+--- Incoming ---
+[u'struct CvKalman', '', [], [], '']
+parseName: struct CvKalman with ['', 'cv'] -> fullname:CvKalman namespace: classpath: classname: name:CvKalman
+register class CvKalman ([u'struct CvKalman', '', [], [], '']) [ignored]
+
+--- Incoming ---
+[   u'cvCreateKalman',
+    u'CvKalman*',
+    ['/NW'],
+    [   [u'int', u'dynam_params', '', []],
+        [u'int', u'measure_params', '', []],
+        [u'int', u'control_params', u'0', []]],
+    '']
+parseName: cvCreateKalman with ['', 'cv'] -> fullname:cvCreateKalman namespace: classpath: classname: name:cvCreateKalman
+register (function) cvCreateKalman
+
+--- Incoming ---
+[   u'cvReleaseKalman',
+    u'void',
+    ['/NW'],
+    [[u'CvKalman**', u'kalman', '', []]],
+    '']
+parseName: cvReleaseKalman with ['', 'cv'] -> fullname:cvReleaseKalman namespace: classpath: classname: name:cvReleaseKalman
+register (function) cvReleaseKalman
+
+--- Incoming ---
+[   u'cvKalmanPredict',
+    u'const CvMat*',
+    ['/NW'],
+    [   [u'CvKalman*', u'kalman', '', []],
+        [u'const CvMat*', u'control', u'NULL', []]],
+    '']
+parseName: cvKalmanPredict with ['', 'cv'] -> fullname:cvKalmanPredict namespace: classpath: classname: name:cvKalmanPredict
+Registering an unknown type: CvMat
+register (function) cvKalmanPredict
+
+--- Incoming ---
+[   u'cvKalmanCorrect',
+    u'const CvMat*',
+    ['/NW'],
+    [   [u'CvKalman*', u'kalman', '', []],
+        [u'const CvMat*', u'measurement', '', []]],
+    '']
+parseName: cvKalmanCorrect with ['', 'cv'] -> fullname:cvKalmanCorrect namespace: classpath: classname: name:cvKalmanCorrect
+register (function) cvKalmanCorrect
+
+--- Incoming ---
+[   u'cv.updateMotionHistory',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'silhouette', '', []],
+        [u'InputOutputArray', u'mhi', '', []],
+        [u'double', u'timestamp', '', []],
+        [u'double', u'duration', '', []]],
+    u'updates motion history image using the current silhouette\n']
+parseName: cv.updateMotionHistory with ['', 'cv'] -> fullname:cv::updateMotionHistory namespace:cv classpath: classname: name:updateMotionHistory
+Registering an unknown type: InputOutputArray
+register (function) updateMotionHistory
+
+--- Incoming ---
+[   u'cv.calcMotionGradient',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'mhi', '', []],
+        [u'OutputArray', u'mask', '', []],
+        [u'OutputArray', u'orientation', '', []],
+        [u'double', u'delta1', '', []],
+        [u'double', u'delta2', '', []],
+        [u'int', u'apertureSize', u'3', []]],
+    u'computes the motion gradient orientation image from the motion history image\n']
+parseName: cv.calcMotionGradient with ['', 'cv'] -> fullname:cv::calcMotionGradient namespace:cv classpath: classname: name:calcMotionGradient
+register (function) calcMotionGradient
+
+--- Incoming ---
+[   u'cv.calcGlobalOrientation',
+    u'double',
+    ['/NW'],
+    [   [u'InputArray', u'orientation', '', []],
+        [u'InputArray', u'mask', '', []],
+        [u'InputArray', u'mhi', '', []],
+        [u'double', u'timestamp', '', []],
+        [u'double', u'duration', '', []]],
+    u'computes the global orientation of the selected motion history image part\n']
+parseName: cv.calcGlobalOrientation with ['', 'cv'] -> fullname:cv::calcGlobalOrientation namespace:cv classpath: classname: name:calcGlobalOrientation
+register (function) calcGlobalOrientation
+
+--- Incoming ---
+[   u'cv.segmentMotion',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'mhi', '', []],
+        [u'OutputArray', u'segmask', '', []],
+        [u'vector<Rect>&', u'boundingRects', '', []],
+        [u'double', u'timestamp', '', []],
+        [u'double', u'segThresh', '', []]],
+    '']
+parseName: cv.segmentMotion with ['', 'cv'] -> fullname:cv::segmentMotion namespace:cv classpath: classname: name:segmentMotion
+register (function) segmentMotion
+
+--- Incoming ---
+[   u'cv.CamShift',
+    u'RotatedRect',
+    ['/NW'],
+    [   [u'InputArray', u'probImage', '', []],
+        [u'Rect&', u'window', '', []],
+        [u'TermCriteria', u'criteria', '', []]],
+    u'updates the object tracking window using CAMSHIFT algorithm\n']
+parseName: cv.CamShift with ['', 'cv'] -> fullname:cv::CamShift namespace:cv classpath: classname: name:CamShift
+Registering an unknown type: RotatedRect
+Registering an unknown type: TermCriteria
+register (function) CamShift
+
+--- Incoming ---
+[   u'cv.meanShift',
+    u'int',
+    ['/NW'],
+    [   [u'InputArray', u'probImage', '', []],
+        [u'Rect&', u'window', '', []],
+        [u'TermCriteria', u'criteria', '', []]],
+    u'updates the object tracking window using meanshift algorithm\n']
+parseName: cv.meanShift with ['', 'cv'] -> fullname:cv::meanShift namespace:cv classpath: classname: name:meanShift
+register (function) meanShift
+
+--- Incoming ---
+[   u'class cv.KalmanFilter',
+    '',
+    [],
+    [],
+    u'Kalman filter.\n\nThe class implements standard Kalman filter http://en.wikipedia.org/wiki/Kalman_filter.\nHowever, you can modify KalmanFilter::transitionMatrix, KalmanFilter::controlMatrix and\nKalmanFilter::measurementMatrix to get the extended Kalman filter functionality.\n']
+parseName: class cv.KalmanFilter with ['', 'cv'] -> fullname:cv::KalmanFilter namespace:cv classpath: classname: name:KalmanFilter
+register class cv::KalmanFilter ([u'class cv.KalmanFilter', '', [], [], u'Kalman filter.\n\nThe class implements standard Kalman filter http://en.wikipedia.org/wiki/Kalman_filter.\nHowever, you can modify KalmanFilter::transitionMatrix, KalmanFilter::controlMatrix and\nKalmanFilter::measurementMatrix to get the extended Kalman filter functionality.\n'])
+
+--- Incoming ---
+[   u'cv.KalmanFilter.KalmanFilter',
+    u'',
+    ['/NW'],
+    [],
+    u'the default constructor\n']
+parseName: cv.KalmanFilter.KalmanFilter with ['', 'cv'] -> fullname:cv::KalmanFilter::KalmanFilter namespace:cv classpath:KalmanFilter classname:KalmanFilter name:KalmanFilter
+register (constructor) new in cv::KalmanFilter
+
+--- Incoming ---
+[   u'cv.KalmanFilter.KalmanFilter',
+    u'',
+    ['/NW'],
+    [   [u'int', u'dynamParams', '', []],
+        [u'int', u'measureParams', '', []],
+        [u'int', u'controlParams', u'0', []],
+        [u'int', u'type', u'CV_32F', []]],
+    u'the full constructor taking the dimensionality of the state, of the measurement and of the control vector\n']
+parseName: cv.KalmanFilter.KalmanFilter with ['', 'cv'] -> fullname:cv::KalmanFilter::KalmanFilter namespace:cv classpath:KalmanFilter classname:KalmanFilter name:KalmanFilter
+register (constructor) new in cv::KalmanFilter
+
+--- Incoming ---
+[   u'cv.KalmanFilter.init',
+    u'void',
+    ['/NW'],
+    [   [u'int', u'dynamParams', '', []],
+        [u'int', u'measureParams', '', []],
+        [u'int', u'controlParams', u'0', []],
+        [u'int', u'type', u'CV_32F', []]],
+    u're-initializes Kalman filter. The previous content is destroyed.\n']
+parseName: cv.KalmanFilter.init with ['', 'cv'] -> fullname:cv::KalmanFilter::init namespace:cv classpath:KalmanFilter classname:KalmanFilter name:init
+register (method) init in cv::KalmanFilter
+
+--- Incoming ---
+[   u'cv.KalmanFilter.predict',
+    u'const Mat&',
+    ['/NW'],
+    [[u'const Mat&', u'control', u'Mat()', []]],
+    u'computes predicted state\n']
+parseName: cv.KalmanFilter.predict with ['', 'cv'] -> fullname:cv::KalmanFilter::predict namespace:cv classpath:KalmanFilter classname:KalmanFilter name:predict
+register (method) predict in cv::KalmanFilter
+
+--- Incoming ---
+[   u'cv.KalmanFilter.correct',
+    u'const Mat&',
+    ['/NW'],
+    [[u'const Mat&', u'measurement', '', []]],
+    u'updates the predicted state from the measurement\n']
+parseName: cv.KalmanFilter.correct with ['', 'cv'] -> fullname:cv::KalmanFilter::correct namespace:cv classpath:KalmanFilter classname:KalmanFilter name:correct
+register (method) correct in cv::KalmanFilter
+
+--- Incoming ---
+[u'const cv.OPTFLOW_USE_INITIAL_FLOW', u'CV_LKFLOW_INITIAL_GUESSES', [], []]
+parseName: const cv.OPTFLOW_USE_INITIAL_FLOW with ['', 'cv'] -> fullname:cv::OPTFLOW_USE_INITIAL_FLOW namespace:cv classpath: classname: name:OPTFLOW_USE_INITIAL_FLOW
+
+--- Incoming ---
+[   u'const cv.OPTFLOW_LK_GET_MIN_EIGENVALS',
+    u'CV_LKFLOW_GET_MIN_EIGENVALS',
+    [],
+    []]
+parseName: const cv.OPTFLOW_LK_GET_MIN_EIGENVALS with ['', 'cv'] -> fullname:cv::OPTFLOW_LK_GET_MIN_EIGENVALS namespace:cv classpath: classname: name:OPTFLOW_LK_GET_MIN_EIGENVALS
+
+--- Incoming ---
+[u'const cv.OPTFLOW_FARNEBACK_GAUSSIAN', u'256', [], []]
+parseName: const cv.OPTFLOW_FARNEBACK_GAUSSIAN with ['', 'cv'] -> fullname:cv::OPTFLOW_FARNEBACK_GAUSSIAN namespace:cv classpath: classname: name:OPTFLOW_FARNEBACK_GAUSSIAN
+
+--- Incoming ---
+[   u'cv.buildOpticalFlowPyramid',
+    u'int',
+    ['/NW'],
+    [   [u'InputArray', u'img', '', []],
+        [u'OutputArrayOfArrays', u'pyramid', '', []],
+        [u'Size', u'winSize', '', []],
+        [u'int', u'maxLevel', '', []],
+        [u'bool', u'withDerivatives', u'true', []],
+        [u'int', u'pyrBorder', u'BORDER_REFLECT_101', []],
+        [u'int', u'derivBorder', u'BORDER_CONSTANT', []],
+        [u'bool', u'tryReuseInputImage', u'true', []]],
+    u'constructs a pyramid which can be used as input for calcOpticalFlowPyrLK\n']
+parseName: cv.buildOpticalFlowPyramid with ['', 'cv'] -> fullname:cv::buildOpticalFlowPyramid namespace:cv classpath: classname: name:buildOpticalFlowPyramid
+Registering an unknown type: OutputArrayOfArrays
+register (function) buildOpticalFlowPyramid
+
+--- Incoming ---
+[   u'cv.calcOpticalFlowPyrLK',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'prevImg', '', []],
+        [u'InputArray', u'nextImg', '', []],
+        [u'InputArray', u'prevPts', '', []],
+        [u'InputOutputArray', u'nextPts', '', []],
+        [u'OutputArray', u'status', '', []],
+        [u'OutputArray', u'err', '', []],
+        [u'Size', u'winSize', u'Size(21,21)', []],
+        [u'int', u'maxLevel', u'3', []],
+        [   u'TermCriteria',
+            u'criteria',
+            u'TermCriteria(TermCriteria::COUNT+TermCriteria::EPS, 30, 0.01)',
+            []],
+        [u'int', u'flags', u'0', []],
+        [u'double', u'minEigThreshold', u'1e-4', []]],
+    u'computes sparse optical flow using multi-scale Lucas-Kanade algorithm\n']
+parseName: cv.calcOpticalFlowPyrLK with ['', 'cv'] -> fullname:cv::calcOpticalFlowPyrLK namespace:cv classpath: classname: name:calcOpticalFlowPyrLK
+register (function) calcOpticalFlowPyrLK
+
+--- Incoming ---
+[   u'cv.calcOpticalFlowFarneback',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'prev', '', []],
+        [u'InputArray', u'next', '', []],
+        [u'InputOutputArray', u'flow', '', []],
+        [u'double', u'pyr_scale', '', []],
+        [u'int', u'levels', '', []],
+        [u'int', u'winsize', '', []],
+        [u'int', u'iterations', '', []],
+        [u'int', u'poly_n', '', []],
+        [u'double', u'poly_sigma', '', []],
+        [u'int', u'flags', '', []]],
+    u'computes dense optical flow using Farneback algorithm\n']
+parseName: cv.calcOpticalFlowFarneback with ['', 'cv'] -> fullname:cv::calcOpticalFlowFarneback namespace:cv classpath: classname: name:calcOpticalFlowFarneback
+register (function) calcOpticalFlowFarneback
+
+--- Incoming ---
+[   u'cv.estimateRigidTransform',
+    u'Mat',
+    ['/NW'],
+    [   [u'InputArray', u'src', '', []],
+        [u'InputArray', u'dst', '', []],
+        [u'bool', u'fullAffine', '', []]],
+    u'estimates the best-fit Euqcidean, similarity, affine or perspective transformation\n']
+parseName: cv.estimateRigidTransform with ['', 'cv'] -> fullname:cv::estimateRigidTransform namespace:cv classpath: classname: name:estimateRigidTransform
+register (function) estimateRigidTransform
+
+--- Incoming ---
+[   u'cv.calcOpticalFlowSF',
+    u'void',
+    ['/NW'],
+    [   [u'Mat&', u'from', '', []],
+        [u'Mat&', u'to', '', []],
+        [u'Mat&', u'flow', '', []],
+        [u'int', u'layers', '', []],
+        [u'int', u'averaging_block_size', '', []],
+        [u'int', u'max_flow', '', []]],
+    u'computes dense optical flow using Simple Flow algorithm\n']
+parseName: cv.calcOpticalFlowSF with ['', 'cv'] -> fullname:cv::calcOpticalFlowSF namespace:cv classpath: classname: name:calcOpticalFlowSF
+register (function) calcOpticalFlowSF
+
+--- Incoming ---
+[   u'cv.calcOpticalFlowSF',
+    u'void',
+    ['/NW'],
+    [   [u'Mat&', u'from', '', []],
+        [u'Mat&', u'to', '', []],
+        [u'Mat&', u'flow', '', []],
+        [u'int', u'layers', '', []],
+        [u'int', u'averaging_block_size', '', []],
+        [u'int', u'max_flow', '', []],
+        [u'double', u'sigma_dist', '', []],
+        [u'double', u'sigma_color', '', []],
+        [u'int', u'postprocess_window', '', []],
+        [u'double', u'sigma_dist_fix', '', []],
+        [u'double', u'sigma_color_fix', '', []],
+        [u'double', u'occ_thr', '', []],
+        [u'int', u'upscale_averaging_radius', '', []],
+        [u'double', u'upscale_sigma_dist', '', []],
+        [u'double', u'upscale_sigma_color', '', []],
+        [u'double', u'speed_up_thr', '', []]],
+    '']
+parseName: cv.calcOpticalFlowSF with ['', 'cv'] -> fullname:cv::calcOpticalFlowSF namespace:cv classpath: classname: name:calcOpticalFlowSF
+register (function) calcOpticalFlowSF
+
+--- Incoming ---
+[u'class cv.DenseOpticalFlow', ': cv::Algorithm', [], [], '']
+parseName: class cv.DenseOpticalFlow with ['', 'cv'] -> fullname:cv::DenseOpticalFlow namespace:cv classpath: classname: name:DenseOpticalFlow
+register class cv::DenseOpticalFlow ([u'class cv.DenseOpticalFlow', ': cv::Algorithm', [], [], '']) impl:cv::Algorithm
+
+--- Incoming ---
+[   u'cv.DenseOpticalFlow.calc',
+    u'void',
+    ['/NW', '/A'],
+    [   [u'InputArray', u'I0', '', []],
+        [u'InputArray', u'I1', '', []],
+        [u'InputOutputArray', u'flow', '', []]],
+    '']
+parseName: cv.DenseOpticalFlow.calc with ['', 'cv'] -> fullname:cv::DenseOpticalFlow::calc namespace:cv classpath:DenseOpticalFlow classname:DenseOpticalFlow name:calc
+
+--- Incoming ---
+[u'cv.DenseOpticalFlow.collectGarbage', u'void', ['/NW', '/A'], [], '']
+parseName: cv.DenseOpticalFlow.collectGarbage with ['', 'cv'] -> fullname:cv::DenseOpticalFlow::collectGarbage namespace:cv classpath:DenseOpticalFlow classname:DenseOpticalFlow name:collectGarbage
+
+--- Incoming ---
+[u'cv.createOptFlow_DualTVL1', u'Ptr<DenseOpticalFlow>', ['/NW'], [], '']
+parseName: cv.createOptFlow_DualTVL1 with ['', 'cv'] -> fullname:cv::createOptFlow_DualTVL1 namespace:cv classpath: classname: name:createOptFlow_DualTVL1
+register (function) createOptFlow_DualTVL1
+
+
+===== Header: /usr/include/opencv2/video/video.hpp =====
+Namespaces: set(['', 'cv'])
+
+--- Incoming ---
+[u'cv.initModule_video', u'bool', ['/NW'], [], '']
+parseName: cv.initModule_video with ['', 'cv'] -> fullname:cv::initModule_video namespace:cv classpath: classname: name:initModule_video
+register (function) initModule_video
+
+
+===== Header: /usr/include/opencv2/video/background_segm.hpp =====
+Namespaces: set(['', 'cv'])
+
+--- Incoming ---
+[   u'class cv.BackgroundSubtractor',
+    ': cv::Algorithm',
+    [],
+    [],
+    u'The Base Class for Background/Foreground Segmentation\n\nThe class is only used to define the common interface for\nthe whole family of background/foreground segmentation algorithms.\n']
+parseName: class cv.BackgroundSubtractor with ['', 'cv'] -> fullname:cv::BackgroundSubtractor namespace:cv classpath: classname: name:BackgroundSubtractor
+register class cv::BackgroundSubtractor ([u'class cv.BackgroundSubtractor', ': cv::Algorithm', [], [], u'The Base Class for Background/Foreground Segmentation\n\nThe class is only used to define the common interface for\nthe whole family of background/foreground segmentation algorithms.\n']) impl:cv::Algorithm
+
+--- Incoming ---
+[   u'cv.BackgroundSubtractor.~BackgroundSubtractor',
+    u'',
+    ['/NW'],
+    [],
+    u'the virtual destructor\n']
+parseName: cv.BackgroundSubtractor.~BackgroundSubtractor with ['', 'cv'] -> fullname:cv::BackgroundSubtractor::~BackgroundSubtractor namespace:cv classpath:BackgroundSubtractor classname:BackgroundSubtractor name:~BackgroundSubtractor
+ignore destructor (method) ~BackgroundSubtractor in cv::BackgroundSubtractor
+
+--- Incoming ---
+[   u'cv.BackgroundSubtractor.operator ()',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'image', '', []],
+        [u'OutputArray', u'fgmask', '', []],
+        [u'double', u'learningRate', u'0', []]],
+    u'the update operator that takes the next video frame and returns the current foreground mask as 8-bit binary image.\n']
+parseName: cv.BackgroundSubtractor.operator () with ['', 'cv'] -> fullname:cv::BackgroundSubtractor::operator () namespace:cv classpath:BackgroundSubtractor classname:BackgroundSubtractor name:operator ()
+ignore (method) operator () in cv::BackgroundSubtractor
+
+--- Incoming ---
+[   u'cv.BackgroundSubtractor.getBackgroundImage',
+    u'void',
+    ['/NW', '/C'],
+    [[u'OutputArray', u'backgroundImage', '', []]],
+    u'computes a background image\n']
+parseName: cv.BackgroundSubtractor.getBackgroundImage with ['', 'cv'] -> fullname:cv::BackgroundSubtractor::getBackgroundImage namespace:cv classpath:BackgroundSubtractor classname:BackgroundSubtractor name:getBackgroundImage
+register (method) getBackgroundImage in cv::BackgroundSubtractor
+
+--- Incoming ---
+[   u'class cv.BackgroundSubtractorMOG',
+    u': cv::BackgroundSubtractor',
+    [],
+    [],
+    u'Gaussian Mixture-based Backbround/Foreground Segmentation Algorithm\n\nThe class implements the following algorithm:\n"An improved adaptive background mixture model for real-time tracking with shadow detection"\nP. KadewTraKuPong and R. Bowden,\nProc. 2nd European Workshp on Advanced Video-Based Surveillance Systems, 2001."\nhttp://personal.ee.surrey.ac.uk/Personal/R.Bowden/publications/avbs01/avbs01.pdf\n\n']
+parseName: class cv.BackgroundSubtractorMOG with ['', 'cv'] -> fullname:cv::BackgroundSubtractorMOG namespace:cv classpath: classname: name:BackgroundSubtractorMOG
+register class cv::BackgroundSubtractorMOG ([u'class cv.BackgroundSubtractorMOG', u': cv::BackgroundSubtractor', [], [], u'Gaussian Mixture-based Backbround/Foreground Segmentation Algorithm\n\nThe class implements the following algorithm:\n"An improved adaptive background mixture model for real-time tracking with shadow detection"\nP. KadewTraKuPong and R. Bowden,\nProc. 2nd European Workshp on Advanced Video-Based Surveillance Systems, 2001."\nhttp://personal.ee.surrey.ac.uk/Personal/R.Bowden/publications/avbs01/avbs01.pdf\n\n']) impl:cv::BackgroundSubtractor
+
+--- Incoming ---
+[   u'cv.BackgroundSubtractorMOG.BackgroundSubtractorMOG',
+    u'',
+    ['/NW'],
+    [],
+    u'the default constructor\n']
+parseName: cv.BackgroundSubtractorMOG.BackgroundSubtractorMOG with ['', 'cv'] -> fullname:cv::BackgroundSubtractorMOG::BackgroundSubtractorMOG namespace:cv classpath:BackgroundSubtractorMOG classname:BackgroundSubtractorMOG name:BackgroundSubtractorMOG
+register (constructor) new in cv::BackgroundSubtractorMOG
+
+--- Incoming ---
+[   u'cv.BackgroundSubtractorMOG.BackgroundSubtractorMOG',
+    u'',
+    ['/NW'],
+    [   [u'int', u'history', '', []],
+        [u'int', u'nmixtures', '', []],
+        [u'double', u'backgroundRatio', '', []],
+        [u'double', u'noiseSigma', u'0', []]],
+    u'the full constructor that takes the length of the history, the number of gaussian mixtures, the background ratio parameter and the noise strength\n']
+parseName: cv.BackgroundSubtractorMOG.BackgroundSubtractorMOG with ['', 'cv'] -> fullname:cv::BackgroundSubtractorMOG::BackgroundSubtractorMOG namespace:cv classpath:BackgroundSubtractorMOG classname:BackgroundSubtractorMOG name:BackgroundSubtractorMOG
+register (constructor) new in cv::BackgroundSubtractorMOG
+
+--- Incoming ---
+[   u'cv.BackgroundSubtractorMOG.~BackgroundSubtractorMOG',
+    u'',
+    ['/NW'],
+    [],
+    u'the destructor\n']
+parseName: cv.BackgroundSubtractorMOG.~BackgroundSubtractorMOG with ['', 'cv'] -> fullname:cv::BackgroundSubtractorMOG::~BackgroundSubtractorMOG namespace:cv classpath:BackgroundSubtractorMOG classname:BackgroundSubtractorMOG name:~BackgroundSubtractorMOG
+ignore destructor (method) ~BackgroundSubtractorMOG in cv::BackgroundSubtractorMOG
+
+--- Incoming ---
+[   u'cv.BackgroundSubtractorMOG.operator ()',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'image', '', []],
+        [u'OutputArray', u'fgmask', '', []],
+        [u'double', u'learningRate', u'0', []]],
+    u'the update operator\n']
+parseName: cv.BackgroundSubtractorMOG.operator () with ['', 'cv'] -> fullname:cv::BackgroundSubtractorMOG::operator () namespace:cv classpath:BackgroundSubtractorMOG classname:BackgroundSubtractorMOG name:operator ()
+ignore (method) operator () in cv::BackgroundSubtractorMOG
+
+--- Incoming ---
+[   u'cv.BackgroundSubtractorMOG.initialize',
+    u'void',
+    ['/NW'],
+    [[u'Size', u'frameSize', '', []], [u'int', u'frameType', '', []]],
+    u're-initiaization method\n']
+parseName: cv.BackgroundSubtractorMOG.initialize with ['', 'cv'] -> fullname:cv::BackgroundSubtractorMOG::initialize namespace:cv classpath:BackgroundSubtractorMOG classname:BackgroundSubtractorMOG name:initialize
+register (method) initialize in cv::BackgroundSubtractorMOG
+
+--- Incoming ---
+[u'cv.BackgroundSubtractorMOG.info', u'AlgorithmInfo*', ['/NW', '/C'], [], '']
+parseName: cv.BackgroundSubtractorMOG.info with ['', 'cv'] -> fullname:cv::BackgroundSubtractorMOG::info namespace:cv classpath:BackgroundSubtractorMOG classname:BackgroundSubtractorMOG name:info
+Registering an unknown type: AlgorithmInfo
+register (method) info in cv::BackgroundSubtractorMOG
+
+--- Incoming ---
+[   u'class cv.BackgroundSubtractorMOG2',
+    u': cv::BackgroundSubtractor',
+    [],
+    [],
+    u'The class implements the following algorithm:\n"Improved adaptive Gausian mixture model for background subtraction"\nZ.Zivkovic\nInternational Conference Pattern Recognition, UK, August, 2004.\nhttp://www.zoranz.net/Publications/zivkovic2004ICPR.pdf\n']
+parseName: class cv.BackgroundSubtractorMOG2 with ['', 'cv'] -> fullname:cv::BackgroundSubtractorMOG2 namespace:cv classpath: classname: name:BackgroundSubtractorMOG2
+register class cv::BackgroundSubtractorMOG2 ([u'class cv.BackgroundSubtractorMOG2', u': cv::BackgroundSubtractor', [], [], u'The class implements the following algorithm:\n"Improved adaptive Gausian mixture model for background subtraction"\nZ.Zivkovic\nInternational Conference Pattern Recognition, UK, August, 2004.\nhttp://www.zoranz.net/Publications/zivkovic2004ICPR.pdf\n']) impl:cv::BackgroundSubtractor
+
+--- Incoming ---
+[   u'cv.BackgroundSubtractorMOG2.BackgroundSubtractorMOG2',
+    u'',
+    ['/NW'],
+    [],
+    u'the default constructor\n']
+parseName: cv.BackgroundSubtractorMOG2.BackgroundSubtractorMOG2 with ['', 'cv'] -> fullname:cv::BackgroundSubtractorMOG2::BackgroundSubtractorMOG2 namespace:cv classpath:BackgroundSubtractorMOG2 classname:BackgroundSubtractorMOG2 name:BackgroundSubtractorMOG2
+register (constructor) new in cv::BackgroundSubtractorMOG2
+
+--- Incoming ---
+[   u'cv.BackgroundSubtractorMOG2.BackgroundSubtractorMOG2',
+    u'',
+    ['/NW'],
+    [   [u'int', u'history', '', []],
+        [u'float', u'varThreshold', '', []],
+        [u'bool', u'bShadowDetection', u'true', []]],
+    u'the full constructor that takes the length of the history, the number of gaussian mixtures, the background ratio parameter and the noise strength\n']
+parseName: cv.BackgroundSubtractorMOG2.BackgroundSubtractorMOG2 with ['', 'cv'] -> fullname:cv::BackgroundSubtractorMOG2::BackgroundSubtractorMOG2 namespace:cv classpath:BackgroundSubtractorMOG2 classname:BackgroundSubtractorMOG2 name:BackgroundSubtractorMOG2
+register (constructor) new in cv::BackgroundSubtractorMOG2
+
+--- Incoming ---
+[   u'cv.BackgroundSubtractorMOG2.~BackgroundSubtractorMOG2',
+    u'',
+    ['/NW'],
+    [],
+    u'the destructor\n']
+parseName: cv.BackgroundSubtractorMOG2.~BackgroundSubtractorMOG2 with ['', 'cv'] -> fullname:cv::BackgroundSubtractorMOG2::~BackgroundSubtractorMOG2 namespace:cv classpath:BackgroundSubtractorMOG2 classname:BackgroundSubtractorMOG2 name:~BackgroundSubtractorMOG2
+ignore destructor (method) ~BackgroundSubtractorMOG2 in cv::BackgroundSubtractorMOG2
+
+--- Incoming ---
+[   u'cv.BackgroundSubtractorMOG2.operator ()',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'image', '', []],
+        [u'OutputArray', u'fgmask', '', []],
+        [u'double', u'learningRate', u'-1', []]],
+    u'the update operator\n']
+parseName: cv.BackgroundSubtractorMOG2.operator () with ['', 'cv'] -> fullname:cv::BackgroundSubtractorMOG2::operator () namespace:cv classpath:BackgroundSubtractorMOG2 classname:BackgroundSubtractorMOG2 name:operator ()
+ignore (method) operator () in cv::BackgroundSubtractorMOG2
+
+--- Incoming ---
+[   u'cv.BackgroundSubtractorMOG2.getBackgroundImage',
+    u'void',
+    ['/NW', '/C'],
+    [[u'OutputArray', u'backgroundImage', '', []]],
+    u'computes a background image which are the mean of all background gaussians\n']
+parseName: cv.BackgroundSubtractorMOG2.getBackgroundImage with ['', 'cv'] -> fullname:cv::BackgroundSubtractorMOG2::getBackgroundImage namespace:cv classpath:BackgroundSubtractorMOG2 classname:BackgroundSubtractorMOG2 name:getBackgroundImage
+register (method) getBackgroundImage in cv::BackgroundSubtractorMOG2
+
+--- Incoming ---
+[   u'cv.BackgroundSubtractorMOG2.initialize',
+    u'void',
+    ['/NW'],
+    [[u'Size', u'frameSize', '', []], [u'int', u'frameType', '', []]],
+    u're-initiaization method\n']
+parseName: cv.BackgroundSubtractorMOG2.initialize with ['', 'cv'] -> fullname:cv::BackgroundSubtractorMOG2::initialize namespace:cv classpath:BackgroundSubtractorMOG2 classname:BackgroundSubtractorMOG2 name:initialize
+register (method) initialize in cv::BackgroundSubtractorMOG2
+
+--- Incoming ---
+[u'cv.BackgroundSubtractorMOG2.info', u'AlgorithmInfo*', ['/NW', '/C'], [], '']
+parseName: cv.BackgroundSubtractorMOG2.info with ['', 'cv'] -> fullname:cv::BackgroundSubtractorMOG2::info namespace:cv classpath:BackgroundSubtractorMOG2 classname:BackgroundSubtractorMOG2 name:info
+register (method) info in cv::BackgroundSubtractorMOG2
+
+--- Incoming ---
+[   u'class cv.BackgroundSubtractorGMG',
+    u': cv::BackgroundSubtractor',
+    [],
+    [],
+    '']
+parseName: class cv.BackgroundSubtractorGMG with ['', 'cv'] -> fullname:cv::BackgroundSubtractorGMG namespace:cv classpath: classname: name:BackgroundSubtractorGMG
+register class cv::BackgroundSubtractorGMG ([u'class cv.BackgroundSubtractorGMG', u': cv::BackgroundSubtractor', [], [], '']) impl:cv::BackgroundSubtractor
+
+--- Incoming ---
+[u'cv.BackgroundSubtractorGMG.BackgroundSubtractorGMG', u'', ['/NW'], [], '']
+parseName: cv.BackgroundSubtractorGMG.BackgroundSubtractorGMG with ['', 'cv'] -> fullname:cv::BackgroundSubtractorGMG::BackgroundSubtractorGMG namespace:cv classpath:BackgroundSubtractorGMG classname:BackgroundSubtractorGMG name:BackgroundSubtractorGMG
+register (constructor) new in cv::BackgroundSubtractorGMG
+
+--- Incoming ---
+[u'cv.BackgroundSubtractorGMG.~BackgroundSubtractorGMG', u'', ['/NW'], [], '']
+parseName: cv.BackgroundSubtractorGMG.~BackgroundSubtractorGMG with ['', 'cv'] -> fullname:cv::BackgroundSubtractorGMG::~BackgroundSubtractorGMG namespace:cv classpath:BackgroundSubtractorGMG classname:BackgroundSubtractorGMG name:~BackgroundSubtractorGMG
+ignore destructor (method) ~BackgroundSubtractorGMG in cv::BackgroundSubtractorGMG
+
+--- Incoming ---
+[u'cv.BackgroundSubtractorGMG.info', u'AlgorithmInfo*', ['/NW', '/C'], [], '']
+parseName: cv.BackgroundSubtractorGMG.info with ['', 'cv'] -> fullname:cv::BackgroundSubtractorGMG::info namespace:cv classpath:BackgroundSubtractorGMG classname:BackgroundSubtractorGMG name:info
+register (method) info in cv::BackgroundSubtractorGMG
+
+--- Incoming ---
+[   u'cv.BackgroundSubtractorGMG.initialize',
+    u'void',
+    ['/NW'],
+    [   [u'cv::Size', u'frameSize', '', []],
+        [u'double', u'min', '', []],
+        [u'double', u'max', '', []]],
+    '']
+parseName: cv.BackgroundSubtractorGMG.initialize with ['', 'cv'] -> fullname:cv::BackgroundSubtractorGMG::initialize namespace:cv classpath:BackgroundSubtractorGMG classname:BackgroundSubtractorGMG name:initialize
+Registering an unknown type: cv::Size
+register (method) initialize in cv::BackgroundSubtractorGMG
+
+--- Incoming ---
+[   u'cv.BackgroundSubtractorGMG.operator ()',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'image', '', []],
+        [u'OutputArray', u'fgmask', '', []],
+        [u'double', u'learningRate', u'-1.0', []]],
+    '']
+parseName: cv.BackgroundSubtractorGMG.operator () with ['', 'cv'] -> fullname:cv::BackgroundSubtractorGMG::operator () namespace:cv classpath:BackgroundSubtractorGMG classname:BackgroundSubtractorGMG name:operator ()
+ignore (method) operator () in cv::BackgroundSubtractorGMG
+
+--- Incoming ---
+[u'cv.BackgroundSubtractorGMG.release', u'void', ['/NW'], [], '']
+parseName: cv.BackgroundSubtractorGMG.release with ['', 'cv'] -> fullname:cv::BackgroundSubtractorGMG::release namespace:cv classpath:BackgroundSubtractorGMG classname:BackgroundSubtractorGMG name:release
+register (method) release in cv::BackgroundSubtractorGMG
+
+
+===== Generating... =====
+Generating func cvCalcAffineFlowPyrLK (function)
+  ignored: can not map type Unknown[CvArr] yet
+Generating func cvCalcGlobalOrientation (function)
+  ignored: can not map type Unknown[CvArr] yet
+Generating func cvCalcMotionGradient (function)
+  ignored: can not map type Unknown[CvArr] yet
+Generating func cvCalcOpticalFlowFarneback (function)
+  ignored: can not map type Unknown[CvArr] yet
+Generating func cvCalcOpticalFlowPyrLK (function)
+  ignored: can not map type Unknown[CvArr] yet
+Generating func cvCamShift (function)
+  ignored: can not map type Unknown[CvArr] yet
+Generating func cvCreateKalman (function)
+  ignored: return type class RawPtr[CvKalman (boxed)] is ignored
+Generating func cvEstimateRigidTransform (function)
+  ignored: can not map type Unknown[CvArr] yet
+Generating func cvKalmanCorrect (function)
+  ignored: return type class RawPtr[Unknown[CvMat]] is ignored
+Generating func cvKalmanPredict (function)
+  ignored: return type class RawPtr[Unknown[CvMat]] is ignored
+Generating func cvMeanShift (function)
+  ignored: can not map type Unknown[CvArr] yet
+Generating func cvReleaseKalman (function)
+  ignored: can not map type RawPtr[CvKalman (boxed)] yet
+Generating func cvSegmentMotion (function)
+  ignored: return type class RawPtr[Unknown[CvSeq]] is ignored
+Generating func cvUpdateMotionHistory (function)
+  ignored: can not map type Unknown[CvArr] yet
+Generating func cv::CamShift (function)
+  ignored: return type class Unknown[RotatedRect] is ignored
+Generating func cv::buildOpticalFlowPyramid (function)
+  ignored: can not map type Unknown[OutputArrayOfArrays] yet
+Generating func cv::calcGlobalOrientation (function)
+Generating func cv::calcMotionGradient (function)
+Generating func cv::calcOpticalFlowFarneback (function)
+  ignored: can not map type Unknown[InputOutputArray] yet
+Generating func cv::calcOpticalFlowPyrLK (function)
+  ignored: can not map type Unknown[InputOutputArray] yet
+Generating func cv::calcOpticalFlowSF (function)
+Generating func cv::calcOpticalFlowSF (function)
+Generating func cv::createOptFlow_DualTVL1 (function)
+  ignored: return type class SmartPtr[cv::DenseOpticalFlow (boxed)] is ignored
+Generating func cv::estimateRigidTransform (function)
+Generating func cv::initModule_video (function)
+Generating func cv::meanShift (function)
+  ignored: can not map type Unknown[TermCriteria] yet
+Generating func cv::segmentMotion (function)
+Generating func cv::updateMotionHistory (function)
+  ignored: can not map type Unknown[InputOutputArray] yet
+Generating impl for trait cv::BackgroundSubtractor
+Generating func cv::BackgroundSubtractor::getBackgroundImage (method) cv::BackgroundSubtractor . getBackgroundImage
+Generating box for struct cv::BackgroundSubtractorGMG
+Generating box for cv::BackgroundSubtractorGMG
+Generating impl for struct cv::BackgroundSubtractorGMG
+Generating func cv::BackgroundSubtractorGMG::BackgroundSubtractorGMG (constructor) cv::BackgroundSubtractorGMG . new
+Generating func cv::BackgroundSubtractorGMG::info (method) cv::BackgroundSubtractorGMG . info
+  ignored: return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+Generating func cv::BackgroundSubtractorGMG::initialize (method) cv::BackgroundSubtractorGMG . initialize
+  ignored: can not map type Unknown[cv::Size] yet
+Generating func cv::BackgroundSubtractorGMG::release (method) cv::BackgroundSubtractorGMG . release
+Generating box for struct cv::BackgroundSubtractorMOG
+Generating box for cv::BackgroundSubtractorMOG
+Generating impl for struct cv::BackgroundSubtractorMOG
+Generating func cv::BackgroundSubtractorMOG::BackgroundSubtractorMOG (constructor) cv::BackgroundSubtractorMOG . new
+Generating func cv::BackgroundSubtractorMOG::BackgroundSubtractorMOG (constructor) cv::BackgroundSubtractorMOG . new
+Generating func cv::BackgroundSubtractorMOG::initialize (method) cv::BackgroundSubtractorMOG . initialize
+Generating func cv::BackgroundSubtractorMOG::info (method) cv::BackgroundSubtractorMOG . info
+  ignored: return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+Generating box for struct cv::BackgroundSubtractorMOG2
+Generating box for cv::BackgroundSubtractorMOG2
+Generating impl for struct cv::BackgroundSubtractorMOG2
+Generating func cv::BackgroundSubtractorMOG2::BackgroundSubtractorMOG2 (constructor) cv::BackgroundSubtractorMOG2 . new
+Generating func cv::BackgroundSubtractorMOG2::BackgroundSubtractorMOG2 (constructor) cv::BackgroundSubtractorMOG2 . new
+Generating func cv::BackgroundSubtractorMOG2::getBackgroundImage (method) cv::BackgroundSubtractorMOG2 . getBackgroundImage
+Generating func cv::BackgroundSubtractorMOG2::initialize (method) cv::BackgroundSubtractorMOG2 . initialize
+Generating func cv::BackgroundSubtractorMOG2::info (method) cv::BackgroundSubtractorMOG2 . info
+  ignored: return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+Generating impl for trait cv::DenseOpticalFlow
+Generating box for struct cv::KalmanFilter
+Generating box for cv::KalmanFilter
+Generating impl for struct cv::KalmanFilter
+Generating func cv::KalmanFilter::KalmanFilter (constructor) cv::KalmanFilter . new
+Generating func cv::KalmanFilter::KalmanFilter (constructor) cv::KalmanFilter . new
+Generating func cv::KalmanFilter::init (method) cv::KalmanFilter . init
+Generating func cv::KalmanFilter::predict (method) cv::KalmanFilter . predict
+Generating func cv::KalmanFilter::correct (method) cv::KalmanFilter . correct

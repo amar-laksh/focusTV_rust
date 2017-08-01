@@ -1,0 +1,1902 @@
+parseName: class cv.Mat with set(['cv']) -> fullname:cv::Mat namespace:cv classpath: classname: name:Mat
+register class cv::Mat (['class cv.Mat', '', ['/Ghost'], []])
+parseName: class cv.Algorithm with set(['cv']) -> fullname:cv::Algorithm namespace:cv classpath: classname: name:Algorithm
+register class cv::Algorithm (['class cv.Algorithm', '', ['/Ghost'], []])
+
+
+===== Header: /usr/include/opencv2/objdetect/objdetect.hpp =====
+Namespaces: set(['', u'cv.linemod', 'cv'])
+
+--- Incoming ---
+[u'const CV_HAAR_MAGIC_VAL', u'0x42500000', [], [], '']
+parseName: const CV_HAAR_MAGIC_VAL with ['', u'cv::linemod', 'cv'] -> fullname:CV_HAAR_MAGIC_VAL namespace: classpath: classname: name:CV_HAAR_MAGIC_VAL
+
+--- Incoming ---
+[u'const CV_TYPE_NAME_HAAR', u'"opencv-haar-classifier"', [], [], '']
+parseName: const CV_TYPE_NAME_HAAR with ['', u'cv::linemod', 'cv'] -> fullname:CV_TYPE_NAME_HAAR namespace: classpath: classname: name:CV_TYPE_NAME_HAAR
+
+--- Incoming ---
+[u'const CV_HAAR_FEATURE_MAX', u'3', [], [], '']
+parseName: const CV_HAAR_FEATURE_MAX with ['', u'cv::linemod', 'cv'] -> fullname:CV_HAAR_FEATURE_MAX namespace: classpath: classname: name:CV_HAAR_FEATURE_MAX
+
+--- Incoming ---
+[u'struct CvHaarFeature', '', [], [], '']
+parseName: struct CvHaarFeature with ['', u'cv::linemod', 'cv'] -> fullname:CvHaarFeature namespace: classpath: classname: name:CvHaarFeature
+register class CvHaarFeature ([u'struct CvHaarFeature', '', [], [], '']) [ignored]
+
+--- Incoming ---
+[u'struct CvHaarClassifier', '', [], [], '']
+parseName: struct CvHaarClassifier with ['', u'cv::linemod', 'cv'] -> fullname:CvHaarClassifier namespace: classpath: classname: name:CvHaarClassifier
+register class CvHaarClassifier ([u'struct CvHaarClassifier', '', [], [], '']) [ignored]
+
+--- Incoming ---
+[u'struct CvHaarStageClassifier', '', [], [], '']
+parseName: struct CvHaarStageClassifier with ['', u'cv::linemod', 'cv'] -> fullname:CvHaarStageClassifier namespace: classpath: classname: name:CvHaarStageClassifier
+register class CvHaarStageClassifier ([u'struct CvHaarStageClassifier', '', [], [], '']) [ignored]
+
+--- Incoming ---
+[u'struct CvHaarClassifierCascade', '', [], [], '']
+parseName: struct CvHaarClassifierCascade with ['', u'cv::linemod', 'cv'] -> fullname:CvHaarClassifierCascade namespace: classpath: classname: name:CvHaarClassifierCascade
+register class CvHaarClassifierCascade ([u'struct CvHaarClassifierCascade', '', [], [], '']) [ignored]
+
+--- Incoming ---
+[u'struct CvAvgComp', '', [], [], '']
+parseName: struct CvAvgComp with ['', u'cv::linemod', 'cv'] -> fullname:CvAvgComp namespace: classpath: classname: name:CvAvgComp
+register class CvAvgComp ([u'struct CvAvgComp', '', [], [], '']) [ignored]
+
+--- Incoming ---
+[   u'cvLoadHaarClassifierCascade',
+    u'CvHaarClassifierCascade*',
+    ['/NW'],
+    [   [u'const char*', u'directory', '', []],
+        [u'CvSize', u'orig_window_size', '', []]],
+    '']
+parseName: cvLoadHaarClassifierCascade with ['', u'cv::linemod', 'cv'] -> fullname:cvLoadHaarClassifierCascade namespace: classpath: classname: name:cvLoadHaarClassifierCascade
+Registering an unknown type: CvSize
+register (function) cvLoadHaarClassifierCascade
+
+--- Incoming ---
+[   u'cvReleaseHaarClassifierCascade',
+    u'void',
+    ['/NW'],
+    [[u'CvHaarClassifierCascade**', u'cascade', '', []]],
+    '']
+parseName: cvReleaseHaarClassifierCascade with ['', u'cv::linemod', 'cv'] -> fullname:cvReleaseHaarClassifierCascade namespace: classpath: classname: name:cvReleaseHaarClassifierCascade
+register (function) cvReleaseHaarClassifierCascade
+
+--- Incoming ---
+[u'const CV_HAAR_DO_CANNY_PRUNING', u'1', [], [], '']
+parseName: const CV_HAAR_DO_CANNY_PRUNING with ['', u'cv::linemod', 'cv'] -> fullname:CV_HAAR_DO_CANNY_PRUNING namespace: classpath: classname: name:CV_HAAR_DO_CANNY_PRUNING
+
+--- Incoming ---
+[u'const CV_HAAR_SCALE_IMAGE', u'2', [], [], '']
+parseName: const CV_HAAR_SCALE_IMAGE with ['', u'cv::linemod', 'cv'] -> fullname:CV_HAAR_SCALE_IMAGE namespace: classpath: classname: name:CV_HAAR_SCALE_IMAGE
+
+--- Incoming ---
+[u'const CV_HAAR_FIND_BIGGEST_OBJECT', u'4', [], [], '']
+parseName: const CV_HAAR_FIND_BIGGEST_OBJECT with ['', u'cv::linemod', 'cv'] -> fullname:CV_HAAR_FIND_BIGGEST_OBJECT namespace: classpath: classname: name:CV_HAAR_FIND_BIGGEST_OBJECT
+
+--- Incoming ---
+[u'const CV_HAAR_DO_ROUGH_SEARCH', u'8', [], [], '']
+parseName: const CV_HAAR_DO_ROUGH_SEARCH with ['', u'cv::linemod', 'cv'] -> fullname:CV_HAAR_DO_ROUGH_SEARCH namespace: classpath: classname: name:CV_HAAR_DO_ROUGH_SEARCH
+
+--- Incoming ---
+[   u'cvHaarDetectObjects',
+    u'CvSeq*',
+    ['/NW'],
+    [   [u'const CvArr*', u'image', '', []],
+        [u'CvHaarClassifierCascade*', u'cascade', '', []],
+        [u'CvMemStorage*', u'storage', '', []],
+        [u'double', u'scale_factor', u'1.1', []],
+        [u'int', u'min_neighbors', u'3', []],
+        [u'int', u'flags', u'0', []],
+        [u'CvSize', u'min_size', u'cvSize(0,0)', []],
+        [u'CvSize', u'max_size', u'cvSize(0,0)', []]],
+    '']
+parseName: cvHaarDetectObjects with ['', u'cv::linemod', 'cv'] -> fullname:cvHaarDetectObjects namespace: classpath: classname: name:cvHaarDetectObjects
+Registering an unknown type: CvSeq
+Registering an unknown type: CvArr
+Registering an unknown type: CvMemStorage
+register (function) cvHaarDetectObjects
+
+--- Incoming ---
+[   u'cvSetImagesForHaarClassifierCascade',
+    u'void',
+    ['/NW'],
+    [   [u'CvHaarClassifierCascade*', u'cascade', '', []],
+        [u'const CvArr*', u'sum', '', []],
+        [u'const CvArr*', u'sqsum', '', []],
+        [u'const CvArr*', u'tilted_sum', '', []],
+        [u'double', u'scale', '', []]],
+    '']
+parseName: cvSetImagesForHaarClassifierCascade with ['', u'cv::linemod', 'cv'] -> fullname:cvSetImagesForHaarClassifierCascade namespace: classpath: classname: name:cvSetImagesForHaarClassifierCascade
+register (function) cvSetImagesForHaarClassifierCascade
+
+--- Incoming ---
+[   u'cvRunHaarClassifierCascade',
+    u'int',
+    ['/NW'],
+    [   [u'const CvHaarClassifierCascade*', u'cascade', '', []],
+        [u'CvPoint', u'pt', '', []],
+        [u'int', u'start_stage', u'0', []]],
+    '']
+parseName: cvRunHaarClassifierCascade with ['', u'cv::linemod', 'cv'] -> fullname:cvRunHaarClassifierCascade namespace: classpath: classname: name:cvRunHaarClassifierCascade
+Registering an unknown type: CvPoint
+register (function) cvRunHaarClassifierCascade
+
+--- Incoming ---
+[u'struct CvLSVMFilterPosition', '', [], [], '']
+parseName: struct CvLSVMFilterPosition with ['', u'cv::linemod', 'cv'] -> fullname:CvLSVMFilterPosition namespace: classpath: classname: name:CvLSVMFilterPosition
+register class CvLSVMFilterPosition ([u'struct CvLSVMFilterPosition', '', [], [], '']) [ignored]
+
+--- Incoming ---
+[u'struct CvLSVMFilterObject', '', [], [], '']
+parseName: struct CvLSVMFilterObject with ['', u'cv::linemod', 'cv'] -> fullname:CvLSVMFilterObject namespace: classpath: classname: name:CvLSVMFilterObject
+register class CvLSVMFilterObject ([u'struct CvLSVMFilterObject', '', [], [], '']) [ignored]
+
+--- Incoming ---
+[u'struct CvLatentSvmDetector', '', [], [], '']
+parseName: struct CvLatentSvmDetector with ['', u'cv::linemod', 'cv'] -> fullname:CvLatentSvmDetector namespace: classpath: classname: name:CvLatentSvmDetector
+register class CvLatentSvmDetector ([u'struct CvLatentSvmDetector', '', [], [], '']) [ignored]
+
+--- Incoming ---
+[u'struct CvObjectDetection', '', [], [], '']
+parseName: struct CvObjectDetection with ['', u'cv::linemod', 'cv'] -> fullname:CvObjectDetection namespace: classpath: classname: name:CvObjectDetection
+register class CvObjectDetection ([u'struct CvObjectDetection', '', [], [], '']) [ignored]
+
+--- Incoming ---
+[   u'cvLoadLatentSvmDetector',
+    u'CvLatentSvmDetector*',
+    ['/NW'],
+    [[u'const char*', u'filename', '', []]],
+    '']
+parseName: cvLoadLatentSvmDetector with ['', u'cv::linemod', 'cv'] -> fullname:cvLoadLatentSvmDetector namespace: classpath: classname: name:cvLoadLatentSvmDetector
+register (function) cvLoadLatentSvmDetector
+
+--- Incoming ---
+[   u'cvReleaseLatentSvmDetector',
+    u'void',
+    ['/NW'],
+    [[u'CvLatentSvmDetector**', u'detector', '', []]],
+    '']
+parseName: cvReleaseLatentSvmDetector with ['', u'cv::linemod', 'cv'] -> fullname:cvReleaseLatentSvmDetector namespace: classpath: classname: name:cvReleaseLatentSvmDetector
+register (function) cvReleaseLatentSvmDetector
+
+--- Incoming ---
+[   u'cvLatentSvmDetectObjects',
+    u'CvSeq*',
+    ['/NW'],
+    [   [u'IplImage*', u'image', '', []],
+        [u'CvLatentSvmDetector*', u'detector', '', []],
+        [u'CvMemStorage*', u'storage', '', []],
+        [u'float', u'overlap_threshold', u'0.5f', []],
+        [u'int', u'numThreads', u'-1', []]],
+    '']
+parseName: cvLatentSvmDetectObjects with ['', u'cv::linemod', 'cv'] -> fullname:cvLatentSvmDetectObjects namespace: classpath: classname: name:cvLatentSvmDetectObjects
+Registering an unknown type: IplImage
+register (function) cvLatentSvmDetectObjects
+
+--- Incoming ---
+[   u'cvHaarDetectObjectsForROC',
+    u'CvSeq*',
+    ['/NW'],
+    [   [u'const CvArr*', u'image', '', []],
+        [u'CvHaarClassifierCascade*', u'cascade', '', []],
+        [u'CvMemStorage*', u'storage', '', []],
+        [u'std::vector<int>&', u'rejectLevels', '', []],
+        [u'std::vector<double>&', u'levelWeightds', '', []],
+        [u'double', u'scale_factor', u'1.1', []],
+        [u'int', u'min_neighbors', u'3', []],
+        [u'int', u'flags', u'0', []],
+        [u'CvSize', u'min_size', u'cvSize(0,0)', []],
+        [u'CvSize', u'max_size', u'cvSize(0,0)', []],
+        [u'bool', u'outputRejectLevels', u'false', []]],
+    '']
+parseName: cvHaarDetectObjectsForROC with ['', u'cv::linemod', 'cv'] -> fullname:cvHaarDetectObjectsForROC namespace: classpath: classname: name:cvHaarDetectObjectsForROC
+Registering an unknown type: std::vector<int>
+Registering an unknown type: std::vector<double>
+register (function) cvHaarDetectObjectsForROC
+
+--- Incoming ---
+[u'class cv.LatentSvmDetector', '', [], [], '']
+parseName: class cv.LatentSvmDetector with ['', u'cv::linemod', 'cv'] -> fullname:cv::LatentSvmDetector namespace:cv classpath: classname: name:LatentSvmDetector
+register class cv::LatentSvmDetector ([u'class cv.LatentSvmDetector', '', [], [], ''])
+
+--- Incoming ---
+[u'struct cv.LatentSvmDetector.ObjectDetection', '', [], [], '']
+parseName: struct cv.LatentSvmDetector.ObjectDetection with ['', u'cv::linemod', 'cv'] -> fullname:cv::LatentSvmDetector::ObjectDetection namespace:cv classpath:LatentSvmDetector classname:LatentSvmDetector name:ObjectDetection
+register class cv::LatentSvmDetector::ObjectDetection ([u'struct cv.LatentSvmDetector.ObjectDetection', '', [], [], ''])
+
+--- Incoming ---
+[u'cv.LatentSvmDetector.ObjectDetection.ObjectDetection', u'', ['/NW'], [], '']
+parseName: cv.LatentSvmDetector.ObjectDetection.ObjectDetection with ['', u'cv::linemod', 'cv'] -> fullname:cv::LatentSvmDetector::ObjectDetection::ObjectDetection namespace:cv classpath:LatentSvmDetector::ObjectDetection classname:ObjectDetection name:ObjectDetection
+register (constructor) new in cv::LatentSvmDetector::ObjectDetection
+
+--- Incoming ---
+[   u'cv.LatentSvmDetector.ObjectDetection.ObjectDetection',
+    u'',
+    ['/NW'],
+    [   [u'const Rect&', u'rect', '', []],
+        [u'float', u'score', '', []],
+        [u'int', u'classID', u'-1', []]],
+    '']
+parseName: cv.LatentSvmDetector.ObjectDetection.ObjectDetection with ['', u'cv::linemod', 'cv'] -> fullname:cv::LatentSvmDetector::ObjectDetection::ObjectDetection namespace:cv classpath:LatentSvmDetector::ObjectDetection classname:ObjectDetection name:ObjectDetection
+register (constructor) new in cv::LatentSvmDetector::ObjectDetection
+
+--- Incoming ---
+[u'cv.LatentSvmDetector.LatentSvmDetector', u'', ['/NW'], [], '']
+parseName: cv.LatentSvmDetector.LatentSvmDetector with ['', u'cv::linemod', 'cv'] -> fullname:cv::LatentSvmDetector::LatentSvmDetector namespace:cv classpath:LatentSvmDetector classname:LatentSvmDetector name:LatentSvmDetector
+register (constructor) new in cv::LatentSvmDetector
+
+--- Incoming ---
+[   u'cv.LatentSvmDetector.LatentSvmDetector',
+    u'',
+    ['/NW'],
+    [   [u'const vector<string>&', u'filenames', '', []],
+        [u'const vector<string>&', u'classNames', u'vector<string>()', []]],
+    '']
+parseName: cv.LatentSvmDetector.LatentSvmDetector with ['', u'cv::linemod', 'cv'] -> fullname:cv::LatentSvmDetector::LatentSvmDetector namespace:cv classpath:LatentSvmDetector classname:LatentSvmDetector name:LatentSvmDetector
+register (constructor) new in cv::LatentSvmDetector
+
+--- Incoming ---
+[u'cv.LatentSvmDetector.~LatentSvmDetector', u'', ['/NW'], [], '']
+parseName: cv.LatentSvmDetector.~LatentSvmDetector with ['', u'cv::linemod', 'cv'] -> fullname:cv::LatentSvmDetector::~LatentSvmDetector namespace:cv classpath:LatentSvmDetector classname:LatentSvmDetector name:~LatentSvmDetector
+ignore destructor (method) ~LatentSvmDetector in cv::LatentSvmDetector
+
+--- Incoming ---
+[u'cv.LatentSvmDetector.clear', u'void', ['/NW'], [], '']
+parseName: cv.LatentSvmDetector.clear with ['', u'cv::linemod', 'cv'] -> fullname:cv::LatentSvmDetector::clear namespace:cv classpath:LatentSvmDetector classname:LatentSvmDetector name:clear
+register (method) clear in cv::LatentSvmDetector
+
+--- Incoming ---
+[u'cv.LatentSvmDetector.empty', u'bool', ['/NW', '/C'], [], '']
+parseName: cv.LatentSvmDetector.empty with ['', u'cv::linemod', 'cv'] -> fullname:cv::LatentSvmDetector::empty namespace:cv classpath:LatentSvmDetector classname:LatentSvmDetector name:empty
+register (method) empty in cv::LatentSvmDetector
+
+--- Incoming ---
+[   u'cv.LatentSvmDetector.load',
+    u'bool',
+    ['/NW'],
+    [   [u'const vector<string>&', u'filenames', '', []],
+        [u'const vector<string>&', u'classNames', u'vector<string>()', []]],
+    '']
+parseName: cv.LatentSvmDetector.load with ['', u'cv::linemod', 'cv'] -> fullname:cv::LatentSvmDetector::load namespace:cv classpath:LatentSvmDetector classname:LatentSvmDetector name:load
+register (method) load in cv::LatentSvmDetector
+
+--- Incoming ---
+[   u'cv.LatentSvmDetector.detect',
+    u'void',
+    ['/NW'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<ObjectDetection>&', u'objectDetections', '', []],
+        [u'float', u'overlapThreshold', u'0.5f', []],
+        [u'int', u'numThreads', u'-1', []]],
+    '']
+parseName: cv.LatentSvmDetector.detect with ['', u'cv::linemod', 'cv'] -> fullname:cv::LatentSvmDetector::detect namespace:cv classpath:LatentSvmDetector classname:LatentSvmDetector name:detect
+register (method) detect in cv::LatentSvmDetector
+
+--- Incoming ---
+[   u'cv.LatentSvmDetector.getClassNames',
+    u'const vector<string>&',
+    ['/NW', '/C'],
+    [],
+    '']
+parseName: cv.LatentSvmDetector.getClassNames with ['', u'cv::linemod', 'cv'] -> fullname:cv::LatentSvmDetector::getClassNames namespace:cv classpath:LatentSvmDetector classname:LatentSvmDetector name:getClassNames
+register (method) getClassNames in cv::LatentSvmDetector
+
+--- Incoming ---
+[u'cv.LatentSvmDetector.getClassCount', u'size_t', ['/NW', '/C'], [], '']
+parseName: cv.LatentSvmDetector.getClassCount with ['', u'cv::linemod', 'cv'] -> fullname:cv::LatentSvmDetector::getClassCount namespace:cv classpath:LatentSvmDetector classname:LatentSvmDetector name:getClassCount
+register (method) getClassCount in cv::LatentSvmDetector
+
+--- Incoming ---
+[u'class cv.SimilarRects', '', [], [], '']
+parseName: class cv.SimilarRects with ['', u'cv::linemod', 'cv'] -> fullname:cv::SimilarRects namespace:cv classpath: classname: name:SimilarRects
+register class cv::SimilarRects ([u'class cv.SimilarRects', '', [], [], ''])
+
+--- Incoming ---
+[   u'cv.SimilarRects.SimilarRects',
+    u'',
+    ['/NW'],
+    [[u'double', u'_eps', '', []]],
+    '']
+parseName: cv.SimilarRects.SimilarRects with ['', u'cv::linemod', 'cv'] -> fullname:cv::SimilarRects::SimilarRects namespace:cv classpath:SimilarRects classname:SimilarRects name:SimilarRects
+register (constructor) new in cv::SimilarRects
+
+--- Incoming ---
+[   u'cv.SimilarRects.operator ()',
+    u'bool',
+    ['/NW', '/C'],
+    [[u'const Rect&', u'r1', '', []], [u'const Rect&', u'r2', '', []]],
+    '']
+parseName: cv.SimilarRects.operator () with ['', u'cv::linemod', 'cv'] -> fullname:cv::SimilarRects::operator () namespace:cv classpath:SimilarRects classname:SimilarRects name:operator ()
+ignore (method) operator () in cv::SimilarRects
+
+--- Incoming ---
+[   u'cv.groupRectangles',
+    u'void',
+    ['/NW'],
+    [   [u'vector<Rect>&', u'rectList', '', []],
+        [u'int', u'groupThreshold', '', []],
+        [u'double', u'eps', u'0.2', []]],
+    '']
+parseName: cv.groupRectangles with ['', u'cv::linemod', 'cv'] -> fullname:cv::groupRectangles namespace:cv classpath: classname: name:groupRectangles
+register (function) groupRectangles
+
+--- Incoming ---
+[   u'cv.groupRectangles',
+    u'void',
+    ['/NW'],
+    [   [u'vector<Rect>&', u'rectList', '', []],
+        [u'vector<int>&', u'weights', '', []],
+        [u'int', u'groupThreshold', '', []],
+        [u'double', u'eps', u'0.2', []]],
+    '']
+parseName: cv.groupRectangles with ['', u'cv::linemod', 'cv'] -> fullname:cv::groupRectangles namespace:cv classpath: classname: name:groupRectangles
+register (function) groupRectangles
+
+--- Incoming ---
+[   u'cv.groupRectangles',
+    u'void',
+    ['/NW'],
+    [   [u'vector<Rect>&', u'rectList', '', []],
+        [u'int', u'groupThreshold', '', []],
+        [u'double', u'eps', '', []],
+        [u'vector<int>*', u'weights', '', []],
+        [u'vector<double>*', u'levelWeights', '', []]],
+    '']
+parseName: cv.groupRectangles with ['', u'cv::linemod', 'cv'] -> fullname:cv::groupRectangles namespace:cv classpath: classname: name:groupRectangles
+register (function) groupRectangles
+
+--- Incoming ---
+[   u'cv.groupRectangles',
+    u'void',
+    ['/NW'],
+    [   [u'vector<Rect>&', u'rectList', '', []],
+        [u'vector<int>&', u'rejectLevels', '', []],
+        [u'vector<double>&', u'levelWeights', '', []],
+        [u'int', u'groupThreshold', '', []],
+        [u'double', u'eps', u'0.2', []]],
+    '']
+parseName: cv.groupRectangles with ['', u'cv::linemod', 'cv'] -> fullname:cv::groupRectangles namespace:cv classpath: classname: name:groupRectangles
+register (function) groupRectangles
+
+--- Incoming ---
+[   u'cv.groupRectangles_meanshift',
+    u'void',
+    ['/NW'],
+    [   [u'vector<Rect>&', u'rectList', '', []],
+        [u'vector<double>&', u'foundWeights', '', []],
+        [u'vector<double>&', u'foundScales', '', []],
+        [u'double', u'detectThreshold', u'0.0', []],
+        [u'Size', u'winDetSize', u'Size(64, 128)', []]],
+    '']
+parseName: cv.groupRectangles_meanshift with ['', u'cv::linemod', 'cv'] -> fullname:cv::groupRectangles_meanshift namespace:cv classpath: classname: name:groupRectangles_meanshift
+register (function) groupRectangles_meanshift
+
+--- Incoming ---
+[u'class cv.FeatureEvaluator', '', [], [], '']
+parseName: class cv.FeatureEvaluator with ['', u'cv::linemod', 'cv'] -> fullname:cv::FeatureEvaluator namespace:cv classpath: classname: name:FeatureEvaluator
+register class cv::FeatureEvaluator ([u'class cv.FeatureEvaluator', '', [], [], ''])
+
+--- Incoming ---
+[u'const cv.FeatureEvaluator.HAAR', u'0', [], []]
+parseName: const cv.FeatureEvaluator.HAAR with ['', u'cv::linemod', 'cv'] -> fullname:cv::FeatureEvaluator::HAAR namespace:cv classpath:FeatureEvaluator classname:FeatureEvaluator name:HAAR
+
+--- Incoming ---
+[u'const cv.FeatureEvaluator.LBP', u'1', [], []]
+parseName: const cv.FeatureEvaluator.LBP with ['', u'cv::linemod', 'cv'] -> fullname:cv::FeatureEvaluator::LBP namespace:cv classpath:FeatureEvaluator classname:FeatureEvaluator name:LBP
+
+--- Incoming ---
+[u'const cv.FeatureEvaluator.HOG', u'2', [], []]
+parseName: const cv.FeatureEvaluator.HOG with ['', u'cv::linemod', 'cv'] -> fullname:cv::FeatureEvaluator::HOG namespace:cv classpath:FeatureEvaluator classname:FeatureEvaluator name:HOG
+
+--- Incoming ---
+[u'cv.FeatureEvaluator.~FeatureEvaluator', u'', ['/NW'], [], '']
+parseName: cv.FeatureEvaluator.~FeatureEvaluator with ['', u'cv::linemod', 'cv'] -> fullname:cv::FeatureEvaluator::~FeatureEvaluator namespace:cv classpath:FeatureEvaluator classname:FeatureEvaluator name:~FeatureEvaluator
+ignore destructor (method) ~FeatureEvaluator in cv::FeatureEvaluator
+
+--- Incoming ---
+[   u'cv.FeatureEvaluator.read',
+    u'bool',
+    ['/NW'],
+    [[u'const FileNode&', u'node', '', []]],
+    '']
+parseName: cv.FeatureEvaluator.read with ['', u'cv::linemod', 'cv'] -> fullname:cv::FeatureEvaluator::read namespace:cv classpath:FeatureEvaluator classname:FeatureEvaluator name:read
+Registering an unknown type: FileNode
+register (method) read in cv::FeatureEvaluator
+
+--- Incoming ---
+[u'cv.FeatureEvaluator.clone', u'Ptr<FeatureEvaluator>', ['/NW', '/C'], [], '']
+parseName: cv.FeatureEvaluator.clone with ['', u'cv::linemod', 'cv'] -> fullname:cv::FeatureEvaluator::clone namespace:cv classpath:FeatureEvaluator classname:FeatureEvaluator name:clone
+register (method) clone in cv::FeatureEvaluator
+
+--- Incoming ---
+[u'cv.FeatureEvaluator.getFeatureType', u'int', ['/NW', '/C'], [], '']
+parseName: cv.FeatureEvaluator.getFeatureType with ['', u'cv::linemod', 'cv'] -> fullname:cv::FeatureEvaluator::getFeatureType namespace:cv classpath:FeatureEvaluator classname:FeatureEvaluator name:getFeatureType
+register (method) getFeatureType in cv::FeatureEvaluator
+
+--- Incoming ---
+[   u'cv.FeatureEvaluator.setImage',
+    u'bool',
+    ['/NW'],
+    [[u'const Mat&', u'img', '', []], [u'Size', u'origWinSize', '', []]],
+    '']
+parseName: cv.FeatureEvaluator.setImage with ['', u'cv::linemod', 'cv'] -> fullname:cv::FeatureEvaluator::setImage namespace:cv classpath:FeatureEvaluator classname:FeatureEvaluator name:setImage
+register (method) setImage in cv::FeatureEvaluator
+
+--- Incoming ---
+[   u'cv.FeatureEvaluator.setWindow',
+    u'bool',
+    ['/NW'],
+    [[u'Point', u'p', '', []]],
+    '']
+parseName: cv.FeatureEvaluator.setWindow with ['', u'cv::linemod', 'cv'] -> fullname:cv::FeatureEvaluator::setWindow namespace:cv classpath:FeatureEvaluator classname:FeatureEvaluator name:setWindow
+register (method) setWindow in cv::FeatureEvaluator
+
+--- Incoming ---
+[   u'cv.FeatureEvaluator.calcOrd',
+    u'double',
+    ['/NW', '/C'],
+    [[u'int', u'featureIdx', '', []]],
+    '']
+parseName: cv.FeatureEvaluator.calcOrd with ['', u'cv::linemod', 'cv'] -> fullname:cv::FeatureEvaluator::calcOrd namespace:cv classpath:FeatureEvaluator classname:FeatureEvaluator name:calcOrd
+register (method) calcOrd in cv::FeatureEvaluator
+
+--- Incoming ---
+[   u'cv.FeatureEvaluator.calcCat',
+    u'int',
+    ['/NW', '/C'],
+    [[u'int', u'featureIdx', '', []]],
+    '']
+parseName: cv.FeatureEvaluator.calcCat with ['', u'cv::linemod', 'cv'] -> fullname:cv::FeatureEvaluator::calcCat namespace:cv classpath:FeatureEvaluator classname:FeatureEvaluator name:calcCat
+register (method) calcCat in cv::FeatureEvaluator
+
+--- Incoming ---
+[   u'cv.FeatureEvaluator.create',
+    u'Ptr<FeatureEvaluator>',
+    ['/NW', '/S'],
+    [[u'int', u'type', '', []]],
+    '']
+parseName: cv.FeatureEvaluator.create with ['', u'cv::linemod', 'cv'] -> fullname:cv::FeatureEvaluator::create namespace:cv classpath:FeatureEvaluator classname:FeatureEvaluator name:create
+register (method) create in cv::FeatureEvaluator
+
+--- Incoming ---
+[u'const cv.CASCADE_DO_CANNY_PRUNING', u'1', [], []]
+parseName: const cv.CASCADE_DO_CANNY_PRUNING with ['', u'cv::linemod', 'cv'] -> fullname:cv::CASCADE_DO_CANNY_PRUNING namespace:cv classpath: classname: name:CASCADE_DO_CANNY_PRUNING
+
+--- Incoming ---
+[u'const cv.CASCADE_SCALE_IMAGE', u'2', [], []]
+parseName: const cv.CASCADE_SCALE_IMAGE with ['', u'cv::linemod', 'cv'] -> fullname:cv::CASCADE_SCALE_IMAGE namespace:cv classpath: classname: name:CASCADE_SCALE_IMAGE
+
+--- Incoming ---
+[u'const cv.CASCADE_FIND_BIGGEST_OBJECT', u'4', [], []]
+parseName: const cv.CASCADE_FIND_BIGGEST_OBJECT with ['', u'cv::linemod', 'cv'] -> fullname:cv::CASCADE_FIND_BIGGEST_OBJECT namespace:cv classpath: classname: name:CASCADE_FIND_BIGGEST_OBJECT
+
+--- Incoming ---
+[u'const cv.CASCADE_DO_ROUGH_SEARCH', u'8', [], []]
+parseName: const cv.CASCADE_DO_ROUGH_SEARCH with ['', u'cv::linemod', 'cv'] -> fullname:cv::CASCADE_DO_ROUGH_SEARCH namespace:cv classpath: classname: name:CASCADE_DO_ROUGH_SEARCH
+
+--- Incoming ---
+[u'class cv.CascadeClassifier', '', [], [], '']
+parseName: class cv.CascadeClassifier with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier namespace:cv classpath: classname: name:CascadeClassifier
+register class cv::CascadeClassifier ([u'class cv.CascadeClassifier', '', [], [], ''])
+
+--- Incoming ---
+[u'cv.CascadeClassifier.CascadeClassifier', u'', ['/NW'], [], '']
+parseName: cv.CascadeClassifier.CascadeClassifier with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::CascadeClassifier namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:CascadeClassifier
+register (constructor) new in cv::CascadeClassifier
+
+--- Incoming ---
+[   u'cv.CascadeClassifier.CascadeClassifier',
+    u'',
+    ['/NW'],
+    [[u'const string&', u'filename', '', []]],
+    '']
+parseName: cv.CascadeClassifier.CascadeClassifier with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::CascadeClassifier namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:CascadeClassifier
+register (constructor) new in cv::CascadeClassifier
+
+--- Incoming ---
+[u'cv.CascadeClassifier.~CascadeClassifier', u'', ['/NW'], [], '']
+parseName: cv.CascadeClassifier.~CascadeClassifier with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::~CascadeClassifier namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:~CascadeClassifier
+ignore destructor (method) ~CascadeClassifier in cv::CascadeClassifier
+
+--- Incoming ---
+[u'cv.CascadeClassifier.empty', u'bool', ['/NW', '/C'], [], '']
+parseName: cv.CascadeClassifier.empty with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::empty namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:empty
+register (method) empty in cv::CascadeClassifier
+
+--- Incoming ---
+[   u'cv.CascadeClassifier.load',
+    u'bool',
+    ['/NW'],
+    [[u'const string&', u'filename', '', []]],
+    '']
+parseName: cv.CascadeClassifier.load with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::load namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:load
+register (method) load in cv::CascadeClassifier
+
+--- Incoming ---
+[   u'cv.CascadeClassifier.read',
+    u'bool',
+    ['/NW'],
+    [[u'const FileNode&', u'node', '', []]],
+    '']
+parseName: cv.CascadeClassifier.read with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::read namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:read
+register (method) read in cv::CascadeClassifier
+
+--- Incoming ---
+[   u'cv.CascadeClassifier.detectMultiScale',
+    u'void',
+    ['/NW'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<Rect>&', u'objects', '', []],
+        [u'double', u'scaleFactor', u'1.1', []],
+        [u'int', u'minNeighbors', u'3', []],
+        [u'int', u'flags', u'0', []],
+        [u'Size', u'minSize', u'Size()', []],
+        [u'Size', u'maxSize', u'Size()', []]],
+    '']
+parseName: cv.CascadeClassifier.detectMultiScale with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::detectMultiScale namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:detectMultiScale
+register (method) detectMultiScale in cv::CascadeClassifier
+
+--- Incoming ---
+[   u'cv.CascadeClassifier.detectMultiScale',
+    u'void',
+    ['/NW'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'vector<Rect>&', u'objects', '', []],
+        [u'vector<int>&', u'rejectLevels', '', []],
+        [u'vector<double>&', u'levelWeights', '', []],
+        [u'double', u'scaleFactor', u'1.1', []],
+        [u'int', u'minNeighbors', u'3', []],
+        [u'int', u'flags', u'0', []],
+        [u'Size', u'minSize', u'Size()', []],
+        [u'Size', u'maxSize', u'Size()', []],
+        [u'bool', u'outputRejectLevels', u'false', []]],
+    '']
+parseName: cv.CascadeClassifier.detectMultiScale with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::detectMultiScale namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:detectMultiScale
+register (method) detectMultiScale in cv::CascadeClassifier
+
+--- Incoming ---
+[u'cv.CascadeClassifier.isOldFormatCascade', u'bool', ['/NW', '/C'], [], '']
+parseName: cv.CascadeClassifier.isOldFormatCascade with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::isOldFormatCascade namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:isOldFormatCascade
+register (method) isOldFormatCascade in cv::CascadeClassifier
+
+--- Incoming ---
+[u'cv.CascadeClassifier.getOriginalWindowSize', u'Size', ['/NW', '/C'], [], '']
+parseName: cv.CascadeClassifier.getOriginalWindowSize with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::getOriginalWindowSize namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:getOriginalWindowSize
+register (method) getOriginalWindowSize in cv::CascadeClassifier
+
+--- Incoming ---
+[u'cv.CascadeClassifier.getFeatureType', u'int', ['/NW', '/C'], [], '']
+parseName: cv.CascadeClassifier.getFeatureType with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::getFeatureType namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:getFeatureType
+register (method) getFeatureType in cv::CascadeClassifier
+
+--- Incoming ---
+[   u'cv.CascadeClassifier.setImage',
+    u'bool',
+    ['/NW'],
+    [[u'const Mat&', u'', '', []]],
+    '']
+parseName: cv.CascadeClassifier.setImage with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::setImage namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:setImage
+register (method) setImage in cv::CascadeClassifier
+
+--- Incoming ---
+[   u'cv.CascadeClassifier.detectSingleScale',
+    u'bool',
+    ['/NW', '/H'],
+    [   [u'const Mat&', u'image', '', []],
+        [u'int', u'stripCount', '', []],
+        [u'Size', u'processingRectSize', '', []],
+        [u'int', u'stripSize', '', []],
+        [u'int', u'yStep', '', []],
+        [u'double', u'factor', '', []],
+        [u'vector<Rect>&', u'candidates', '', []],
+        [u'vector<int>&', u'rejectLevels', '', []],
+        [u'vector<double>&', u'levelWeights', '', []],
+        [u'bool', u'outputRejectLevels', u'false', []]],
+    '']
+parseName: cv.CascadeClassifier.detectSingleScale with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::detectSingleScale namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:detectSingleScale
+
+--- Incoming ---
+[u'const cv.CascadeClassifier.BOOST', u'0', [], []]
+parseName: const cv.CascadeClassifier.BOOST with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::BOOST namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:BOOST
+
+--- Incoming ---
+[u'const cv.CascadeClassifier.DO_CANNY_PRUNING', u'1', [], []]
+parseName: const cv.CascadeClassifier.DO_CANNY_PRUNING with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::DO_CANNY_PRUNING namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:DO_CANNY_PRUNING
+
+--- Incoming ---
+[u'const cv.CascadeClassifier.SCALE_IMAGE', u'2', [], []]
+parseName: const cv.CascadeClassifier.SCALE_IMAGE with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::SCALE_IMAGE namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:SCALE_IMAGE
+
+--- Incoming ---
+[u'const cv.CascadeClassifier.FIND_BIGGEST_OBJECT', u'4', [], []]
+parseName: const cv.CascadeClassifier.FIND_BIGGEST_OBJECT with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::FIND_BIGGEST_OBJECT namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:FIND_BIGGEST_OBJECT
+
+--- Incoming ---
+[u'const cv.CascadeClassifier.DO_ROUGH_SEARCH', u'8', [], []]
+parseName: const cv.CascadeClassifier.DO_ROUGH_SEARCH with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::DO_ROUGH_SEARCH namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:DO_ROUGH_SEARCH
+
+--- Incoming ---
+[   u'cv.CascadeClassifier.setImage',
+    u'bool',
+    ['/NW', '/H'],
+    [   [u'Ptr<FeatureEvaluator>&', u'feval', '', []],
+        [u'const Mat&', u'image', '', []]],
+    '']
+parseName: cv.CascadeClassifier.setImage with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::setImage namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:setImage
+
+--- Incoming ---
+[   u'cv.CascadeClassifier.runAt',
+    u'int',
+    ['/NW', '/H'],
+    [   [u'Ptr<FeatureEvaluator>&', u'feval', '', []],
+        [u'Point', u'pt', '', []],
+        [u'double&', u'weight', '', []]],
+    '']
+parseName: cv.CascadeClassifier.runAt with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::runAt namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:runAt
+
+--- Incoming ---
+[u'class cv.CascadeClassifier.Data', '', ['/Hidden'], [], '']
+parseName: class cv.CascadeClassifier.Data with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::Data namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:Data
+register class cv::CascadeClassifier::Data ([u'class cv.CascadeClassifier.Data', '', ['/Hidden'], [], '']) [ignored]
+
+--- Incoming ---
+[u'struct cv.CascadeClassifier.Data.DTreeNode', '', [], [], '']
+parseName: struct cv.CascadeClassifier.Data.DTreeNode with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::Data::DTreeNode namespace:cv classpath:CascadeClassifier::Data classname:Data name:DTreeNode
+register class cv::CascadeClassifier::Data::DTreeNode ([u'struct cv.CascadeClassifier.Data.DTreeNode', '', [], [], '']) [ignored]
+
+--- Incoming ---
+[u'struct cv.CascadeClassifier.Data.DTree', '', [], [], '']
+parseName: struct cv.CascadeClassifier.Data.DTree with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::Data::DTree namespace:cv classpath:CascadeClassifier::Data classname:Data name:DTree
+register class cv::CascadeClassifier::Data::DTree ([u'struct cv.CascadeClassifier.Data.DTree', '', [], [], '']) [ignored]
+
+--- Incoming ---
+[u'struct cv.CascadeClassifier.Data.Stage', '', [], [], '']
+parseName: struct cv.CascadeClassifier.Data.Stage with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::Data::Stage namespace:cv classpath:CascadeClassifier::Data classname:Data name:Stage
+register class cv::CascadeClassifier::Data::Stage ([u'struct cv.CascadeClassifier.Data.Stage', '', [], [], '']) [ignored]
+
+--- Incoming ---
+[   u'cv.CascadeClassifier.Data.read',
+    u'bool',
+    ['/NW'],
+    [[u'const FileNode &', u'node', '', []]],
+    '']
+parseName: cv.CascadeClassifier.Data.read with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::Data::read namespace:cv classpath:CascadeClassifier::Data classname:Data name:read
+Registering an unknown type: FileNode 
+register (method) read in cv::CascadeClassifier::Data
+
+--- Incoming ---
+[u'class cv.CascadeClassifier.MaskGenerator', '', [], [], '']
+parseName: class cv.CascadeClassifier.MaskGenerator with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::MaskGenerator namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:MaskGenerator
+register class cv::CascadeClassifier::MaskGenerator ([u'class cv.CascadeClassifier.MaskGenerator', '', [], [], ''])
+
+--- Incoming ---
+[u'cv.CascadeClassifier.MaskGenerator.~MaskGenerator', u'', ['/NW'], [], '']
+parseName: cv.CascadeClassifier.MaskGenerator.~MaskGenerator with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::MaskGenerator::~MaskGenerator namespace:cv classpath:CascadeClassifier::MaskGenerator classname:MaskGenerator name:~MaskGenerator
+ignore destructor (method) ~MaskGenerator in cv::CascadeClassifier::MaskGenerator
+
+--- Incoming ---
+[   u'cv.CascadeClassifier.MaskGenerator.generateMask',
+    u'cv::Mat',
+    ['/NW', '/A'],
+    [[u'const cv::Mat&', u'src', '', []]],
+    '']
+parseName: cv.CascadeClassifier.MaskGenerator.generateMask with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::MaskGenerator::generateMask namespace:cv classpath:CascadeClassifier::MaskGenerator classname:MaskGenerator name:generateMask
+
+--- Incoming ---
+[   u'cv.CascadeClassifier.MaskGenerator.initializeMask',
+    u'void',
+    ['/NW'],
+    [[u'const cv::Mat&', u'', '', []]],
+    '']
+parseName: cv.CascadeClassifier.MaskGenerator.initializeMask with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::MaskGenerator::initializeMask namespace:cv classpath:CascadeClassifier::MaskGenerator classname:MaskGenerator name:initializeMask
+register (method) initializeMask in cv::CascadeClassifier::MaskGenerator
+
+--- Incoming ---
+[   u'cv.CascadeClassifier.setMaskGenerator',
+    u'void',
+    ['/NW'],
+    [[u'Ptr<MaskGenerator>', u'maskGenerator', '', []]],
+    '']
+parseName: cv.CascadeClassifier.setMaskGenerator with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::setMaskGenerator namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:setMaskGenerator
+register (method) setMaskGenerator in cv::CascadeClassifier
+
+--- Incoming ---
+[   u'cv.CascadeClassifier.getMaskGenerator',
+    u'Ptr<MaskGenerator>',
+    ['/NW'],
+    [],
+    '']
+parseName: cv.CascadeClassifier.getMaskGenerator with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::getMaskGenerator namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:getMaskGenerator
+register (method) getMaskGenerator in cv::CascadeClassifier
+
+--- Incoming ---
+[   u'cv.CascadeClassifier.setFaceDetectionMaskGenerator',
+    u'void',
+    ['/NW'],
+    [],
+    '']
+parseName: cv.CascadeClassifier.setFaceDetectionMaskGenerator with ['', u'cv::linemod', 'cv'] -> fullname:cv::CascadeClassifier::setFaceDetectionMaskGenerator namespace:cv classpath:CascadeClassifier classname:CascadeClassifier name:setFaceDetectionMaskGenerator
+register (method) setFaceDetectionMaskGenerator in cv::CascadeClassifier
+
+--- Incoming ---
+[u'struct cv.DetectionROI', '', [], [], '']
+parseName: struct cv.DetectionROI with ['', u'cv::linemod', 'cv'] -> fullname:cv::DetectionROI namespace:cv classpath: classname: name:DetectionROI
+register class cv::DetectionROI ([u'struct cv.DetectionROI', '', [], [], ''])
+
+--- Incoming ---
+[   u'struct cv.HOGDescriptor',
+    '',
+    [],
+    [   [u'Size', u'winSize', '', []],
+        [u'Size', u'blockSize', '', []],
+        [u'Size', u'blockStride', '', []],
+        [u'Size', u'cellSize', '', []],
+        [u'int', u'nbins', '', []],
+        [u'int', u'derivAperture', '', []],
+        [u'double', u'winSigma', '', []],
+        [u'int', u'histogramNormType', '', []],
+        [u'double', u'L2HysThreshold', '', []],
+        [u'bool', u'gammaCorrection', '', []],
+        [u'vector_float', u'svmDetector', '', []],
+        [u'int', u'nlevels', '', []]],
+    '']
+parseName: struct cv.HOGDescriptor with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor namespace:cv classpath: classname: name:HOGDescriptor
+register class cv::HOGDescriptor ([u'struct cv.HOGDescriptor', '', [], [[u'Size', u'winSize', '', []], [u'Size', u'blockSize', '', []], [u'Size', u'blockStride', '', []], [u'Size', u'cellSize', '', []], [u'int', u'nbins', '', []], [u'int', u'derivAperture', '', []], [u'double', u'winSigma', '', []], [u'int', u'histogramNormType', '', []], [u'double', u'L2HysThreshold', '', []], [u'bool', u'gammaCorrection', '', []], [u'vector_float', u'svmDetector', '', []], [u'int', u'nlevels', '', []]], ''])
+
+--- Incoming ---
+[u'const cv.HOGDescriptor.L2Hys', u'0', [], []]
+parseName: const cv.HOGDescriptor.L2Hys with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::L2Hys namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:L2Hys
+
+--- Incoming ---
+[u'const cv.HOGDescriptor.DEFAULT_NLEVELS', u'64', [], []]
+parseName: const cv.HOGDescriptor.DEFAULT_NLEVELS with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::DEFAULT_NLEVELS namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:DEFAULT_NLEVELS
+
+--- Incoming ---
+[u'cv.HOGDescriptor.HOGDescriptor', u'', ['/NW'], [], '']
+parseName: cv.HOGDescriptor.HOGDescriptor with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::HOGDescriptor namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:HOGDescriptor
+register (constructor) new in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.HOGDescriptor',
+    u'',
+    ['/NW'],
+    [   [u'Size', u'_winSize', '', []],
+        [u'Size', u'_blockSize', '', []],
+        [u'Size', u'_blockStride', '', []],
+        [u'Size', u'_cellSize', '', []],
+        [u'int', u'_nbins', '', []],
+        [u'int', u'_derivAperture', u'1', []],
+        [u'double', u'_winSigma', u'-1', []],
+        [u'int', u'_histogramNormType', u'HOGDescriptor::L2Hys', []],
+        [u'double', u'_L2HysThreshold', u'0.2', []],
+        [u'bool', u'_gammaCorrection', u'false', []],
+        [u'int', u'_nlevels', u'HOGDescriptor::DEFAULT_NLEVELS', []]],
+    '']
+parseName: cv.HOGDescriptor.HOGDescriptor with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::HOGDescriptor namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:HOGDescriptor
+register (constructor) new in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.HOGDescriptor',
+    u'',
+    ['/NW'],
+    [[u'const String&', u'filename', '', []]],
+    '']
+parseName: cv.HOGDescriptor.HOGDescriptor with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::HOGDescriptor namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:HOGDescriptor
+Registering an unknown type: String
+register (constructor) new in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.HOGDescriptor',
+    u'',
+    ['/NW'],
+    [[u'const HOGDescriptor&', u'd', '', []]],
+    '']
+parseName: cv.HOGDescriptor.HOGDescriptor with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::HOGDescriptor namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:HOGDescriptor
+register (constructor) new in cv::HOGDescriptor
+
+--- Incoming ---
+[u'cv.HOGDescriptor.~HOGDescriptor', u'', ['/NW'], [], '']
+parseName: cv.HOGDescriptor.~HOGDescriptor with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::~HOGDescriptor namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:~HOGDescriptor
+ignore destructor (method) ~HOGDescriptor in cv::HOGDescriptor
+
+--- Incoming ---
+[u'cv.HOGDescriptor.getDescriptorSize', u'size_t', ['/NW', '/C'], [], '']
+parseName: cv.HOGDescriptor.getDescriptorSize with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::getDescriptorSize namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:getDescriptorSize
+register (method) getDescriptorSize in cv::HOGDescriptor
+
+--- Incoming ---
+[u'cv.HOGDescriptor.checkDetectorSize', u'bool', ['/NW', '/C'], [], '']
+parseName: cv.HOGDescriptor.checkDetectorSize with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::checkDetectorSize namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:checkDetectorSize
+register (method) checkDetectorSize in cv::HOGDescriptor
+
+--- Incoming ---
+[u'cv.HOGDescriptor.getWinSigma', u'double', ['/NW', '/C'], [], '']
+parseName: cv.HOGDescriptor.getWinSigma with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::getWinSigma namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:getWinSigma
+register (method) getWinSigma in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.setSVMDetector',
+    u'void',
+    ['/NW'],
+    [[u'InputArray', u'_svmdetector', '', []]],
+    '']
+parseName: cv.HOGDescriptor.setSVMDetector with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::setSVMDetector namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:setSVMDetector
+register (method) setSVMDetector in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.read',
+    u'bool',
+    ['/NW'],
+    [[u'FileNode&', u'fn', '', []]],
+    '']
+parseName: cv.HOGDescriptor.read with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::read namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:read
+Registering an unknown type: FileNode
+register (method) read in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.write',
+    u'void',
+    ['/NW', '/C'],
+    [[u'FileStorage&', u'fs', '', []], [u'const String&', u'objname', '', []]],
+    '']
+parseName: cv.HOGDescriptor.write with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::write namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:write
+Registering an unknown type: FileStorage
+register (method) write in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.load',
+    u'bool',
+    ['/NW'],
+    [   [u'const String&', u'filename', '', []],
+        [u'const String&', u'objname', u'String()', []]],
+    '']
+parseName: cv.HOGDescriptor.load with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::load namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:load
+register (method) load in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.save',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const String&', u'filename', '', []],
+        [u'const String&', u'objname', u'String()', []]],
+    '']
+parseName: cv.HOGDescriptor.save with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::save namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:save
+register (method) save in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.copyTo',
+    u'void',
+    ['/NW', '/C'],
+    [[u'HOGDescriptor&', u'c', '', []]],
+    '']
+parseName: cv.HOGDescriptor.copyTo with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::copyTo namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:copyTo
+register (method) copyTo in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.compute',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const Mat&', u'img', '', []],
+        [u'vector<float>&', u'descriptors', '', []],
+        [u'Size', u'winStride', u'Size()', []],
+        [u'Size', u'padding', u'Size()', []],
+        [u'const vector<Point>&', u'locations', u'vector<Point>()', []]],
+    '']
+parseName: cv.HOGDescriptor.compute with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::compute namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:compute
+register (method) compute in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.detect',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const Mat&', u'img', '', []],
+        [u'vector<Point>&', u'foundLocations', '', []],
+        [u'vector<double>&', u'weights', '', []],
+        [u'double', u'hitThreshold', u'0', []],
+        [u'Size', u'winStride', u'Size()', []],
+        [u'Size', u'padding', u'Size()', []],
+        [u'const vector<Point>&', u'searchLocations', u'vector<Point>()', []]],
+    '']
+parseName: cv.HOGDescriptor.detect with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::detect namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:detect
+register (method) detect in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.detect',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const Mat&', u'img', '', []],
+        [u'vector<Point>&', u'foundLocations', '', []],
+        [u'double', u'hitThreshold', u'0', []],
+        [u'Size', u'winStride', u'Size()', []],
+        [u'Size', u'padding', u'Size()', []],
+        [u'const vector<Point>&', u'searchLocations', u'vector<Point>()', []]],
+    '']
+parseName: cv.HOGDescriptor.detect with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::detect namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:detect
+register (method) detect in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.detectMultiScale',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const Mat&', u'img', '', []],
+        [u'vector<Rect>&', u'foundLocations', '', []],
+        [u'vector<double>&', u'foundWeights', '', []],
+        [u'double', u'hitThreshold', u'0', []],
+        [u'Size', u'winStride', u'Size()', []],
+        [u'Size', u'padding', u'Size()', []],
+        [u'double', u'scale', u'1.05', []],
+        [u'double', u'finalThreshold', u'2.0', []],
+        [u'bool', u'useMeanshiftGrouping', u'false', []]],
+    '']
+parseName: cv.HOGDescriptor.detectMultiScale with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::detectMultiScale namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:detectMultiScale
+register (method) detectMultiScale in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.detectMultiScale',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const Mat&', u'img', '', []],
+        [u'vector<Rect>&', u'foundLocations', '', []],
+        [u'double', u'hitThreshold', u'0', []],
+        [u'Size', u'winStride', u'Size()', []],
+        [u'Size', u'padding', u'Size()', []],
+        [u'double', u'scale', u'1.05', []],
+        [u'double', u'finalThreshold', u'2.0', []],
+        [u'bool', u'useMeanshiftGrouping', u'false', []]],
+    '']
+parseName: cv.HOGDescriptor.detectMultiScale with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::detectMultiScale namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:detectMultiScale
+register (method) detectMultiScale in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.computeGradient',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const Mat&', u'img', '', []],
+        [u'Mat&', u'grad', '', []],
+        [u'Mat&', u'angleOfs', '', []],
+        [u'Size', u'paddingTL', u'Size()', []],
+        [u'Size', u'paddingBR', u'Size()', []]],
+    '']
+parseName: cv.HOGDescriptor.computeGradient with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::computeGradient namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:computeGradient
+register (method) computeGradient in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.getDefaultPeopleDetector',
+    u'vector<float>',
+    ['/NW', '/S'],
+    [],
+    '']
+parseName: cv.HOGDescriptor.getDefaultPeopleDetector with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::getDefaultPeopleDetector namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:getDefaultPeopleDetector
+register (method) getDefaultPeopleDetector in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.getDaimlerPeopleDetector',
+    u'vector<float>',
+    ['/NW', '/S'],
+    [],
+    '']
+parseName: cv.HOGDescriptor.getDaimlerPeopleDetector with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::getDaimlerPeopleDetector namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:getDaimlerPeopleDetector
+register (method) getDaimlerPeopleDetector in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.detectROI',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const cv::Mat&', u'img', '', []],
+        [u'const vector<cv::Point> &', u'locations', '', []],
+        [u'std::vector<cv::Point>&', u'foundLocations', '', []],
+        [u'std::vector<double>&', u'confidences', '', []],
+        [u'double', u'hitThreshold', u'0', []],
+        [u'cv::Size', u'winStride', u'Size()', []],
+        [u'cv::Size', u'padding', u'Size()', []]],
+    '']
+parseName: cv.HOGDescriptor.detectROI with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::detectROI namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:detectROI
+Registering an unknown type: cv::Point>
+Registering an unknown type: std::vector<cv::Point>
+Registering an unknown type: cv::Size
+register (method) detectROI in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.detectMultiScaleROI',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const cv::Mat&', u'img', '', []],
+        [u'std::vector<cv::Rect>&', u'foundLocations', '', []],
+        [u'std::vector<DetectionROI>&', u'locations', '', []],
+        [u'double', u'hitThreshold', u'0', []],
+        [u'int', u'groupThreshold', u'0', []]],
+    '']
+parseName: cv.HOGDescriptor.detectMultiScaleROI with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::detectMultiScaleROI namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:detectMultiScaleROI
+Registering an unknown type: std::vector<cv::Rect>
+Registering an unknown type: std::vector<DetectionROI>
+register (method) detectMultiScaleROI in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.readALTModel',
+    u'void',
+    ['/NW'],
+    [[u'std::string', u'modelfile', '', []]],
+    '']
+parseName: cv.HOGDescriptor.readALTModel with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::readALTModel namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:readALTModel
+Registering an unknown type: std::string
+register (method) readALTModel in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.HOGDescriptor.groupRectangles',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'vector<cv::Rect>&', u'rectList', '', []],
+        [u'vector<double>&', u'weights', '', []],
+        [u'int', u'groupThreshold', '', []],
+        [u'double', u'eps', '', []]],
+    '']
+parseName: cv.HOGDescriptor.groupRectangles with ['', u'cv::linemod', 'cv'] -> fullname:cv::HOGDescriptor::groupRectangles namespace:cv classpath:HOGDescriptor classname:HOGDescriptor name:groupRectangles
+Registering an unknown type: cv::Rect
+register (method) groupRectangles in cv::HOGDescriptor
+
+--- Incoming ---
+[   u'cv.findDataMatrix',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'image', '', []],
+        [u'vector<string>&', u'codes', '', []],
+        [u'OutputArray', u'corners', u'noArray()', []],
+        [u'OutputArrayOfArrays', u'dmtx', u'noArray()', []]],
+    '']
+parseName: cv.findDataMatrix with ['', u'cv::linemod', 'cv'] -> fullname:cv::findDataMatrix namespace:cv classpath: classname: name:findDataMatrix
+Registering an unknown type: OutputArrayOfArrays
+register (function) findDataMatrix
+
+--- Incoming ---
+[   u'cv.drawDataMatrixCodes',
+    u'void',
+    ['/NW'],
+    [   [u'InputOutputArray', u'image', '', []],
+        [u'const vector<string>&', u'codes', '', []],
+        [u'InputArray', u'corners', '', []]],
+    '']
+parseName: cv.drawDataMatrixCodes with ['', u'cv::linemod', 'cv'] -> fullname:cv::drawDataMatrixCodes namespace:cv classpath: classname: name:drawDataMatrixCodes
+Registering an unknown type: InputOutputArray
+register (function) drawDataMatrixCodes
+
+--- Incoming ---
+[u'struct CvDataMatrixCode', '', [], [], '']
+parseName: struct CvDataMatrixCode with ['', u'cv::linemod', 'cv'] -> fullname:CvDataMatrixCode namespace: classpath: classname: name:CvDataMatrixCode
+register class CvDataMatrixCode ([u'struct CvDataMatrixCode', '', [], [], '']) [ignored]
+
+--- Incoming ---
+[   u'cvFindDataMatrix',
+    u'std::deque<CvDataMatrixCode>',
+    ['/NW'],
+    [[u'CvMat *', u'im', '', []]],
+    '']
+parseName: cvFindDataMatrix with ['', u'cv::linemod', 'cv'] -> fullname:cvFindDataMatrix namespace: classpath: classname: name:cvFindDataMatrix
+Registering an unknown type: std::deque<CvDataMatrixCode>
+Registering an unknown type: CvMat
+register (function) cvFindDataMatrix
+
+--- Incoming ---
+[u'struct cv.linemod.Feature', '', [], [], '']
+parseName: struct cv.linemod.Feature with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Feature namespace:cv::linemod classpath: classname: name:Feature
+register class cv::linemod::Feature ([u'struct cv.linemod.Feature', '', [], [], ''])
+
+--- Incoming ---
+[u'cv.linemod.Feature.Feature', u'', ['/NW'], [], '']
+parseName: cv.linemod.Feature.Feature with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Feature::Feature namespace:cv::linemod classpath:Feature classname:Feature name:Feature
+register (constructor) new in cv::linemod::Feature
+
+--- Incoming ---
+[   u'cv.linemod.Feature.Feature',
+    u'',
+    ['/NW'],
+    [   [u'int', u'x', '', []],
+        [u'int', u'y', '', []],
+        [u'int', u'label', '', []]],
+    '']
+parseName: cv.linemod.Feature.Feature with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Feature::Feature namespace:cv::linemod classpath:Feature classname:Feature name:Feature
+register (constructor) new in cv::linemod::Feature
+
+--- Incoming ---
+[   u'cv.linemod.Feature.read',
+    u'void',
+    ['/NW'],
+    [[u'const FileNode&', u'fn', '', []]],
+    '']
+parseName: cv.linemod.Feature.read with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Feature::read namespace:cv::linemod classpath:Feature classname:Feature name:read
+register (method) read in cv::linemod::Feature
+
+--- Incoming ---
+[   u'cv.linemod.Feature.write',
+    u'void',
+    ['/NW', '/C'],
+    [[u'FileStorage&', u'fs', '', []]],
+    '']
+parseName: cv.linemod.Feature.write with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Feature::write namespace:cv::linemod classpath:Feature classname:Feature name:write
+register (method) write in cv::linemod::Feature
+
+--- Incoming ---
+[   u'cv.linemod.Feature.Feature',
+    u'',
+    ['/NW'],
+    [   [u'int', u'_x', '', []],
+        [u'int', u'_y', '', []],
+        [u'int', u'_label', '', []]],
+    '']
+parseName: cv.linemod.Feature.Feature with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Feature::Feature namespace:cv::linemod classpath:Feature classname:Feature name:Feature
+register (constructor) new in cv::linemod::Feature
+
+--- Incoming ---
+[u'struct cv.linemod.Template', '', [], [], '']
+parseName: struct cv.linemod.Template with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Template namespace:cv::linemod classpath: classname: name:Template
+register class cv::linemod::Template ([u'struct cv.linemod.Template', '', [], [], ''])
+
+--- Incoming ---
+[   u'cv.linemod.Template.read',
+    u'void',
+    ['/NW'],
+    [[u'const FileNode&', u'fn', '', []]],
+    '']
+parseName: cv.linemod.Template.read with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Template::read namespace:cv::linemod classpath:Template classname:Template name:read
+register (method) read in cv::linemod::Template
+
+--- Incoming ---
+[   u'cv.linemod.Template.write',
+    u'void',
+    ['/NW', '/C'],
+    [[u'FileStorage&', u'fs', '', []]],
+    '']
+parseName: cv.linemod.Template.write with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Template::write namespace:cv::linemod classpath:Template classname:Template name:write
+register (method) write in cv::linemod::Template
+
+--- Incoming ---
+[u'class cv.linemod.QuantizedPyramid', '', [], [], '']
+parseName: class cv.linemod.QuantizedPyramid with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::QuantizedPyramid namespace:cv::linemod classpath: classname: name:QuantizedPyramid
+register class cv::linemod::QuantizedPyramid ([u'class cv.linemod.QuantizedPyramid', '', [], [], ''])
+
+--- Incoming ---
+[u'cv.linemod.QuantizedPyramid.~QuantizedPyramid', u'', ['/NW'], [], '']
+parseName: cv.linemod.QuantizedPyramid.~QuantizedPyramid with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::QuantizedPyramid::~QuantizedPyramid namespace:cv::linemod classpath:QuantizedPyramid classname:QuantizedPyramid name:~QuantizedPyramid
+ignore destructor (method) ~QuantizedPyramid in cv::linemod::QuantizedPyramid
+
+--- Incoming ---
+[   u'cv.linemod.QuantizedPyramid.quantize',
+    u'void',
+    ['/NW', '/A', '/C'],
+    [[u'Mat&', u'dst', '', []]],
+    '']
+parseName: cv.linemod.QuantizedPyramid.quantize with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::QuantizedPyramid::quantize namespace:cv::linemod classpath:QuantizedPyramid classname:QuantizedPyramid name:quantize
+
+--- Incoming ---
+[   u'cv.linemod.QuantizedPyramid.extractTemplate',
+    u'bool',
+    ['/NW', '/A', '/C'],
+    [[u'Template&', u'templ', '', []]],
+    '']
+parseName: cv.linemod.QuantizedPyramid.extractTemplate with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::QuantizedPyramid::extractTemplate namespace:cv::linemod classpath:QuantizedPyramid classname:QuantizedPyramid name:extractTemplate
+
+--- Incoming ---
+[u'cv.linemod.QuantizedPyramid.pyrDown', u'void', ['/NW', '/A'], [], '']
+parseName: cv.linemod.QuantizedPyramid.pyrDown with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::QuantizedPyramid::pyrDown namespace:cv::linemod classpath:QuantizedPyramid classname:QuantizedPyramid name:pyrDown
+
+--- Incoming ---
+[u'struct cv.linemod.QuantizedPyramid.Candidate', '', ['/Hidden'], [], '']
+parseName: struct cv.linemod.QuantizedPyramid.Candidate with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::QuantizedPyramid::Candidate namespace:cv::linemod classpath:QuantizedPyramid classname:QuantizedPyramid name:Candidate
+register class cv::linemod::QuantizedPyramid::Candidate ([u'struct cv.linemod.QuantizedPyramid.Candidate', '', ['/Hidden'], [], '']) [ignored]
+
+--- Incoming ---
+[   u'cv.linemod.QuantizedPyramid.Candidate.Candidate',
+    u'',
+    ['/NW'],
+    [   [u'int', u'x', '', []],
+        [u'int', u'y', '', []],
+        [u'int', u'label', '', []],
+        [u'float', u'score', '', []]],
+    '']
+parseName: cv.linemod.QuantizedPyramid.Candidate.Candidate with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::QuantizedPyramid::Candidate::Candidate namespace:cv::linemod classpath:QuantizedPyramid::Candidate classname:Candidate name:Candidate
+register (constructor) new in cv::linemod::QuantizedPyramid::Candidate
+
+--- Incoming ---
+[   u'cv.linemod.QuantizedPyramid.Candidate.operator <',
+    u'bool',
+    ['/NW', '/C'],
+    [[u'const Candidate&', u'rhs', '', []]],
+    '']
+parseName: cv.linemod.QuantizedPyramid.Candidate.operator < with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::QuantizedPyramid::Candidate::operator < namespace:cv::linemod classpath:QuantizedPyramid::Candidate classname:Candidate name:operator <
+ignore (method) operator < in cv::linemod::QuantizedPyramid::Candidate
+
+--- Incoming ---
+[   u'cv.linemod.QuantizedPyramid.selectScatteredFeatures',
+    u'void',
+    ['/NW', '/S', '/H'],
+    [   [u'const std::vector<Candidate>&', u'candidates', '', []],
+        [u'std::vector<Feature>&', u'features', '', []],
+        [u'size_t', u'num_features', '', []],
+        [u'float', u'distance', '', []]],
+    '']
+parseName: cv.linemod.QuantizedPyramid.selectScatteredFeatures with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::QuantizedPyramid::selectScatteredFeatures namespace:cv::linemod classpath:QuantizedPyramid classname:QuantizedPyramid name:selectScatteredFeatures
+Registering an unknown type: std::vector<Candidate>
+Registering an unknown type: std::vector<Feature>
+
+--- Incoming ---
+[   u'cv.linemod.QuantizedPyramid.Candidate.Candidate',
+    u'',
+    ['/NW'],
+    [   [u'int', u'x', '', []],
+        [u'int', u'y', '', []],
+        [u'int', u'label', '', []],
+        [u'float', u'_score', '', []]],
+    '']
+parseName: cv.linemod.QuantizedPyramid.Candidate.Candidate with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::QuantizedPyramid::Candidate::Candidate namespace:cv::linemod classpath:QuantizedPyramid::Candidate classname:Candidate name:Candidate
+register (constructor) new in cv::linemod::QuantizedPyramid::Candidate
+
+--- Incoming ---
+[u'class cv.linemod.Modality', '', [], [], '']
+parseName: class cv.linemod.Modality with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Modality namespace:cv::linemod classpath: classname: name:Modality
+register class cv::linemod::Modality ([u'class cv.linemod.Modality', '', [], [], ''])
+
+--- Incoming ---
+[u'cv.linemod.Modality.~Modality', u'', ['/NW'], [], '']
+parseName: cv.linemod.Modality.~Modality with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Modality::~Modality namespace:cv::linemod classpath:Modality classname:Modality name:~Modality
+ignore destructor (method) ~Modality in cv::linemod::Modality
+
+--- Incoming ---
+[   u'cv.linemod.Modality.process',
+    u'Ptr<QuantizedPyramid>',
+    ['/NW', '/C'],
+    [[u'const Mat&', u'src', '', []], [u'const Mat&', u'mask', u'Mat()', []]],
+    '']
+parseName: cv.linemod.Modality.process with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Modality::process namespace:cv::linemod classpath:Modality classname:Modality name:process
+register (method) process in cv::linemod::Modality
+
+--- Incoming ---
+[u'cv.linemod.Modality.name', u'std::string', ['/NW', '/A', '/C'], [], '']
+parseName: cv.linemod.Modality.name with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Modality::name namespace:cv::linemod classpath:Modality classname:Modality name:name
+
+--- Incoming ---
+[   u'cv.linemod.Modality.read',
+    u'void',
+    ['/NW', '/A'],
+    [[u'const FileNode&', u'fn', '', []]],
+    '']
+parseName: cv.linemod.Modality.read with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Modality::read namespace:cv::linemod classpath:Modality classname:Modality name:read
+
+--- Incoming ---
+[   u'cv.linemod.Modality.write',
+    u'void',
+    ['/NW', '/A', '/C'],
+    [[u'FileStorage&', u'fs', '', []]],
+    '']
+parseName: cv.linemod.Modality.write with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Modality::write namespace:cv::linemod classpath:Modality classname:Modality name:write
+
+--- Incoming ---
+[   u'cv.linemod.Modality.create',
+    u'Ptr<Modality>',
+    ['/NW', '/S'],
+    [[u'const std::string&', u'modality_type', '', []]],
+    '']
+parseName: cv.linemod.Modality.create with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Modality::create namespace:cv::linemod classpath:Modality classname:Modality name:create
+Registering an unknown type: std::string
+register (method) create in cv::linemod::Modality
+
+--- Incoming ---
+[   u'cv.linemod.Modality.create',
+    u'Ptr<Modality>',
+    ['/NW', '/S'],
+    [[u'const FileNode&', u'fn', '', []]],
+    '']
+parseName: cv.linemod.Modality.create with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Modality::create namespace:cv::linemod classpath:Modality classname:Modality name:create
+register (method) create in cv::linemod::Modality
+
+--- Incoming ---
+[   u'cv.linemod.Modality.processImpl',
+    u'Ptr<QuantizedPyramid>',
+    ['/NW', '/A', '/C', '/H'],
+    [[u'const Mat&', u'src', '', []], [u'const Mat&', u'mask', '', []]],
+    '']
+parseName: cv.linemod.Modality.processImpl with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Modality::processImpl namespace:cv::linemod classpath:Modality classname:Modality name:processImpl
+
+--- Incoming ---
+[u'class cv.linemod.ColorGradient', u': cv::linemod::Modality', [], [], '']
+parseName: class cv.linemod.ColorGradient with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::ColorGradient namespace:cv::linemod classpath: classname: name:ColorGradient
+register class cv::linemod::ColorGradient ([u'class cv.linemod.ColorGradient', u': cv::linemod::Modality', [], [], '']) impl:cv::linemod::Modality
+
+--- Incoming ---
+[u'cv.linemod.ColorGradient.ColorGradient', u'', ['/NW'], [], '']
+parseName: cv.linemod.ColorGradient.ColorGradient with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::ColorGradient::ColorGradient namespace:cv::linemod classpath:ColorGradient classname:ColorGradient name:ColorGradient
+register (constructor) new in cv::linemod::ColorGradient
+
+--- Incoming ---
+[   u'cv.linemod.ColorGradient.ColorGradient',
+    u'',
+    ['/NW'],
+    [   [u'float', u'weak_threshold', '', []],
+        [u'size_t', u'num_features', '', []],
+        [u'float', u'strong_threshold', '', []]],
+    '']
+parseName: cv.linemod.ColorGradient.ColorGradient with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::ColorGradient::ColorGradient namespace:cv::linemod classpath:ColorGradient classname:ColorGradient name:ColorGradient
+register (constructor) new in cv::linemod::ColorGradient
+
+--- Incoming ---
+[u'cv.linemod.ColorGradient.name', u'std::string', ['/NW', '/C'], [], '']
+parseName: cv.linemod.ColorGradient.name with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::ColorGradient::name namespace:cv::linemod classpath:ColorGradient classname:ColorGradient name:name
+register (method) name in cv::linemod::ColorGradient
+
+--- Incoming ---
+[   u'cv.linemod.ColorGradient.read',
+    u'void',
+    ['/NW'],
+    [[u'const FileNode&', u'fn', '', []]],
+    '']
+parseName: cv.linemod.ColorGradient.read with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::ColorGradient::read namespace:cv::linemod classpath:ColorGradient classname:ColorGradient name:read
+register (method) read in cv::linemod::ColorGradient
+
+--- Incoming ---
+[   u'cv.linemod.ColorGradient.write',
+    u'void',
+    ['/NW', '/C'],
+    [[u'FileStorage&', u'fs', '', []]],
+    '']
+parseName: cv.linemod.ColorGradient.write with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::ColorGradient::write namespace:cv::linemod classpath:ColorGradient classname:ColorGradient name:write
+register (method) write in cv::linemod::ColorGradient
+
+--- Incoming ---
+[   u'cv.linemod.ColorGradient.processImpl',
+    u'Ptr<QuantizedPyramid>',
+    ['/NW', '/C', '/H'],
+    [[u'const Mat&', u'src', '', []], [u'const Mat&', u'mask', '', []]],
+    '']
+parseName: cv.linemod.ColorGradient.processImpl with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::ColorGradient::processImpl namespace:cv::linemod classpath:ColorGradient classname:ColorGradient name:processImpl
+
+--- Incoming ---
+[u'class cv.linemod.DepthNormal', u': cv::linemod::Modality', [], [], '']
+parseName: class cv.linemod.DepthNormal with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::DepthNormal namespace:cv::linemod classpath: classname: name:DepthNormal
+register class cv::linemod::DepthNormal ([u'class cv.linemod.DepthNormal', u': cv::linemod::Modality', [], [], '']) impl:cv::linemod::Modality
+
+--- Incoming ---
+[u'cv.linemod.DepthNormal.DepthNormal', u'', ['/NW'], [], '']
+parseName: cv.linemod.DepthNormal.DepthNormal with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::DepthNormal::DepthNormal namespace:cv::linemod classpath:DepthNormal classname:DepthNormal name:DepthNormal
+register (constructor) new in cv::linemod::DepthNormal
+
+--- Incoming ---
+[   u'cv.linemod.DepthNormal.DepthNormal',
+    u'',
+    ['/NW'],
+    [   [u'int', u'distance_threshold', '', []],
+        [u'int', u'difference_threshold', '', []],
+        [u'size_t', u'num_features', '', []],
+        [u'int', u'extract_threshold', '', []]],
+    '']
+parseName: cv.linemod.DepthNormal.DepthNormal with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::DepthNormal::DepthNormal namespace:cv::linemod classpath:DepthNormal classname:DepthNormal name:DepthNormal
+register (constructor) new in cv::linemod::DepthNormal
+
+--- Incoming ---
+[u'cv.linemod.DepthNormal.name', u'std::string', ['/NW', '/C'], [], '']
+parseName: cv.linemod.DepthNormal.name with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::DepthNormal::name namespace:cv::linemod classpath:DepthNormal classname:DepthNormal name:name
+register (method) name in cv::linemod::DepthNormal
+
+--- Incoming ---
+[   u'cv.linemod.DepthNormal.read',
+    u'void',
+    ['/NW'],
+    [[u'const FileNode&', u'fn', '', []]],
+    '']
+parseName: cv.linemod.DepthNormal.read with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::DepthNormal::read namespace:cv::linemod classpath:DepthNormal classname:DepthNormal name:read
+register (method) read in cv::linemod::DepthNormal
+
+--- Incoming ---
+[   u'cv.linemod.DepthNormal.write',
+    u'void',
+    ['/NW', '/C'],
+    [[u'FileStorage&', u'fs', '', []]],
+    '']
+parseName: cv.linemod.DepthNormal.write with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::DepthNormal::write namespace:cv::linemod classpath:DepthNormal classname:DepthNormal name:write
+register (method) write in cv::linemod::DepthNormal
+
+--- Incoming ---
+[   u'cv.linemod.DepthNormal.processImpl',
+    u'Ptr<QuantizedPyramid>',
+    ['/NW', '/C', '/H'],
+    [[u'const Mat&', u'src', '', []], [u'const Mat&', u'mask', '', []]],
+    '']
+parseName: cv.linemod.DepthNormal.processImpl with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::DepthNormal::processImpl namespace:cv::linemod classpath:DepthNormal classname:DepthNormal name:processImpl
+
+--- Incoming ---
+[   u'cv.linemod.colormap',
+    u'void',
+    ['/NW'],
+    [[u'const Mat&', u'quantized', '', []], [u'Mat&', u'dst', '', []]],
+    '']
+parseName: cv.linemod.colormap with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::colormap namespace:cv::linemod classpath: classname: name:colormap
+register (function) colormap
+
+--- Incoming ---
+[u'struct cv.linemod.Match', '', [], [], '']
+parseName: struct cv.linemod.Match with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Match namespace:cv::linemod classpath: classname: name:Match
+register class cv::linemod::Match ([u'struct cv.linemod.Match', '', [], [], ''])
+
+--- Incoming ---
+[u'cv.linemod.Match.Match', u'', ['/NW'], [], '']
+parseName: cv.linemod.Match.Match with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Match::Match namespace:cv::linemod classpath:Match classname:Match name:Match
+register (constructor) new in cv::linemod::Match
+
+--- Incoming ---
+[   u'cv.linemod.Match.Match',
+    u'',
+    ['/NW'],
+    [   [u'int', u'x', '', []],
+        [u'int', u'y', '', []],
+        [u'float', u'similarity', '', []],
+        [u'const std::string&', u'class_id', '', []],
+        [u'int', u'template_id', '', []]],
+    '']
+parseName: cv.linemod.Match.Match with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Match::Match namespace:cv::linemod classpath:Match classname:Match name:Match
+register (constructor) new in cv::linemod::Match
+
+--- Incoming ---
+[   u'cv.linemod.Match.operator <',
+    u'bool',
+    ['/NW', '/C'],
+    [[u'const Match&', u'rhs', '', []]],
+    '']
+parseName: cv.linemod.Match.operator < with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Match::operator < namespace:cv::linemod classpath:Match classname:Match name:operator <
+ignore (method) operator < in cv::linemod::Match
+
+--- Incoming ---
+[   u'cv.linemod.Match.operator==',
+    u'bool',
+    ['/NW', '/C'],
+    [[u'const Match&', u'rhs', '', []]],
+    '']
+parseName: cv.linemod.Match.operator== with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Match::operator== namespace:cv::linemod classpath:Match classname:Match name:operator==
+ignore (method) operator== in cv::linemod::Match
+
+--- Incoming ---
+[   u'cv.linemod.Match.Match',
+    u'',
+    ['/NW'],
+    [   [u'int', u'_x', '', []],
+        [u'int', u'_y', '', []],
+        [u'float', u'_similarity', '', []],
+        [u'const std::string&', u'_class_id', '', []],
+        [u'int', u'_template_id', '', []]],
+    '']
+parseName: cv.linemod.Match.Match with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Match::Match namespace:cv::linemod classpath:Match classname:Match name:Match
+register (constructor) new in cv::linemod::Match
+
+--- Incoming ---
+[u'class cv.linemod.Detector', '', [], [], '']
+parseName: class cv.linemod.Detector with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector namespace:cv::linemod classpath: classname: name:Detector
+register class cv::linemod::Detector ([u'class cv.linemod.Detector', '', [], [], ''])
+
+--- Incoming ---
+[u'cv.linemod.Detector.Detector', u'', ['/NW'], [], '']
+parseName: cv.linemod.Detector.Detector with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector::Detector namespace:cv::linemod classpath:Detector classname:Detector name:Detector
+register (constructor) new in cv::linemod::Detector
+
+--- Incoming ---
+[   u'cv.linemod.Detector.Detector',
+    u'',
+    ['/NW'],
+    [   [u'const std::vector< Ptr<Modality> >&', u'modalities', '', []],
+        [u'const std::vector<int>&', u'T_pyramid', '', []]],
+    '']
+parseName: cv.linemod.Detector.Detector with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector::Detector namespace:cv::linemod classpath:Detector classname:Detector name:Detector
+Registering an unknown type: std::vector< Ptr<Modality> >
+Registering an unknown type: std::vector<int>
+register (constructor) new in cv::linemod::Detector
+
+--- Incoming ---
+[   u'cv.linemod.Detector.match',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const std::vector<Mat>&', u'sources', '', []],
+        [u'float', u'threshold', '', []],
+        [u'std::vector<Match>&', u'matches', '', []],
+        [   u'const std::vector<std::string>&',
+            u'class_ids',
+            u'std::vector<std::string>()',
+            []],
+        [u'OutputArrayOfArrays', u'quantized_images', u'noArray()', []],
+        [u'const std::vector<Mat>&', u'masks', u'std::vector<Mat>()', []]],
+    '']
+parseName: cv.linemod.Detector.match with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector::match namespace:cv::linemod classpath:Detector classname:Detector name:match
+Registering an unknown type: std::vector<Mat>
+Registering an unknown type: std::vector<Match>
+Registering an unknown type: std::vector<std::string>
+register (method) match in cv::linemod::Detector
+
+--- Incoming ---
+[   u'cv.linemod.Detector.addTemplate',
+    u'int',
+    ['/NW'],
+    [   [u'const std::vector<Mat>&', u'sources', '', []],
+        [u'const std::string&', u'class_id', '', []],
+        [u'const Mat&', u'object_mask', '', []],
+        [u'Rect*', u'bounding_box', u'NULL', []]],
+    '']
+parseName: cv.linemod.Detector.addTemplate with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector::addTemplate namespace:cv::linemod classpath:Detector classname:Detector name:addTemplate
+register (method) addTemplate in cv::linemod::Detector
+
+--- Incoming ---
+[   u'cv.linemod.Detector.addSyntheticTemplate',
+    u'int',
+    ['/NW'],
+    [   [u'const std::vector<Template>&', u'templates', '', []],
+        [u'const std::string&', u'class_id', '', []]],
+    '']
+parseName: cv.linemod.Detector.addSyntheticTemplate with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector::addSyntheticTemplate namespace:cv::linemod classpath:Detector classname:Detector name:addSyntheticTemplate
+Registering an unknown type: std::vector<Template>
+register (method) addSyntheticTemplate in cv::linemod::Detector
+
+--- Incoming ---
+[   u'cv.linemod.Detector.getModalities',
+    u'const std::vector< Ptr<Modality> >&',
+    ['/NW', '/C'],
+    [],
+    '']
+parseName: cv.linemod.Detector.getModalities with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector::getModalities namespace:cv::linemod classpath:Detector classname:Detector name:getModalities
+register (method) getModalities in cv::linemod::Detector
+
+--- Incoming ---
+[   u'cv.linemod.Detector.getT',
+    u'int',
+    ['/NW', '/C'],
+    [[u'int', u'pyramid_level', '', []]],
+    '']
+parseName: cv.linemod.Detector.getT with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector::getT namespace:cv::linemod classpath:Detector classname:Detector name:getT
+register (method) getT in cv::linemod::Detector
+
+--- Incoming ---
+[u'cv.linemod.Detector.pyramidLevels', u'int', ['/NW', '/C'], [], '']
+parseName: cv.linemod.Detector.pyramidLevels with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector::pyramidLevels namespace:cv::linemod classpath:Detector classname:Detector name:pyramidLevels
+register (method) pyramidLevels in cv::linemod::Detector
+
+--- Incoming ---
+[   u'cv.linemod.Detector.getTemplates',
+    u'const std::vector<Template>&',
+    ['/NW', '/C'],
+    [   [u'const std::string&', u'class_id', '', []],
+        [u'int', u'template_id', '', []]],
+    '']
+parseName: cv.linemod.Detector.getTemplates with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector::getTemplates namespace:cv::linemod classpath:Detector classname:Detector name:getTemplates
+register (method) getTemplates in cv::linemod::Detector
+
+--- Incoming ---
+[u'cv.linemod.Detector.numTemplates', u'int', ['/NW', '/C'], [], '']
+parseName: cv.linemod.Detector.numTemplates with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector::numTemplates namespace:cv::linemod classpath:Detector classname:Detector name:numTemplates
+register (method) numTemplates in cv::linemod::Detector
+
+--- Incoming ---
+[   u'cv.linemod.Detector.numTemplates',
+    u'int',
+    ['/NW', '/C'],
+    [[u'const std::string&', u'class_id', '', []]],
+    '']
+parseName: cv.linemod.Detector.numTemplates with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector::numTemplates namespace:cv::linemod classpath:Detector classname:Detector name:numTemplates
+register (method) numTemplates in cv::linemod::Detector
+
+--- Incoming ---
+[u'cv.linemod.Detector.numClasses', u'int', ['/NW', '/C'], [], '']
+parseName: cv.linemod.Detector.numClasses with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector::numClasses namespace:cv::linemod classpath:Detector classname:Detector name:numClasses
+register (method) numClasses in cv::linemod::Detector
+
+--- Incoming ---
+[   u'cv.linemod.Detector.classIds',
+    u'std::vector<std::string>',
+    ['/NW', '/C'],
+    [],
+    '']
+parseName: cv.linemod.Detector.classIds with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector::classIds namespace:cv::linemod classpath:Detector classname:Detector name:classIds
+Registering an unknown type: std::vector<std::string>
+register (method) classIds in cv::linemod::Detector
+
+--- Incoming ---
+[   u'cv.linemod.Detector.read',
+    u'void',
+    ['/NW'],
+    [[u'const FileNode&', u'fn', '', []]],
+    '']
+parseName: cv.linemod.Detector.read with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector::read namespace:cv::linemod classpath:Detector classname:Detector name:read
+register (method) read in cv::linemod::Detector
+
+--- Incoming ---
+[   u'cv.linemod.Detector.write',
+    u'void',
+    ['/NW', '/C'],
+    [[u'FileStorage&', u'fs', '', []]],
+    '']
+parseName: cv.linemod.Detector.write with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector::write namespace:cv::linemod classpath:Detector classname:Detector name:write
+register (method) write in cv::linemod::Detector
+
+--- Incoming ---
+[   u'cv.linemod.Detector.readClass',
+    u'std::string',
+    ['/NW'],
+    [   [u'const FileNode&', u'fn', '', []],
+        [u'const std::string &', u'class_id_override', u'""', []]],
+    '']
+parseName: cv.linemod.Detector.readClass with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector::readClass namespace:cv::linemod classpath:Detector classname:Detector name:readClass
+Registering an unknown type: std::string 
+register (method) readClass in cv::linemod::Detector
+
+--- Incoming ---
+[   u'cv.linemod.Detector.writeClass',
+    u'void',
+    ['/NW', '/C'],
+    [   [u'const std::string&', u'class_id', '', []],
+        [u'FileStorage&', u'fs', '', []]],
+    '']
+parseName: cv.linemod.Detector.writeClass with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector::writeClass namespace:cv::linemod classpath:Detector classname:Detector name:writeClass
+register (method) writeClass in cv::linemod::Detector
+
+--- Incoming ---
+[   u'cv.linemod.Detector.readClasses',
+    u'void',
+    ['/NW'],
+    [   [u'const std::vector<std::string>&', u'class_ids', '', []],
+        [u'const std::string&', u'format', u'"templates_%s.yml.gz"', []]],
+    '']
+parseName: cv.linemod.Detector.readClasses with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector::readClasses namespace:cv::linemod classpath:Detector classname:Detector name:readClasses
+register (method) readClasses in cv::linemod::Detector
+
+--- Incoming ---
+[   u'cv.linemod.Detector.writeClasses',
+    u'void',
+    ['/NW', '/C'],
+    [[u'const std::string&', u'format', u'"templates_%s.yml.gz"', []]],
+    '']
+parseName: cv.linemod.Detector.writeClasses with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector::writeClasses namespace:cv::linemod classpath:Detector classname:Detector name:writeClasses
+register (method) writeClasses in cv::linemod::Detector
+
+--- Incoming ---
+[   u'cv.linemod.Detector.matchClass',
+    u'void',
+    ['/NW', '/C', '/H'],
+    [   [u'const LinearMemoryPyramid&', u'lm_pyramid', '', []],
+        [u'const std::vector<Size>&', u'sizes', '', []],
+        [u'float', u'threshold', '', []],
+        [u'std::vector<Match>&', u'matches', '', []],
+        [u'const std::string&', u'class_id', '', []],
+        [   u'const std::vector<TemplatePyramid>&',
+            u'template_pyramids',
+            '',
+            []]],
+    '']
+parseName: cv.linemod.Detector.matchClass with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::Detector::matchClass namespace:cv::linemod classpath:Detector classname:Detector name:matchClass
+Registering an unknown type: LinearMemoryPyramid
+Registering an unknown type: std::vector<Size>
+Registering an unknown type: std::vector<TemplatePyramid>
+
+--- Incoming ---
+[u'cv.linemod.getDefaultLINE', u'Ptr<Detector>', ['/NW'], [], '']
+parseName: cv.linemod.getDefaultLINE with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::getDefaultLINE namespace:cv::linemod classpath: classname: name:getDefaultLINE
+register (function) getDefaultLINE
+
+--- Incoming ---
+[u'cv.linemod.getDefaultLINEMOD', u'Ptr<Detector>', ['/NW'], [], '']
+parseName: cv.linemod.getDefaultLINEMOD with ['', u'cv::linemod', 'cv'] -> fullname:cv::linemod::getDefaultLINEMOD namespace:cv::linemod classpath: classname: name:getDefaultLINEMOD
+register (function) getDefaultLINEMOD
+
+
+===== Generating... =====
+Generating func cvFindDataMatrix (function)
+  ignored: return type class Unknown[std::deque<CvDataMatrixCode>] is ignored
+Generating func cvHaarDetectObjectsForROC (function)
+  ignored: return type class RawPtr[Unknown[CvSeq]] is ignored
+Generating func cvHaarDetectObjects (function)
+  ignored: return type class RawPtr[Unknown[CvSeq]] is ignored
+Generating func cvLatentSvmDetectObjects (function)
+  ignored: return type class RawPtr[Unknown[CvSeq]] is ignored
+Generating func cvLoadHaarClassifierCascade (function)
+  ignored: return type class RawPtr[CvHaarClassifierCascade (boxed)] is ignored
+Generating func cvLoadLatentSvmDetector (function)
+  ignored: return type class RawPtr[CvLatentSvmDetector (boxed)] is ignored
+Generating func cvReleaseHaarClassifierCascade (function)
+  ignored: can not map type RawPtr[CvHaarClassifierCascade (boxed)] yet
+Generating func cvReleaseLatentSvmDetector (function)
+  ignored: can not map type RawPtr[CvLatentSvmDetector (boxed)] yet
+Generating func cvRunHaarClassifierCascade (function)
+  ignored: can not map type CvHaarClassifierCascade (boxed) yet
+Generating func cvSetImagesForHaarClassifierCascade (function)
+  ignored: can not map type CvHaarClassifierCascade (boxed) yet
+Generating func cv::drawDataMatrixCodes (function)
+  ignored: can not map type Unknown[InputOutputArray] yet
+Generating func cv::findDataMatrix (function)
+  ignored: can not map type Unknown[OutputArrayOfArrays] yet
+Generating func cv::groupRectangles (function)
+Generating func cv::groupRectangles (function)
+Generating func cv::groupRectangles (function)
+Generating func cv::groupRectangles (function)
+Generating func cv::groupRectangles_meanshift (function)
+Generating func cv::linemod::colormap (function)
+Generating func cv::linemod::getDefaultLINE (function)
+Generating func cv::linemod::getDefaultLINEMOD (function)
+Generating box for struct cv::CascadeClassifier
+Generating box for cv::CascadeClassifier
+Generating impl for struct cv::CascadeClassifier
+Generating func cv::CascadeClassifier::CascadeClassifier (constructor) cv::CascadeClassifier . new
+Generating func cv::CascadeClassifier::CascadeClassifier (constructor) cv::CascadeClassifier . new
+Generating func cv::CascadeClassifier::empty (method) cv::CascadeClassifier . empty
+Generating func cv::CascadeClassifier::load (method) cv::CascadeClassifier . load
+Generating func cv::CascadeClassifier::read (method) cv::CascadeClassifier . read
+  ignored: can not map type Unknown[FileNode] yet
+Generating func cv::CascadeClassifier::detectMultiScale (method) cv::CascadeClassifier . detectMultiScale
+Generating func cv::CascadeClassifier::detectMultiScale (method) cv::CascadeClassifier . detectMultiScale
+Generating func cv::CascadeClassifier::isOldFormatCascade (method) cv::CascadeClassifier . isOldFormatCascade
+Generating func cv::CascadeClassifier::getOriginalWindowSize (method) cv::CascadeClassifier . getOriginalWindowSize
+Generating func cv::CascadeClassifier::getFeatureType (method) cv::CascadeClassifier . getFeatureType
+Generating func cv::CascadeClassifier::setImage (method) cv::CascadeClassifier . setImage
+Generating func cv::CascadeClassifier::setMaskGenerator (method) cv::CascadeClassifier . setMaskGenerator
+  ignored: can not map type SmartPtr[cv::CascadeClassifier::MaskGenerator (boxed)] yet
+Generating func cv::CascadeClassifier::getMaskGenerator (method) cv::CascadeClassifier . getMaskGenerator
+  ignored: return type class SmartPtr[cv::CascadeClassifier::MaskGenerator (boxed)] is ignored
+Generating func cv::CascadeClassifier::setFaceDetectionMaskGenerator (method) cv::CascadeClassifier . setFaceDetectionMaskGenerator
+Generating impl for trait cv::CascadeClassifier::MaskGenerator
+Generating func cv::CascadeClassifier::MaskGenerator::initializeMask (method) cv::CascadeClassifier::MaskGenerator . initializeMask
+Generating box for struct cv::DetectionROI
+Generating box for cv::DetectionROI
+Generating impl for struct cv::DetectionROI
+Generating box for struct cv::FeatureEvaluator
+Generating box for cv::FeatureEvaluator
+Generating impl for struct cv::FeatureEvaluator
+Generating func cv::FeatureEvaluator::read (method) cv::FeatureEvaluator . read
+  ignored: can not map type Unknown[FileNode] yet
+Generating func cv::FeatureEvaluator::clone (method) cv::FeatureEvaluator . clone
+Generating func cv::FeatureEvaluator::getFeatureType (method) cv::FeatureEvaluator . getFeatureType
+Generating func cv::FeatureEvaluator::setImage (method) cv::FeatureEvaluator . setImage
+Generating func cv::FeatureEvaluator::setWindow (method) cv::FeatureEvaluator . setWindow
+Generating func cv::FeatureEvaluator::calcOrd (method) cv::FeatureEvaluator . calcOrd
+Generating func cv::FeatureEvaluator::calcCat (method) cv::FeatureEvaluator . calcCat
+Generating func cv::FeatureEvaluator::create (method) cv::FeatureEvaluator . create
+Generating box for struct cv::HOGDescriptor
+Generating box for cv::HOGDescriptor
+Generating impl for struct cv::HOGDescriptor
+Generating func cv::HOGDescriptor::HOGDescriptor (constructor) cv::HOGDescriptor . new
+Generating func cv::HOGDescriptor::HOGDescriptor (constructor) cv::HOGDescriptor . new
+Generating func cv::HOGDescriptor::HOGDescriptor (constructor) cv::HOGDescriptor . new
+  ignored: can not map type Unknown[String] yet
+Generating func cv::HOGDescriptor::HOGDescriptor (constructor) cv::HOGDescriptor . new
+Generating func cv::HOGDescriptor::getDescriptorSize (method) cv::HOGDescriptor . getDescriptorSize
+Generating func cv::HOGDescriptor::checkDetectorSize (method) cv::HOGDescriptor . checkDetectorSize
+Generating func cv::HOGDescriptor::getWinSigma (method) cv::HOGDescriptor . getWinSigma
+Generating func cv::HOGDescriptor::setSVMDetector (method) cv::HOGDescriptor . setSVMDetector
+Generating func cv::HOGDescriptor::read (method) cv::HOGDescriptor . read
+  ignored: can not map type Unknown[FileNode] yet
+Generating func cv::HOGDescriptor::write (method) cv::HOGDescriptor . write
+  ignored: can not map type Unknown[FileStorage] yet
+Generating func cv::HOGDescriptor::load (method) cv::HOGDescriptor . load
+  ignored: can not map type Unknown[String] yet
+Generating func cv::HOGDescriptor::save (method) cv::HOGDescriptor . save
+  ignored: can not map type Unknown[String] yet
+Generating func cv::HOGDescriptor::copyTo (method) cv::HOGDescriptor . copyTo
+Generating func cv::HOGDescriptor::compute (method) cv::HOGDescriptor . compute
+Generating func cv::HOGDescriptor::detect (method) cv::HOGDescriptor . detect
+Generating func cv::HOGDescriptor::detect (method) cv::HOGDescriptor . detect
+Generating func cv::HOGDescriptor::detectMultiScale (method) cv::HOGDescriptor . detectMultiScale
+Generating func cv::HOGDescriptor::detectMultiScale (method) cv::HOGDescriptor . detectMultiScale
+Generating func cv::HOGDescriptor::computeGradient (method) cv::HOGDescriptor . computeGradient
+Generating func cv::HOGDescriptor::getDefaultPeopleDetector (method) cv::HOGDescriptor . getDefaultPeopleDetector
+Generating func cv::HOGDescriptor::getDaimlerPeopleDetector (method) cv::HOGDescriptor . getDaimlerPeopleDetector
+Generating func cv::HOGDescriptor::detectROI (method) cv::HOGDescriptor . detectROI
+  ignored: can not map type Vector[Unknown[cv::Point>]] yet
+Generating func cv::HOGDescriptor::detectMultiScaleROI (method) cv::HOGDescriptor . detectMultiScaleROI
+  ignored: can not map type Unknown[std::vector<cv::Rect>] yet
+Generating func cv::HOGDescriptor::readALTModel (method) cv::HOGDescriptor . readALTModel
+  ignored: can not map type Unknown[std::string] yet
+Generating func cv::HOGDescriptor::groupRectangles (method) cv::HOGDescriptor . groupRectangles
+  ignored: can not map type Vector[Unknown[cv::Rect]] yet
+Generating box for struct cv::LatentSvmDetector
+Generating box for cv::LatentSvmDetector
+Generating impl for struct cv::LatentSvmDetector
+Generating func cv::LatentSvmDetector::LatentSvmDetector (constructor) cv::LatentSvmDetector . new
+Generating func cv::LatentSvmDetector::LatentSvmDetector (constructor) cv::LatentSvmDetector . new
+Generating func cv::LatentSvmDetector::clear (method) cv::LatentSvmDetector . clear
+Generating func cv::LatentSvmDetector::empty (method) cv::LatentSvmDetector . empty
+Generating func cv::LatentSvmDetector::load (method) cv::LatentSvmDetector . load
+Generating func cv::LatentSvmDetector::detect (method) cv::LatentSvmDetector . detect
+Generating func cv::LatentSvmDetector::getClassNames (method) cv::LatentSvmDetector . getClassNames
+Generating func cv::LatentSvmDetector::getClassCount (method) cv::LatentSvmDetector . getClassCount
+Generating box for struct cv::LatentSvmDetector::ObjectDetection
+Generating box for cv::LatentSvmDetector::ObjectDetection
+Generating impl for struct cv::LatentSvmDetector::ObjectDetection
+Generating func cv::LatentSvmDetector::ObjectDetection::ObjectDetection (constructor) cv::LatentSvmDetector::ObjectDetection . new
+Generating func cv::LatentSvmDetector::ObjectDetection::ObjectDetection (constructor) cv::LatentSvmDetector::ObjectDetection . new
+Generating box for struct cv::SimilarRects
+Generating box for cv::SimilarRects
+Generating impl for struct cv::SimilarRects
+Generating func cv::SimilarRects::SimilarRects (constructor) cv::SimilarRects . new
+Generating box for struct cv::linemod::ColorGradient
+Generating box for cv::linemod::ColorGradient
+Generating impl for struct cv::linemod::ColorGradient
+Generating func cv::linemod::ColorGradient::ColorGradient (constructor) cv::linemod::ColorGradient . new
+Generating func cv::linemod::ColorGradient::ColorGradient (constructor) cv::linemod::ColorGradient . new
+Generating func cv::linemod::ColorGradient::name (method) cv::linemod::ColorGradient . name
+  ignored: return type class Unknown[std::string] is ignored
+Generating func cv::linemod::ColorGradient::read (method) cv::linemod::ColorGradient . read
+  ignored: can not map type Unknown[FileNode] yet
+Generating func cv::linemod::ColorGradient::write (method) cv::linemod::ColorGradient . write
+  ignored: can not map type Unknown[FileStorage] yet
+Generating box for struct cv::linemod::DepthNormal
+Generating box for cv::linemod::DepthNormal
+Generating impl for struct cv::linemod::DepthNormal
+Generating func cv::linemod::DepthNormal::DepthNormal (constructor) cv::linemod::DepthNormal . new
+Generating func cv::linemod::DepthNormal::DepthNormal (constructor) cv::linemod::DepthNormal . new
+Generating func cv::linemod::DepthNormal::name (method) cv::linemod::DepthNormal . name
+  ignored: return type class Unknown[std::string] is ignored
+Generating func cv::linemod::DepthNormal::read (method) cv::linemod::DepthNormal . read
+  ignored: can not map type Unknown[FileNode] yet
+Generating func cv::linemod::DepthNormal::write (method) cv::linemod::DepthNormal . write
+  ignored: can not map type Unknown[FileStorage] yet
+Generating box for struct cv::linemod::Detector
+Generating box for cv::linemod::Detector
+Generating impl for struct cv::linemod::Detector
+Generating func cv::linemod::Detector::Detector (constructor) cv::linemod::Detector . new
+Generating func cv::linemod::Detector::Detector (constructor) cv::linemod::Detector . new
+  ignored: can not map type Unknown[std::vector< Ptr<Modality> >] yet
+Generating func cv::linemod::Detector::match (method) cv::linemod::Detector . match
+  ignored: can not map type Unknown[std::vector<Mat>] yet
+Generating func cv::linemod::Detector::addTemplate (method) cv::linemod::Detector . addTemplate
+  ignored: can not map type Unknown[std::vector<Mat>] yet
+Generating func cv::linemod::Detector::addSyntheticTemplate (method) cv::linemod::Detector . addSyntheticTemplate
+  ignored: can not map type Unknown[std::vector<Template>] yet
+Generating func cv::linemod::Detector::getModalities (method) cv::linemod::Detector . getModalities
+  ignored: return type class Unknown[std::vector< Ptr<Modality> >] is ignored
+Generating func cv::linemod::Detector::getT (method) cv::linemod::Detector . getT
+Generating func cv::linemod::Detector::pyramidLevels (method) cv::linemod::Detector . pyramidLevels
+Generating func cv::linemod::Detector::getTemplates (method) cv::linemod::Detector . getTemplates
+  ignored: return type class Unknown[std::vector<Template>] is ignored
+Generating func cv::linemod::Detector::numTemplates (method) cv::linemod::Detector . numTemplates
+Generating func cv::linemod::Detector::numTemplates (method) cv::linemod::Detector . numTemplates
+  ignored: can not map type Unknown[std::string] yet
+Generating func cv::linemod::Detector::numClasses (method) cv::linemod::Detector . numClasses
+Generating func cv::linemod::Detector::classIds (method) cv::linemod::Detector . classIds
+  ignored: return type class Unknown[std::vector<std::string>] is ignored
+Generating func cv::linemod::Detector::read (method) cv::linemod::Detector . read
+  ignored: can not map type Unknown[FileNode] yet
+Generating func cv::linemod::Detector::write (method) cv::linemod::Detector . write
+  ignored: can not map type Unknown[FileStorage] yet
+Generating func cv::linemod::Detector::readClass (method) cv::linemod::Detector . readClass
+  ignored: return type class Unknown[std::string] is ignored
+Generating func cv::linemod::Detector::writeClass (method) cv::linemod::Detector . writeClass
+  ignored: can not map type Unknown[std::string] yet
+Generating func cv::linemod::Detector::readClasses (method) cv::linemod::Detector . readClasses
+  ignored: can not map type Unknown[std::vector<std::string>] yet
+Generating func cv::linemod::Detector::writeClasses (method) cv::linemod::Detector . writeClasses
+  ignored: can not map type Unknown[std::string] yet
+Generating box for struct cv::linemod::Feature
+Generating box for cv::linemod::Feature
+Generating impl for struct cv::linemod::Feature
+Generating func cv::linemod::Feature::Feature (constructor) cv::linemod::Feature . new
+Generating func cv::linemod::Feature::Feature (constructor) cv::linemod::Feature . new
+Generating func cv::linemod::Feature::read (method) cv::linemod::Feature . read
+  ignored: can not map type Unknown[FileNode] yet
+Generating func cv::linemod::Feature::write (method) cv::linemod::Feature . write
+  ignored: can not map type Unknown[FileStorage] yet
+Generating func cv::linemod::Feature::Feature (constructor) cv::linemod::Feature . new
+  ignored: ignored by renamed table
+Generating box for struct cv::linemod::Match
+Generating box for cv::linemod::Match
+Generating impl for struct cv::linemod::Match
+Generating func cv::linemod::Match::Match (constructor) cv::linemod::Match . new
+Generating func cv::linemod::Match::Match (constructor) cv::linemod::Match . new
+  ignored: can not map type Unknown[std::string] yet
+Generating func cv::linemod::Match::Match (constructor) cv::linemod::Match . new
+  ignored: can not map type Unknown[std::string] yet
+Generating impl for trait cv::linemod::Modality
+Generating func cv::linemod::Modality::process (method) cv::linemod::Modality . process
+  ignored: return type class SmartPtr[cv::linemod::QuantizedPyramid (boxed)] is ignored
+Generating func cv::linemod::Modality::create (method) cv::linemod::Modality . create
+  ignored: return type class SmartPtr[cv::linemod::Modality (boxed)] is ignored
+Generating func cv::linemod::Modality::create (method) cv::linemod::Modality . create
+  ignored: return type class SmartPtr[cv::linemod::Modality (boxed)] is ignored
+Generating impl for trait cv::linemod::QuantizedPyramid
+Generating box for struct cv::linemod::Template
+Generating box for cv::linemod::Template
+Generating impl for struct cv::linemod::Template
+Generating func cv::linemod::Template::read (method) cv::linemod::Template . read
+  ignored: can not map type Unknown[FileNode] yet
+Generating func cv::linemod::Template::write (method) cv::linemod::Template . write
+  ignored: can not map type Unknown[FileStorage] yet

@@ -1,0 +1,105 @@
+FOUND FUNCs: 47
+
+PORTED FUNCs: 22
+
+PORTED: cv::calcGlobalOrientation (function)
+PORTED: cv::calcMotionGradient (function)
+PORTED: cv::calcOpticalFlowSF (function)
+PORTED: cv::calcOpticalFlowSF (function)
+PORTED: cv::estimateRigidTransform (function)
+PORTED: cv::initModule_video (function)
+PORTED: cv::segmentMotion (function)
+PORTED: cv::BackgroundSubtractor::getBackgroundImage (method) cv::BackgroundSubtractor . getBackgroundImage
+PORTED: cv::BackgroundSubtractorGMG::BackgroundSubtractorGMG (constructor) cv::BackgroundSubtractorGMG . new
+PORTED: cv::BackgroundSubtractorGMG::release (method) cv::BackgroundSubtractorGMG . release
+PORTED: cv::BackgroundSubtractorMOG::BackgroundSubtractorMOG (constructor) cv::BackgroundSubtractorMOG . new
+PORTED: cv::BackgroundSubtractorMOG::BackgroundSubtractorMOG (constructor) cv::BackgroundSubtractorMOG . new
+PORTED: cv::BackgroundSubtractorMOG::initialize (method) cv::BackgroundSubtractorMOG . initialize
+PORTED: cv::BackgroundSubtractorMOG2::BackgroundSubtractorMOG2 (constructor) cv::BackgroundSubtractorMOG2 . new
+PORTED: cv::BackgroundSubtractorMOG2::BackgroundSubtractorMOG2 (constructor) cv::BackgroundSubtractorMOG2 . new
+PORTED: cv::BackgroundSubtractorMOG2::getBackgroundImage (method) cv::BackgroundSubtractorMOG2 . getBackgroundImage
+PORTED: cv::BackgroundSubtractorMOG2::initialize (method) cv::BackgroundSubtractorMOG2 . initialize
+PORTED: cv::KalmanFilter::KalmanFilter (constructor) cv::KalmanFilter . new
+PORTED: cv::KalmanFilter::KalmanFilter (constructor) cv::KalmanFilter . new
+PORTED: cv::KalmanFilter::init (method) cv::KalmanFilter . init
+PORTED: cv::KalmanFilter::predict (method) cv::KalmanFilter . predict
+PORTED: cv::KalmanFilter::correct (method) cv::KalmanFilter . correct
+
+
+SKIPPED FUNCs: 25
+
+SKIPPED: cvCalcAffineFlowPyrLK (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvCalcGlobalOrientation (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvCalcMotionGradient (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvCalcOpticalFlowFarneback (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvCalcOpticalFlowPyrLK (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvCamShift (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvCreateKalman (function)
+   return type class RawPtr[CvKalman (boxed)] is ignored
+
+SKIPPED: cvEstimateRigidTransform (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvKalmanCorrect (function)
+   return type class RawPtr[Unknown[CvMat]] is ignored
+
+SKIPPED: cvKalmanPredict (function)
+   return type class RawPtr[Unknown[CvMat]] is ignored
+
+SKIPPED: cvMeanShift (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cvReleaseKalman (function)
+   can not map type RawPtr[CvKalman (boxed)] yet
+
+SKIPPED: cvSegmentMotion (function)
+   return type class RawPtr[Unknown[CvSeq]] is ignored
+
+SKIPPED: cvUpdateMotionHistory (function)
+   can not map type Unknown[CvArr] yet
+
+SKIPPED: cv::CamShift (function)
+   return type class Unknown[RotatedRect] is ignored
+
+SKIPPED: cv::buildOpticalFlowPyramid (function)
+   can not map type Unknown[OutputArrayOfArrays] yet
+
+SKIPPED: cv::calcOpticalFlowFarneback (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::calcOpticalFlowPyrLK (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::createOptFlow_DualTVL1 (function)
+   return type class SmartPtr[cv::DenseOpticalFlow (boxed)] is ignored
+
+SKIPPED: cv::meanShift (function)
+   can not map type Unknown[TermCriteria] yet
+
+SKIPPED: cv::updateMotionHistory (function)
+   can not map type Unknown[InputOutputArray] yet
+
+SKIPPED: cv::BackgroundSubtractorGMG::info (method) cv::BackgroundSubtractorGMG . info
+   return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+
+SKIPPED: cv::BackgroundSubtractorGMG::initialize (method) cv::BackgroundSubtractorGMG . initialize
+   can not map type Unknown[cv::Size] yet
+
+SKIPPED: cv::BackgroundSubtractorMOG::info (method) cv::BackgroundSubtractorMOG . info
+   return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+
+SKIPPED: cv::BackgroundSubtractorMOG2::info (method) cv::BackgroundSubtractorMOG2 . info
+   return type class RawPtr[Unknown[AlgorithmInfo]] is ignored
+

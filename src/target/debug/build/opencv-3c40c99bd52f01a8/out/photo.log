@@ -1,0 +1,127 @@
+parseName: class cv.Mat with set(['cv']) -> fullname:cv::Mat namespace:cv classpath: classname: name:Mat
+register class cv::Mat (['class cv.Mat', '', ['/Ghost'], []])
+parseName: class cv.Algorithm with set(['cv']) -> fullname:cv::Algorithm namespace:cv classpath: classname: name:Algorithm
+register class cv::Algorithm (['class cv.Algorithm', '', ['/Ghost'], []])
+
+
+===== Header: /usr/include/opencv2/photo/photo_c.h =====
+Namespaces: set(['', 'cv'])
+
+--- Incoming ---
+[u'const CV_INPAINT_NS', u'0', [], []]
+parseName: const CV_INPAINT_NS with ['', 'cv'] -> fullname:CV_INPAINT_NS namespace: classpath: classname: name:CV_INPAINT_NS
+
+--- Incoming ---
+[u'const CV_INPAINT_TELEA', u'1', [], []]
+parseName: const CV_INPAINT_TELEA with ['', 'cv'] -> fullname:CV_INPAINT_TELEA namespace: classpath: classname: name:CV_INPAINT_TELEA
+
+--- Incoming ---
+[   u'cvInpaint',
+    u'void',
+    ['/NW'],
+    [   [u'const CvArr*', u'src', '', []],
+        [u'const CvArr*', u'inpaint_mask', '', []],
+        [u'CvArr*', u'dst', '', []],
+        [u'double', u'inpaintRange', '', []],
+        [u'int', u'flags', '', []]],
+    '']
+parseName: cvInpaint with ['', 'cv'] -> fullname:cvInpaint namespace: classpath: classname: name:cvInpaint
+Registering an unknown type: CvArr
+Registering an unknown type: CvArr
+register (function) cvInpaint
+
+
+===== Header: /usr/include/opencv2/photo/photo.hpp =====
+Namespaces: set(['', 'cv'])
+
+--- Incoming ---
+[u'const cv.INPAINT_NS', u'CV_INPAINT_NS', [], []]
+parseName: const cv.INPAINT_NS with ['', 'cv'] -> fullname:cv::INPAINT_NS namespace:cv classpath: classname: name:INPAINT_NS
+
+--- Incoming ---
+[u'const cv.INPAINT_TELEA', u'CV_INPAINT_TELEA', [], []]
+parseName: const cv.INPAINT_TELEA with ['', 'cv'] -> fullname:cv::INPAINT_TELEA namespace:cv classpath: classname: name:INPAINT_TELEA
+
+--- Incoming ---
+[   u'cv.inpaint',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'src', '', []],
+        [u'InputArray', u'inpaintMask', '', []],
+        [u'OutputArray', u'dst', '', []],
+        [u'double', u'inpaintRadius', '', []],
+        [u'int', u'flags', '', []]],
+    u'restores the damaged image areas using one of the available intpainting algorithms\n']
+parseName: cv.inpaint with ['', 'cv'] -> fullname:cv::inpaint namespace:cv classpath: classname: name:inpaint
+register (function) inpaint
+
+--- Incoming ---
+[   u'cv.fastNlMeansDenoising',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'src', '', []],
+        [u'OutputArray', u'dst', '', []],
+        [u'float', u'h', u'3', []],
+        [u'int', u'templateWindowSize', u'7', []],
+        [u'int', u'searchWindowSize', u'21', []]],
+    '']
+parseName: cv.fastNlMeansDenoising with ['', 'cv'] -> fullname:cv::fastNlMeansDenoising namespace:cv classpath: classname: name:fastNlMeansDenoising
+register (function) fastNlMeansDenoising
+
+--- Incoming ---
+[   u'cv.fastNlMeansDenoisingColored',
+    u'void',
+    ['/NW'],
+    [   [u'InputArray', u'src', '', []],
+        [u'OutputArray', u'dst', '', []],
+        [u'float', u'h', u'3', []],
+        [u'float', u'hColor', u'3', []],
+        [u'int', u'templateWindowSize', u'7', []],
+        [u'int', u'searchWindowSize', u'21', []]],
+    '']
+parseName: cv.fastNlMeansDenoisingColored with ['', 'cv'] -> fullname:cv::fastNlMeansDenoisingColored namespace:cv classpath: classname: name:fastNlMeansDenoisingColored
+register (function) fastNlMeansDenoisingColored
+
+--- Incoming ---
+[   u'cv.fastNlMeansDenoisingMulti',
+    u'void',
+    ['/NW'],
+    [   [u'InputArrayOfArrays', u'srcImgs', '', []],
+        [u'OutputArray', u'dst', '', []],
+        [u'int', u'imgToDenoiseIndex', '', []],
+        [u'int', u'temporalWindowSize', '', []],
+        [u'float', u'h', u'3', []],
+        [u'int', u'templateWindowSize', u'7', []],
+        [u'int', u'searchWindowSize', u'21', []]],
+    '']
+parseName: cv.fastNlMeansDenoisingMulti with ['', 'cv'] -> fullname:cv::fastNlMeansDenoisingMulti namespace:cv classpath: classname: name:fastNlMeansDenoisingMulti
+Registering an unknown type: InputArrayOfArrays
+register (function) fastNlMeansDenoisingMulti
+
+--- Incoming ---
+[   u'cv.fastNlMeansDenoisingColoredMulti',
+    u'void',
+    ['/NW'],
+    [   [u'InputArrayOfArrays', u'srcImgs', '', []],
+        [u'OutputArray', u'dst', '', []],
+        [u'int', u'imgToDenoiseIndex', '', []],
+        [u'int', u'temporalWindowSize', '', []],
+        [u'float', u'h', u'3', []],
+        [u'float', u'hColor', u'3', []],
+        [u'int', u'templateWindowSize', u'7', []],
+        [u'int', u'searchWindowSize', u'21', []]],
+    '']
+parseName: cv.fastNlMeansDenoisingColoredMulti with ['', 'cv'] -> fullname:cv::fastNlMeansDenoisingColoredMulti namespace:cv classpath: classname: name:fastNlMeansDenoisingColoredMulti
+register (function) fastNlMeansDenoisingColoredMulti
+
+
+===== Generating... =====
+Generating func cvInpaint (function)
+  ignored: can not map type Unknown[CvArr] yet
+Generating func cv::fastNlMeansDenoisingColoredMulti (function)
+  ignored: can not map type Unknown[InputArrayOfArrays] yet
+Generating func cv::fastNlMeansDenoisingColored (function)
+Generating func cv::fastNlMeansDenoisingMulti (function)
+  ignored: can not map type Unknown[InputArrayOfArrays] yet
+Generating func cv::fastNlMeansDenoising (function)
+Generating func cv::inpaint (function)
