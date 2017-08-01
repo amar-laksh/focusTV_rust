@@ -1,6 +1,10 @@
 #[macro_use]
 extern crate shells;
 extern crate opencv;
+extern crate inputbot;
+ 
+use inputbot::*;
+use KeybdKey::*;
 use opencv::highgui;
 use opencv::core;
 use opencv::imgproc;
@@ -21,21 +25,21 @@ fn in_focus(window: &str) -> bool {
 }
 
 
+fn press_stuff() {
+    SpaceKey.press();
+}
+
 fn run() -> Result<(),String> {
     let window = "video capture";
     let xml = "/usr/share/opencv/haarcascades/haarcascade_frontalface_alt.xml";
     let vlc = "VLC";
     let youtube = "YouTube";
-
+    let mut c = 0;
+    let mut flag = 1;
     loop {
-        while(in_focus(vlc) || in_focus(youtube)){
+        while in_focus(vlc) || in_focus(youtube) {
             try!(highgui::named_window(window,1));
-            let mut cam = try!(highgui::VideoCapture::device(1));
-            let opened = try!(highgui::VideoCapture::is_opened(&cam));
-            if ! opened {
-                println!("Using different camera");
-                cam = try!(highgui::VideoCapture::device(0));
-            }
+            let mut cam = try!(highgui::VideoCapture::device(0));
             let mut face = try!(objdetect::CascadeClassifier::new(xml));
             loop {
                 let mut frame = try!(core::Mat::new());
@@ -54,7 +58,17 @@ fn run() -> Result<(),String> {
                     objdetect::CV_HAAR_SCALE_IMAGE,
                     core::Size{ width:30, height:30 },
                     core::Size{ width:0, height:0 }));
-                println!("faces: {}", faces.len());
+
+                if faces.len() == 0 &&  c == 0 {
+                    c = 1;
+                    press_stuff();
+                    flag = 0;
+                }
+                else if faces.len() != 0 && flag == 0 {
+                    c = 0;
+                    press_stuff();
+                    flag = 1;
+                }
                 for face in faces.iter() {
                     println!("face {:?}", face);
                     let scaled_face = core::Rect{
@@ -66,7 +80,7 @@ fn run() -> Result<(),String> {
                         1, 8, 0));
                 }
                 core::flip(&frame, &frame, 1);
-                try!(highgui::imshow(window, &frame));
+                //try!(highgui::imshow(window, &frame));
                 if try!(highgui::wait_key(10)) > 0 {
                     break;
                 }
