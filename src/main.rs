@@ -27,6 +27,7 @@ fn in_focus(window: &str) -> bool {
 
 fn press_stuff() {
     SpaceKey.press();
+    SpaceKey.release();
 }
 
 fn run() -> Result<(),String> {
@@ -38,7 +39,7 @@ fn run() -> Result<(),String> {
     let mut flag = 1;
     loop {
         while in_focus(vlc) || in_focus(youtube) {
-            try!(highgui::named_window(window,1));
+            // try!(highgui::named_window(window,1));
             let mut cam = try!(highgui::VideoCapture::device(0));
             let mut face = try!(objdetect::CascadeClassifier::new(xml));
             loop {
@@ -64,7 +65,7 @@ fn run() -> Result<(),String> {
                     press_stuff();
                     flag = 0;
                 }
-                else if faces.len() != 0 && flag == 0 {
+                else if faces.len() == 1 && flag == 0 {
                     c = 0;
                     press_stuff();
                     flag = 1;
@@ -81,12 +82,12 @@ fn run() -> Result<(),String> {
                 }
                 core::flip(&frame, &frame, 1);
                 //try!(highgui::imshow(window, &frame));
-                if try!(highgui::wait_key(10)) > 0 {
-                    break;
-                }
-                if !(in_focus(youtube) && in_focus(vlc)) {
-                    break;
-                }
+                // if try!(highgui::wait_key(10)) > 0 {
+                //     break;
+                // }
+                // if !(in_focus(youtube) && in_focus(vlc)) {
+                //     break;
+                // }
             }
         }
     }
