@@ -2,18 +2,11 @@
 extern crate shells;
 extern crate opencv;
 extern crate inputbot;
- 
 use inputbot::*;
 use KeybdKey::*;
-use opencv::highgui;
-use opencv::core;
-use opencv::imgproc;
-use opencv::objdetect;
-use std::process::Command;
-
-
+use opencv::*;
 fn in_focus(window: &str) -> bool {
-    let (code, current, stderr) = sh!("xprop -id $(xprop -root \
+    let (code, current,stderr) = sh!("xprop -id $(xprop -root \
             | sed -n -e \"s/^.*NET_ACTIVE_WINDOW(WINDOW): window id # //p\") | \
             sed -n -e \"s/^.*WM_NAME(STRING) = //p\"");
 
@@ -24,14 +17,12 @@ fn in_focus(window: &str) -> bool {
     return false;
 }
 
-
 fn press_stuff() {
     SpaceKey.press();
     SpaceKey.release();
 }
 
 fn run() -> Result<(),String> {
-    let window = "video capture";
     let xml = "/usr/share/opencv/haarcascades/haarcascade_frontalface_alt.xml";
     let vlc = "VLC";
     let youtube = "YouTube";
@@ -80,14 +71,6 @@ fn run() -> Result<(),String> {
                         core::Scalar{ data:[0f64,-1f64,-1f64,-1f64] },
                         1, 8, 0));
                 }
-                core::flip(&frame, &frame, 1);
-                //try!(highgui::imshow(window, &frame));
-                // if try!(highgui::wait_key(10)) > 0 {
-                //     break;
-                // }
-                // if !(in_focus(youtube) && in_focus(vlc)) {
-                //     break;
-                // }
             }
         }
     }
